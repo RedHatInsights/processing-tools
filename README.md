@@ -6,7 +6,6 @@ This repository and its counterpart living in [GitLab - processing-tools](https:
 - Test archive generation and sending (using [Molodec](https://gitlab.cee.redhat.com/ccx/molodec))
 - Open PRs GitHub action running once per day
 
-
 ## Related
 - [GitLab processing-tools](https://gitlab.cee.redhat.com/lsolarov/processing-tools) - running scraping from GL repositiories such as open MRs
 - [Molodec](https://gitlab.cee.redhat.com/ccx/molodec) - archive generation, sending
