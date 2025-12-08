@@ -1,50 +1,13 @@
-# Processing Tools - GitHub
+# PROCESSING TOOLS
 
-Lightweight utilities for managing and monitoring GitHub repositories.
+This repository and its counterpart living in [GitLab - processing-tools](https://gitlab.cee.redhat.com/lsolarov/processing-tools) are repositoriories containing scripts, utilities and automation used by the ObsInt processing team.
 
-## Quick Start
+## Structure
+- Test archive generation and sending (using [Molodec](https://gitlab.cee.redhat.com/ccx/molodec))
+- Open PRs GitHub action running once per day
 
-### Prerequisites
-
-1. Install GitHub CLI:
-   ```bash
-   brew install gh
-   gh auth login
-   ```
-
-2. Install PyYAML:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-### Run the Script
-
-```bash
-cd github-utils
-python3 list_repos_prs.py
-```
-
-## Output
-
-The script generates three files:
-
-1. **`open-prs.csv`** - All PRs in CSV format
-2. **`open-prs-konflux.md`** - Markdown table of Konflux PRs (app/red-hat-konflux)
-3. **`open-prs-others.md`** - Markdown table of other PRs (humans, dependabot, etc.)
-
-## Configuration
-
-Edit `github-utils/repos.yaml` to add/remove repositories:
-
-```yaml
-github_repos:
-  - RedHatInsights/insights-results-aggregator
-  - RedHatInsights/insights-results-smart-proxy
-  # Add more repos here...
-```
-
-## GitHub Actions
-
-The workflow runs automatically daily at 4 AM UTC and updates the markdown reports.
-
-You can also trigger it manually from the Actions tab.
+## Related
+- [GitLab processing-tools](https://gitlab.cee.redhat.com/lsolarov/processing-tools) - running scraping from GL repositiories such as open MRs
+- [Molodec](https://gitlab.cee.redhat.com/ccx/molodec) - archive generation, sending
+- [Local deployment of processing services](https://github.com/RedHatInsights/obsint-processing-local-deploy) - local deployment of processing services
+- [Juan's utils](https://github.com/juandspy/utils) - Juan's repo full of automations and scripts
