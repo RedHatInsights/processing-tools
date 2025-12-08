@@ -1,0 +1,14 @@
+# GitHub repositories to monitor for open PRs
+# Format: owner/repo-name
+github_repos:
+  - RedHatInsights/insights-results-aggregator
+  - RedHatInsights/insights-results-aggregator-cleaner
+  - RedHatInsights/insights-results-aggregator-exporter
+  - RedHatInsights/insights-results-smart-proxy
+  - RedHatInsights/ccx-notification-writer
+  - RedHatInsights/ccx-notification-service
+  - RedHatInsights/insights-operator-gathering-conditions-service
+  - RedHatInsights/insights-content-template-renderer
+  - RedHatInsights/insights-behavioral-spec
+  - RedHatInsights/obsint-mocks
+  - RedHatInsights/insights-ccx-messaging

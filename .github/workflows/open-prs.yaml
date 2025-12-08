@@ -1,0 +1,54 @@
+name: Daily Open PRs Report
+
+on:
+  schedule:
+    - cron: '0 4 * * *'  # every day at 4AM
+  workflow_dispatch:     # allow manual execution
+
+jobs:
+  update-prs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false  # ensures that the credentials used to checkout the repository are not saved or persisted on the runner after the job complete
+          fetch-depth: 1              # we just need to clone the latest commit
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Set up Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Pull latest changes
+        run: |
+          git pull origin main
+
+      - name: Run script to update PR report
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd github-utils
+          python3 list_repos_prs.py
+
+      - name: Commit and push changes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git add github-utils/open-prs-konflux.md github-utils/open-prs-others.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update open PRs report [bot]"
+            git push https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
+          fi
