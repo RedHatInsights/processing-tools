@@ -38,13 +38,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "🔍 Fetching open PRs..."
-          cd github-utils
+          cd open_mr_pr/github
           python3 list_repos_prs.py
 
       - name: Commit and push results
         run: |
           # Add generated files
-          git add github-utils/open-prs-konflux.md github-utils/open-prs-others.md github-utils/open-prs.csv || true
+          git add open_mr_pr/github/open-prs-konflux.md open_mr_pr/github/open-prs-others.md open_mr_pr/github/open-prs.csv || true
 
           # Check if there are changes to commit
           if git diff --cached --quiet; then
