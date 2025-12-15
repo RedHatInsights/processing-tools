@@ -1,8 +1,19 @@
 """
-You need to install molodec first
+Start a venv:
+
+python3 -m venv venv        
+source venv/bin/activate 
+
+Install requirements:
+
+pip install -r requirements.txt
+
+You need to install molodec:
 
 export PIP_INDEX_URL=https://repository.engineering.redhat.com/nexus/repository/insights-qe/simple
 pip install -U molodec
+
+upload with: python upload_archive_ephemeral.py upload <ephemeral-namespace> <options>
 """
 
 import json
