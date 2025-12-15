@@ -1,12 +1,14 @@
 # Open Merge Requests (Others)
 
-*Last updated: 2025-12-12 12:48:40*
+*Last updated: 2025-12-15 11:11:57*
 
-**Total MRs: 14**
+**Total MRs: 16**
 
 | Project | MR | Title | Created | Author | CI Status | Draft |
 |---------|-------|-------|---------|--------|-----------|-------|
-| insights-qe/iqe-ccx-plugin | [!1151](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1151) | Use the mock AMS new endpoints to register cluster for test endpoints | 2025-12-05 | ireyes | ✅ ok | no |
+| ccx/ccx-data-pipeline | [!1126](https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1126) | [CCXDEV-15618] Add AGENTS.md | 2025-12-15 | jipapous | ✅ ok | no |
+| insights-qe/iqe-ccx-plugin | [!1157](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1157) | Update pre-commit hooks | 2025-12-13 | iqe-bot | ✅ ok | no |
+| insights-qe/iqe-ccx-plugin | [!1156](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1156) | Add AGENTS.md | 2025-12-12 | ireyes | ✅ ok | no |
 | ccx/parquet-factory | [!299](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/299) | TEST PR | 2025-09-30 | jdrobena | ✅ ok | no |
 | ccx/parquet-factory | [!297](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/297) | Draft: Test Commit | 2025-09-26 | jdrobena | ❌ failed | draft |
 | ccx/ccx-data-pipeline | [!1095](https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1095) | [DON'T MERGE] [CCXDEV-15282] Determine how much CPU/mem our apps realistically need during a PR check | 2025-08-14 | jdiazsua | ✅ ok | no |
