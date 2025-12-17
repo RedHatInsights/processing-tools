@@ -1,3 +1,4 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
+insights-results-aggregator,2343,chore(deps): update all dependencies,2025-12-17T00:49:17Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2343,app/red-hat-konflux,failed,ready
 insights-results-aggregator,2260,fix: don't add empty rule IDs,2025-09-05T08:18:51Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2260,juandspy,ok,draft
 insights-operator-gathering-conditions-service,371,Drop legacy building,2025-03-28T12:35:04Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/371,ikerreyes,failed,draft
