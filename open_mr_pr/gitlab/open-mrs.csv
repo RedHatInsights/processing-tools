@@ -1,14 +1,7 @@
 project,mr_id,title,date_created,url,author,ci_status,draft_status
-ccx/content-service,853,chore(deps): update all dependencies,2025-12-16T00:19:11.587Z,https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/853,app/konflux-ci,ok,no
-ccx/parquet-factory,327,fix(deps): update aws-sdk-go-v2 monorepo,2025-12-15T20:15:12.930Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/327,app/konflux-ci,ok,no
-ccx/parquet-factory,326,Remove deprecated CI tag,2025-12-15T14:08:15.008Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/326,ireyes,ok,no
-ccx/ccx-upgrades-data-eng,213,Test ci,2025-12-15T13:56:34.748Z,https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/213,ireyes,ok,no
-ccx/parquet-factory,325,chore(deps): update all dependencies,2025-12-15T12:19:54.601Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/325,app/konflux-ci,ok,no
-ccx/ccx-data-pipeline,1126,[CCXDEV-15618] Add AGENTS.md,2025-12-15T09:27:37.839Z,https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1126,jipapous,failed,no
-insights-qe/iqe-ccx-plugin,1156,Add AGENTS.md,2025-12-12T23:17:21.303Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1156,ireyes,ok,no
-ccx/ccx-upgrades-data-eng,212,Update pre-commit hooks version,2025-12-08T07:03:24.375Z,https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/212,app/konflux-ci,failed,no
-ccx/parquet-factory,324,fix(deps): update module github.com/xdg-go/scram to v1.2.0,2025-11-24T20:18:39.403Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/324,app/konflux-ci,ok,no
-ccx/parquet-factory,323,fix(deps): update module github.com/prometheus/client_golang to v1.23.2,2025-11-20T08:16:47.894Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/323,app/konflux-ci,failed,no
+ccx/parquet-factory,330,chore(deps): update all dependencies,2025-12-17T00:18:17.468Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/330,app/konflux-ci,ok,no
+ccx/content-service,854,chore(deps): update all dependencies,2025-12-17T00:17:59.551Z,https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/854,app/konflux-ci,ok,no
+ccx/parquet-factory,329,fix(deps): update aws-sdk-go-v2 monorepo,2025-12-17T00:14:42.201Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/329,app/konflux-ci,ok,no
 ccx/parquet-factory,322,fix(deps): update module github.com/xitongsys/parquet-go to v1.6.2,2025-11-12T20:15:38.921Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/322,app/konflux-ci,failed,no
 ccx/parquet-factory,320,chore(deps): update quay.io/projectquay/golang docker tag to v1.25,2025-11-12T16:14:44.407Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/320,app/konflux-ci,ok,no
 ccx/parquet-factory,299,TEST PR,2025-09-30T12:33:46.840Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/299,jdrobena,ok,no

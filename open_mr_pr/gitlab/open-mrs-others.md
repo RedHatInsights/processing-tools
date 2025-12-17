@@ -1,15 +1,11 @@
 # Open Merge Requests (Others)
 
-*Last updated: 2025-12-16 03:33:45*
+*Last updated: 2025-12-17 03:03:29*
 
-**Total MRs: 17**
+**Total MRs: 13**
 
 | Project | MR | Title | Created | Author | CI Status | Draft |
 |---------|-------|-------|---------|--------|-----------|-------|
-| ccx/parquet-factory | [!326](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/326) | Remove deprecated CI tag | 2025-12-15 | ireyes | ✅ ok | no |
-| ccx/ccx-upgrades-data-eng | [!213](https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/213) | Test ci | 2025-12-15 | ireyes | ✅ ok | no |
-| ccx/ccx-data-pipeline | [!1126](https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1126) | [CCXDEV-15618] Add AGENTS.md | 2025-12-15 | jipapous | ❌ failed | no |
-| insights-qe/iqe-ccx-plugin | [!1156](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1156) | Add AGENTS.md | 2025-12-12 | ireyes | ✅ ok | no |
 | ccx/parquet-factory | [!299](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/299) | TEST PR | 2025-09-30 | jdrobena | ✅ ok | no |
 | ccx/parquet-factory | [!297](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/297) | Draft: Test Commit | 2025-09-26 | jdrobena | ❌ failed | draft |
 | ccx/ccx-data-pipeline | [!1095](https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1095) | [DON'T MERGE] [CCXDEV-15282] Determine how much CPU/mem our apps realistically need during a PR check | 2025-08-14 | jdiazsua | ✅ ok | no |
