@@ -1,15 +1,13 @@
 # Open Merge Requests (Others)
 
-*Last updated: 2025-12-19 06:16:56*
+*Last updated: 2025-12-20 03:03:32*
 
-**Total MRs: 17**
+**Total MRs: 15**
 
 | Project | MR | Title | Created | Author | CI Status | Draft |
 |---------|-------|-------|---------|--------|-----------|-------|
 | insights-qe/iqe-ccx-plugin | [!1161](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1161) | Update pre-commit hooks | 2025-12-19 | iqe-bot | ✅ ok | no |
-| ccx/ccx-upgrades-inference | [!132](https://gitlab.cee.redhat.com/ccx/ccx-upgrades-inference/-/merge_requests/132) | Remove pr_check script as now Konflux is running integration tests | 2025-12-18 | ireyes | ✅ ok | no |
-| ccx/ccx-upgrades-data-eng | [!214](https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/214) | Remove pr_check script as now Konflux is running integration tests | 2025-12-18 | ireyes | ✅ ok | no |
-| ccx/content-service | [!856](https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/856) | Remove pr_check script as now Konflux is running integration tests | 2025-12-18 | ireyes | ✅ ok | no |
+| ccx/content-service | [!856](https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/856) | Draft: Remove pr_check script as now Konflux is running integration tests | 2025-12-18 | ireyes | ✅ ok | draft |
 | ccx/parquet-factory | [!299](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/299) | TEST PR | 2025-09-30 | jdrobena | ✅ ok | no |
 | ccx/parquet-factory | [!297](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/297) | Draft: Test Commit | 2025-09-26 | jdrobena | ❌ failed | draft |
 | ccx/ccx-data-pipeline | [!1095](https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1095) | [DON'T MERGE] [CCXDEV-15282] Determine how much CPU/mem our apps realistically need during a PR check | 2025-08-14 | jdiazsua | ✅ ok | no |

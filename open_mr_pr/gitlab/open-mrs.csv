@@ -1,9 +1,6 @@
 project,mr_id,title,date_created,url,author,ci_status,draft_status
 insights-qe/iqe-ccx-plugin,1161,Update pre-commit hooks,2025-12-19T04:43:15.502Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1161,iqe-bot,ok,no
-ccx/content-service,857,fix(deps): update module github.com/burntsushi/toml to v1.6.0,2025-12-18T16:35:09.549Z,https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/857,app/konflux-ci,ok,no
-ccx/ccx-upgrades-inference,132,Remove pr_check script as now Konflux is running integration tests,2025-12-18T10:10:29.926Z,https://gitlab.cee.redhat.com/ccx/ccx-upgrades-inference/-/merge_requests/132,ireyes,ok,no
-ccx/ccx-upgrades-data-eng,214,Remove pr_check script as now Konflux is running integration tests,2025-12-18T10:10:19.147Z,https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/214,ireyes,ok,no
-ccx/content-service,856,Remove pr_check script as now Konflux is running integration tests,2025-12-18T10:10:09.631Z,https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/856,ireyes,ok,no
+ccx/content-service,856,Draft: Remove pr_check script as now Konflux is running integration tests,2025-12-18T10:10:09.631Z,https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/856,ireyes,ok,draft
 ccx/parquet-factory,322,fix(deps): update module github.com/xitongsys/parquet-go to v1.6.2,2025-11-12T20:15:38.921Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/322,app/konflux-ci,failed,no
 ccx/parquet-factory,299,TEST PR,2025-09-30T12:33:46.840Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/299,jdrobena,ok,no
 ccx/parquet-factory,297,Draft: Test Commit,2025-09-26T14:19:09.416Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/297,jdrobena,failed,draft
