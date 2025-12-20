@@ -1,10 +1,13 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2025-12-19 04:15:41*
+*Last updated: 2025-12-20 04:09:37*
 
-**Total PRs: 2**
+**Total PRs: 5**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| insights-results-aggregator | [2347](https://github.com/RedHatInsights/insights-results-aggregator/pull/2347) | [CCXDEV-15658] Disable sourcery AI | 2025-12-19 | matysek | ✅ ok | ready |
+| insights-ccx-messaging | [627](https://github.com/RedHatInsights/insights-ccx-messaging/pull/627) | [CCXDEV-15658] Disable sourcery AI | 2025-12-19 | matysek | ✅ ok | ready |
+| insights-results-aggregator | [2346](https://github.com/RedHatInsights/insights-results-aggregator/pull/2346) | [CCXDEV-15852] fix: wrong resource parameter names | 2025-12-19 | juandspy | ❌ failed | draft |
 | insights-results-aggregator | [2260](https://github.com/RedHatInsights/insights-results-aggregator/pull/2260) | fix: don't add empty rule IDs | 2025-09-05 | juandspy | ✅ ok | draft |
 | insights-operator-gathering-conditions-service | [371](https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/371) | Drop legacy building | 2025-03-28 | ikerreyes | ❌ failed | draft |
