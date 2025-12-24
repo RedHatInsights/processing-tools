@@ -1,12 +1,12 @@
 # Open Merge Requests (Others)
 
-*Last updated: 2025-12-23 03:03:41*
+*Last updated: 2025-12-24 03:03:34*
 
 **Total MRs: 14**
 
 | Project | MR | Title | Created | Author | CI Status | Draft |
 |---------|-------|-------|---------|--------|-----------|-------|
-| ccx/content-service | [!856](https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/856) | Remove pr_check script as now Konflux is running integration tests | 2025-12-18 | ireyes | ✅ ok | no |
+| ccx/ccx-upgrades-data-eng | [!216](https://gitlab.cee.redhat.com/ccx/ccx-upgrades-data-eng/-/merge_requests/216) | [Do not merge] Trigger Build | 2025-12-23 | ireyes | ✅ ok | no |
 | ccx/parquet-factory | [!299](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/299) | TEST PR | 2025-09-30 | jdrobena | ✅ ok | no |
 | ccx/parquet-factory | [!297](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/297) | Draft: Test Commit | 2025-09-26 | jdrobena | ❌ failed | draft |
 | ccx/ccx-data-pipeline | [!1095](https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1095) | [DON'T MERGE] [CCXDEV-15282] Determine how much CPU/mem our apps realistically need during a PR check | 2025-08-14 | jdiazsua | ✅ ok | no |
