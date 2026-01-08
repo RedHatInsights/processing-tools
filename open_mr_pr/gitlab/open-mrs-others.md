@@ -1,12 +1,11 @@
 # Open Merge Requests (Others)
 
-*Last updated: 2026-01-07 03:03:37*
+*Last updated: 2026-01-08 03:03:54*
 
-**Total MRs: 14**
+**Total MRs: 13**
 
 | Project | MR | Title | Created | Author | CI Status | Draft |
 |---------|-------|-------|---------|--------|-----------|-------|
-| insights-qe/iqe-ccx-plugin | [!1162](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1162) | [CCXDEV-15873] test: remove tests for ols | 2026-01-06 | lsolarov | ✅ ok | no |
 | ccx/parquet-factory | [!299](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/299) | TEST PR | 2025-09-30 | jdrobena | ✅ ok | no |
 | ccx/parquet-factory | [!297](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/297) | Draft: Test Commit | 2025-09-26 | jdrobena | ❌ failed | draft |
 | ccx/ccx-data-pipeline | [!1095](https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1095) | [DON'T MERGE] [CCXDEV-15282] Determine how much CPU/mem our apps realistically need during a PR check | 2025-08-14 | jdiazsua | ✅ ok | no |
