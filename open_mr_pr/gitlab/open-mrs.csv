@@ -1,4 +1,6 @@
 project,mr_id,title,date_created,url,author,ci_status,draft_status
+ccx/parquet-factory,334,fix(deps): update aws-sdk-go-v2 monorepo,2026-01-09T20:15:01.879Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/334,app/konflux-ci,failed,no
+insights-qe/iqe-ccx-plugin,1163,Update pre-commit hooks,2026-01-09T04:42:23.975Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1163,iqe-bot,ok,no
 ccx/parquet-factory,333,chore(deps): update all dependencies,2026-01-05T16:18:36.967Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/333,app/konflux-ci,failed,no
 ccx/content-service,858,chore(deps): update all dependencies,2026-01-05T16:18:24.102Z,https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/858,app/konflux-ci,ok,no
 ccx/parquet-factory,299,TEST PR,2025-09-30T12:33:46.840Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/299,jdrobena,ok,no
