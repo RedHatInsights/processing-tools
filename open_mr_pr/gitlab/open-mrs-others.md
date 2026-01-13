@@ -1,11 +1,12 @@
 # Open Merge Requests (Others)
 
-*Last updated: 2026-01-12 03:03:44*
+*Last updated: 2026-01-13 03:03:38*
 
-**Total MRs: 14**
+**Total MRs: 15**
 
 | Project | MR | Title | Created | Author | CI Status | Draft |
 |---------|-------|-------|---------|--------|-----------|-------|
+| ccx/ccx-data-pipeline | [!1129](https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1129) | [CCXDEV-15854] Fix CVE-2025-66034 Remove fonttools dependency (no longer required) | 2026-01-12 | mzibrick | ✅ ok | no |
 | insights-qe/iqe-ccx-plugin | [!1163](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1163) | Update pre-commit hooks | 2026-01-09 | iqe-bot | ✅ ok | no |
 | ccx/parquet-factory | [!299](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/299) | TEST PR | 2025-09-30 | jdrobena | ✅ ok | no |
 | ccx/parquet-factory | [!297](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/297) | Draft: Test Commit | 2025-09-26 | jdrobena | ❌ failed | draft |
