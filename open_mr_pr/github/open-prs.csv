@@ -1,5 +1,6 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-insights-results-smart-proxy,1651,Update registry.access.redhat.com/ubi9/go-toolset Docker tag to v1.25.3-1767889151,2026-01-13T08:52:53Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1651,app/red-hat-konflux,failed,ready
+insights-ccx-messaging,637,[CCXDEV-15881] Remove multiplexor stage two,2026-01-14T08:39:42Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/637,lenasolarova,failed,draft
+insights-results-smart-proxy,1657,[CCXDEV-15516] Use skopeo for go version retrieval from image,2026-01-14T08:18:06Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1657,JiriPapousek,ok,ready
 ccx-notification-writer,739,[CCXDEV-15516] Add CI for checking Go version sync,2026-01-13T08:32:24Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/739,JiriPapousek,ok,ready
 insights-results-aggregator,2352,[CCXDEV-15516] Add CI for checking Go version sync,2026-01-13T08:23:14Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2352,JiriPapousek,failed,ready
 ccx-notification-service,1048,Bump github.com/openshift-online/ocm-sdk-go from 0.1.486 to 0.1.487,2026-01-13T08:11:08Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1048,app/dependabot,failed,ready
