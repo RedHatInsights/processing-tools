@@ -1,6 +1,8 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-insights-results-aggregator-cleaner,577,chore(deps): update all dependencies,2026-01-16T20:44:32Z,https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/577,app/red-hat-konflux,failed,ready
-insights-results-aggregator,2354,chore(deps): update all dependencies,2026-01-16T17:18:50Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2354,app/red-hat-konflux,failed,ready
+ccx-notification-writer,743,chore(deps): update all dependencies,2026-01-17T12:50:41Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/743,app/red-hat-konflux,ok,ready
+insights-operator-gathering-conditions-service,565,chore(deps): update all dependencies,2026-01-17T12:50:07Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/565,app/red-hat-konflux,ok,ready
+insights-results-aggregator-cleaner,577,chore(deps): update all dependencies,2026-01-16T20:44:32Z,https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/577,app/red-hat-konflux,ok,ready
+insights-results-aggregator,2354,chore(deps): update all dependencies,2026-01-16T17:18:50Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2354,app/red-hat-konflux,ok,ready
 insights-ccx-messaging,637,[CCXDEV-15881] Remove multiplexor stage two,2026-01-14T08:39:42Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/637,lenasolarova,failed,ready
 ccx-notification-service,1048,Bump github.com/openshift-online/ocm-sdk-go from 0.1.486 to 0.1.487,2026-01-13T08:11:08Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1048,app/dependabot,failed,ready
 insights-results-aggregator-exporter,500,chore(deps): update all dependencies,2026-01-11T00:43:55Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/500,app/red-hat-konflux,failed,ready
