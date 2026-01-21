@@ -1,12 +1,11 @@
 # Open Merge Requests (Others)
 
-*Last updated: 2026-01-20 03:03:38*
+*Last updated: 2026-01-21 03:03:46*
 
-**Total MRs: 15**
+**Total MRs: 14**
 
 | Project | MR | Title | Created | Author | CI Status | Draft |
 |---------|-------|-------|---------|--------|-----------|-------|
-| ccx/ccx-data-pipeline | [!1135](https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1135) | Draft: [CCXDEV-15919] Remove multiplexor component from pr_check.sh | 2026-01-19 | lsolarov | ✅ ok | draft |
 | insights-qe/iqe-ccx-plugin | [!1163](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1163) | Update pre-commit hooks | 2026-01-09 | iqe-bot | ✅ ok | no |
 | ccx/parquet-factory | [!299](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/299) | TEST PR | 2025-09-30 | jdrobena | ✅ ok | no |
 | ccx/parquet-factory | [!297](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/297) | Draft: Test Commit | 2025-09-26 | jdrobena | ❌ failed | draft |
