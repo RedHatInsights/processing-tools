@@ -1,8 +1,8 @@
 project,mr_id,title,date_created,url,author,ci_status,draft_status
-ccx/content-service,863,Bumped ccx-rules-ocp version to 2026.01.27,2026-01-27T08:52:53.096Z,https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/863,app/konflux-ci,failed,no
-ccx/parquet-factory,340,fix(deps): update module github.com/aws/aws-sdk-go-v2/feature/s3/manager to v1.21.0,2026-01-21T04:25:24.376Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/340,app/konflux-ci,failed,no
+insights-qe/iqe-ccx-plugin,1171,Fix test environment detection for openshuft_com_app fixture,2026-01-28T10:58:40.295Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1171,jsegural,failed,no
+ccx/parquet-factory,340,fix(deps): update aws-sdk-go-v2 monorepo,2026-01-21T04:25:24.376Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/340,app/konflux-ci,failed,no
 ccx/parquet-factory,339,chore(deps): update all dependencies,2026-01-16T16:21:44.012Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/339,app/konflux-ci,failed,no
-ccx/content-service,861,chore(deps): update all dependencies,2026-01-16T16:20:55.051Z,https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/861,app/konflux-ci,failed,no
+ccx/content-service,861,chore(deps): update all dependencies,2026-01-16T16:20:55.051Z,https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/861,app/konflux-ci,ok,no
 insights-qe/iqe-ccx-plugin,1163,Update pre-commit hooks,2026-01-09T04:42:23.975Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1163,iqe-bot,ok,no
 ccx/parquet-factory,299,TEST PR,2025-09-30T12:33:46.840Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/299,jdrobena,ok,no
 ccx/parquet-factory,297,Draft: Test Commit,2025-09-26T14:19:09.416Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/297,jdrobena,failed,draft
