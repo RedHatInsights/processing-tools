@@ -1,5 +1,4 @@
 project,mr_id,title,date_created,url,author,ci_status,draft_status
-ccx/ccx-data-pipeline,1137,feat: update project not to depend on VPN resources (nexus),2026-01-30T09:33:07.836Z,https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1137,jdiazsua,failed,no
 insights-qe/iqe-ccx-plugin,1171,Fix test environment detection for openshuft_com_app fixture,2026-01-28T10:58:40.295Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1171,jsegural,failed,no
 ccx/parquet-factory,340,fix(deps): update aws-sdk-go-v2 monorepo,2026-01-21T04:25:24.376Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/340,app/konflux-ci,failed,no
 ccx/parquet-factory,339,chore(deps): update all dependencies,2026-01-16T16:21:44.012Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/339,app/konflux-ci,failed,no

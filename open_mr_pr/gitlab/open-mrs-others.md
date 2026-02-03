@@ -1,12 +1,11 @@
 # Open Merge Requests (Others)
 
-*Last updated: 2026-02-01 03:03:29*
+*Last updated: 2026-02-03 03:03:34*
 
-**Total MRs: 16**
+**Total MRs: 15**
 
 | Project | MR | Title | Created | Author | CI Status | Draft |
 |---------|-------|-------|---------|--------|-----------|-------|
-| ccx/ccx-data-pipeline | [!1137](https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1137) | feat: update project not to depend on VPN resources (nexus) | 2026-01-30 | jdiazsua | ❌ failed | no |
 | insights-qe/iqe-ccx-plugin | [!1171](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1171) | Fix test environment detection for openshuft_com_app fixture | 2026-01-28 | jsegural | ❌ failed | no |
 | insights-qe/iqe-ccx-plugin | [!1163](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1163) | Update pre-commit hooks | 2026-01-09 | iqe-bot | ✅ ok | no |
 | ccx/parquet-factory | [!299](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/299) | TEST PR | 2025-09-30 | jdrobena | ✅ ok | no |
