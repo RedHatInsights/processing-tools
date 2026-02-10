@@ -12,3 +12,8 @@ github_repos:
   - RedHatInsights/insights-behavioral-spec
   - RedHatInsights/obsint-mocks
   - RedHatInsights/insights-ccx-messaging
+  - RedHatInsights/data-pipeline
+  - RedHatInsights/content-service
+  - RedHatInsights/parquet-factory
+  - RedHatInsights/ccx-upgrades-inference
+  - RedHatInsights/ccx-upgrades-data-eng
