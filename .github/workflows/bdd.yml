@@ -1,0 +1,95 @@
+name: BDD tests
+
+on:
+  workflow_call:
+      inputs:
+        service:
+          description: Service to be tested
+          required: true
+          type: string
+        
+        use_kafka:
+          description: Whether to use Kafka
+          required: false
+          type: boolean
+          default: false
+        
+        use_minio:
+          description: Whether to use MinIO
+          required: false
+          type: boolean
+          default: false
+
+        use_pushgateway:
+          description: Whether to use Prometheus Pushgateway
+          required: false
+          type: boolean
+          default: false
+
+jobs:
+  bdd:
+    runs-on: ubuntu-latest
+    name: BDD tests
+
+    env:
+      BDD_PATH: /insights-behavioral-spec
+      VIRTUAL_ENV: /insights-behavioral-spec-venv/
+    container:
+        image: quay.io/redhat-services-prod/obsint-processing-tenant/insights-behavioral-spec/insights-behavioral-spec:latest
+
+    services:
+      kafka:
+        image: ${{ inputs.use_kafka == true && 'quay.io/ccxdev/kafka-no-zk:latest' || '' }}
+      
+      minio:
+        image: ${{ inputs.use_minio == true && 'quay.io/ccxdev/minio-server-ubi:latest' || '' }}
+        env:
+          MINIO_ACCESS_KEY: test_access_key
+          MINIO_SECRET_KEY: test_secret_access_key
+          PORT: 9000
+
+      pushgateway:
+        image: ${{ inputs.use_pushgateway == true && 'quay.io/ccxdev/prom-pushgateway-admin:latest' || '' }}
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Setup Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.24'
+      - name: Run BDD tests
+        env:
+          SERVICE_UNDER_TEST: ${{ github.workspace }}
+        run: |
+          cd ${BDD_PATH} && make ${{ inputs.service }}
+
+      - name: Debug
+        if: always()
+        run: ls -R ${BDD_PATH}/logs
+      
+      - name: Check if logs exist
+        if: always()
+        id: check_logs
+        run: |
+          if [ -d "${BDD_PATH}/logs" ] && [ -n "$(ls -A ${BDD_PATH}/logs 2>/dev/null)" ]; then
+            echo "has_logs=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_logs=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Rename logs
+        if: always() && steps.check_logs.outputs.has_logs == 'true'
+        # Otherwise the upload-artifact action will complain
+        run: |
+          for filename in ${BDD_PATH}/logs/*; do
+            mv -n "${filename}" "$(echo "${filename}" | sed -e 's/["><:]//g')"
+          done
+
+      - name: Store tests logs
+        if: always() && steps.check_logs.outputs.has_logs == 'true'
+        uses: actions/upload-artifact@v5
+        with:
+          name: store-logs-${{ inputs.service }}
+          path: ${{ env.BDD_PATH }}/logs
