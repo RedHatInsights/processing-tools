@@ -1,0 +1,73 @@
+on:
+    workflow_call:
+      inputs:
+        service:
+          required: true
+          type: string
+        
+        artifacts_log_dir:
+          required: true
+          type: string
+
+jobs:
+  bdd:
+    runs-on: ubuntu-latest
+    name: BDD tests
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+            go-version: '1.23'
+    
+      - name: Build project
+        run: make build
+
+      - name: Retrieve Docker compose file
+        run: wget -O docker-compose.yml https://raw.githubusercontent.com/RedHatInsights/insights-behavioral-spec/main/docker-compose.yml
+
+      - name: Retrieve BDD runner
+        run: wget -O bdd_runner.sh https://raw.githubusercontent.com/RedHatInsights/insights-behavioral-spec/main/run_in_docker.sh && chmod +x bdd_runner.sh
+    
+      - name: Run BDD
+        run: CLEANUP_ENABLED=0 ./bdd_runner.sh ${{ inputs.service }} .
+      
+      - name: Set container ID as step result
+        id: set_container_id
+        if: always()
+        run: echo "BDD_CONTAINER=$(docker ps | grep 'insights-behavioral-spec:latest' | cut -d ' ' -f 1)" >> $GITHUB_OUTPUT
+      - name: Debug
+        if: always()
+        run: docker exec -u root "${{ steps.set_container_id.outputs.BDD_CONTAINER }}" /bin/bash -c "ls -R /insights-behavioral-spec/logs"
+    
+      - name: Copy logs from container to host
+        if: always()
+        run: docker cp "${{ steps.set_container_id.outputs.BDD_CONTAINER }}:/insights-behavioral-spec/logs" .
+
+      - name: Check if logs exist
+        if: always()
+        id: check_logs
+        run: |
+          if [ -d "logs/${{ inputs.artifacts_log_dir }}" ] && [ -n "$(ls -A logs/${{ inputs.artifacts_log_dir }} 2>/dev/null)" ]; then
+            echo "has_logs=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_logs=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Rename logs
+        if: always() && steps.check_logs.outputs.has_logs == 'true'
+        # Otherwise the upload-artifact action will complain
+        run: |
+          for filename in logs/${{ inputs.artifacts_log_dir }}/*; do mv --update=none "$filename" "$(echo "$filename" | sed -e 's/["><:]//g')"; done
+      
+      - name: Store service logs
+        if: always() && steps.check_logs.outputs.has_logs == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: store-logs-${{ inputs.service }}
+          path: |
+            logs/${{ inputs.artifacts_log_dir }}
