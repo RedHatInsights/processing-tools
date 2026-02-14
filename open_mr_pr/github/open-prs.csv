@@ -1,13 +1,14 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
+content-service,718,Trigger Build,2026-02-13T18:37:23Z,https://github.com/RedHatInsights/content-service/pull/718,ikerreyes,failed,ready
+data-pipeline,18,chore(deps): update python dependencies,2026-02-13T12:55:32Z,https://github.com/RedHatInsights/data-pipeline/pull/18,app/red-hat-konflux,failed,ready
+data-pipeline,17,Potential fix for code scanning alert no. 1: Workflow does not contain permissions,2026-02-13T11:47:57Z,https://github.com/RedHatInsights/data-pipeline/pull/17,juandspy,failed,ready
+data-pipeline,16,[CCXDEV-14701] conf: remove pr_check.sh,2026-02-13T08:00:35Z,https://github.com/RedHatInsights/data-pipeline/pull/16,juandspy,failed,ready
 insights-results-aggregator,2363,[DONT MERGE] Use reusable BDD workflow,2026-02-12T12:31:27Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2363,joselsegura,failed,ready
 insights-results-smart-proxy,1670,dummy commit to test CI,2026-02-11T21:00:26Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1670,Bee-lee,ok,ready
 insights-results-smart-proxy,1668,[DONT MERGE] Force CI execution,2026-02-11T15:23:16Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1668,joselsegura,failed,ready
-data-pipeline,11,test,2026-02-10T11:00:19Z,https://github.com/RedHatInsights/data-pipeline/pull/11,juandspy,failed,ready
-data-pipeline,9,chore(deps): update python dependencies,2026-02-10T00:53:29Z,https://github.com/RedHatInsights/data-pipeline/pull/9,app/red-hat-konflux,failed,ready
 parquet-factory,6,Update Go dependencies,2026-02-09T12:58:36Z,https://github.com/RedHatInsights/parquet-factory/pull/6,app/red-hat-konflux,failed,ready
 insights-ccx-messaging,648,"build(deps): update boto3 requirement from <1.42.35,>=1.34.1 to >=1.34.1,<1.42.45",2026-02-09T07:43:50Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/648,app/dependabot,failed,ready
 insights-ccx-messaging,647,build(deps): bump aiobotocore from 2.26.0 to 3.1.2,2026-02-09T07:43:19Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/647,app/dependabot,failed,ready
-content-service,710,Update Pre-commit hooks,2026-02-06T16:54:42Z,https://github.com/RedHatInsights/content-service/pull/710,app/red-hat-konflux,failed,ready
 content-service,709,Update Go dependencies,2026-02-06T16:54:35Z,https://github.com/RedHatInsights/content-service/pull/709,app/red-hat-konflux,failed,ready
 insights-operator-gathering-conditions-service,567,fix(deps): update module github.com/unleash/unleash-go-sdk/v5 to v6,2026-02-03T08:58:43Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/567,app/red-hat-konflux,failed,ready
 insights-operator-gathering-conditions-service,371,Drop legacy building,2025-03-28T12:35:04Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/371,ikerreyes,failed,draft
