@@ -1,4 +1,5 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
+data-pipeline,20,chore(deps): update konflux references,2026-02-14T09:06:23Z,https://github.com/RedHatInsights/data-pipeline/pull/20,app/red-hat-konflux,failed,ready
 content-service,718,Trigger Build,2026-02-13T18:37:23Z,https://github.com/RedHatInsights/content-service/pull/718,ikerreyes,failed,ready
 data-pipeline,18,chore(deps): update python dependencies,2026-02-13T12:55:32Z,https://github.com/RedHatInsights/data-pipeline/pull/18,app/red-hat-konflux,failed,ready
 data-pipeline,17,Potential fix for code scanning alert no. 1: Workflow does not contain permissions,2026-02-13T11:47:57Z,https://github.com/RedHatInsights/data-pipeline/pull/17,juandspy,failed,ready
