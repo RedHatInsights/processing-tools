@@ -1,11 +1,12 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-02-23 04:44:12*
+*Last updated: 2026-02-24 04:39:05*
 
-**Total PRs: 5**
+**Total PRs: 6**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| insights-behavioral-spec | [730](https://github.com/RedHatInsights/insights-behavioral-spec/pull/730) | Unifying the log path handling | 2026-02-23 | joselsegura | ❌ failed | ready |
 | insights-ccx-messaging | [650](https://github.com/RedHatInsights/insights-ccx-messaging/pull/650) | build(deps): bump aiobotocore from 2.26.0 to 3.1.3 | 2026-02-16 | app/dependabot | ❌ failed | ready |
 | insights-results-aggregator | [2363](https://github.com/RedHatInsights/insights-results-aggregator/pull/2363) | [DONT MERGE] Use reusable BDD workflow | 2026-02-12 | joselsegura | ❌ failed | ready |
 | insights-results-smart-proxy | [1670](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1670) | dummy commit to test CI | 2026-02-11 | Bee-lee | ✅ ok | ready |
