@@ -1,11 +1,12 @@
 # Open Merge Requests (Others)
 
-*Last updated: 2026-02-23 03:03:40*
+*Last updated: 2026-02-24 03:03:43*
 
-**Total MRs: 15**
+**Total MRs: 16**
 
 | Project | MR | Title | Created | Author | CI Status | Draft |
 |---------|-------|-------|---------|--------|-----------|-------|
+| insights-qe/iqe-ccx-plugin | [!1187](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1187) | [CCXDEV-16026] Mark tests as xfail if there is a rules version mismatch | 2026-02-23 | ireyes | ✅ ok | no |
 | insights-qe/iqe-ccx-plugin | [!1171](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1171) | Fix test environment detection for openshuft_com_app fixture | 2026-01-28 | jsegural | ❌ failed | no |
 | insights-qe/iqe-ccx-plugin | [!1163](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1163) | Update pre-commit hooks | 2026-01-09 | iqe-bot | ❌ failed | no |
 | ccx/parquet-factory | [!299](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/299) | TEST PR | 2025-09-30 | jdrobena | ✅ ok | no |
