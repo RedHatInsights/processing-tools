@@ -1,0 +1,27 @@
+name: Check Go Version Consistency
+
+on:
+  workflow_call:
+
+jobs:
+  check-versions:
+    name: Verify Go versions are in sync
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+      
+      - name: Prepare workflow
+        uses: actions/checkout@v6
+        with:
+          repository: RedHatInsights/processing-tools
+          path: processing-tools
+      
+      - name: Check Go version consistency
+        run: ./processing-tools/go-checkers/check_go_versions.sh
+
+      - name: Report status
+        if: failure()
+        run: |
+          echo "::error::Go version mismatch detected. Please make sure the versions are in sync."
