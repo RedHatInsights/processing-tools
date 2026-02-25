@@ -1,14 +1,12 @@
 # Open Merge Requests (Others)
 
-*Last updated: 2026-02-24 03:03:43*
+*Last updated: 2026-02-25 03:04:00*
 
-**Total MRs: 16**
+**Total MRs: 14**
 
 | Project | MR | Title | Created | Author | CI Status | Draft |
 |---------|-------|-------|---------|--------|-----------|-------|
-| insights-qe/iqe-ccx-plugin | [!1187](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1187) | [CCXDEV-16026] Mark tests as xfail if there is a rules version mismatch | 2026-02-23 | ireyes | ✅ ok | no |
 | insights-qe/iqe-ccx-plugin | [!1171](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1171) | Fix test environment detection for openshuft_com_app fixture | 2026-01-28 | jsegural | ❌ failed | no |
-| insights-qe/iqe-ccx-plugin | [!1163](https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1163) | Update pre-commit hooks | 2026-01-09 | iqe-bot | ❌ failed | no |
 | ccx/parquet-factory | [!299](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/299) | TEST PR | 2025-09-30 | jdrobena | ✅ ok | no |
 | ccx/parquet-factory | [!297](https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/297) | Draft: Test Commit | 2025-09-26 | jdrobena | ❌ failed | draft |
 | ccx/ccx-data-pipeline | [!1095](https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1095) | [DON'T MERGE] [CCXDEV-15282] Determine how much CPU/mem our apps realistically need during a PR check | 2025-08-14 | jdiazsua | ✅ ok | no |
