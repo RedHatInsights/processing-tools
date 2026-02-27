@@ -54,7 +54,7 @@ jobs:
         image: ${{ inputs.use_kafka == true && 'quay.io/ccxdev/kafka-no-zk:latest' || '' }}
       
       database:
-        image: ${{ inputs.use_postgres == true && 'postgres:${{ inputs.postgres_version }}' || '' }}
+        image: ${{ inputs.use_postgres == true && format('postgres:{0}', inputs.postgres_version) || '' }}
         env:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
