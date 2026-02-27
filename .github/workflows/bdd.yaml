@@ -14,6 +14,18 @@ on:
           type: boolean
           default: false
         
+        use_postgres:
+          description: Whether to use PostgreSQL
+          required: false
+          type: boolean
+          default: false
+        
+        postgres_version:
+          description: PostgreSQL version
+          required: false
+          type: string
+          default: 13.9
+
         use_minio:
           description: Whether to use MinIO
           required: false
@@ -41,6 +53,13 @@ jobs:
       kafka:
         image: ${{ inputs.use_kafka == true && 'quay.io/ccxdev/kafka-no-zk:latest' || '' }}
       
+      database:
+        image: ${{ inputs.use_postgres == true && 'postgres:${{ inputs.postgres_version }}' || '' }}
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: test
+
       minio:
         image: ${{ inputs.use_minio == true && 'quay.io/ccxdev/minio-server-ubi:latest' || '' }}
         env:
