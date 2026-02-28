@@ -1,18 +1,15 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
+insights-results-aggregator,2369,Use reusable workflow for BDD tests,2026-02-27T15:00:15Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2369,joselsegura,failed,ready
+ccx-notification-service,1064,fix(deps): update module github.com/ibm/sarama to v1.47.0,2026-02-27T13:23:53Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1064,app/red-hat-konflux,failed,ready
+insights-results-aggregator,2368,fix(deps): update module github.com/ibm/sarama to v1.47.0,2026-02-27T13:22:01Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2368,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1676,Bump github.com/openshift-online/ocm-sdk-go from 0.1.496 to 0.1.497,2026-02-26T17:54:39Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1676,app/dependabot,failed,ready
-parquet-factory,9,Simplify documentation structure,2026-02-26T14:46:09Z,https://github.com/RedHatInsights/parquet-factory/pull/9,ikerreyes,failed,ready
-content-service,726,Simplify docs for GitHub native navigation,2026-02-26T12:54:43Z,https://github.com/RedHatInsights/content-service/pull/726,ikerreyes,ok,ready
-content-service,725,Fix GitHub Pages workflow action versions,2026-02-26T12:33:11Z,https://github.com/RedHatInsights/content-service/pull/725,ikerreyes,failed,ready
 ccx-notification-service,1063,Bump github.com/openshift-online/ocm-sdk-go from 0.1.494 to 0.1.497,2026-02-26T07:12:48Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1063,app/dependabot,failed,ready
 insights-results-aggregator,2367,chore(deps): update all dependencies,2026-02-24T01:02:52Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2367,app/red-hat-konflux,failed,ready
-ccx-upgrades-data-eng,24,Update dependency fastapi to v0.133.1,2026-02-23T20:59:44Z,https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/24,app/red-hat-konflux,failed,ready
-ccx-upgrades-inference,22,Update dependency fastapi to v0.133.1,2026-02-23T20:59:19Z,https://github.com/RedHatInsights/ccx-upgrades-inference/pull/22,app/red-hat-konflux,failed,ready
+ccx-upgrades-inference,22,Update dependency fastapi to v0.134.0,2026-02-23T20:59:19Z,https://github.com/RedHatInsights/ccx-upgrades-inference/pull/22,app/red-hat-konflux,failed,ready
 insights-ccx-messaging,650,build(deps): bump aiobotocore from 2.26.0 to 3.1.3,2026-02-16T07:34:15Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/650,app/dependabot,failed,ready
 data-pipeline,18,chore(deps): update python dependencies,2026-02-13T12:55:32Z,https://github.com/RedHatInsights/data-pipeline/pull/18,app/red-hat-konflux,failed,ready
 insights-results-aggregator,2363,[DONT MERGE] Use reusable BDD workflow,2026-02-12T12:31:27Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2363,joselsegura,failed,ready
 insights-results-smart-proxy,1670,dummy commit to test CI,2026-02-11T21:00:26Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1670,Bee-lee,ok,ready
-insights-results-smart-proxy,1668,[DONT MERGE] Force CI execution,2026-02-11T15:23:16Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1668,joselsegura,failed,ready
 parquet-factory,6,Update Go dependencies,2026-02-09T12:58:36Z,https://github.com/RedHatInsights/parquet-factory/pull/6,app/red-hat-konflux,failed,ready
 content-service,709,Update Go dependencies,2026-02-06T16:54:35Z,https://github.com/RedHatInsights/content-service/pull/709,app/red-hat-konflux,failed,ready
-insights-operator-gathering-conditions-service,567,fix(deps): update module github.com/unleash/unleash-go-sdk/v5 to v6,2026-02-03T08:58:43Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/567,app/red-hat-konflux,failed,ready
 insights-operator-gathering-conditions-service,371,Drop legacy building,2025-03-28T12:35:04Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/371,ikerreyes,failed,draft
