@@ -140,12 +140,7 @@ def main():
     # Project paths to monitor
     project_paths = [
         "insights-qe/iqe-ccx-plugin",
-        "ccx/ccx-data-pipeline",
-        "ccx/content-service",
         "ccx/ccx-load-test",
-        "ccx/parquet-factory",
-        "ccx/ccx-upgrades-data-eng",
-        "ccx/ccx-upgrades-inference"
     ]
 
     # Get token from environment and strip any BOM or whitespace
