@@ -13,7 +13,31 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-threshold=${ABCGO_THRESHOLD:=64}
+arg_threshold=
+REMAINING_ARGS=()
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        --threshold=*|-t=*)
+            arg_threshold=${1#*=}
+            if [[ -z "$arg_threshold" ]]; then
+                echo "Error: --threshold= / -t= requires a positive integer value" >&2
+                exit 1
+            fi
+            shift
+            continue
+            ;;
+        *)
+            REMAINING_ARGS+=("$1")
+            shift
+            ;;
+    esac
+done
+
+threshold=${arg_threshold:-${ABCGO_THRESHOLD:-50}}
+if ! [[ "$threshold" =~ ^[0-9]+$ ]] || [[ "$threshold" -le 0 ]]; then
+    echo "Error: threshold must be a positive integer, got: ${threshold}" >&2
+    exit 1
+fi
 
 BLUE=$(tput setaf 4)
 RED_BG=$(tput setab 1)
@@ -21,8 +45,7 @@ GREEN_BG=$(tput setab 2)
 NC=$(tput sgr0) # No Color
 
 VERBOSE=false
-
-if [[ $* == *verbose* ]]; then
+if printf '%s\n' "${REMAINING_ARGS[@]}" | grep -qx verbose; then
     VERBOSE=true
 fi
 
