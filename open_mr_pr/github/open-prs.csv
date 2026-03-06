@@ -1,7 +1,10 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
+data-pipeline,33,"chore(deps): update dependency boto3 to >=1.42.62,<1.43.0",2026-03-06T01:20:37Z,https://github.com/RedHatInsights/data-pipeline/pull/33,app/red-hat-konflux,failed,ready
+parquet-factory,16,fix(deps): update go dependencies,2026-03-05T21:35:21Z,https://github.com/RedHatInsights/parquet-factory/pull/16,app/red-hat-konflux,ok,ready
+ccx-notification-service,1069,DON'T MERGE Using reusable workflow,2026-03-05T16:29:13Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1069,joselsegura,ok,ready
 insights-content-template-renderer,251,Bump fastapi from 0.132.0 to 0.135.1,2026-03-03T00:27:00Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/251,app/dependabot,failed,ready
 insights-results-smart-proxy,1676,Bump github.com/openshift-online/ocm-sdk-go from 0.1.496 to 0.1.497,2026-02-26T17:54:39Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1676,app/dependabot,failed,ready
-ccx-notification-service,1063,Bump github.com/openshift-online/ocm-sdk-go from 0.1.494 to 0.1.497,2026-02-26T07:12:48Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1063,app/dependabot,failed,ready
+ccx-notification-service,1063,Bump github.com/openshift-online/ocm-sdk-go from 0.1.494 to 0.1.497,2026-02-26T07:12:48Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1063,app/dependabot,ok,ready
 ccx-upgrades-inference,22,Update dependency fastapi to v0.135.1,2026-02-23T20:59:19Z,https://github.com/RedHatInsights/ccx-upgrades-inference/pull/22,app/red-hat-konflux,failed,ready
 insights-results-aggregator,2363,[DONT MERGE] Use reusable BDD workflow,2026-02-12T12:31:27Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2363,joselsegura,failed,ready
 insights-results-smart-proxy,1670,dummy commit to test CI,2026-02-11T21:00:26Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1670,Bee-lee,ok,ready
