@@ -24,7 +24,7 @@ on:
           description: PostgreSQL version
           required: false
           type: string
-          default: 13.9
+          default: "13.9"
 
         use_minio:
           description: Whether to use MinIO
@@ -38,6 +38,12 @@ on:
           type: boolean
           default: false
 
+        go_version:
+          description: Version of Go to be used to build the service
+          required: false
+          type: string
+          default: "1.24"
+
 jobs:
   bdd:
     runs-on: ubuntu-latest
@@ -46,13 +52,15 @@ jobs:
     env:
       BDD_PATH: /insights-behavioral-spec
       VIRTUAL_ENV: /insights-behavioral-spec-venv/
+      WITHMOCK: 1
+
     container:
         image: quay.io/redhat-services-prod/obsint-processing-tenant/insights-behavioral-spec/insights-behavioral-spec:latest
 
     services:
       kafka:
         image: ${{ inputs.use_kafka == true && 'quay.io/ccxdev/kafka-no-zk:latest' || '' }}
-      
+
       database:
         image: ${{ inputs.use_postgres == true && format('postgres:{0}', inputs.postgres_version) || '' }}
         env:
@@ -77,17 +85,13 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v4
         with:
-          go-version: '1.24'
+          go-version: ${{ inputs.go_version }}
       - name: Run BDD tests
         env:
           SERVICE_UNDER_TEST: ${{ github.workspace }}
         run: |
           cd ${BDD_PATH} && make ${{ inputs.service }}
 
-      - name: Debug
-        if: always()
-        run: ls -R ${BDD_PATH}/logs
-      
       - name: Check if logs exist
         if: always()
         id: check_logs
