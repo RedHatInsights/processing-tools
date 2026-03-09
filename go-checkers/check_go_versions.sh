@@ -25,9 +25,14 @@ fi
 
 echo "INFO: Dockerfile: $DOCKER_MAJOR_MINOR"
 
-# Extract Go version from gotests workflow
-GOTESTS_VERSION=$(grep 'go-version:' processing-tools/.github/workflows/gotests.yaml | sed -E 's/.*go-version:\s*"?([0-9]+\.[0-9]+)"?.*/\1/')
-echo "INFO: gotests.yaml: $GOTESTS_VERSION"
+if [ -f .github/workflows/gotests.yaml ]; then
+    # Extract Go version from gotests workflow
+    GOTESTS_VERSION=$(grep 'go-version:' .github/workflows/gotests.yaml | sed -E 's/.*go-version:\s*"?([0-9]+\.[0-9]+)"?.*/\1/')
+    echo "INFO: gotests.yaml: $GOTESTS_VERSION"
+else
+    echo "INFO: This repository doesn't have a gotests.yaml file. Exiting"
+    exit 0
+fi
 
 # Extract major.minor version from gotests (e.g., 1.24 from 1.24.0)
 GOTESTS_MAJOR_MINOR=$(echo "$GOTESTS_VERSION" | cut -d. -f1,2)
