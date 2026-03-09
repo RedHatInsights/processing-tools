@@ -1,7 +1,15 @@
--   id: abcgo
-    name: Run abcgo complexity checker
-    description: Reports functions with ABC metrics greter than a limit
-    entry: go-checkers/abcgo.sh
-    language: unsupported_script
-    types: [go]
-    pass_filenames: false
+- id: abcgo
+  name: Run abcgo complexity checker
+  description: Reports functions with ABC metrics greter than a limit
+  entry: go-checkers/abcgo.sh
+  language: unsupported_script
+  types: [go]
+  pass_filenames: false
+
+- id: go-version-consistency
+  name: Check Go version consistency
+  description: Checks if the Go version is consistent across the codebase
+  entry: go-checkers/check_go_versions.sh
+  language: unsupported_script
+  types: [go]
+  pass_filenames: false
