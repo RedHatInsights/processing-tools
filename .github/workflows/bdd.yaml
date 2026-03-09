@@ -38,6 +38,12 @@ on:
           type: boolean
           default: false
 
+        use_mock-oauth2-server:
+          description: Whether to use Mock OAuth2 Server
+          required: false
+          type: boolean
+          default: false
+
         go_version:
           description: Version of Go to be used to build the service
           required: false
@@ -77,6 +83,11 @@ jobs:
 
       pushgateway:
         image: ${{ inputs.use_pushgateway == true && 'quay.io/ccxdev/prom-pushgateway-admin:latest' || '' }}
+
+      mock-oauth2-server:
+        image: ${{ inputs.use_mock-oauth2-server == true && 'ghcr.io/navikt/mock-oauth2-server:2.2.1' || '' }}
+        env:
+          PORT: 8081
 
     steps:
       - uses: actions/checkout@v6
