@@ -1,19 +1,12 @@
 project,mr_id,title,date_created,url,author,ci_status,draft_status
-insights-qe/iqe-ccx-plugin,1199,[CCXDEV-16074] CI pipeline optimizations,2026-03-06T14:38:16.559Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1199,ireyes,failed,no
 insights-qe/iqe-ccx-plugin,1194,Update pre-commit hooks,2026-02-27T04:43:05.249Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1194,iqe-bot,failed,no
 insights-qe/iqe-ccx-plugin,1171,Fix test environment detection for openshuft_com_app fixture,2026-01-28T10:58:40.295Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1171,jsegural,failed,no
-ccx/parquet-factory,340,fix(deps): update aws-sdk-go-v2 monorepo,2026-01-21T04:25:24.376Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/340,app/konflux-ci,failed,no
-ccx/parquet-factory,339,chore(deps): update all dependencies,2026-01-16T16:21:44.012Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/339,app/konflux-ci,failed,no
-ccx/content-service,861,chore(deps): update all dependencies,2026-01-16T16:20:55.051Z,https://gitlab.cee.redhat.com/ccx/content-service/-/merge_requests/861,app/konflux-ci,ok,no
-ccx/parquet-factory,299,TEST PR,2025-09-30T12:33:46.840Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/299,jdrobena,ok,no
-ccx/parquet-factory,297,Draft: Test Commit,2025-09-26T14:19:09.416Z,https://gitlab.cee.redhat.com/ccx/parquet-factory/-/merge_requests/297,jdrobena,failed,draft
 ccx/ccx-data-pipeline,1095,[DON'T MERGE] [CCXDEV-15282] Determine how much CPU/mem our apps realistically need during a PR check,2025-08-14T11:11:05.418Z,https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1095,jdiazsua,ok,no
 ccx/ccx-data-pipeline,1079,DO NOT MERGE ccx-messaging memory leak investigation,2025-07-10T09:11:26.117Z,https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1079,jdrobena,failed,no
 ccx/ccx-load-test,36,[CCXDEV-14537] Trigger PR verification,2024-10-31T14:33:43.856Z,https://gitlab.cee.redhat.com/ccx/ccx-load-test/-/merge_requests/36,mzibrick,ok,no
 insights-qe/iqe-ccx-plugin,963,Draft: Updating the test_organization_clusters to work with AMS,2024-08-20T10:09:21.418Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/963,jdrobena,ok,draft
 insights-qe/iqe-ccx-plugin,872,Draft: [CCXDEV-10509] CI job to check that API code has been generated,2024-05-02T12:44:13.224Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/872,ireyes,ok,draft
 insights-qe/iqe-ccx-plugin,849,Draft: Block test_servicelog_notification_triggered in all envs,2024-04-10T07:05:10.769Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/849,pcamara,ok,draft
-insights-qe/iqe-ccx-plugin,814,[CCXDEV-11902] Update user config for ccx plugin - identity attr,2024-02-26T11:37:16.485Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/814,mzibrick,ok,no
 insights-qe/iqe-ccx-plugin,651,Draft: Run fuzz tests on URP endpoint for upgrades marker,2023-07-05T10:02:51.137Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/651,jdiazsua,ok,draft
 insights-qe/iqe-ccx-plugin,646,Draft: Check notification is not sent for unmanaged rules,2023-06-30T11:56:00.113Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/646,jdiazsua,ok,draft
 insights-qe/iqe-ccx-plugin,427,Draft: Ouia table safe demo,2022-07-15T08:40:30.152Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/427,ireyes,ok,draft
