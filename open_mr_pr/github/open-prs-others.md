@@ -1,11 +1,12 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-03-11 04:36:29*
+*Last updated: 2026-03-12 04:37:03*
 
-**Total PRs: 10**
+**Total PRs: 11**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| content-service | [734](https://github.com/RedHatInsights/content-service/pull/734) | [CCXDEV-16111] Switch to goccy/go-yaml package instead of unmaintained go-yaml | 2026-03-11 | lenasolarova | ❌ failed | ready |
 | insights-results-aggregator | [2380](https://github.com/RedHatInsights/insights-results-aggregator/pull/2380) | Integrate pre commit | 2026-03-10 | joselsegura | ❌ failed | ready |
 | insights-results-smart-proxy | [1683](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1683) | [pre-commit] Remove trailing whitespaces | 2026-03-10 | joselsegura | ❌ failed | ready |
 | insights-results-smart-proxy | [1682](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1682) | Fix some shellcheck errors | 2026-03-10 | joselsegura | ❌ failed | ready |

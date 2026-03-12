@@ -1,4 +1,8 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
+insights-results-aggregator-cleaner,617,chore(deps): update all dependencies,2026-03-12T01:55:11Z,https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/617,app/red-hat-konflux,ok,ready
+ccx-notification-writer,769,chore(deps): update all dependencies,2026-03-11T19:58:24Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/769,app/red-hat-konflux,failed,ready
+insights-results-smart-proxy,1684,Bump github.com/openshift-online/ocm-sdk-go from 0.1.497 to 0.1.498,2026-03-11T17:52:46Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1684,app/dependabot,failed,ready
+content-service,734,[CCXDEV-16111] Switch to goccy/go-yaml package instead of unmaintained go-yaml,2026-03-11T15:09:39Z,https://github.com/RedHatInsights/content-service/pull/734,lenasolarova,failed,ready
 insights-results-aggregator,2380,Integrate pre commit,2026-03-10T15:11:49Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2380,joselsegura,failed,ready
 content-service,732,Update pre-commit hook golangci/golangci-lint to v2.11.3,2026-03-10T13:50:59Z,https://github.com/RedHatInsights/content-service/pull/732,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1683,[pre-commit] Remove trailing whitespaces,2026-03-10T10:47:31Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1683,joselsegura,failed,ready
@@ -13,8 +17,8 @@ insights-operator-gathering-conditions-service,587,chore(deps): update all depen
 parquet-factory,18,chore(deps): update go dependencies,2026-03-08T13:48:16Z,https://github.com/RedHatInsights/parquet-factory/pull/18,app/red-hat-konflux,failed,ready
 insights-operator-gathering-conditions-service,586,fix(deps): update module golang.org/x/sync to v0.20.0,2026-03-08T13:44:15Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/586,app/red-hat-konflux,failed,ready
 insights-results-aggregator,2375,fix(deps): update module golang.org/x/sync to v0.20.0,2026-03-08T13:43:11Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2375,app/red-hat-konflux,failed,ready
-insights-results-aggregator-exporter,520,chore(deps): update module golang.org/x/sys to v0.42.0,2026-03-08T13:42:51Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/520,app/red-hat-konflux,ok,ready
-data-pipeline,34,"chore(deps): update dependency boto3 to >=1.42.65,<1.43.0",2026-03-07T05:47:41Z,https://github.com/RedHatInsights/data-pipeline/pull/34,app/red-hat-konflux,failed,ready
+insights-results-aggregator-exporter,520,chore(deps): update all dependencies,2026-03-08T13:42:51Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/520,app/red-hat-konflux,failed,ready
+data-pipeline,34,"chore(deps): update dependency boto3 to >=1.42.66,<1.43.0",2026-03-07T05:47:41Z,https://github.com/RedHatInsights/data-pipeline/pull/34,app/red-hat-konflux,failed,ready
 insights-results-aggregator-exporter,519,Bump github.com/minio/minio-go/v7 from 7.0.98 to 7.0.99,2026-03-06T23:13:19Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/519,app/dependabot,ok,ready
 insights-results-aggregator-exporter,518,fix(deps): update module github.com/minio/minio-go/v7 to v7.0.99,2026-03-06T17:21:30Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/518,app/red-hat-konflux,ok,ready
 insights-results-aggregator,2374,chore(deps): update all dependencies,2026-03-06T13:34:52Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2374,app/red-hat-konflux,failed,ready
