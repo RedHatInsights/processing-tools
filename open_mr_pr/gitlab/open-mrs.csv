@@ -1,14 +1,4 @@
 project,mr_id,title,date_created,url,author,ci_status,draft_status
-insights-qe/iqe-ccx-plugin,1209,Add clowder_smoke users,2026-03-12T22:11:42.394Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1209,ireyes,ok,no
-insights-qe/iqe-ccx-plugin,1194,Update pre-commit hooks,2026-02-27T04:43:05.249Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1194,iqe-bot,failed,no
-insights-qe/iqe-ccx-plugin,1171,Fix test environment detection for openshuft_com_app fixture,2026-01-28T10:58:40.295Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1171,jsegural,failed,no
-ccx/ccx-data-pipeline,1095,[DON'T MERGE] [CCXDEV-15282] Determine how much CPU/mem our apps realistically need during a PR check,2025-08-14T11:11:05.418Z,https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1095,jdiazsua,ok,no
-ccx/ccx-data-pipeline,1079,DO NOT MERGE ccx-messaging memory leak investigation,2025-07-10T09:11:26.117Z,https://gitlab.cee.redhat.com/ccx/ccx-data-pipeline/-/merge_requests/1079,jdrobena,failed,no
-ccx/ccx-load-test,36,[CCXDEV-14537] Trigger PR verification,2024-10-31T14:33:43.856Z,https://gitlab.cee.redhat.com/ccx/ccx-load-test/-/merge_requests/36,mzibrick,ok,no
-insights-qe/iqe-ccx-plugin,963,Draft: Updating the test_organization_clusters to work with AMS,2024-08-20T10:09:21.418Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/963,jdrobena,ok,draft
 insights-qe/iqe-ccx-plugin,872,Draft: [CCXDEV-10509] CI job to check that API code has been generated,2024-05-02T12:44:13.224Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/872,ireyes,ok,draft
-insights-qe/iqe-ccx-plugin,849,Draft: Block test_servicelog_notification_triggered in all envs,2024-04-10T07:05:10.769Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/849,pcamara,ok,draft
-insights-qe/iqe-ccx-plugin,651,Draft: Run fuzz tests on URP endpoint for upgrades marker,2023-07-05T10:02:51.137Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/651,jdiazsua,ok,draft
-insights-qe/iqe-ccx-plugin,646,Draft: Check notification is not sent for unmanaged rules,2023-06-30T11:56:00.113Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/646,jdiazsua,ok,draft
 insights-qe/iqe-ccx-plugin,427,Draft: Ouia table safe demo,2022-07-15T08:40:30.152Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/427,ireyes,ok,draft
 insights-qe/iqe-ccx-plugin,287,WIP: Notification redirections,2022-02-21T12:50:50.834Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/287,ireyes,ok,no
