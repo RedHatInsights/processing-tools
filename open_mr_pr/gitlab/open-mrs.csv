@@ -1,4 +1,5 @@
 project,mr_id,title,date_created,url,author,ci_status,draft_status
+insights-qe/iqe-ccx-plugin,1211,Remove xfail_if_version_mismatch dependency from IDP tests,2026-03-17T11:05:34.679Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1211,ireyes,failed,no
 insights-qe/iqe-ccx-plugin,872,Draft: [CCXDEV-10509] CI job to check that API code has been generated,2024-05-02T12:44:13.224Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/872,ireyes,ok,draft
 insights-qe/iqe-ccx-plugin,427,Draft: Ouia table safe demo,2022-07-15T08:40:30.152Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/427,ireyes,ok,draft
 insights-qe/iqe-ccx-plugin,287,WIP: Notification redirections,2022-02-21T12:50:50.834Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/287,ireyes,ok,no
