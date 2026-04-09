@@ -1,18 +1,8 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
 ccx-upgrades-inference,40,Update linter,2026-04-08T12:01:36Z,https://github.com/RedHatInsights/ccx-upgrades-inference/pull/40,joselsegura,ok,ready
-insights-results-aggregator-cleaner,649,Bump github.com/lib/pq from 1.12.2 to 1.12.3,2026-04-06T09:05:12Z,https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/649,app/dependabot,failed,ready
 ccx-upgrades-data-eng,51,[Automated] Update pre-commit hooks,2026-04-06T08:28:38Z,https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/51,app/github-actions,ok,ready
-ccx-notification-writer,787,fix(deps): update module github.com/lib/pq to v1.12.3,2026-04-03T21:31:48Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/787,app/red-hat-konflux,failed,ready
-insights-results-aggregator-cleaner,648,fix(deps): update go dependencies,2026-04-03T05:31:48Z,https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/648,app/red-hat-konflux,failed,ready
-insights-results-aggregator,2407,chore(deps): update pre-commit hook astral-sh/ruff-pre-commit to v0.15.9,2026-04-02T21:53:03Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2407,app/red-hat-konflux,failed,ready
-ccx-upgrades-data-eng,49,chore(deps): update python dependencies,2026-03-31T02:24:14Z,https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/49,app/red-hat-konflux,failed,ready
-insights-content-template-renderer,260,Bump requests from 2.32.5 to 2.33.1,2026-03-30T23:23:35Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/260,app/dependabot,ok,ready
+insights-results-aggregator,2407,chore(deps): update pre-commit hook astral-sh/ruff-pre-commit to v0.15.9,2026-04-02T21:53:03Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2407,app/red-hat-konflux,ok,ready
 insights-ccx-messaging,671,[CCXDEV-15098] Fix memory leak - add broker size observability gauges,2026-03-30T14:29:39Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/671,matysek,ok,draft
-ccx-notification-service,1080,Bump github.com/buger/jsonparser from 1.1.1 to 1.1.2,2026-03-27T15:50:51Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1080,app/dependabot,failed,ready
 obsint-mocks,167,Update CODEOWNERS file,2026-03-27T13:05:46Z,https://github.com/RedHatInsights/obsint-mocks/pull/167,joselsegura,ok,ready
-insights-content-template-renderer,259,Bump requests from 2.32.5 to 2.33.0,2026-03-26T16:19:04Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/259,app/dependabot,ok,ready
-insights-ccx-messaging,667,chore(deps): update python dependencies,2026-03-26T13:59:57Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/667,app/red-hat-konflux,failed,ready
-data-pipeline,45,"chore(deps): update dependency boto3 to >=1.42.86,<1.43.0",2026-03-25T21:33:41Z,https://github.com/RedHatInsights/data-pipeline/pull/45,app/red-hat-konflux,failed,ready
 insights-content-template-renderer,255,Linters reusable workflow,2026-03-18T12:16:54Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/255,joselsegura,ok,ready
-insights-content-template-renderer,251,Bump fastapi from 0.132.0 to 0.135.1,2026-03-03T00:27:00Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/251,app/dependabot,failed,ready
 insights-operator-gathering-conditions-service,371,Drop legacy building,2025-03-28T12:35:04Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/371,ikerreyes,failed,draft
