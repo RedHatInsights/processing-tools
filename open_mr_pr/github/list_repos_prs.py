@@ -61,8 +61,9 @@ def get_prs_for_repo(repo_path: str) -> List[Dict[str, Any]]:
 
         return prs
     except subprocess.CalledProcessError as e:
-        print(f"Error fetching PRs for {repo_path}: {e}", file=sys.stderr)
-        return []
+        gh_error = e.stderr.strip() if e.stderr else str(e)
+        print(f"Error fetching PRs for {repo_path}: {gh_error}", file=sys.stderr)
+        sys.exit(1)
 
 
 def format_pr_as_csv(pr: Dict[str, Any]) -> str:
