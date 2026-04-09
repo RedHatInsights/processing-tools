@@ -11,13 +11,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
-      
+
       - name: Prepare workflow
         uses: actions/checkout@v6
         with:
           repository: RedHatInsights/processing-tools
           path: processing-tools
-      
+
       - name: Check Go version consistency
         run: ./processing-tools/go-checkers/check_go_versions.sh
 

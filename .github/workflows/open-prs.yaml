@@ -35,7 +35,7 @@ jobs:
 
       - name: Generate PR reports
         env:
-          GITHUB_TOKEN: ${{ secrets.INSIGHTSDROID_TOKEN }}    
+          GITHUB_TOKEN: ${{ secrets.INSIGHTSDROID_TOKEN }}
         run: |
           echo "🔍 Fetching open PRs..."
           cd open_mr_pr/github

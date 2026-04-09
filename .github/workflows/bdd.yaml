@@ -7,19 +7,19 @@ on:
           description: Service to be tested
           required: true
           type: string
-        
+
         use_kafka:
           description: Whether to use Kafka
           required: false
           type: boolean
           default: false
-        
+
         use_postgres:
           description: Whether to use PostgreSQL
           required: false
           type: boolean
           default: false
-        
+
         postgres_version:
           description: PostgreSQL version
           required: false

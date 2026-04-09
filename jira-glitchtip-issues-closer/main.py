@@ -1,16 +1,14 @@
-from datetime import datetime, timezone
-import json
 import os
+from datetime import datetime, timezone
 
-from jira import get_issues, JIRA_DOMAIN
-from glitchtip import get_issue, GLITCHTIP_DATE_FORMAT, \
-    get_issues as glitchtip_issues, GLITCHTIP_DOMAIN
-
+from glitchtip import GLITCHTIP_DATE_FORMAT, GLITCHTIP_DOMAIN, get_issue
+from glitchtip import get_issues as glitchtip_issues
+from jira import JIRA_DOMAIN, get_issues
 
 DEFAULT_MAX_DAYS_OF_INACTIVITY = 7
-MAX_DAYS_OF_INACTIVITY = int(os.environ.get(
-    "MAX_DAYS_OF_INACTIVITY",
-    DEFAULT_MAX_DAYS_OF_INACTIVITY))
+MAX_DAYS_OF_INACTIVITY = int(
+    os.environ.get("MAX_DAYS_OF_INACTIVITY", DEFAULT_MAX_DAYS_OF_INACTIVITY)
+)
 
 TEMPLATE = """# Glitchtip <-> Jira integration checker
 
@@ -61,16 +59,16 @@ def get_jira_issues_with_last_seen_older_than(max_days_of_inactivity: int):
         issue_data = get_issue(glitchtip_url.split("/")[-1])
 
         last_seen_in_days = get_last_seen_in_days(issue_data)
-        if last_seen_in_days is not None:
-            if last_seen_in_days < max_days_of_inactivity:
-                continue
-        
+        if last_seen_in_days is not None and last_seen_in_days < max_days_of_inactivity:
+            continue
+
         issue["glitchtip_url"] = glitchtip_url
         issue["last_seen_in_days"] = last_seen_in_days
-        
+
         out["issues"].append(issue)
 
     return out
+
 
 def format_issues_as_markdown(data):
     """Format Jira issues with Glitchtip events as markdown table rows."""
@@ -79,10 +77,13 @@ def format_issues_as_markdown(data):
         jira_url = f"https://{JIRA_DOMAIN}/browse/{issue['key']}"
         jira_link = f"[{issue['key']}]({jira_url})"
         glitchtip_link = f"[Link]({issue['glitchtip_url']})"
-        days = issue["last_seen_in_days"] if issue["last_seen_in_days"] is not None else "N/A"
+        days = (
+            issue["last_seen_in_days"]
+            if issue["last_seen_in_days"] is not None
+            else "N/A"
+        )
         rows.append(f"| {jira_link} | {glitchtip_link} | {days} |")
     return "\n".join(rows) if rows else "| No issues found | | |"
-
 
 
 def get_glitchtip_issues_with_no_jira(max_days_of_inactivity: int):
@@ -95,13 +96,12 @@ def get_glitchtip_issues_with_no_jira(max_days_of_inactivity: int):
             continue
         glitchtip_url = f"https://{GLITCHTIP_DOMAIN}/ccx/issues/{issue['id']}"
         jira_issues = get_issues(
-            f'project = CCXDEV AND labels = "{glitchtip_url}" AND status != CLOSED')
+            f'project = CCXDEV AND labels = "{glitchtip_url}" AND status != CLOSED'
+        )
         if len(jira_issues["issues"]) == 0:
-            out.append({
-                "glitchtip_url": glitchtip_url,
-                "diff": last_seen_in_days
-            })
+            out.append({"glitchtip_url": glitchtip_url, "diff": last_seen_in_days})
     return out
+
 
 def format_glitchtip_issues_as_markdown(issues):
     """Format Glitchtip issues without Jira as markdown table rows."""
@@ -115,10 +115,11 @@ def format_glitchtip_issues_as_markdown(issues):
 
 if __name__ == "__main__":
     jira_issues_with_last_seen = get_jira_issues_with_last_seen_older_than(
-        MAX_DAYS_OF_INACTIVITY)
+        MAX_DAYS_OF_INACTIVITY
+    )
     glitchtip_issues_no_jira = get_glitchtip_issues_with_no_jira(MAX_DAYS_OF_INACTIVITY)
 
-    timestamp = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')
+    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
 
     print(
         TEMPLATE.format(
@@ -126,6 +127,8 @@ if __name__ == "__main__":
             jira_count=len(jira_issues_with_last_seen["issues"]),
             jira_table_rows=format_issues_as_markdown(jira_issues_with_last_seen),
             glitchtip_count=len(glitchtip_issues_no_jira),
-            glitchtip_table_rows=format_glitchtip_issues_as_markdown(glitchtip_issues_no_jira)
+            glitchtip_table_rows=format_glitchtip_issues_as_markdown(
+                glitchtip_issues_no_jira
+            ),
         )
     )

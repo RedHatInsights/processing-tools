@@ -1,6 +1,6 @@
 import os
-import requests
 
+import requests
 
 JIRA_DOMAIN = "issues.redhat.com"
 
@@ -8,14 +8,14 @@ JIRA_DOMAIN = "issues.redhat.com"
 def get_issues(
     query="project=CCXDEV AND labels=Glitchtip AND status!=CLOSED",
     timeout=60,
-    max_results="200"
+    max_results="200",
 ):
     # Define constants
-    JIRA_API_TOKEN = os.getenv("JIRA_API_TOKEN")
+    jira_api_token = os.getenv("JIRA_API_TOKEN")
 
     # Define the request headers
     headers = {
-        "Authorization": f"Bearer {JIRA_API_TOKEN}",
+        "Authorization": f"Bearer {jira_api_token}",
         "Accept": "application/json",
     }
 
@@ -33,7 +33,9 @@ def get_issues(
     # TODO: This response is paginated. If there are more than 50 results it
     # won't contain all the issues.
     if response.status_code != 200:
-        raise ConnectionError(f"{response.status_code} - Error getting issues: {response.text}")
+        raise ConnectionError(
+            f"{response.status_code} - Error getting issues: {response.text}"
+        )
     return response.json()
 
 
@@ -61,6 +63,8 @@ def close_issue(
     )
 
     if response.status_code != 204:
-        raise ConnectionError(f"{response.status_code} - Error closing issue: {response.text}")
+        raise ConnectionError(
+            f"{response.status_code} - Error closing issue: {response.text}"
+        )
 
     return response.text

@@ -2,11 +2,11 @@
 """Fetch open Merge Requests from GitLab repositories and generate reports"""
 
 import json
-import urllib.request
-import urllib.error
-from datetime import datetime
 import os
 import ssl
+import urllib.error
+import urllib.request
+from datetime import datetime
 
 
 class GitLabMRFetcher:
@@ -17,10 +17,10 @@ class GitLabMRFetcher:
             project_path: Project path (e.g., "insights-qe/iqe-ccx-plugin")
             token: GitLab personal access token
         """
-        self.gitlab_url = gitlab_url.rstrip('/')
+        self.gitlab_url = gitlab_url.rstrip("/")
         self.project_path = project_path
         # URL encode the project path (/ becomes %2F)
-        self.project_id = project_path.replace('/', '%2F')
+        self.project_id = project_path.replace("/", "%2F")
         self.api_base = f"{self.gitlab_url}/api/v4"
 
         self.headers = {"Accept": "application/json"}
@@ -36,10 +36,10 @@ class GitLabMRFetcher:
         ctx.verify_mode = ssl.CERT_NONE
         try:
             with urllib.request.urlopen(req, context=ctx) as response:
-                return json.loads(response.read().decode('utf-8'))
+                return json.loads(response.read().decode("utf-8"))
 
         except urllib.error.HTTPError as e:
-            error_body = e.read().decode('utf-8')
+            error_body = e.read().decode("utf-8")
             print(f"❌ HTTP Error {e.code}: {e.reason}")
             print(f"   URL: {url}")
             print(f"   Response: {error_body[:200]}")
@@ -58,19 +58,19 @@ class GitLabMRFetcher:
             if pipelines and len(pipelines) > 0:
                 # Get the most recent pipeline
                 latest = pipelines[0]
-                status = latest.get('status', 'unknown')
+                status = latest.get("status", "unknown")
                 # Map GitLab statuses to simple ok/failed
-                if status in ['success', 'manual']:
-                    return 'ok'
-                elif status in ['failed', 'canceled']:
-                    return 'failed'
-                elif status in ['running', 'pending', 'created']:
-                    return 'running'
+                if status in ["success", "manual"]:
+                    return "ok"
+                elif status in ["failed", "canceled"]:
+                    return "failed"
+                elif status in ["running", "pending", "created"]:
+                    return "running"
                 else:
-                    return 'unknown'
-            return 'ok'  # No pipeline means ok (like GitHub)
+                    return "unknown"
+            return "ok"  # No pipeline means ok (like GitHub)
         except Exception:
-            return 'ok'
+            return "ok"
 
     def get_open_mrs(self):
         """Get all open MRs for the project"""
@@ -79,9 +79,11 @@ class GitLabMRFetcher:
 
         while True:
             # GitLab API: Get open MRs ordered by updated time
-            url = (f"{self.api_base}/projects/{self.project_id}/merge_requests"
-                   f"?state=opened&order_by=updated_at&sort=desc"
-                   f"&per_page=100&page={page}")
+            url = (
+                f"{self.api_base}/projects/{self.project_id}/merge_requests"
+                f"?state=opened&order_by=updated_at&sort=desc"
+                f"&per_page=100&page={page}"
+            )
 
             try:
                 data = self._api_request(url)
@@ -94,35 +96,43 @@ class GitLabMRFetcher:
 
             for mr in data:
                 # Parse dates
-                created_at = mr.get('created_at', '')
-                updated_at = mr.get('updated_at', '')
+                created_at = mr.get("created_at", "")
+                updated_at = mr.get("updated_at", "")
 
                 # Get pipeline status
-                pipeline_status = self.get_pipeline_status(mr['iid'])
+                pipeline_status = self.get_pipeline_status(mr["iid"])
 
                 # Normalize author name for Konflux and CCX bot
-                author = mr['author']['username']
-                if author == 'group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee':
-                    author = 'app/konflux-ci'
-                elif author == 'ccx-bot':
-                    author = 'app/konflux-ci'
+                author = mr["author"]["username"]
+                if (
+                    author == "group_7843_bot_a9ccf2da3fc11b4f888fe6cbaea7c2ee"
+                    or author == "ccx-bot"
+                ):
+                    author = "app/konflux-ci"
 
-                mrs.append({
-                    'iid': mr['iid'],
-                    'title': mr['title'],
-                    'author': author,
-                    'author_name': mr['author']['name'],
-                    'created_at': created_at,
-                    'updated_at': updated_at,
-                    'web_url': mr['web_url'],
-                    'source_branch': mr['source_branch'],
-                    'target_branch': mr['target_branch'],
-                    'draft': mr.get('draft', False) or mr.get('work_in_progress', False),
-                    'labels': mr.get('labels', []),
-                    'assignee': mr['assignee']['username'] if mr.get('assignee') else None,
-                    'assignee_name': mr['assignee']['name'] if mr.get('assignee') else None,
-                    'pipeline_status': pipeline_status,
-                })
+                mrs.append(
+                    {
+                        "iid": mr["iid"],
+                        "title": mr["title"],
+                        "author": author,
+                        "author_name": mr["author"]["name"],
+                        "created_at": created_at,
+                        "updated_at": updated_at,
+                        "web_url": mr["web_url"],
+                        "source_branch": mr["source_branch"],
+                        "target_branch": mr["target_branch"],
+                        "draft": mr.get("draft", False)
+                        or mr.get("work_in_progress", False),
+                        "labels": mr.get("labels", []),
+                        "assignee": mr["assignee"]["username"]
+                        if mr.get("assignee")
+                        else None,
+                        "assignee_name": mr["assignee"]["name"]
+                        if mr.get("assignee")
+                        else None,
+                        "pipeline_status": pipeline_status,
+                    }
+                )
 
             page += 1
 
@@ -144,9 +154,9 @@ def main():
     ]
 
     # Get token from environment and strip any BOM or whitespace
-    token = os.environ.get('GITLAB_TOKEN')
+    token = os.environ.get("GITLAB_TOKEN")
     if token:
-        token = token.strip().lstrip('\ufeff')
+        token = token.strip().lstrip("\ufeff")
 
     if not token:
         print("⚠️ No GITLAB_TOKEN found. Some repos may not be accessible.")
@@ -166,7 +176,7 @@ def main():
 
             # Add project info to each MR
             for mr in mrs:
-                mr['project'] = project_path
+                mr["project"] = project_path
 
             all_mrs.extend(mrs)
             project_stats[project_path] = len(mrs)
@@ -179,33 +189,35 @@ def main():
             continue
 
     # Sort by created_at (newest first, same as GitHub)
-    all_mrs.sort(key=lambda x: x['created_at'], reverse=True)
+    all_mrs.sort(key=lambda x: x["created_at"], reverse=True)
 
     print(f"\n📊 Total: {len(all_mrs)} open MRs across all projects")
 
     # Categorize MRs - Konflux vs Others
-    konflux_mrs = [mr for mr in all_mrs if mr['author'] == 'app/konflux-ci']
-    other_mrs = [mr for mr in all_mrs if mr['author'] != 'app/konflux-ci']
+    konflux_mrs = [mr for mr in all_mrs if mr["author"] == "app/konflux-ci"]
+    other_mrs = [mr for mr in all_mrs if mr["author"] != "app/konflux-ci"]
 
     # Generate CSV output (all MRs)
     csv_file = "open_mr/open-mrs.csv"
-    with open(csv_file, 'w') as f:
+    with open(csv_file, "w") as f:
         f.write("project,mr_id,title,date_created,url,author,ci_status,draft_status\n")
         for mr in all_mrs:
             # Escape commas and quotes in title
-            title = mr['title'].replace('"', '""')
-            if ',' in title or '"' in title:
+            title = mr["title"].replace('"', '""')
+            if "," in title or '"' in title:
                 title = f'"{title}"'
-            draft_status = "draft" if mr['draft'] else "no"
+            draft_status = "draft" if mr["draft"] else "no"
 
-            f.write(f'{mr["project"]},{mr["iid"]},{title},{mr["created_at"]},{mr["web_url"]},{mr["author"]},{mr["pipeline_status"]},{draft_status}\n')
+            f.write(
+                f"{mr['project']},{mr['iid']},{title},{mr['created_at']},{mr['web_url']},{mr['author']},{mr['pipeline_status']},{draft_status}\n"
+            )
 
     print(f"💾 CSV report saved to: {csv_file}")
 
     # Generate Konflux Markdown file
     konflux_md_file = "open_mr/open-mrs-konflux.md"
-    with open(konflux_md_file, 'w') as f:
-        f.write(f"# Open Merge Requests (Konflux)\n\n")
+    with open(konflux_md_file, "w") as f:
+        f.write("# Open Merge Requests (Konflux)\n\n")
         f.write(f"*Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*\n\n")
         f.write(f"**Total Konflux MRs: {len(konflux_mrs)}**\n\n")
 
@@ -215,17 +227,26 @@ def main():
 
         # Table rows
         for mr in konflux_mrs:
-            ci_status = "✅ ok" if mr['pipeline_status'] == 'ok' else "❌ failed" if mr['pipeline_status'] == 'failed' else f"🔄 {mr['pipeline_status']}"
-            draft_status = "draft" if mr['draft'] else "no"
-            date = mr['created_at'][:10]  # Just the date part
-            f.write(f"| {mr['project']} | [!{mr['iid']}]({mr['web_url']}) | {mr['title']} | {date} | {mr['author']} | {ci_status} | {draft_status} |\n")
+            ci_status = (
+                "✅ ok"
+                if mr["pipeline_status"] == "ok"
+                else "❌ failed"
+                if mr["pipeline_status"] == "failed"
+                else f"🔄 {mr['pipeline_status']}"
+            )
+            draft_status = "draft" if mr["draft"] else "no"
+            date = mr["created_at"][:10]  # Just the date part
+            f.write(
+                f"| {mr['project']} | [!{mr['iid']}]({mr['web_url']}) | {mr['title']} | {date} | "
+                f"{mr['author']} | {ci_status} | {draft_status} |\n"
+            )
 
     print(f"💾 Markdown report (Konflux) saved to: {konflux_md_file}")
 
     # Generate Others Markdown file
     others_md_file = "open_mr/open-mrs-others.md"
-    with open(others_md_file, 'w') as f:
-        f.write(f"# Open Merge Requests (Others)\n\n")
+    with open(others_md_file, "w") as f:
+        f.write("# Open Merge Requests (Others)\n\n")
         f.write(f"*Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*\n\n")
         f.write(f"**Total MRs: {len(other_mrs)}**\n\n")
 
@@ -235,10 +256,19 @@ def main():
 
         # Table rows
         for mr in other_mrs:
-            ci_status = "✅ ok" if mr['pipeline_status'] == 'ok' else "❌ failed" if mr['pipeline_status'] == 'failed' else f"🔄 {mr['pipeline_status']}"
-            draft_status = "draft" if mr['draft'] else "no"
-            date = mr['created_at'][:10]  # Just the date part
-            f.write(f"| {mr['project']} | [!{mr['iid']}]({mr['web_url']}) | {mr['title']} | {date} | {mr['author']} | {ci_status} | {draft_status} |\n")
+            ci_status = (
+                "✅ ok"
+                if mr["pipeline_status"] == "ok"
+                else "❌ failed"
+                if mr["pipeline_status"] == "failed"
+                else f"🔄 {mr['pipeline_status']}"
+            )
+            draft_status = "draft" if mr["draft"] else "no"
+            date = mr["created_at"][:10]  # Just the date part
+            f.write(
+                f"| {mr['project']} | [!{mr['iid']}]({mr['web_url']}) | {mr['title']} | {date} | "
+                f"{mr['author']} | {ci_status} | {draft_status} |\n"
+            )
 
     print(f"💾 Markdown report (Others) saved to: {others_md_file}")
     print("\n✅ Report generation complete!")

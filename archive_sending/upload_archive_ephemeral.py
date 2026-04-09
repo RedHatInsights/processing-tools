@@ -1,8 +1,8 @@
 """
 Start a venv:
 
-python3 -m venv venv        
-source venv/bin/activate 
+python3 -m venv venv
+source venv/bin/activate
 
 Install requirements:
 
@@ -32,7 +32,6 @@ from requests.auth import HTTPBasicAuth
 CLUSTER_ID = "181862b9-c53b-4ea9-ae22-ac4415e2cf21"
 
 
-
 def upload_ocp_recommendations(namespace):
     producer = ArchiveProducer(Renderer(*RuleSet("io").get_default_rules()))
     tario = producer.make_tar_io(CLUSTER_ID)
@@ -42,7 +41,7 @@ def upload_ocp_recommendations(namespace):
     requests.post(
         ingress_endpoint,
         files={"file": ("archive", tario.getvalue(), CONTENT_TYPE)},
-        auth=HTTPBasicAuth(ns_data["default_username"], ns_data["default_password"])
+        auth=HTTPBasicAuth(ns_data["default_username"], ns_data["default_password"]),
     )
 
 
@@ -51,30 +50,26 @@ def upload_ols(namespace):
     ingress_endpoint = f"{ns_data['gateway_route']}/api/ingress/v1/upload"
 
     tario = BytesIO()
-    tar = tarfile.open(fileobj=tario, mode="w:gz")
 
-    try:
-        tar_info = tarfile.TarInfo("openshift_lightspeed.json")
-        tar_info.size = 0
-        tar.addfile(tar_info)
+    with tarfile.open(fileobj=tario, mode="w:gz") as tar:
+        try:
+            tar_info = tarfile.TarInfo("openshift_lightspeed.json")
+            tar_info.size = 0
+            tar.addfile(tar_info)
 
-        tar_info = tarfile.TarInfo("config/id")
-        content = bytes(CLUSTER_ID, "utf-8")
-        tar_info.size = len(content)
-        tar.addfile(tar_info, fileobj=BytesIO(content))
+            tar_info = tarfile.TarInfo("config/id")
+            content = bytes(CLUSTER_ID, "utf-8")
+            tar_info.size = len(content)
+            tar.addfile(tar_info, fileobj=BytesIO(content))
 
-    except:  # noqa E722
-        raise
-    finally:
-        tar.close()
+        except:  # noqa E722
+            raise
 
     requests.post(
         ingress_endpoint,
         files={"file": ("archive", tario.getvalue(), CONTENT_TYPE)},
-        auth=HTTPBasicAuth(ns_data["default_username"], ns_data["default_password"])
+        auth=HTTPBasicAuth(ns_data["default_username"], ns_data["default_password"]),
     )
-
-
 
 
 @click.group(context_settings={"help_option_names": ["-h", "--help"]})

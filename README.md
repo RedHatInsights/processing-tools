@@ -2,7 +2,7 @@
 
 This repository and its counterpart living in GitLab contain scripts, utilities and automations used by the ObsInt processing team.
 
-The [GitLab - processing-tools](https://gitlab.cee.redhat.com/ccx/processing-team/processing-tools) repository is used only for scripts that need to run behind VPN - directly in GitLab - such as gathering open GitLab Merge requests. 
+The [GitLab - processing-tools](https://gitlab.cee.redhat.com/ccx/processing-team/processing-tools) repository is used only for scripts that need to run behind VPN - directly in GitLab - such as gathering open GitLab Merge requests.
 
 **You should always use this GitHub repository, unless the workload needs to be behind VPN and you ensure synchronisation with this repositry**
 

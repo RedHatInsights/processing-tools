@@ -194,4 +194,3 @@
 | [Link](https://glitchtip.devshift.net/ccx/issues/4129067) | 2 |
 | [Link](https://glitchtip.devshift.net/ccx/issues/4239270) | 4 |
 | [Link](https://glitchtip.devshift.net/ccx/issues/4236678) | 6 |
-
