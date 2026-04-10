@@ -1,0 +1,71 @@
+RedHatInsights/ccx-notification-service:
+  - CODEOWNERS
+
+RedHatInsights/ccx-notification-writer:
+  - CODEOWNERS
+
+RedHatInsights/ccx-upgrades-data-eng:
+  - CODEOWNERS
+
+RedHatInsights/ccx-upgrades-inference:
+  - CODEOWNERS
+
+RedHatInsights/content-service:
+  - CODEOWNERS
+
+RedHatInsights/data-pipeline:
+  - CODEOWNERS
+
+RedHatInsights/insights-ccx-messaging:
+  - CODEOWNERS
+
+RedHatInsights/insights-content-template-renderer:
+  - CODEOWNERS
+
+RedHatInsights/insights-data-schemas:
+  - CODEOWNERS
+
+RedHatInsights/insights-on-prem:
+  - CODEOWNERS
+
+RedHatInsights/insights-operator-gathering-conditions:
+  - CODEOWNERS
+
+RedHatInsights/insights-operator-gathering-conditions-service:
+  - CODEOWNERS
+
+RedHatInsights/insights-operator-utils:
+  - CODEOWNERS
+
+RedHatInsights/insights-results-aggregator:
+  - CODEOWNERS
+
+RedHatInsights/insights-results-aggregator-cleaner:
+  - CODEOWNERS
+
+RedHatInsights/insights-results-aggregator-data:
+  - CODEOWNERS
+
+RedHatInsights/insights-results-aggregator-exporter:
+  - CODEOWNERS
+
+RedHatInsights/insights-results-aggregator-mock:
+  - CODEOWNERS
+
+RedHatInsights/insights-results-aggregator-utils:
+  - CODEOWNERS
+
+RedHatInsights/insights-results-mcp:
+  - CODEOWNERS
+
+RedHatInsights/insights-results-smart-proxy:
+  - CODEOWNERS
+
+RedHatInsights/obsint-mocks:
+  - CODEOWNERS
+
+RedHatInsights/parquet-factory:
+  - CODEOWNERS
+
+RedHatInsights/insights-behavioral-spec:
+  - CODEOWNERS
