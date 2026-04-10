@@ -22,11 +22,11 @@ RedHatInsights/insights-ccx-messaging:
 RedHatInsights/insights-content-template-renderer:
   - CODEOWNERS
 
-RedHatInsights/insights-data-schemas:
-  - CODEOWNERS
+# RedHatInsights/insights-data-schemas:
+#   - CODEOWNERS
 
-RedHatInsights/insights-on-prem:
-  - CODEOWNERS
+# RedHatInsights/insights-on-prem:
+#   - CODEOWNERS
 
 RedHatInsights/insights-operator-gathering-conditions:
   - CODEOWNERS
@@ -43,8 +43,8 @@ RedHatInsights/insights-results-aggregator:
 RedHatInsights/insights-results-aggregator-cleaner:
   - CODEOWNERS
 
-RedHatInsights/insights-results-aggregator-data:
-  - CODEOWNERS
+# RedHatInsights/insights-results-aggregator-data:
+#   - CODEOWNERS
 
 RedHatInsights/insights-results-aggregator-exporter:
   - CODEOWNERS
@@ -55,8 +55,8 @@ RedHatInsights/insights-results-aggregator-mock:
 RedHatInsights/insights-results-aggregator-utils:
   - CODEOWNERS
 
-RedHatInsights/insights-results-mcp:
-  - CODEOWNERS
+# RedHatInsights/insights-results-mcp:
+#   - CODEOWNERS
 
 RedHatInsights/insights-results-smart-proxy:
   - CODEOWNERS
