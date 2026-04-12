@@ -1,12 +1,11 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-04-11 04:41:45*
+*Last updated: 2026-04-12 05:00:13*
 
-**Total Konflux PRs: 6**
+**Total Konflux PRs: 5**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| insights-operator-gathering-conditions-service | [606](https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/606) | chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v43.110.14 | 2026-04-10 | app/red-hat-konflux | ❌ failed | ready |
 | insights-content-template-renderer | [264](https://github.com/RedHatInsights/insights-content-template-renderer/pull/264) | Update Python dependencies | 2026-04-10 | app/red-hat-konflux | ✅ ok | ready |
 | data-pipeline | [51](https://github.com/RedHatInsights/data-pipeline/pull/51) | chore(deps): update dependency boto3 to >=1.42.88,<1.43.0 | 2026-04-10 | app/red-hat-konflux | ❌ failed | ready |
 | ccx-upgrades-inference | [42](https://github.com/RedHatInsights/ccx-upgrades-inference/pull/42) | Update Pre-commit hooks | 2026-04-09 | app/red-hat-konflux | ❌ failed | ready |

@@ -1,11 +1,10 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
 parquet-factory,43,🔄 synced file(s) with RedHatInsights/processing-tools,2026-04-10T14:35:21Z,https://github.com/RedHatInsights/parquet-factory/pull/43,InsightsDroid,ok,ready
 insights-results-aggregator,2420,🔄 synced file(s) with RedHatInsights/processing-tools,2026-04-10T14:34:53Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2420,InsightsDroid,ok,ready
-data-pipeline,52,🔄 synced file(s) with RedHatInsights/processing-tools,2026-04-10T14:34:32Z,https://github.com/RedHatInsights/data-pipeline/pull/52,InsightsDroid,ok,ready
-content-service,769,🔄 synced file(s) with RedHatInsights/processing-tools,2026-04-10T14:34:28Z,https://github.com/RedHatInsights/content-service/pull/769,InsightsDroid,ok,ready
+data-pipeline,52,🔄 synced file(s) with RedHatInsights/processing-tools,2026-04-10T14:34:32Z,https://github.com/RedHatInsights/data-pipeline/pull/52,InsightsDroid,failed,ready
+content-service,769,🔄 synced file(s) with RedHatInsights/processing-tools,2026-04-10T14:34:28Z,https://github.com/RedHatInsights/content-service/pull/769,InsightsDroid,failed,ready
 ccx-upgrades-inference,43,🔄 synced file(s) with RedHatInsights/processing-tools,2026-04-10T14:34:24Z,https://github.com/RedHatInsights/ccx-upgrades-inference/pull/43,InsightsDroid,ok,ready
 ccx-upgrades-data-eng,54,🔄 synced file(s) with RedHatInsights/processing-tools,2026-04-10T14:34:21Z,https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/54,InsightsDroid,ok,ready
-insights-operator-gathering-conditions-service,606,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v43.110.14,2026-04-10T13:56:12Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/606,app/red-hat-konflux,failed,ready
 insights-content-template-renderer,264,Update Python dependencies,2026-04-10T13:55:32Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/264,app/red-hat-konflux,ok,ready
 parquet-factory,42,Add common linter workflow,2026-04-10T11:49:52Z,https://github.com/RedHatInsights/parquet-factory/pull/42,joselsegura,ok,ready
 data-pipeline,51,"chore(deps): update dependency boto3 to >=1.42.88,<1.43.0",2026-04-10T01:37:11Z,https://github.com/RedHatInsights/data-pipeline/pull/51,app/red-hat-konflux,failed,ready
