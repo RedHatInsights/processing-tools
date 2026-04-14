@@ -64,6 +64,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       id-token: write
+      contents: read
     name: Python tests
     steps:
       - uses: actions/checkout@v6
@@ -85,6 +86,11 @@ jobs:
         run: pip install -e .
 
       - name: Unit tests
+        if: inputs.coverage != true
+        run: python -m pytest
+
+      - name: Unit tests with coverage
+        if: inputs.coverage == true
         run: python -m pytest --cov=${{ inputs.packages }} --cov-report=xml:coverage.xml --cov-report=term-missing --cov-fail-under=${{ inputs.coverage_threshold }} ${{ inputs.cov_branch && '--cov-branch' || '' }}
 
       - name: Push coverage report to Codecov

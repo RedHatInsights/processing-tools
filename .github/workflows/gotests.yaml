@@ -34,6 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       id-token: write
+      contents: read
     container:
         image: registry.access.redhat.com/ubi9/go-toolset:latest
     name: Go tests
