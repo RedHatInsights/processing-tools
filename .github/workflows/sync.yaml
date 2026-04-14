@@ -8,9 +8,15 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
+      - id: app_token
+        uses: actions/create-github-app-token@v3
+        with:
+          app_id: ${{ secrets.OBSINT_PROCESSING_APP_CLIENT_ID }}
+          private_key: ${{ secrets.OBSINT_PROCESSING_APP_PRIVATE_KEY }}
+
       - name: Checkout Repository
         uses: actions/checkout@v6
       - name: Run GitHub File Sync
         uses: BetaHuhn/repo-file-sync-action@v1
         with:
-          GH_PAT: ${{ secrets.INSIGHTSDROID_TOKEN }}
+          GH_INSTALLATION_TOKEN: ${{ steps.app_token.outputs.token }}
