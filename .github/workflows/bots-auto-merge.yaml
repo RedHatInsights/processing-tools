@@ -1,0 +1,31 @@
+# Set as automatically merge all the pull requests created by bots
+
+name: Bots auto-merge
+on:
+  workflow_call:
+
+# # This section adds write permissions to the secrets.GITHUB_TOKEN. Default is just read
+# permissions:
+#   contents: write
+#   pull-requests: write
+
+jobs:
+  bot-automerge:
+    runs-on: ubuntu-latest
+    # Path A: Konflux bot + mintmaker branch + not from a fork.
+    # Path B: obsint-processing-app + same-repo checks
+    if: |
+      (
+        github.event.pull_request.user.login == 'red-hat-konflux[bot]' &&
+        startsWith(github.event.pull_request.head.ref, 'konflux/mintmaker/main/') &&
+        github.event.pull_request.head.repo.full_name == github.repository
+      ) || (
+        github.event.pull_request.user.login == 'obsint-processing-app[bot]' &&
+        github.event.pull_request.head.repo.full_name == github.repository
+      )
+    steps:
+      - name: Enable auto-merge for PR
+        run: gh pr merge --auto --merge "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GH_TOKEN: ${{ github.token }}
