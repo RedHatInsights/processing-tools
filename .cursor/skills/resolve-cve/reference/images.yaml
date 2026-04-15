@@ -18,7 +18,4 @@ images:
   - quay.io/redhat-services-prod/obsint-processing-tenant/aggregator-exporter/aggregator-exporter
   - quay.io/redhat-services-prod/obsint-processing-tenant/rules-containers/rules-containers-private
   - quay.io/redhat-services-prod/obsint-processing-tenant/load-test/load-test
-  - quay.io/redhat-services-prod/obsint-processing-tenant/insights-behavioral-spec
-  - quay.io/redhat-services-prod/obsint-processing-tenant/io-gathering-service
-  - quay.io/redhat-services-prod/obsint-processing-tenant/insights-results-aggregator-cleaner
   - quay.io/redhat-services-prod/obsint-processing-tenant/dvo-extractor/dvo-extractor
