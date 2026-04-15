@@ -7,4 +7,4 @@ on:
 
 jobs:
   lint:
-    uses: RedHatInsights/processing-tools/.github/workflows/linters.yaml@v0.1.0
+    uses: RedHatInsights/processing-tools/.github/workflows/linters.yaml@v0.2.0
