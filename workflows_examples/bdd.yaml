@@ -8,7 +8,7 @@ on:
 jobs:
   bdd:
     name: BDD tests
-    uses: RedHatInsights/processing-tools/.github/workflows/bdd.yaml@master
+    uses: RedHatInsights/processing-tools/.github/workflows/bdd.yaml@v0.2.0
     with:
       service: data-engineering-service
       use_mock-oauth2-server: true

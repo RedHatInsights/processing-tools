@@ -5,7 +5,7 @@ on:
   workflow_call:
   pull_request:
 
-# # This section adds write permissions to the secrets.GITHUB_TOKEN. Default is just read
+# This section adds write permissions to the secrets.GITHUB_TOKEN. Default is just read
 # permissions:
 #   contents: write
 #   pull-requests: write
@@ -13,14 +13,8 @@ on:
 jobs:
   bots-automerge:
     runs-on: ubuntu-latest
-    # Path A: Konflux bot + mintmaker branch + not from a fork.
-    # Path B: obsint-processing-app + same-repo checks
     if: |
       (
-        github.event.pull_request.user.login == 'red-hat-konflux[bot]' &&
-        startsWith(github.event.pull_request.head.ref, 'konflux/mintmaker/main/') &&
-        github.event.pull_request.head.repo.full_name == github.repository
-      ) || (
         github.event.pull_request.user.login == 'obsint-processing-app[bot]' &&
         github.event.pull_request.head.repo.full_name == github.repository
       )
