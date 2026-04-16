@@ -67,7 +67,7 @@ Run the script from the `skills/update-refs` directory:
 ```bash
 BRANCH="update-refs-$(date +%Y%m%d)"
 git checkout -b $BRANCH
-git add .
+git add data/services/insights/ccx-data-pipeline
 git commit -m "chore: update refs"
 git push -o merge_request.create \
             -o merge_request.remove_source_branch \
