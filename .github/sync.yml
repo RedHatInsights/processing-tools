@@ -165,8 +165,6 @@ RedHatInsights/obsint-mocks:
 RedHatInsights/parquet-factory:
   - CODEOWNERS
   - renovate.json
-  - source: workflows_examples/linters.yaml
-    dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
 
