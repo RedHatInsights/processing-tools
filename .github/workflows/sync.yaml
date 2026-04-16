@@ -13,6 +13,7 @@ jobs:
         with:
           client-id: ${{ secrets.OBSINT_PROCESSING_APP_CLIENT_ID }}
           private-key: ${{ secrets.OBSINT_PROCESSING_APP_PRIVATE_KEY }}
+          owner: RedHatInsights
 
       - name: Checkout Repository
         uses: actions/checkout@v6
