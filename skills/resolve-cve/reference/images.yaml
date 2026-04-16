@@ -1,0 +1,21 @@
+images:
+  - quay.io/redhat-services-prod/obsint-processing-tenant/aggregator/aggregator
+  - quay.io/redhat-services-prod/obsint-processing-tenant/data-pipeline/data-pipeline
+  - quay.io/redhat-services-prod/obsint-processing-tenant/notification-writer/notification-writer
+  - quay.io/redhat-services-prod/obsint-processing-tenant/insights-ocp-advisor/ocp-advisor-frontend
+  - quay.io/redhat-services-prod/obsint-processing-tenant/ccx-messaging/ccx-messaging
+  - quay.io/redhat-services-prod/obsint-processing-tenant/parquet-factory/parquet-factory
+  - quay.io/redhat-services-prod/obsint-processing-tenant/upgrades-inference/upgrades-inference
+  - quay.io/redhat-services-prod/obsint-processing-tenant/insights-results-aggregator-cleaner/insights-results-aggregator-cleaner
+  - quay.io/redhat-services-prod/obsint-processing-tenant/smart-proxy/smart-proxy
+  - quay.io/redhat-services-prod/obsint-processing-tenant/content-renderer/content-renderer
+  - quay.io/redhat-services-prod/obsint-processing-tenant/io-gathering-service/io-gathering-service
+  - quay.io/redhat-services-prod/obsint-processing-tenant/content-service/content-service
+  - quay.io/redhat-services-prod/obsint-processing-tenant/upgrades-data-eng/upgrades-data-eng
+  - quay.io/redhat-services-prod/obsint-processing-tenant/notification-service/notification-service
+  - quay.io/redhat-services-prod/obsint-processing-tenant/insights-behavioral-spec/insights-behavioral-spec
+  - quay.io/redhat-services-prod/obsint-processing-tenant/obsint-mocks/obsint-mocks
+  - quay.io/redhat-services-prod/obsint-processing-tenant/aggregator-exporter/aggregator-exporter
+  - quay.io/redhat-services-prod/obsint-processing-tenant/rules-containers/rules-containers-private
+  - quay.io/redhat-services-prod/obsint-processing-tenant/load-test/load-test
+  - quay.io/redhat-services-prod/obsint-processing-tenant/dvo-extractor/dvo-extractor
