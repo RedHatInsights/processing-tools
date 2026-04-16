@@ -1,17 +1,37 @@
 #!/usr/bin/env bash
 # Update all GitHub/GitLab refs in ccx-data-pipeline saas files to latest commit SHAs.
 # Skips ref: internal (ephemeral/bonfire targets), main and master.
-# Usage: update_refs.sh [--dry-run] [--repo <name-or-url>]...
+# Usage: update_refs.sh [--dry-run] [--repo <name-or-url>]... [--local-folder <path>]
 # --repo filters by exact repo name or full URL (can be repeated).
+# --local-folder uses an existing app-interface checkout instead of cloning.
 set -uo pipefail
 
-PATH_TO_APP_INTERFACE="" # if empty, it will clone a copy in /tmp
+declare -A SHA_CACHE=()  # repo_url -> latest_sha
+declare -A BRANCH_CACHE=()  # repo_url -> default_branch
+declare -a REPO_FILTERS=()  # exact repo URLs/names to update
+DRY_RUN=false
+PATH_TO_APP_INTERFACE=""
+
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --dry-run) DRY_RUN=true; echo "=== DRY RUN ===" ;;
+        --repo)
+            [[ -z "${2:-}" ]] && echo "ERROR: --repo requires a value" >&2 && exit 1
+            REPO_FILTERS+=("$2"); shift ;;
+        --local-folder)
+            [[ -z "${2:-}" ]] && echo "ERROR: --local-folder requires a path" >&2 && exit 1
+            PATH_TO_APP_INTERFACE="$2"; shift ;;
+        *) echo "Unknown option: $1" >&2; exit 1 ;;
+    esac
+    shift
+done
+
 if [[ -z "$PATH_TO_APP_INTERFACE" ]]; then
     PATH_TO_APP_INTERFACE="/tmp/app-interface"
     if [[ -d "$PATH_TO_APP_INTERFACE/.git" ]]; then
         echo "App-interface repo already exists at $PATH_TO_APP_INTERFACE, skipping clone."
     else
-        git clone --depth 1 https://gitlab.cee.redhat.com/service/app-interface.git "$PATH_TO_APP_INTERFACE"
+        git clone --depth 1 git@gitlab.cee.redhat.com:service/app-interface.git "$PATH_TO_APP_INTERFACE"
     fi
 fi
 
@@ -22,21 +42,6 @@ git checkout master
 git pull origin master
 
 BASE_DIR="data/services/insights/ccx-data-pipeline"
-declare -A SHA_CACHE=()  # repo_url -> latest_sha
-declare -A BRANCH_CACHE=()  # repo_url -> default_branch
-declare -a REPO_FILTERS=()  # exact repo URLs/names to update
-DRY_RUN=false
-
-while [[ $# -gt 0 ]]; do
-    case "$1" in
-        --dry-run) DRY_RUN=true; echo "=== DRY RUN ===" ;;
-        --repo)
-            [[ -z "${2:-}" ]] && echo "ERROR: --repo requires a value" >&2 && exit 1
-            REPO_FILTERS+=("$2"); shift ;;
-        *) echo "Unknown option: $1" >&2; exit 1 ;;
-    esac
-    shift
-done
 
 repo_matches() {
     local url="$1"

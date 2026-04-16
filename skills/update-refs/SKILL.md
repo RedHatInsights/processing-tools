@@ -24,7 +24,7 @@ default branch. Skips `ref: internal`, `main`, and `master`.
 Run the script from the `skills/update-refs` directory:
 
 ```bash
-./scripts/update_refs.sh [--dry-run] [--repo <name-or-url>]...
+./scripts/update_refs.sh [--dry-run] [--repo <name-or-url>]... [--local-folder <path>]
 ```
 
 ### Options
@@ -33,6 +33,7 @@ Run the script from the `skills/update-refs` directory:
 |------|-------------|
 | `--dry-run` | Show what would change without modifying files |
 | `--repo <value>` | Only update refs for this repo (repeatable). Accepts a full URL or just the repo name. Uses **exact match** — `insights-results-aggregator` will not match `insights-results-aggregator-cleaner`. |
+| `--local-folder <path>` | Use an existing local app-interface checkout instead of cloning to `/tmp/app-interface`. |
 
 ### Examples
 
@@ -54,11 +55,28 @@ Run the script from the `skills/update-refs` directory:
 
 1. **Ask the user** which repos to update, or whether to update all.
    Always start with `--dry-run` so the user can review changes.
-2. Run the script with `--dry-run` and present the output.
-3. After user confirmation, run without `--dry-run`.
-4. The script modifies files inside the local app-interface
+2. **Ask the user** if you should clone the app-interface repository or use
+   the local one. If so, use `--local-folder` option.
+3. Run the script with `--dry-run` and present the output.
+4. After user confirmation, run without `--dry-run`.
+5. The script modifies files inside the local app-interface
    clone at `/tmp/app-interface`. The user can then `cd` there
    to review and submit a merge request.
+6. Checkout to a branch named `update-refs-<timestamp>` and push the changes.
+   If not using `--local-folder`, **ask the user** for the fork:
+```bash
+BRANCH="update-refs-$(date +%Y%m%d)"
+git checkout -b $BRANCH
+git add .
+git commit -m "chore: update refs"
+git push -o merge_request.create \
+            -o merge_request.remove_source_branch \
+            -o merge_request.target=master \
+            -o merge_request.title="chore: update refs" \
+            fork ${BRANCH} --verbose
+```
+1. Tell the user to follow the merge request CI in order
+   to ask the rest of the team to review the changes.
 
 ## How it works
 
