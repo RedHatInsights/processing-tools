@@ -25,12 +25,16 @@ fi
 
 echo "INFO: Dockerfile: $DOCKER_MAJOR_MINOR"
 
-if [ -f .github/workflows/gotests.yaml ]; then
-    # Extract Go version from gotests workflow
-    GOTESTS_VERSION=$(grep 'go-version:' .github/workflows/gotests.yaml | sed -E 's/.*go-version:\s*"?([0-9]+\.[0-9]+)"?.*/\1/')
-    echo "INFO: gotests.yaml: $GOTESTS_VERSION"
+GOTESTS_FILE=""
+[ -f .github/workflows/gotests.yaml ] && GOTESTS_FILE=".github/workflows/gotests.yaml"
+[ -f .github/workflows/gotests.yml ] && GOTESTS_FILE=".github/workflows/gotests.yml"
+
+if [ -n "$GOTESTS_FILE" ]; then
+    grep -q 'uses:.*\.github/workflows/' "$GOTESTS_FILE" && echo "INFO: $GOTESTS_FILE uses a reusable workflow, skipping." && exit 0
+    GOTESTS_VERSION=$(grep 'go-version:' "$GOTESTS_FILE" | sed -E 's/.*go-version:\s*"?([0-9]+\.[0-9]+)"?.*/\1/')
+    echo "INFO: $GOTESTS_FILE: $GOTESTS_VERSION"
 else
-    echo "INFO: This repository doesn't have a gotests.yaml file. Exiting"
+    echo "INFO: This repository doesn't have a gotests.yaml/yml file. Exiting"
     exit 0
 fi
 
