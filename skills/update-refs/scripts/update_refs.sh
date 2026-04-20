@@ -102,7 +102,7 @@ process_file() {
                 if get_latest_sha "$current_url"; then
                     local new_sha="$REPLY"
                     if [[ "$old_ref" != "$new_sha" ]]; then
-                        echo "  $old_ref -> ${new_sha:0:12}... ($current_url)" >&2
+                        echo "  $old_ref -> ${new_sha:0:7}... ($current_url)" >&2
                         line="${prefix}${new_sha}"
                         ((changes++)) || true
                     fi
