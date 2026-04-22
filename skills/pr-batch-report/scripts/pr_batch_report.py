@@ -30,7 +30,9 @@ GH_JSON_FIELDS = ",".join(
 FAIL_CONCLUSIONS = frozenset(
     {"FAILURE", "ERROR", "TIMED_OUT", "CANCELLED", "ACTION_REQUIRED"}
 )
-PENDING_STATUSES = frozenset({"IN_PROGRESS", "PENDING", "QUEUED", "WAITING", "REQUESTED"})
+PENDING_STATUSES = frozenset(
+    {"IN_PROGRESS", "PENDING", "QUEUED", "WAITING", "REQUESTED"}
+)
 
 
 def normalize_pr_url(raw: str) -> str:
@@ -279,8 +281,12 @@ def emit_json(rows: list[Row]) -> None:
 
 
 def main() -> int:
-    p = argparse.ArgumentParser(description="Markdown (or JSON) report for a list of PR URLs.")
-    p.add_argument("url", nargs="*", help="PR URLs (https://github.com/org/repo/pull/N)")
+    p = argparse.ArgumentParser(
+        description="Markdown (or JSON) report for a list of PR URLs."
+    )
+    p.add_argument(
+        "url", nargs="*", help="PR URLs (https://github.com/org/repo/pull/N)"
+    )
     p.add_argument(
         "-f",
         "--file",
@@ -302,7 +308,7 @@ def main() -> int:
         "--diff-mode",
         choices=("inline", "collapse", "none"),
         default="inline",
-        help="How to print diffs in markdown: inline blocks, HTML details, or none (default: inline)",
+        help="How to print diffs in md: inline blocks, HTML details, or none (default: inline)",
     )
     p.add_argument(
         "--max-desc",
@@ -322,7 +328,10 @@ def main() -> int:
     args = p.parse_args()
     urls = collect_urls(args)
     if not urls:
-        print("No PR URLs. Pass URLs as args, use --file, or pipe one URL per line.", file=sys.stderr)
+        print(
+            "No PR URLs. Pass URLs as args, use --file, or pipe one URL per line.",
+            file=sys.stderr,
+        )
         return 2
 
     include_diff = not args.no_diff
@@ -336,7 +345,9 @@ def main() -> int:
     if args.format == "json":
         emit_json(ordered)
     else:
-        emit_markdown(ordered, "none" if args.no_diff else args.diff_mode, args.max_desc)
+        emit_markdown(
+            ordered, "none" if args.no_diff else args.diff_mode, args.max_desc
+        )
     return 0
 
 
