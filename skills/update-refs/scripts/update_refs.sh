@@ -35,7 +35,7 @@ if [[ -z "$PATH_TO_APP_INTERFACE" ]]; then
     fi
 fi
 
-cd "$PATH_TO_APP_INTERFACE"
+cd "$PATH_TO_APP_INTERFACE" || exit 1
 
 git fetch origin master
 git checkout master
