@@ -17,3 +17,4 @@ github_repos:
   - RedHatInsights/parquet-factory
   - RedHatInsights/ccx-upgrades-inference
   - RedHatInsights/ccx-upgrades-data-eng
+  - RedHatInsights/insights-operator-utils
