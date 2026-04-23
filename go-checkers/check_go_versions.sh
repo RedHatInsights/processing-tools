@@ -32,6 +32,10 @@ GOTESTS_FILE=""
 if [ -n "$GOTESTS_FILE" ]; then
     grep -q 'uses:.*\.github/workflows/' "$GOTESTS_FILE" && echo "INFO: $GOTESTS_FILE uses a reusable workflow, skipping." && exit 0
     GOTESTS_VERSION=$(grep 'go-version:' "$GOTESTS_FILE" | sed -E 's/.*go-version:\s*"?([0-9]+\.[0-9]+)"?.*/\1/')
+    if [ -z "$GOTESTS_VERSION" ]; then
+        echo "INFO: $GOTESTS_FILE does not declare go-version, skipping."
+        exit 0
+    fi
     echo "INFO: $GOTESTS_FILE: $GOTESTS_VERSION"
 else
     echo "INFO: This repository doesn't have a gotests.yaml/yml file. Exiting"
