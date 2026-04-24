@@ -1,6 +1,7 @@
 RedHatInsights/ccx-notification-service:
   - CODEOWNERS
   - renovate.json
+  - .github/dependabot.yml
   - source: workflows_examples/linters.yaml
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
@@ -9,6 +10,7 @@ RedHatInsights/ccx-notification-service:
 RedHatInsights/ccx-notification-writer:
   - CODEOWNERS
   - renovate.json
+  - .github/dependabot.yml
   - source: workflows_examples/linters.yaml
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
@@ -17,6 +19,7 @@ RedHatInsights/ccx-notification-writer:
 RedHatInsights/ccx-upgrades-data-eng:
   - CODEOWNERS
   - renovate.json
+  - .github/dependabot.yml
   - source: workflows_examples/linters.yaml
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
@@ -25,6 +28,7 @@ RedHatInsights/ccx-upgrades-data-eng:
 RedHatInsights/ccx-upgrades-inference:
   - CODEOWNERS
   - renovate.json
+  - .github/dependabot.yml
   - source: workflows_examples/linters.yaml
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
@@ -33,6 +37,7 @@ RedHatInsights/ccx-upgrades-inference:
 RedHatInsights/content-service:
   - CODEOWNERS
   - renovate.json
+  - .github/dependabot.yml
   - source: workflows_examples/linters.yaml
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
@@ -41,6 +46,7 @@ RedHatInsights/content-service:
 RedHatInsights/data-pipeline:
   - CODEOWNERS
   - renovate.json
+  - .github/dependabot.yml
   - source: workflows_examples/linters.yaml
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
@@ -49,6 +55,7 @@ RedHatInsights/data-pipeline:
 RedHatInsights/insights-ccx-messaging:
   - CODEOWNERS
   - renovate.json
+  - .github/dependabot.yml
   - source: workflows_examples/linters.yaml
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
@@ -57,6 +64,7 @@ RedHatInsights/insights-ccx-messaging:
 RedHatInsights/insights-content-template-renderer:
   - CODEOWNERS
   - renovate.json
+  - .github/dependabot.yml
   - source: workflows_examples/linters.yaml
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
@@ -65,6 +73,7 @@ RedHatInsights/insights-content-template-renderer:
 RedHatInsights/insights-core-messaging:
   - CODEOWNERS
   - renovate.json
+  - .github/dependabot.yml
   - source: workflows_examples/linters.yaml
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
@@ -76,6 +85,7 @@ RedHatInsights/insights-core-messaging:
 RedHatInsights/insights-on-prem:
   - CODEOWNERS
   - renovate.json
+  - .github/dependabot.yml
   - source: workflows_examples/linters.yaml
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
@@ -84,6 +94,7 @@ RedHatInsights/insights-on-prem:
 RedHatInsights/insights-operator-gathering-conditions:
   - CODEOWNERS
   - renovate.json
+  - .github/dependabot.yml
   - source: workflows_examples/linters.yaml
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
@@ -92,6 +103,7 @@ RedHatInsights/insights-operator-gathering-conditions:
 RedHatInsights/insights-operator-gathering-conditions-service:
   - CODEOWNERS
   - renovate.json
+  - .github/dependabot.yml
   - source: workflows_examples/linters.yaml
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
@@ -100,6 +112,7 @@ RedHatInsights/insights-operator-gathering-conditions-service:
 RedHatInsights/insights-operator-utils:
   - CODEOWNERS
   - renovate.json
+  - .github/dependabot.yml
   - source: workflows_examples/linters.yaml
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
@@ -108,6 +121,7 @@ RedHatInsights/insights-operator-utils:
 RedHatInsights/insights-results-aggregator:
   - CODEOWNERS
   - renovate.json
+  - .github/dependabot.yml
   - source: workflows_examples/linters.yaml
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
@@ -116,6 +130,7 @@ RedHatInsights/insights-results-aggregator:
 RedHatInsights/insights-results-aggregator-cleaner:
   - CODEOWNERS
   - renovate.json
+  - .github/dependabot.yml
   - source: workflows_examples/linters.yaml
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
@@ -127,6 +142,7 @@ RedHatInsights/insights-results-aggregator-cleaner:
 RedHatInsights/insights-results-aggregator-exporter:
   - CODEOWNERS
   - renovate.json
+  - .github/dependabot.yml
   - source: workflows_examples/linters.yaml
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
@@ -135,6 +151,7 @@ RedHatInsights/insights-results-aggregator-exporter:
 RedHatInsights/insights-results-aggregator-mock:
   - CODEOWNERS
   - renovate.json
+  - .github/dependabot.yml
   - source: workflows_examples/linters.yaml
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
@@ -143,6 +160,7 @@ RedHatInsights/insights-results-aggregator-mock:
 RedHatInsights/insights-results-aggregator-utils:
   - CODEOWNERS
   - renovate.json
+  - .github/dependabot.yml
   - source: workflows_examples/linters.yaml
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
@@ -154,6 +172,7 @@ RedHatInsights/insights-results-aggregator-utils:
 RedHatInsights/insights-results-smart-proxy:
   - CODEOWNERS
   - renovate.json
+  - .github/dependabot.yml
   - source: workflows_examples/linters.yaml
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
@@ -162,6 +181,7 @@ RedHatInsights/insights-results-smart-proxy:
 RedHatInsights/obsint-mocks:
   - CODEOWNERS
   - renovate.json
+  - .github/dependabot.yml
   - source: workflows_examples/linters.yaml
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
@@ -170,12 +190,14 @@ RedHatInsights/obsint-mocks:
 RedHatInsights/parquet-factory:
   - CODEOWNERS
   - renovate.json
+  - .github/dependabot.yml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
 
 RedHatInsights/insights-behavioral-spec:
   - CODEOWNERS
   - renovate.json
+  - .github/dependabot.yml
   - source: workflows_examples/linters.yaml
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
