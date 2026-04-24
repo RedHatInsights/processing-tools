@@ -33,9 +33,6 @@ on:
   push:
     branches: [main, master]
 
-permissions:
-  contents: read
-
 jobs:
   linters:
     runs-on: ubuntu-latest
