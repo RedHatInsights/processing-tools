@@ -11,6 +11,8 @@ on:
 
   pull_request:
 
+permissions: {}
+
 jobs:
   bots-automerge:
     runs-on: ubuntu-latest
