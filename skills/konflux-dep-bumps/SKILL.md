@@ -41,16 +41,17 @@ Before investigating root cause, try these in order. They resolve a large portio
 
 **Rebase** — covers stale go.sum, go.mod drift, or Renovate artifact failures:
 
-Tick the rebase checkbox in the PR body — Renovate watches for it and re-runs with fresh artifacts:
+Push an empty commit to the bot PR branch — this re-triggers CI and prompts Renovate to rebase with fresh artifacts:
 
 ```bash
-# Get current PR body, flip the rebase checkbox, and update the PR
-BODY=$(gh api repos/RedHatInsights/<REPO>/pulls/<PR_NUMBER> --jq '.body')
-NEWBODY=$(echo "$BODY" | sed 's/- \[ \] <!-- rebase-check -->/- [x] <!-- rebase-check -->/')
-gh api repos/RedHatInsights/<REPO>/pulls/<PR_NUMBER> --method PATCH --field body="$NEWBODY"
+BRANCH=$(gh pr view <PR_NUMBER> --repo RedHatInsights/<REPO> --json headRefName --jq '.headRefName')
+git fetch origin $BRANCH
+git checkout $BRANCH
+git commit --allow-empty -m "chore: trigger Renovate rebase"
+git push origin $BRANCH
 ```
 
-Note: `/rebase` as a comment does **not** work in these repos. The checkbox in the PR body is the correct trigger. If the checkbox has already been ticked and Renovate still hasn't rebased, push an empty commit to the repo's default branch to make the bot PR go behind by one commit — Renovate will then rebase it automatically on the next run.
+Note: `/rebase` as a comment does **not** work in these repos.
 
 **Retest** — covers flaky or environment-dependent failures (infrastructure errors clearly unrelated to the dependency change, e.g. Kafka unreachable, OCM API client errors, DB dial failures). Check whether the Konflux pipeline itself passed even if GitHub Actions failed — that is a strong signal the failure is environmental:
 
@@ -154,6 +155,16 @@ Renovate will rebase the bot PR automatically once the fix lands. If it does not
 
 ---
 
+## CI / workflow gotchas
+
+- **`gh run rerun` does not re-fetch reusable workflows.** When a workflow uses `uses: some-repo/.github/workflows/foo.yaml@master`, the `@master` SHA is resolved once when the run is first created and baked in. `gh run rerun` replays with that same SHA — even if master has since changed. To pick up a new workflow version, push a new commit to trigger a completely fresh run.
+
+- **Multiple PRs with the same root cause — fix them all at once.** When a wave of bot PRs hits with identical failures (e.g. missing go.sum entry across 5 repos), clone each branch, run `go mod tidy`, and push in one session rather than one by one.
+
+- **After your fix PR merges, bot PRs targeting the same files will have conflicts.** Tick the rebase checkbox to get Renovate to rebase. If the conflict is in go.mod/go.sum, Renovate will re-run artifact updates as part of the rebase.
+
+- **Coverage drop from removing covered code is not a regression to fix with arbitrary tests.** If you delete duplicated or misplaced code that happened to be well-covered, overall coverage may dip. The right response is to explain why to the team — not to add pointless tests just to hit a number. If coverage is enforced as a CI gate and blocking merges, consider making it non-blocking (`continue-on-error: true`) rather than gaming the percentage.
+
 ## Triage standards
 
 - **One root cause can affect many repos.** Always check the full list of open Konflux PRs before starting — a pattern across repos points to a shared dependency or a shared library as the source.
@@ -171,6 +182,31 @@ Renovate will rebase the bot PR automatically once the fix lands. If it does not
 |---------|-------------|---------------|
 | Build fails with `undefined`, `no field`, `cannot use` on a transitive dep | Breaking API change in a bumped package used by a shared library | Check which shared library pulls in the broken package; fix there |
 | Python `ResolutionImpossible` | Two bumped packages require incompatible ranges of a shared transitive dep | Read both packages' dependency specs; align the versions |
-| `go: updates to go.mod needed` | Renovate artifact update failed; go.sum is stale | Rebase first; if that fails, run `go mod tidy` manually |
+| `go: updates to go.mod needed` | Renovate artifact update failed; go.sum is stale — often caused by a bogus module path in go.mod | See below |
 | All checks fail on a Go PR, Konflux pipeline also fails | Usually a compile error, not flaky tests | Read build logs, not test logs |
 | GitHub Actions fail but Konflux pipeline passes | Environmental / infrastructure failure in GHA | `/retest` to retrigger |
+
+### Fixing a stale or broken go.mod on a bot PR branch
+
+When `go mod tidy` is needed and the rebase checkbox hasn't helped, fix it directly on the bot branch:
+
+```bash
+BRANCH=$(gh pr view <PR_NUMBER> --repo RedHatInsights/<REPO> --json headRefName --jq '.headRefName')
+git clone git@github.com:RedHatInsights/<REPO>.git <REPO>-fix
+cd <REPO>-fix
+git fetch origin $BRANCH && git checkout $BRANCH
+```
+
+Check for obviously wrong entries — Renovate occasionally introduces bogus module paths (e.g. changing `github.com/foo/bar v1+incompatible` to `github.com/foo/bar/v3` when the real v3 is at a completely different path). If something looks wrong, remove it:
+
+```bash
+sed -i '' '/bogus-module-path/d' go.mod
+go mod tidy
+go build ./...
+go test ./...
+git add go.mod go.sum
+git commit -m "chore: fix go.mod and run go mod tidy"
+git push origin $BRANCH
+```
+
+`go mod tidy` will restore any indirect dependency that is genuinely still needed (at the correct module path), and drop anything that isn't. Trust it.
