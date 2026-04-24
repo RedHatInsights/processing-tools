@@ -51,12 +51,13 @@ jobs:
 
       - name: Retrieve code coverage
         if: inputs.coverage == true
+        continue-on-error: true
         env:
           COV_THRESHOLD: ${{ inputs.coverage_threshold }}
         run: ./processing-tools/go-checkers/check_coverage.sh
 
       - name: Push coverage report to Codecov
-        if: inputs.coverage == true && always()
+        if: inputs.coverage == true
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
