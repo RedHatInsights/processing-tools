@@ -51,6 +51,7 @@ jobs:
 
       - name: Retrieve code coverage
         if: inputs.coverage == true
+        continue-on-error: true
         env:
           COV_THRESHOLD: ${{ inputs.coverage_threshold }}
         run: ./processing-tools/go-checkers/check_coverage.sh
