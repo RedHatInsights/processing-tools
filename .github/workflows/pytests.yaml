@@ -18,6 +18,12 @@ on:
   workflow_call:
 
     inputs:
+      python_version:
+        description: 'Python version to use'
+        required: false
+        type: string
+        default: '3.11'
+
       coverage:
         description: 'Check the code coverage'
         type: boolean
@@ -35,29 +41,11 @@ on:
         type: boolean
         default: false
 
-      install_package:
-        description: 'Install the package in editable mode before running tests (pip install -e .)'
-        required: false
-        type: boolean
-        default: false
-
       packages:
         description: 'Package or directory to measure coverage for (passed to --cov). Defaults to current directory.'
         required: false
         type: string
         default: '.'
-
-      requirements_file:
-        description: 'Path to pip requirements file'
-        required: false
-        type: string
-        default: 'requirements.txt'
-
-      python_version:
-        description: 'Python version to use'
-        required: false
-        type: string
-        default: '3.11'
 
 jobs:
   pytests:
@@ -75,25 +63,20 @@ jobs:
 
       - name: Install dependencies
         run: |
-          if [ -f "${{ inputs.requirements_file }}" ]; then
-            pip install -r ${{ inputs.requirements_file }}
-          fi
-          pip install pytest-cov
-
-      - name: Install package
-        if: inputs.install_package == true
-        run: pip install -e .
+          pip install -U pip
+          pip install pytest pytest-cov
+          pip install '.[test]'
 
       - name: Unit tests
         if: inputs.coverage != true
-        run: python -m pytest
+        run: pytest
 
       - name: Unit tests with coverage
         if: inputs.coverage == true
-        run: python -m pytest --cov=${{ inputs.packages }} --cov-report=xml:coverage.xml --cov-report=term-missing --cov-fail-under=${{ inputs.coverage_threshold }} ${{ inputs.cov_branch && '--cov-branch' || '' }}
+        run: pytest --cov=${{ inputs.packages }} --cov-report=xml:coverage.xml --cov-report=term-missing --cov-fail-under=${{ inputs.coverage_threshold }} ${{ inputs.cov_branch && '--cov-branch' || '' }}
 
       - name: Push coverage report to Codecov
-        if: inputs.coverage == true
+        if: inputs.coverage == true && inputs.python_version == '3.11'
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
