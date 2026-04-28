@@ -16,6 +16,9 @@ name: Python tests
 
 on:
   workflow_call:
+    secrets:
+      CODECOV_TOKEN:
+        required: false
 
     inputs:
       python_version:
