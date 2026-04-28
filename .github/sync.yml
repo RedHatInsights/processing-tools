@@ -21,6 +21,8 @@ RedHatInsights/ccx-upgrades-data-eng:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
+  - source: workflows_examples/pytests.yaml
+    dest: .github/workflows/pytests.yaml
 
 RedHatInsights/ccx-upgrades-inference:
   - CODEOWNERS
@@ -29,6 +31,8 @@ RedHatInsights/ccx-upgrades-inference:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
+  - source: workflows_examples/pytests.yaml
+    dest: .github/workflows/pytests.yaml
 
 RedHatInsights/content-service:
   - CODEOWNERS
@@ -53,6 +57,8 @@ RedHatInsights/insights-ccx-messaging:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
+  - source: workflows_examples/pytests.yaml
+    dest: .github/workflows/pytests.yaml
 
 RedHatInsights/insights-content-template-renderer:
   - CODEOWNERS
@@ -61,6 +67,8 @@ RedHatInsights/insights-content-template-renderer:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
+  - source: workflows_examples/pytests.yaml
+    dest: .github/workflows/pytests.yaml
 
 RedHatInsights/insights-core-messaging:
   - CODEOWNERS
@@ -69,6 +77,8 @@ RedHatInsights/insights-core-messaging:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
+  - source: workflows_examples/pytests.yaml
+    dest: .github/workflows/pytests.yaml
 
 # RedHatInsights/insights-data-schemas:
 #   - CODEOWNERS
@@ -80,6 +90,8 @@ RedHatInsights/insights-on-prem:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
+  - source: workflows_examples/pytests.yaml
+    dest: .github/workflows/pytests.yaml
 
 RedHatInsights/insights-operator-gathering-conditions:
   - CODEOWNERS
@@ -88,6 +100,8 @@ RedHatInsights/insights-operator-gathering-conditions:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
+  - source: workflows_examples/pytests.yaml
+    dest: .github/workflows/pytests.yaml
 
 RedHatInsights/insights-operator-gathering-conditions-service:
   - CODEOWNERS
@@ -147,6 +161,8 @@ RedHatInsights/insights-results-aggregator-utils:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
+  - source: workflows_examples/pytests.yaml
+    dest: .github/workflows/pytests.yaml
 
 # RedHatInsights/insights-results-mcp:
 #   - CODEOWNERS
@@ -180,3 +196,5 @@ RedHatInsights/insights-behavioral-spec:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
+  - source: workflows_examples/pytests.yaml
+    dest: .github/workflows/pytests.yaml
