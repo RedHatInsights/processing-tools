@@ -90,8 +90,6 @@ RedHatInsights/insights-on-prem:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
-  - source: workflows_examples/pytests.yaml
-    dest: .github/workflows/pytests.yaml
 
 RedHatInsights/insights-operator-gathering-conditions:
   - CODEOWNERS
