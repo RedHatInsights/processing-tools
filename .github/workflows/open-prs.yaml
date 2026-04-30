@@ -14,13 +14,13 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           persist-credentials: true
           fetch-depth: 1
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'
 
@@ -28,14 +28,16 @@ jobs:
         run: |
           pip install pyyaml
 
-      - name: Configure Git
-        run: |
-          git config user.name "InsightsDroid"
-          git config user.email "InsightsDroid[bot]@users.noreply.github.com"
+      - id: app_token
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: ${{ secrets.OBSINT_PROCESSING_APP_CLIENT_ID }}
+          private-key: ${{ secrets.OBSINT_PROCESSING_APP_PRIVATE_KEY }}
+          owner: RedHatInsights
 
       - name: Generate PR reports
         env:
-          GITHUB_TOKEN: ${{ secrets.INSIGHTSDROID_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.app_token.outputs.token }}
         run: |
           echo "🔍 Fetching open PRs..."
           cd open_mr_pr/github
@@ -43,17 +45,12 @@ jobs:
           # Copy konflux report to README for easy viewing
           cp open-prs-konflux.md README.md
 
-      - name: Commit and push results
-        run: |
-          # Add generated files
-          git add open_mr_pr/github/open-prs-konflux.md open_mr_pr/github/open-prs-others.md open_mr_pr/github/open-prs.csv open_mr_pr/github/README.md || true
-
-          # Check if there are changes to commit
-          if git diff --cached --quiet; then
-            echo "📊 No changes to commit"
-          else
-            echo "📊 Committing updated PR reports..."
-            git commit -m "chore: update open PRs report [bot]"
-            git pull --rebase origin main || git pull --rebase origin master || true
-            git push
-          fi
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ steps.app_token.outputs.token }}
+          title: "chore: update open PRs report [bot]"
+          body: "This PR is automatically created by the obsint-processing-app bot."
+          branch: obsint-processing-app/open-prs-report
+          labels: "bot"
+          commit-message: "chore: update open PRs report [bot]"
