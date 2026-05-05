@@ -1,0 +1,8 @@
+name: Go tests
+
+on:
+  pull_request:
+
+jobs:
+  gotests:
+    uses: RedHatInsights/processing-tools/.github/workflows/gotests.yaml@v0.4.1
