@@ -1,27 +1,30 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-05-04 05:12:58*
+*Last updated: 2026-05-05 05:06:33*
 
-**Total Konflux PRs: 22**
+**Total Konflux PRs: 25**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| insights-results-aggregator | [2475](https://github.com/RedHatInsights/insights-results-aggregator/pull/2475) | chore(deps): update go dependencies | 2026-05-03 | app/red-hat-konflux | ❌ failed | ready |
+| insights-content-template-renderer | [312](https://github.com/RedHatInsights/insights-content-template-renderer/pull/312) | Update setuptools-scm requirement from >=8 to >=10.0.5 | 2026-05-05 | app/dependabot | ✅ ok | ready |
+| ccx-upgrades-inference | [74](https://github.com/RedHatInsights/ccx-upgrades-inference/pull/74) | chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v43.150.0 | 2026-05-04 | app/red-hat-konflux | ❌ failed | ready |
+| insights-results-aggregator | [2477](https://github.com/RedHatInsights/insights-results-aggregator/pull/2477) | chore(deps): update go dependencies | 2026-05-04 | app/red-hat-konflux | ❌ failed | ready |
+| ccx-upgrades-data-eng | [93](https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/93) | chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v43.150.0 | 2026-05-04 | app/red-hat-konflux | ❌ failed | ready |
+| insights-behavioral-spec | [774](https://github.com/RedHatInsights/insights-behavioral-spec/pull/774) | Update virtualenv requirement from >=20.28.0 to >=21.3.0 | 2026-05-04 | app/dependabot | ✅ ok | ready |
+| insights-ccx-messaging | [734](https://github.com/RedHatInsights/insights-ccx-messaging/pull/734) | build(deps): update boto3 requirement from <1.42.92,>=1.42.91 to >=1.42.91,<1.42.98 | 2026-05-04 | app/dependabot | ✅ ok | ready |
+| ccx-notification-service | [1154](https://github.com/RedHatInsights/ccx-notification-service/pull/1154) | Bump github.com/openshift-online/ocm-sdk-go from 0.1.499 to 0.1.500 | 2026-05-04 | app/dependabot | ✅ ok | ready |
 | insights-results-smart-proxy | [1725](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1725) | Bump github.com/openshift-online/ocm-sdk-go from 0.1.499 to 0.1.500 | 2026-05-01 | app/dependabot | ✅ ok | ready |
-| parquet-factory | [70](https://github.com/RedHatInsights/parquet-factory/pull/70) | chore(deps): update pre-commit hook golangci/golangci-lint to v2.12.1 | 2026-05-01 | app/red-hat-konflux | ❌ failed | ready |
-| insights-results-aggregator | [2474](https://github.com/RedHatInsights/insights-results-aggregator/pull/2474) | chore(deps): update pre-commit hook golangci/golangci-lint to v2.12.1 | 2026-05-01 | app/red-hat-konflux | ❌ failed | ready |
-| insights-operator-utils | [868](https://github.com/RedHatInsights/insights-operator-utils/pull/868) | chore(deps): update pre-commit hook golangci/golangci-lint to v2.12.1 | 2026-05-01 | app/red-hat-konflux | ❌ failed | ready |
-| insights-results-aggregator-exporter | [610](https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/610) | chore(deps): update pre-commit hook golangci/golangci-lint to v2.12.1 | 2026-05-01 | app/red-hat-konflux | ❌ failed | ready |
-| content-service | [826](https://github.com/RedHatInsights/content-service/pull/826) | Update pre-commit hook golangci/golangci-lint to v2.12.1 | 2026-05-01 | app/red-hat-konflux | ❌ failed | ready |
-| ccx-notification-service | [1153](https://github.com/RedHatInsights/ccx-notification-service/pull/1153) | fix(deps): update go dependencies | 2026-04-30 | app/red-hat-konflux | ✅ ok | ready |
-| data-pipeline | [69](https://github.com/RedHatInsights/data-pipeline/pull/69) | chore(deps): update dependency boto3 to >=1.43.2,<1.43.3 | 2026-04-30 | app/red-hat-konflux | ❌ failed | ready |
+| parquet-factory | [70](https://github.com/RedHatInsights/parquet-factory/pull/70) | chore(deps): update pre-commit hooks | 2026-05-01 | app/red-hat-konflux | ❌ failed | ready |
+| insights-results-aggregator | [2474](https://github.com/RedHatInsights/insights-results-aggregator/pull/2474) | chore(deps): update pre-commit hooks | 2026-05-01 | app/red-hat-konflux | ❌ failed | ready |
+| insights-operator-utils | [868](https://github.com/RedHatInsights/insights-operator-utils/pull/868) | chore(deps): update pre-commit hooks | 2026-05-01 | app/red-hat-konflux | ❌ failed | ready |
+| insights-results-aggregator-exporter | [610](https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/610) | chore(deps): update pre-commit hooks | 2026-05-01 | app/red-hat-konflux | ❌ failed | ready |
+| content-service | [826](https://github.com/RedHatInsights/content-service/pull/826) | Update Pre-commit hooks | 2026-05-01 | app/red-hat-konflux | ❌ failed | ready |
+| data-pipeline | [69](https://github.com/RedHatInsights/data-pipeline/pull/69) | chore(deps): update dependency boto3 to >=1.43.3,<1.43.4 | 2026-04-30 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-smart-proxy | [1724](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1724) | Bump github.com/redis/go-redis/v9 from 9.18.0 to 9.19.0 | 2026-04-28 | app/dependabot | ✅ ok | ready |
 | insights-results-smart-proxy | [1722](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1722) | Update Go dependencies | 2026-04-27 | app/red-hat-konflux | ❌ failed | ready |
 | insights-ccx-messaging | [725](https://github.com/RedHatInsights/insights-ccx-messaging/pull/725) | chore(deps): update python dependencies | 2026-04-27 | app/red-hat-konflux | ❌ failed | ready |
 | insights-behavioral-spec | [762](https://github.com/RedHatInsights/insights-behavioral-spec/pull/762) | Update python-multipart requirement from >=0.0.19 to >=0.0.27 | 2026-04-27 | app/dependabot | ✅ ok | ready |
 | insights-behavioral-spec | [761](https://github.com/RedHatInsights/insights-behavioral-spec/pull/761) | Update setuptools requirement from >=70.0.0 to >=82.0.1 | 2026-04-27 | app/dependabot | ✅ ok | ready |
-| insights-behavioral-spec | [760](https://github.com/RedHatInsights/insights-behavioral-spec/pull/760) | Update virtualenv requirement from >=20.28.0 to >=21.3.0 | 2026-04-27 | app/dependabot | ✅ ok | ready |
-| insights-ccx-messaging | [723](https://github.com/RedHatInsights/insights-ccx-messaging/pull/723) | build(deps): update boto3 requirement from <1.42.92,>=1.42.91 to >=1.42.91,<1.42.97 | 2026-04-27 | app/dependabot | ✅ ok | ready |
 | insights-results-smart-proxy | [1717](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1717) | Update Pre-commit hooks | 2026-04-24 | app/red-hat-konflux | ❌ failed | ready |
 | ccx-notification-service | [1114](https://github.com/RedHatInsights/ccx-notification-service/pull/1114) | Bump github.com/RedHatInsights/insights-operator-utils from 1.27.0 to 1.28.0 | 2026-04-24 | app/dependabot | ✅ ok | ready |
 | ccx-notification-service | [1113](https://github.com/RedHatInsights/ccx-notification-service/pull/1113) | Bump github.com/IBM/sarama from 1.47.0 to 1.48.0 | 2026-04-24 | app/dependabot | ✅ ok | ready |
