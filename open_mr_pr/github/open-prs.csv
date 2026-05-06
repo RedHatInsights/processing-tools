@@ -1,9 +1,13 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
+insights-results-smart-proxy,1733,Update Pre-commit hooks,2026-05-06T01:46:22Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1733,app/red-hat-konflux,failed,ready
+insights-results-smart-proxy,1732,Update Go dependencies,2026-05-05T21:54:24Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1732,app/red-hat-konflux,failed,ready
+insights-operator-gathering-conditions-service,673,chore(deps): update pre-commit hook redhatinsights/processing-tools to v0.4.2,2026-05-05T15:45:49Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/673,app/red-hat-konflux,failed,ready
+insights-operator-utils,873,fix: extract repeated Prometheus label and response key strings to constants,2026-05-05T14:03:16Z,https://github.com/RedHatInsights/insights-operator-utils/pull/873,lenasolarova,ok,ready
+insights-results-aggregator-exporter,617,fix: use existing tableNameMsg constant and extract text/csv content type,2026-05-05T14:03:13Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/617,lenasolarova,failed,ready
+parquet-factory,78,fix: extract repeated Prometheus label key to constant,2026-05-05T14:03:02Z,https://github.com/RedHatInsights/parquet-factory/pull/78,lenasolarova,failed,ready
+content-service,834,fix: exclude goconst from test files in golangci-lint config,2026-05-05T14:03:00Z,https://github.com/RedHatInsights/content-service/pull/834,lenasolarova,ok,ready
+insights-results-aggregator,2478,fix: exclude goconst from test files in golangci-lint config,2026-05-05T14:02:47Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2478,lenasolarova,ok,ready
 content-service,833,Removing old Go test file,2026-05-05T12:09:26Z,https://github.com/RedHatInsights/content-service/pull/833,joselsegura,failed,ready
-insights-results-aggregator-exporter,616,🔄 synced file(s) with RedHatInsights/processing-tools,2026-05-05T11:32:21Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/616,app/obsint-processing-app,failed,ready
-insights-results-smart-proxy,1726,🔄 synced file(s) with RedHatInsights/processing-tools,2026-05-05T10:42:23Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1726,app/obsint-processing-app,failed,ready
-insights-operator-utils,872,🔄 synced file(s) with RedHatInsights/processing-tools,2026-05-05T10:41:51Z,https://github.com/RedHatInsights/insights-operator-utils/pull/872,app/obsint-processing-app,ok,ready
-insights-operator-gathering-conditions-service,672,🔄 synced file(s) with RedHatInsights/processing-tools,2026-05-05T10:41:44Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/672,app/obsint-processing-app,ok,ready
 insights-content-template-renderer,312,Update setuptools-scm requirement from >=8 to >=10.0.5,2026-05-05T02:22:44Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/312,app/dependabot,ok,ready
 insights-results-aggregator,2477,chore(deps): update go dependencies,2026-05-04T15:42:37Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2477,app/red-hat-konflux,failed,ready
 insights-behavioral-spec,774,Update virtualenv requirement from >=20.28.0 to >=21.3.0,2026-05-04T11:46:03Z,https://github.com/RedHatInsights/insights-behavioral-spec/pull/774,app/dependabot,ok,ready
@@ -15,7 +19,7 @@ insights-results-aggregator,2474,chore(deps): update pre-commit hooks,2026-05-01
 insights-operator-utils,868,chore(deps): update pre-commit hooks,2026-05-01T17:47:54Z,https://github.com/RedHatInsights/insights-operator-utils/pull/868,app/red-hat-konflux,failed,ready
 insights-results-aggregator-exporter,610,chore(deps): update pre-commit hooks,2026-05-01T17:47:53Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/610,app/red-hat-konflux,failed,ready
 content-service,826,Update Pre-commit hooks,2026-05-01T17:47:47Z,https://github.com/RedHatInsights/content-service/pull/826,app/red-hat-konflux,failed,ready
-data-pipeline,69,"chore(deps): update dependency boto3 to >=1.43.3,<1.43.4",2026-04-30T13:49:48Z,https://github.com/RedHatInsights/data-pipeline/pull/69,app/red-hat-konflux,failed,ready
+data-pipeline,69,"chore(deps): update dependency boto3 to >=1.43.4,<1.43.5",2026-04-30T13:49:48Z,https://github.com/RedHatInsights/data-pipeline/pull/69,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1724,Bump github.com/redis/go-redis/v9 from 9.18.0 to 9.19.0,2026-04-28T17:52:53Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1724,app/dependabot,ok,ready
 insights-ccx-messaging,725,chore(deps): update python dependencies,2026-04-27T14:46:59Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/725,app/red-hat-konflux,failed,ready
 insights-behavioral-spec,762,Update python-multipart requirement from >=0.0.19 to >=0.0.27,2026-04-27T11:25:41Z,https://github.com/RedHatInsights/insights-behavioral-spec/pull/762,app/dependabot,ok,ready
