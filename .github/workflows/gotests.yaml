@@ -42,6 +42,9 @@ jobs:
     name: Go tests
     steps:
       - uses: actions/checkout@v6
+      - name: Prepare Go env
+        run: echo "$(go env GOPATH)/bin" >> ${GITHUB_PATH}
+
       - name: Unit tests
         run: make test
 
