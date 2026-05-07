@@ -7,6 +7,16 @@ RedHatInsights/ccx-notification-service:
     dest: .github/workflows/bots-auto-merge.yaml
   - source: workflows_examples/gotests.yaml
     dest: .github/workflows/gotests.yaml
+  - source: workflows_examples/gotests.yaml.tmpl
+    dest: .github/workflows/gotests-with-coverage.yaml
+    template:
+      coverage_threshold: 10
+  - source: workflows_examples/gotests.yaml.tmpl
+    dest: .github/workflows/gotests-with-coverage-zero.yaml
+    template:
+      coverage_threshold: 0
+  - source: workflows_examples/gotests.yaml.tmpl
+    dest: .github/workflows/gotests-without-coverage.yaml
 
 RedHatInsights/ccx-notification-writer:
   - CODEOWNERS
