@@ -5,7 +5,7 @@ RedHatInsights/ccx-notification-service:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
-  - source: workflows_examples/gotests.yaml
+  - source: workflows_examples/gotests.yaml.tmpl
     dest: .github/workflows/gotests.yaml
 
 RedHatInsights/ccx-notification-writer:
@@ -15,7 +15,7 @@ RedHatInsights/ccx-notification-writer:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
-  - source: workflows_examples/gotests.yaml
+  - source: workflows_examples/gotests.yaml.tmpl
     dest: .github/workflows/gotests.yaml
 
 RedHatInsights/ccx-upgrades-data-eng:
@@ -45,7 +45,7 @@ RedHatInsights/content-service:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
-  - source: workflows_examples/gotests.yaml
+  - source: workflows_examples/gotests.yaml.tmpl
     dest: .github/workflows/gotests.yaml
 
 RedHatInsights/data-pipeline:
@@ -112,7 +112,7 @@ RedHatInsights/insights-operator-gathering-conditions-service:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
-  - source: workflows_examples/gotests.yaml
+  - source: workflows_examples/gotests.yaml.tmpl
     dest: .github/workflows/gotests.yaml
 
 RedHatInsights/insights-operator-utils:
@@ -122,7 +122,7 @@ RedHatInsights/insights-operator-utils:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
-  - source: workflows_examples/gotests.yaml
+  - source: workflows_examples/gotests.yaml.tmpl
     dest: .github/workflows/gotests.yaml
 
 RedHatInsights/insights-results-aggregator:
@@ -140,7 +140,7 @@ RedHatInsights/insights-results-aggregator-cleaner:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
-  - source: workflows_examples/gotests.yaml
+  - source: workflows_examples/gotests.yaml.tmpl
     dest: .github/workflows/gotests.yaml
 
 # RedHatInsights/insights-results-aggregator-data:
@@ -153,7 +153,7 @@ RedHatInsights/insights-results-aggregator-exporter:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
-  - source: workflows_examples/gotests.yaml
+  - source: workflows_examples/gotests.yaml.tmpl
     dest: .github/workflows/gotests.yaml
 
 RedHatInsights/insights-results-aggregator-mock:
@@ -163,7 +163,7 @@ RedHatInsights/insights-results-aggregator-mock:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
-  - source: workflows_examples/gotests.yaml
+  - source: workflows_examples/gotests.yaml.tmpl
     dest: .github/workflows/gotests.yaml
 
 RedHatInsights/insights-results-aggregator-utils:
@@ -186,7 +186,7 @@ RedHatInsights/insights-results-smart-proxy:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
-  - source: workflows_examples/gotests.yaml
+  - source: workflows_examples/gotests.yaml.tmpl
     dest: .github/workflows/gotests.yaml
 
 RedHatInsights/obsint-mocks:
@@ -202,7 +202,7 @@ RedHatInsights/parquet-factory:
   - renovate.json
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
-  - source: workflows_examples/gotests.yaml
+  - source: workflows_examples/gotests.yaml.tmpl
     dest: .github/workflows/gotests.yaml
 
 RedHatInsights/insights-behavioral-spec:
