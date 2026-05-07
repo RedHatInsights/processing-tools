@@ -1,8 +1,5 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-insights-results-smart-proxy,1742,Update Pre-commit hooks,2026-05-07T02:37:34Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1742,app/red-hat-konflux,failed,ready
 ccx-upgrades-data-eng,96,chore(deps): update ghcr.io/navikt/mock-oauth2-server docker tag to v3.0.3,2026-05-06T23:41:48Z,https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/96,app/red-hat-konflux,ok,ready
-insights-results-smart-proxy,1740,Update Go dependencies,2026-05-06T19:03:20Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1740,app/red-hat-konflux,failed,ready
-insights-results-aggregator,2482,chore(deps): update go dependencies,2026-05-06T15:48:22Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2482,app/red-hat-konflux,failed,ready
 parquet-factory,80,Allign Makefile rules with common ones,2026-05-06T14:16:37Z,https://github.com/RedHatInsights/parquet-factory/pull/80,joselsegura,failed,ready
 insights-results-aggregator,2476,[HOLD] Use reusable workflow,2026-05-04T09:44:27Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2476,joselsegura,failed,ready
 data-pipeline,69,"chore(deps): update dependency boto3 to >=1.43.5,<1.43.6",2026-04-30T13:49:48Z,https://github.com/RedHatInsights/data-pipeline/pull/69,app/red-hat-konflux,failed,ready
