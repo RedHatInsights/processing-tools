@@ -8,5 +8,9 @@ on:
 jobs:
   gotests:
     uses: RedHatInsights/processing-tools/.github/workflows/gotests.yaml@v0.4.3
+{% if coverage_threshold is defined %}
+    with:
+      coverage_threshold: {{ coverage_threshold }}
+{% endif %}
     secrets:
-      CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      CODECOV_TOKEN: {% raw %}${{ secrets.CODECOV_TOKEN }}{% endraw %}
