@@ -5,8 +5,10 @@ RedHatInsights/ccx-notification-service:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
-  - source: workflows_examples/gotests.yaml
+  - source: workflows_examples/gotests.yaml.tmpl
     dest: .github/workflows/gotests.yaml
+    template:
+      coverage_threshold: 67
 
 RedHatInsights/ccx-notification-writer:
   - CODEOWNERS
@@ -15,8 +17,10 @@ RedHatInsights/ccx-notification-writer:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
-  - source: workflows_examples/gotests.yaml
+  - source: workflows_examples/gotests.yaml.tmpl
     dest: .github/workflows/gotests.yaml
+    template:
+      coverage_threshold: 62
 
 RedHatInsights/ccx-upgrades-data-eng:
   - CODEOWNERS
@@ -45,8 +49,10 @@ RedHatInsights/content-service:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
-  - source: workflows_examples/gotests.yaml
+  - source: workflows_examples/gotests.yaml.tmpl
     dest: .github/workflows/gotests.yaml
+    template:
+      coverage_threshold: 67
 
 RedHatInsights/data-pipeline:
   - CODEOWNERS
@@ -112,8 +118,10 @@ RedHatInsights/insights-operator-gathering-conditions-service:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
-  - source: workflows_examples/gotests.yaml
+  - source: workflows_examples/gotests.yaml.tmpl
     dest: .github/workflows/gotests.yaml
+    template:
+      coverage_threshold: 85
 
 RedHatInsights/insights-operator-utils:
   - CODEOWNERS
@@ -122,8 +130,10 @@ RedHatInsights/insights-operator-utils:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
-  - source: workflows_examples/gotests.yaml
+  - source: workflows_examples/gotests.yaml.tmpl
     dest: .github/workflows/gotests.yaml
+    template:
+      coverage_threshold: 69
 
 RedHatInsights/insights-results-aggregator:
   - CODEOWNERS
@@ -140,8 +150,10 @@ RedHatInsights/insights-results-aggregator-cleaner:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
-  - source: workflows_examples/gotests.yaml
+  - source: workflows_examples/gotests.yaml.tmpl
     dest: .github/workflows/gotests.yaml
+    template:
+      coverage_threshold: 84
 
 # RedHatInsights/insights-results-aggregator-data:
 #   - CODEOWNERS
@@ -153,8 +165,10 @@ RedHatInsights/insights-results-aggregator-exporter:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
-  - source: workflows_examples/gotests.yaml
+  - source: workflows_examples/gotests.yaml.tmpl
     dest: .github/workflows/gotests.yaml
+    template:
+      coverage_threshold: 59
 
 RedHatInsights/insights-results-aggregator-mock:
   - CODEOWNERS
@@ -163,8 +177,9 @@ RedHatInsights/insights-results-aggregator-mock:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
-  - source: workflows_examples/gotests.yaml
+  - source: workflows_examples/gotests.yaml.tmpl
     dest: .github/workflows/gotests.yaml
+    template: {}
 
 RedHatInsights/insights-results-aggregator-utils:
   - CODEOWNERS
@@ -186,8 +201,10 @@ RedHatInsights/insights-results-smart-proxy:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
-  - source: workflows_examples/gotests.yaml
+  - source: workflows_examples/gotests.yaml.tmpl
     dest: .github/workflows/gotests.yaml
+    template:
+      coverage_threshold: 72
 
 RedHatInsights/obsint-mocks:
   - CODEOWNERS
@@ -202,8 +219,10 @@ RedHatInsights/parquet-factory:
   - renovate.json
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
-  - source: workflows_examples/gotests.yaml
+  - source: workflows_examples/gotests.yaml.tmpl
     dest: .github/workflows/gotests.yaml
+    template:
+      coverage_threshold: 72
 
 RedHatInsights/insights-behavioral-spec:
   - CODEOWNERS
