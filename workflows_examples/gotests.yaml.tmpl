@@ -12,6 +12,7 @@ jobs:
     with:
       coverage_threshold: {{ coverage_threshold }}
 {% endif %}
-    secrets:{% raw %}
+    secrets:
+{% raw %}
       CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 {% endraw %}

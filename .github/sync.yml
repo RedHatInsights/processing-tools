@@ -17,6 +17,7 @@ RedHatInsights/ccx-notification-service:
       coverage_threshold: 0
   - source: workflows_examples/gotests.yaml.tmpl
     dest: .github/workflows/gotests-without-coverage.yaml
+    template: {}
 
 RedHatInsights/ccx-notification-writer:
   - CODEOWNERS
