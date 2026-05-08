@@ -1,8 +1,13 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
+ccx-notification-service,1179,fix(deps): update go dependencies,2026-05-08T02:00:26Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1179,app/red-hat-konflux,ok,ready
+insights-content-template-renderer,320,Update dependency boto3 to v1.43.6,2026-05-08T01:53:31Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/320,app/red-hat-konflux,failed,ready
+insights-results-aggregator,2484,chore(deps): update go dependencies,2026-05-07T10:21:16Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2484,app/red-hat-konflux,failed,ready
+insights-results-smart-proxy,1745,Update Go dependencies,2026-05-07T10:18:48Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1745,app/red-hat-konflux,failed,ready
+insights-results-smart-proxy,1744,Update Pre-commit hooks,2026-05-07T10:16:18Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1744,app/red-hat-konflux,failed,ready
+ccx-upgrades-data-eng,97,chore(deps): update pre-commit hook redhatinsights/processing-tools to v0.4.3,2026-05-07T10:15:42Z,https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/97,app/red-hat-konflux,failed,ready
 ccx-upgrades-data-eng,96,chore(deps): update ghcr.io/navikt/mock-oauth2-server docker tag to v3.0.3,2026-05-06T23:41:48Z,https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/96,app/red-hat-konflux,ok,ready
-parquet-factory,80,Allign Makefile rules with common ones,2026-05-06T14:16:37Z,https://github.com/RedHatInsights/parquet-factory/pull/80,joselsegura,failed,ready
 insights-results-aggregator,2476,[HOLD] Use reusable workflow,2026-05-04T09:44:27Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2476,joselsegura,failed,ready
-data-pipeline,69,"chore(deps): update dependency boto3 to >=1.43.5,<1.43.6",2026-04-30T13:49:48Z,https://github.com/RedHatInsights/data-pipeline/pull/69,app/red-hat-konflux,failed,ready
+data-pipeline,69,"chore(deps): update dependency boto3 to >=1.43.6,<1.43.7",2026-04-30T13:49:48Z,https://github.com/RedHatInsights/data-pipeline/pull/69,app/red-hat-konflux,failed,ready
 insights-ccx-messaging,725,chore(deps): update python dependencies,2026-04-27T14:46:59Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/725,app/red-hat-konflux,failed,ready
 data-pipeline,56,Test PR auto-merge flag,2026-04-15T07:13:13Z,https://github.com/RedHatInsights/data-pipeline/pull/56,app/obsint-processing-app,ok,ready
 parquet-factory,42,Add common linter workflow,2026-04-10T11:49:52Z,https://github.com/RedHatInsights/parquet-factory/pull/42,joselsegura,ok,ready

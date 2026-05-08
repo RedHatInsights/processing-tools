@@ -1,12 +1,11 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-05-07 06:49:19*
+*Last updated: 2026-05-08 05:03:26*
 
-**Total PRs: 6**
+**Total PRs: 5**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| parquet-factory | [80](https://github.com/RedHatInsights/parquet-factory/pull/80) | Allign Makefile rules with common ones | 2026-05-06 | joselsegura | ❌ failed | ready |
 | insights-results-aggregator | [2476](https://github.com/RedHatInsights/insights-results-aggregator/pull/2476) | [HOLD] Use reusable workflow | 2026-05-04 | joselsegura | ❌ failed | ready |
 | data-pipeline | [56](https://github.com/RedHatInsights/data-pipeline/pull/56) | Test PR auto-merge flag | 2026-04-15 | app/obsint-processing-app | ✅ ok | ready |
 | parquet-factory | [42](https://github.com/RedHatInsights/parquet-factory/pull/42) | Add common linter workflow | 2026-04-10 | joselsegura | ✅ ok | ready |
