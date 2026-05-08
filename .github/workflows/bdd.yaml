@@ -48,7 +48,7 @@ on:
           description: Version of Go to be used to build the service
           required: false
           type: string
-          default: "1.24"
+          default: "1.25"
 
 jobs:
   bdd:
