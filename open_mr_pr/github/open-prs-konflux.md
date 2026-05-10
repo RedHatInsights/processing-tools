@@ -1,11 +1,21 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-05-09 05:07:41*
+*Last updated: 2026-05-10 05:15:58*
 
-**Total Konflux PRs: 13**
+**Total Konflux PRs: 23**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| insights-results-aggregator | [2489](https://github.com/RedHatInsights/insights-results-aggregator/pull/2489) | chore(deps): update go dependencies | 2026-05-09 | app/red-hat-konflux | ❌ failed | ready |
+| parquet-factory | [94](https://github.com/RedHatInsights/parquet-factory/pull/94) | chore(deps): update redhatinsights/processing-tools action to v0.4.4 | 2026-05-09 | app/red-hat-konflux | ✅ ok | ready |
+| insights-results-aggregator-cleaner | [742](https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/742) | chore(deps): update redhatinsights/processing-tools action to v0.4.4 | 2026-05-09 | app/red-hat-konflux | ✅ ok | ready |
+| insights-results-aggregator-exporter | [630](https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/630) | chore(deps): update redhatinsights/processing-tools action to v0.4.4 | 2026-05-09 | app/red-hat-konflux | ✅ ok | ready |
+| insights-behavioral-spec | [785](https://github.com/RedHatInsights/insights-behavioral-spec/pull/785) | Update RedHatInsights/processing-tools action to v0.4.4 | 2026-05-09 | app/red-hat-konflux | ✅ ok | ready |
+| data-pipeline | [80](https://github.com/RedHatInsights/data-pipeline/pull/80) | chore(deps): update redhatinsights/processing-tools action to v0.4.4 | 2026-05-09 | app/red-hat-konflux | ✅ ok | ready |
+| obsint-mocks | [240](https://github.com/RedHatInsights/obsint-mocks/pull/240) | chore(deps): update redhatinsights/processing-tools action to v0.4.4 | 2026-05-09 | app/red-hat-konflux | ✅ ok | ready |
+| insights-content-template-renderer | [326](https://github.com/RedHatInsights/insights-content-template-renderer/pull/326) | Update RedHatInsights/processing-tools action to v0.4.4 | 2026-05-09 | app/red-hat-konflux | ✅ ok | ready |
+| content-service | [849](https://github.com/RedHatInsights/content-service/pull/849) | chore(deps): update redhatinsights/processing-tools action to v0.4.4 | 2026-05-09 | app/red-hat-konflux | ✅ ok | ready |
+| insights-ccx-messaging | [746](https://github.com/RedHatInsights/insights-ccx-messaging/pull/746) | chore(deps): update redhatinsights/processing-tools action to v0.4.4 | 2026-05-09 | app/red-hat-konflux | ✅ ok | ready |
 | insights-operator-utils | [886](https://github.com/RedHatInsights/insights-operator-utils/pull/886) | chore(deps): update redhatinsights/processing-tools action to v0.4.4 | 2026-05-08 | app/red-hat-konflux | ✅ ok | ready |
 | ccx-upgrades-inference | [80](https://github.com/RedHatInsights/ccx-upgrades-inference/pull/80) | chore(deps): update pre-commit hook redhatinsights/processing-tools to v0.4.4 | 2026-05-08 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-smart-proxy | [1746](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1746) | Update GitHub Actions | 2026-05-08 | app/red-hat-konflux | ❌ failed | ready |
