@@ -179,14 +179,14 @@ RedHatInsights/insights-results-aggregator:
       service: aggregator
       extra_options:
         use_kafka: true
-        use_posrgres: true
+        use_postgres: true
   - source: workflows_examples/bdd.yaml.tmpl
     dest: .github/workflows/bdd-dvo.yaml
     template:
       service: dvo-writer
       extra_options:
         use_kafka: true
-        use_posrgres: true
+        use_postgres: true
 
 RedHatInsights/insights-results-aggregator-cleaner:
   - CODEOWNERS
@@ -204,7 +204,7 @@ RedHatInsights/insights-results-aggregator-cleaner:
     template:
       service: cleaner
       extra_options:
-        use_posrgres: true
+        use_postgres: true
 
 # RedHatInsights/insights-results-aggregator-data:
 #   - CODEOWNERS
@@ -225,7 +225,7 @@ RedHatInsights/insights-results-aggregator-exporter:
     template:
       service: exporter
       extra_options:
-        use_posrgres: true
+        use_postgres: true
         use_minio: true
 
 RedHatInsights/insights-results-aggregator-mock:
