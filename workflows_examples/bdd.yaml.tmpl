@@ -11,8 +11,8 @@ jobs:
     uses: RedHatInsights/processing-tools/.github/workflows/bdd.yaml@v0.4.4
     with:
       service: {{ service }}
-{% if extra_options is defined %}
-      {% for key, value in extra_options.items() %}
+      {% if extra_options is defined %}
+        {% for key, value in extra_options %}
       {{ key }}: {{ value }}
-      {% endfor %}
-{% endif %}
+        {% endfor %}
+      {% endif %}
