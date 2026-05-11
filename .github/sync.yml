@@ -28,6 +28,12 @@ RedHatInsights/ccx-notification-writer:
     dest: .github/workflows/gotests.yaml
     template:
       coverage_threshold: 62
+  - source: workflows_examples/bdd.yaml.tmpl
+    dest: .github/workflows/bdd.yaml
+    template:
+      service: notification-writer
+      extra_options:
+        use_postgres: true
 
 RedHatInsights/ccx-upgrades-data-eng:
   - CODEOWNERS
@@ -38,6 +44,12 @@ RedHatInsights/ccx-upgrades-data-eng:
     dest: .github/workflows/bots-auto-merge.yaml
   - source: workflows_examples/pytests.yaml
     dest: .github/workflows/pytests.yaml
+  - source: workflows_examples/bdd.yaml.tmpl
+    dest: .github/workflows/bdd.yaml
+    template:
+      service: data-engineering-service
+      extra_options:
+        use_mock-oauth2-server: true
 
 RedHatInsights/ccx-upgrades-inference:
   - CODEOWNERS
@@ -48,6 +60,10 @@ RedHatInsights/ccx-upgrades-inference:
     dest: .github/workflows/bots-auto-merge.yaml
   - source: workflows_examples/pytests.yaml
     dest: .github/workflows/pytests.yaml
+  - source: workflows_examples/bdd.yaml.tmpl
+    dest: .github/workflows/bdd.yaml
+    template:
+      service: inference-service
 
 RedHatInsights/content-service:
   - CODEOWNERS
@@ -60,6 +76,10 @@ RedHatInsights/content-service:
     dest: .github/workflows/gotests.yaml
     template:
       coverage_threshold: 67
+  - source: workflows_examples/bdd.yaml.tmpl
+    dest: .github/workflows/bdd.yaml
+    template:
+      service: content-service
 
 RedHatInsights/data-pipeline:
   - CODEOWNERS
@@ -88,6 +108,10 @@ RedHatInsights/insights-content-template-renderer:
     dest: .github/workflows/bots-auto-merge.yaml
   - source: workflows_examples/pytests.yaml
     dest: .github/workflows/pytests.yaml
+  - source: workflows_examples/bdd.yaml.tmpl
+    dest: .github/workflows/bdd.yaml
+    template:
+      service: content-template-renderer
 
 RedHatInsights/insights-core-messaging:
   - CODEOWNERS
@@ -149,6 +173,20 @@ RedHatInsights/insights-results-aggregator:
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
     dest: .github/workflows/bots-auto-merge.yaml
+  - source: workflows_examples/bdd.yaml.tmpl
+    dest: .github/workflows/bdd-aggregator.yaml
+    template:
+      service: aggregator
+      extra_options:
+        use_kafka: true
+        use_posrgres: true
+  - source: workflows_examples/bdd.yaml.tmpl
+    dest: .github/workflows/bdd-dvo.yaml
+    template:
+      service: dvo-writer
+      extra_options:
+        use_kafka: true
+        use_posrgres: true
 
 RedHatInsights/insights-results-aggregator-cleaner:
   - CODEOWNERS
@@ -161,6 +199,12 @@ RedHatInsights/insights-results-aggregator-cleaner:
     dest: .github/workflows/gotests.yaml
     template:
       coverage_threshold: 84
+  - source: workflows_examples/bdd.yaml.tmpl
+    dest: .github/workflows/bdd.yaml
+    template:
+      service: cleaner
+      extra_options:
+        use_posrgres: true
 
 # RedHatInsights/insights-results-aggregator-data:
 #   - CODEOWNERS
@@ -176,6 +220,13 @@ RedHatInsights/insights-results-aggregator-exporter:
     dest: .github/workflows/gotests.yaml
     template:
       coverage_threshold: 59
+  - source: workflows_examples/bdd.yaml.tmpl
+    dest: .github/workflows/bdd.yaml
+    template:
+      service: exporter
+      extra_options:
+        use_posrgres: true
+        use_minio: true
 
 RedHatInsights/insights-results-aggregator-mock:
   - CODEOWNERS
@@ -187,6 +238,10 @@ RedHatInsights/insights-results-aggregator-mock:
   - source: workflows_examples/gotests.yaml.tmpl
     dest: .github/workflows/gotests.yaml
     template: {}
+  - source: workflows_examples/bdd.yaml.tmpl
+    dest: .github/workflows/bdd.yaml
+    template:
+      service: aggregator-mock
 
 RedHatInsights/insights-results-aggregator-utils:
   - CODEOWNERS
@@ -212,6 +267,10 @@ RedHatInsights/insights-results-smart-proxy:
     dest: .github/workflows/gotests.yaml
     template:
       coverage_threshold: 72
+  - source: workflows_examples/bdd.yaml.tmpl
+    dest: .github/workflows/bdd.yaml
+    template:
+      service: smart-proxy
 
 RedHatInsights/obsint-mocks:
   - CODEOWNERS
@@ -230,6 +289,14 @@ RedHatInsights/parquet-factory:
     dest: .github/workflows/gotests.yaml
     template:
       coverage_threshold: 72
+  - source: workflows_examples/bdd.yaml.tmpl
+    dest: .github/workflows/bdd.yaml
+    template:
+      service: parquet-factory
+      extra_options:
+        use kafka: true
+        use_minio: true
+        use_pushgateway: true
 
 RedHatInsights/insights-behavioral-spec:
   - CODEOWNERS
