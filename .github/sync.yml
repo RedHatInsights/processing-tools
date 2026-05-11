@@ -294,7 +294,7 @@ RedHatInsights/parquet-factory:
     template:
       service: parquet-factory
       extra_options:
-        use kafka: true
+        use_kafka: true
         use_minio: true
         use_pushgateway: true
 
