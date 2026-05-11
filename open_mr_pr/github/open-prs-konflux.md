@@ -1,12 +1,14 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-05-10 05:15:58*
+*Last updated: 2026-05-11 05:22:55*
 
-**Total Konflux PRs: 23**
+**Total Konflux PRs: 25**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| insights-results-aggregator | [2489](https://github.com/RedHatInsights/insights-results-aggregator/pull/2489) | chore(deps): update go dependencies | 2026-05-09 | app/red-hat-konflux | ❌ failed | ready |
+| insights-results-aggregator | [2490](https://github.com/RedHatInsights/insights-results-aggregator/pull/2490) | chore(deps): update go dependencies | 2026-05-10 | app/red-hat-konflux | ❌ failed | ready |
+| ccx-upgrades-data-eng | [104](https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/104) | chore(deps): update redhatinsights/processing-tools action to v0.4.4 | 2026-05-10 | app/red-hat-konflux | ✅ ok | ready |
+| ccx-notification-writer | [842](https://github.com/RedHatInsights/ccx-notification-writer/pull/842) | chore(deps): update redhatinsights/processing-tools action to v0.4.4 | 2026-05-10 | app/red-hat-konflux | ✅ ok | ready |
 | parquet-factory | [94](https://github.com/RedHatInsights/parquet-factory/pull/94) | chore(deps): update redhatinsights/processing-tools action to v0.4.4 | 2026-05-09 | app/red-hat-konflux | ✅ ok | ready |
 | insights-results-aggregator-cleaner | [742](https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/742) | chore(deps): update redhatinsights/processing-tools action to v0.4.4 | 2026-05-09 | app/red-hat-konflux | ✅ ok | ready |
 | insights-results-aggregator-exporter | [630](https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/630) | chore(deps): update redhatinsights/processing-tools action to v0.4.4 | 2026-05-09 | app/red-hat-konflux | ✅ ok | ready |
