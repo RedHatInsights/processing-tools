@@ -9,6 +9,13 @@ RedHatInsights/ccx-notification-service:
     dest: .github/workflows/gotests.yaml
     template:
       coverage_threshold: 67
+  - source: workflows_examples/bdd.yaml.tmpl
+    dest: .github/workflows/bdd.yaml
+    template:
+      service: notification-service
+      extra_options:
+        use_kafka: true
+        use_postgres: true
 
 RedHatInsights/ccx-notification-writer:
   - CODEOWNERS
