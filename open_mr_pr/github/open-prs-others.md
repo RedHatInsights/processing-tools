@@ -1,11 +1,12 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-05-11 05:22:55*
+*Last updated: 2026-05-12 05:16:37*
 
-**Total PRs: 5**
+**Total PRs: 6**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| ccx-upgrades-inference | [81](https://github.com/RedHatInsights/ccx-upgrades-inference/pull/81) | [Automated] Update pre-commit hooks | 2026-05-11 | app/github-actions | ✅ ok | ready |
 | insights-results-aggregator | [2476](https://github.com/RedHatInsights/insights-results-aggregator/pull/2476) | [HOLD] Use reusable workflow | 2026-05-04 | joselsegura | ❌ failed | ready |
 | data-pipeline | [56](https://github.com/RedHatInsights/data-pipeline/pull/56) | Test PR auto-merge flag | 2026-04-15 | app/obsint-processing-app | ✅ ok | ready |
 | parquet-factory | [42](https://github.com/RedHatInsights/parquet-factory/pull/42) | Add common linter workflow | 2026-04-10 | joselsegura | ✅ ok | ready |
