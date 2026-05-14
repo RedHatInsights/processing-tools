@@ -12,6 +12,7 @@ description: >-
 Updates `ref:` fields in ccx-data-pipeline SaaS YAML files
 (in app-interface) to the latest commit SHA from each repo's
 default branch. Skips `ref: internal`, `main`, and `master`.
+Does not modify `jobs/post-deploy-jobs.yml` (app-interface updates those refs automatically).
 
 ## Prerequisites
 
@@ -83,7 +84,8 @@ git push -o merge_request.create \
 1. Clones (or reuses) app-interface to `/tmp/app-interface`. But we always
    clone in /tmp in order not to create conflicts with the user's local
    app-interface clone.
-2. Scans all YAML files under `data/services/insights/ccx-data-pipeline`.
+2. Scans YAML files under `data/services/insights/ccx-data-pipeline`, except
+   `jobs/post-deploy-jobs.yml` / `post-deploy-jobs.yaml`.
 3. For each `url:` + `ref:` pair, fetches the latest SHA from
    the repo's default branch via `git ls-remote`.
 4. Replaces outdated SHA refs in-place (or reports them in dry-run).
@@ -93,5 +95,7 @@ git push -o merge_request.create \
 - **Always dry-run first** — never modify files without user review.
 - **Do not touch branch refs** — `main`, `master`, and `internal`
   are intentionally skipped.
+- **Do not edit post-deploy jobs** — `jobs/post-deploy-jobs.yml` is excluded;
+  app-interface maintains those refs.
 - The script requires VPN network access to both GitLab (app-interface)
   and GitHub (source repos).

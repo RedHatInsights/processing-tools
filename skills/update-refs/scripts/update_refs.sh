@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Update all GitHub/GitLab refs in ccx-data-pipeline saas files to latest commit SHAs.
 # Skips ref: internal (ephemeral/bonfire targets), main and master.
+# Skips jobs/post-deploy-jobs.yml (refs maintained automatically by app-interface).
 # Usage: update_refs.sh [--dry-run] [--repo <name-or-url>]... [--local-folder <path>]
 # --repo filters by exact repo name or full URL (can be repeated).
 # --local-folder uses an existing app-interface checkout instead of cloning.
@@ -42,6 +43,15 @@ git checkout master
 git pull origin master
 
 BASE_DIR="data/services/insights/ccx-data-pipeline"
+
+# Path suffixes under ccx-data-pipeline that must not be touched (automation owns refs).
+should_skip_file() {
+    local f="$1"
+    case "$f" in
+        */jobs/post-deploy-jobs.yml|*/jobs/post-deploy-jobs.yaml) return 0 ;;
+    esac
+    return 1
+}
 
 repo_matches() {
     local url="$1"
@@ -135,6 +145,9 @@ echo "Found ${#files[@]} YAML files. Scanning for refs..."
 echo
 
 for f in "${files[@]}"; do
+    if should_skip_file "$f"; then
+        continue
+    fi
     # Quick check: skip files without both url: and ref:
     if grep -qE '^\s+url:\s+https://' "$f" && grep -qE '^\s+ref:\s' "$f"; then
         process_file "$f"
