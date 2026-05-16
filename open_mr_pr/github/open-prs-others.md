@@ -1,14 +1,11 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-05-15 05:21:46*
+*Last updated: 2026-05-16 05:08:30*
 
-**Total PRs: 8**
+**Total PRs: 5**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| insights-operator-gathering-conditions-service | [690](https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/690) | Update Go version used in the workflow | 2026-05-14 | joselsegura | ✅ ok | ready |
-| ccx-upgrades-inference | [85](https://github.com/RedHatInsights/ccx-upgrades-inference/pull/85) | Remove pre-commit auto-update job | 2026-05-14 | joselsegura | ✅ ok | ready |
-| ccx-upgrades-data-eng | [110](https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/110) | Remove pre-commit auto-update job | 2026-05-14 | joselsegura | ✅ ok | ready |
 | ccx-upgrades-inference | [81](https://github.com/RedHatInsights/ccx-upgrades-inference/pull/81) | [Automated] Update pre-commit hooks | 2026-05-11 | app/github-actions | ✅ ok | ready |
 | insights-results-aggregator | [2476](https://github.com/RedHatInsights/insights-results-aggregator/pull/2476) | [HOLD] Use reusable workflow | 2026-05-04 | joselsegura | ❌ failed | ready |
 | data-pipeline | [56](https://github.com/RedHatInsights/data-pipeline/pull/56) | Test PR auto-merge flag | 2026-04-15 | app/obsint-processing-app | ✅ ok | ready |
