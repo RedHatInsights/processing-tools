@@ -18,3 +18,4 @@ github_repos:
   - RedHatInsights/ccx-upgrades-inference
   - RedHatInsights/ccx-upgrades-data-eng
   - RedHatInsights/insights-operator-utils
+  - RedHatInsights/insights-results-aggregator-mock
