@@ -305,3 +305,9 @@ RedHatInsights/insights-behavioral-spec:
     dest: .github/workflows/bots-auto-merge.yaml
   - source: workflows_examples/pytests.yaml
     dest: .github/workflows/pytests.yaml
+
+RedHatInsights/ocp-advisor-frontend:
+  - CODEOWNERS
+  - renovate.json
+  - source: workflows_examples/bots-auto-merge.yaml
+    dest: .github/workflows/bots-auto-merge.yaml
