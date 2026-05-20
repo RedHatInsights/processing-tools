@@ -1,11 +1,12 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-05-19 05:24:40*
+*Last updated: 2026-05-20 05:24:58*
 
-**Total PRs: 4**
+**Total PRs: 5**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| insights-results-smart-proxy | [1765](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1765) | 🔄 synced file(s) with RedHatInsights/processing-tools | 2026-05-19 | app/obsint-processing-app | ❌ failed | ready |
 | insights-results-aggregator | [2476](https://github.com/RedHatInsights/insights-results-aggregator/pull/2476) | [HOLD] Use reusable workflow | 2026-05-04 | joselsegura | ❌ failed | ready |
 | data-pipeline | [56](https://github.com/RedHatInsights/data-pipeline/pull/56) | Test PR auto-merge flag | 2026-04-15 | app/obsint-processing-app | ✅ ok | ready |
 | ccx-notification-writer | [791](https://github.com/RedHatInsights/ccx-notification-writer/pull/791) | Update pre-commit configuration | 2026-04-09 | joselsegura | ❌ failed | ready |

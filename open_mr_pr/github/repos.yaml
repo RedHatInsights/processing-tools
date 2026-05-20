@@ -11,6 +11,7 @@ github_repos:
   - RedHatInsights/insights-content-template-renderer
   - RedHatInsights/insights-behavioral-spec
   - RedHatInsights/obsint-mocks
+  - RedHatInsights/ocp-advisor-frontend
   - RedHatInsights/insights-ccx-messaging
   - RedHatInsights/data-pipeline
   - RedHatInsights/content-service
