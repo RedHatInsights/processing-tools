@@ -1,6 +1,5 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
 insights-results-aggregator,2504,chore(deps): update go dependencies,2026-05-21T18:00:17Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2504,app/red-hat-konflux,failed,ready
-ccx-upgrades-data-eng,119,chore(deps): update pre-commit hook astral-sh/ruff-pre-commit to v0.15.14,2026-05-21T17:56:58Z,https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/119,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1767,Update GitHub Actions,2026-05-21T17:56:38Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1767,app/red-hat-konflux,failed,ready
 ccx-upgrades-inference,90,chore(deps): update pre-commit hook astral-sh/ruff-pre-commit to v0.15.14,2026-05-21T17:56:29Z,https://github.com/RedHatInsights/ccx-upgrades-inference/pull/90,app/red-hat-konflux,failed,ready
 insights-results-aggregator,2503,chore(deps): update pre-commit hook astral-sh/ruff-pre-commit to v0.15.14,2026-05-21T17:56:13Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2503,app/red-hat-konflux,failed,ready
@@ -9,9 +8,9 @@ ccx-notification-service,1206,fix(deps): update go dependencies,2026-05-21T10:07
 ocp-advisor-frontend,1118,chore(deps): lock file maintenance,2026-05-21T01:55:37Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1118,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1117,fix(deps): update npm minor and patch dependencies,2026-05-20T17:40:39Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1117,app/red-hat-konflux,failed,ready
 insights-ccx-messaging,757,[CCXDEV-16284] Implement memleak workaround from insights-core,2026-05-20T14:00:41Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/757,matysek,failed,draft
-data-pipeline,94,"chore(deps): update dependency boto3 to >=1.43.13,<1.43.14",2026-05-19T22:38:10Z,https://github.com/RedHatInsights/data-pipeline/pull/94,app/red-hat-konflux,failed,ready
+data-pipeline,94,"chore(deps): update dependency boto3 to >=1.43.14,<1.43.15",2026-05-19T22:38:10Z,https://github.com/RedHatInsights/data-pipeline/pull/94,app/red-hat-konflux,failed,ready
 ccx-notification-writer,852,chore(deps): update go dependencies,2026-05-19T14:14:16Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/852,app/red-hat-konflux,failed,ready
-insights-operator-utils,899,chore(deps): update go dependencies,2026-05-19T14:14:09Z,https://github.com/RedHatInsights/insights-operator-utils/pull/899,app/red-hat-konflux,failed,ready
+insights-operator-utils,899,fix(deps): update go dependencies,2026-05-19T14:14:09Z,https://github.com/RedHatInsights/insights-operator-utils/pull/899,app/red-hat-konflux,failed,ready
 insights-results-aggregator-cleaner,752,chore(deps): update go dependencies,2026-05-19T14:13:56Z,https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/752,app/red-hat-konflux,failed,ready
 content-service,865,chore(deps): update go dependencies,2026-05-19T14:13:01Z,https://github.com/RedHatInsights/content-service/pull/865,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1765,🔄 synced file(s) with RedHatInsights/processing-tools,2026-05-19T13:39:44Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1765,app/obsint-processing-app,failed,ready
