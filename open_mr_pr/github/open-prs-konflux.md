@@ -1,11 +1,14 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-05-25 05:36:02*
+*Last updated: 2026-05-26 05:24:29*
 
-**Total Konflux PRs: 16**
+**Total Konflux PRs: 18**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| insights-results-aggregator | [2505](https://github.com/RedHatInsights/insights-results-aggregator/pull/2505) | chore(deps): lock file maintenance ruby dependencies | 2026-05-26 | app/red-hat-konflux | ❌ failed | ready |
+| insights-results-smart-proxy | [1768](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1768) | Lock file maintenance Ruby dependencies | 2026-05-26 | app/red-hat-konflux | ❌ failed | ready |
+| ocp-advisor-frontend | [1120](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1120) | chore(deps): bump the cypress group across 1 directory with 2 updates | 2026-05-25 | app/dependabot | ❌ failed | ready |
 | insights-results-aggregator-mock | [569](https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/569) | Update Go dependencies to v3 | 2026-05-24 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-aggregator | [2504](https://github.com/RedHatInsights/insights-results-aggregator/pull/2504) | chore(deps): update go dependencies | 2026-05-21 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-smart-proxy | [1767](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1767) | Update GitHub Actions | 2026-05-21 | app/red-hat-konflux | ❌ failed | ready |
@@ -14,7 +17,6 @@
 | ocp-advisor-frontend | [1118](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1118) | chore(deps): lock file maintenance | 2026-05-21 | app/red-hat-konflux | ❌ failed | ready |
 | ocp-advisor-frontend | [1117](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1117) | fix(deps): update npm minor and patch dependencies | 2026-05-20 | app/red-hat-konflux | ❌ failed | ready |
 | data-pipeline | [94](https://github.com/RedHatInsights/data-pipeline/pull/94) | chore(deps): update dependency boto3 to >=1.43.14,<1.43.15 | 2026-05-19 | app/red-hat-konflux | ❌ failed | ready |
-| ocp-advisor-frontend | [1115](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1115) | chore(deps): bump the cypress group across 1 directory with 3 updates | 2026-05-19 | app/dependabot | ❌ failed | ready |
 | ocp-advisor-frontend | [1114](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1114) | chore(deps): bump the babel group across 1 directory with 8 updates | 2026-05-19 | app/dependabot | ✅ ok | ready |
 | insights-results-smart-proxy | [1764](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1764) | Update Go dependencies | 2026-05-19 | app/red-hat-konflux | ✅ ok | ready |
 | insights-results-smart-proxy | [1761](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1761) | Update Pre-commit hooks | 2026-05-19 | app/red-hat-konflux | ✅ ok | ready |
