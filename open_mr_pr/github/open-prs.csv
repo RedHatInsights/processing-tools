@@ -1,4 +1,6 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
+ocp-advisor-frontend,1121,chore(deps): update build-tools digest to d1facf7,2026-05-27T01:42:59Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1121,app/red-hat-konflux,ok,ready
+insights-results-aggregator-mock,572,Update registry.access.redhat.com/ubi8/ubi-minimal Docker tag to v8.10-1779772676,2026-05-26T08:24:15Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/572,app/red-hat-konflux,ok,ready
 insights-results-aggregator,2505,chore(deps): lock file maintenance ruby dependencies,2026-05-26T01:38:29Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2505,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1768,Lock file maintenance Ruby dependencies,2026-05-26T00:01:13Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1768,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1120,chore(deps): bump the cypress group across 1 directory with 2 updates,2026-05-25T12:53:01Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1120,app/dependabot,failed,ready
@@ -10,7 +12,7 @@ ccx-notification-service,1206,fix(deps): update go dependencies,2026-05-21T10:07
 ocp-advisor-frontend,1118,chore(deps): lock file maintenance,2026-05-21T01:55:37Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1118,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1117,fix(deps): update npm minor and patch dependencies,2026-05-20T17:40:39Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1117,app/red-hat-konflux,failed,ready
 insights-ccx-messaging,757,[CCXDEV-16284] Implement memleak workaround from insights-core,2026-05-20T14:00:41Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/757,matysek,failed,draft
-data-pipeline,94,"chore(deps): update dependency boto3 to >=1.43.14,<1.43.15",2026-05-19T22:38:10Z,https://github.com/RedHatInsights/data-pipeline/pull/94,app/red-hat-konflux,failed,ready
+data-pipeline,94,"chore(deps): update dependency boto3 to >=1.43.15,<1.43.16",2026-05-19T22:38:10Z,https://github.com/RedHatInsights/data-pipeline/pull/94,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1765,🔄 synced file(s) with RedHatInsights/processing-tools,2026-05-19T13:39:44Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1765,app/obsint-processing-app,failed,ready
 ocp-advisor-frontend,1114,chore(deps): bump the babel group across 1 directory with 8 updates,2026-05-19T11:11:14Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1114,app/dependabot,ok,ready
 insights-results-smart-proxy,1764,Update Go dependencies,2026-05-19T10:26:48Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1764,app/red-hat-konflux,ok,ready
