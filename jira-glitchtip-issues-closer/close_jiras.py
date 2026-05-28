@@ -6,7 +6,7 @@ if __name__ == "__main__":
         MAX_DAYS_OF_INACTIVITY
     )
 
-    for issue in jira_issues_with_last_seen["issues"]:
+    for issue in jira_issues_with_last_seen:
         print(f"Closing {issue['key']}")
         comment = (
             f"This issue has been inactive for {MAX_DAYS_OF_INACTIVITY} days so it might be a "

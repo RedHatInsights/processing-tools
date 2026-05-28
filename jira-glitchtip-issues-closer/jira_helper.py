@@ -7,16 +7,22 @@ JIRA_DOMAIN = "redhat.atlassian.net"
 
 
 @lru_cache
-def get_issues(
-    query="project=CCXDEV AND labels=Glitchtip AND status!=CLOSED",
-    timeout=60,
-):
+def get_jira_client():
     # Define constants
     jira_api_token = os.getenv("JIRA_API_TOKEN")
     jira_email = os.getenv("JIRA_EMAIL")
 
-    client = JIRA(f"https://{JIRA_DOMAIN}", basic_auth=(jira_email, jira_api_token))
+    if not jira_api_token or not jira_email:
+        raise ValueError("JIRA_API_TOKEN and JIRA_EMAIL must be set")
 
+    return JIRA(f"https://{JIRA_DOMAIN}", basic_auth=(jira_email, jira_api_token))
+
+
+def get_issues(
+    query="project=CCXDEV AND labels=Glitchtip AND status!=CLOSED",
+):
+
+    client = get_jira_client()
     results = client.enhanced_search_issues(query)
 
     while results.nextPageToken is not None:
@@ -34,14 +40,8 @@ def close_issue(
     comment="This issue is a duplicate.",
     transition="Closed",
     resolution="Duplicate",
-    timeout=5,
 ):
-    # Define constants
-    jira_api_token = os.getenv("JIRA_API_TOKEN")
-    jira_email = os.getenv("JIRA_EMAIL")
-
-    client = JIRA(f"https://{JIRA_DOMAIN}", basic_auth=(jira_email, jira_api_token))
-
+    client = get_jira_client()
     client.transition_issue(
         issue_id, transition, fields={"resolution": {"name": resolution}}
     )

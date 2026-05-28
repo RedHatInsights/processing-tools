@@ -37,11 +37,11 @@ def get_issues():
 
 
 def get_last_seen_in_days(issue):
-    try:
-        last_seen = datetime.strptime(issue["lastSeen"], GLITCHTIP_DATE_FORMAT)
+    last_seen_in_issue = issue.get("lastSeen", None)
 
-    except KeyError:
+    if last_seen_in_issue is None:
         return None
 
+    last_seen = datetime.strptime(last_seen_in_issue, GLITCHTIP_DATE_FORMAT)
     diff = datetime.now(timezone.utc) - last_seen
     return diff.days

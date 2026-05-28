@@ -29,7 +29,10 @@ class JiraGlitchtipComposite:
         return get_last_seen_in_days(self.glitchtip_issue)
 
     def __repr__(self):
-        return f"JiraGlitchtipComposite(jira_issue={self.jira_issue}, glitchtip_issue={self.glitchtip_issue.get('id', '<missing>')})"
+        return (
+            f"JiraGlitchtipComposite(jira_issue={self.jira_issue}, "
+            f"glitchtip_issue={self.glitchtip_issue.get('id', '<missing>')})"
+        )
 
 
 def get_jira_issues_with_last_seen_older_than(
@@ -48,6 +51,9 @@ def get_jira_issues_with_last_seen_older_than(
             if "https://glitchtip.devshift.net" in label:
                 glitchtip_url = label
                 break
+
+        if not glitchtip_url:
+            continue
 
         issue_data = get_glitchtip_issue(glitchtip_url.split("/")[-1])
         last_seen_in_days = get_last_seen_in_days(issue_data)
@@ -69,8 +75,10 @@ def get_glitchtip_issues_with_no_jira(max_days_of_inactivity: int):
     issues = get_glitchtip_issues()
     for issue in issues:
         last_seen_in_days = get_last_seen_in_days(issue)
+
         if last_seen_in_days >= max_days_of_inactivity:
             continue
+
         glitchtip_url = f"https://{GLITCHTIP_DOMAIN}/ccx/issues/{issue['id']}"
         jira_issues = get_jira_issues(
             f'project = CCXDEV AND labels = "{glitchtip_url}" AND status != CLOSED'
