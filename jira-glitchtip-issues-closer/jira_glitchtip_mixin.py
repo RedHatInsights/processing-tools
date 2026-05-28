@@ -16,6 +16,10 @@ class JiraGlitchtipComposite:
         self.jira_issue = jira_issue
         self.glitchtip_issue = glitchtip_issue
 
+    @property
+    def jira_key(self):
+        return self.jira_issue.key
+
     def jira_md_link(self):
         return f"[{self.jira_issue.key}]({self.jira_issue.permalink()})"
 
