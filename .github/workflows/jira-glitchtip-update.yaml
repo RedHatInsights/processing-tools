@@ -32,6 +32,7 @@ jobs:
       - name: Update README with integration data
         env:
           MAX_DAYS_OF_INACTIVITY: 7
+          JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
           JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
           GLITCHTIP_API_TOKEN: ${{ secrets.GLITCHTIP_API_TOKEN }}
         run: |
