@@ -1,4 +1,6 @@
 import os
+from datetime import datetime, timezone
+from functools import lru_cache
 
 import requests
 
@@ -24,6 +26,7 @@ def get_issue(issue_id):
     return response.json()
 
 
+@lru_cache
 def get_issues():
     # Send the GET request to Glitchtip API
     response = requests.get(
@@ -31,3 +34,14 @@ def get_issues():
         headers=glitchtip_headers,
     )
     return response.json()
+
+
+def get_last_seen_in_days(issue):
+    try:
+        last_seen = datetime.strptime(issue["lastSeen"], GLITCHTIP_DATE_FORMAT)
+
+    except KeyError:
+        return None
+
+    diff = datetime.now(timezone.utc) - last_seen
+    return diff.days

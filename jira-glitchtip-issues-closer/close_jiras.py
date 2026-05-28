@@ -1,4 +1,4 @@
-from jira import close_issue
+from jira_helper import close_issue
 from main import MAX_DAYS_OF_INACTIVITY, get_jira_issues_with_last_seen_older_than
 
 if __name__ == "__main__":
@@ -15,7 +15,4 @@ if __name__ == "__main__":
             "happens again."
         )
 
-        response = close_issue(
-            issue["id"],
-            comment=comment,
-        )
+        close_issue(issue["id"], comment=comment)
