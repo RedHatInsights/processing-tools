@@ -29,8 +29,7 @@ TEMPLATE = """# Glitchtip <-> Jira integration checker
 
 | Glitchtip | Days since last event |
 |-----------|----------------------|
-{glitchtip_table_rows}
-"""
+{glitchtip_table_rows}"""
 
 
 def format_issues_as_markdown(data):
