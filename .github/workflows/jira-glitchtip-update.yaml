@@ -39,20 +39,22 @@ jobs:
           cd jira-glitchtip-issues-closer
           python3 main.py > README.md
 
-      - name: Configure Git
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+      - id: app_token
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: ${{ secrets.OBSINT_PROCESSING_APP_CLIENT_ID }}
+          private-key: ${{ secrets.OBSINT_PROCESSING_APP_PRIVATE_KEY }}
+          owner: RedHatInsights
 
-      - name: Commit and push changes
-        run: |
-          git add jira-glitchtip-issues-closer/README.md
-
-          if git diff --cached --quiet; then
-            echo "📊 No changes to README.md"
-          else
-            echo "📊 Committing updated Jira-Glitchtip integration data..."
-            git commit -m "chore: update Jira-Glitchtip integration data [bot]"
-            git pull --rebase origin main || git pull --rebase origin master || true
-            git push
-          fi
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ steps.app_token.outputs.token }}
+          title: "chore: update Jira-Glitchtip integration data [bot]"
+          body: "This PR is automatically created by the obsint-processing-app bot."
+          branch: obsint-processing-app/jira-glitchtip-integration-data
+          labels: "bot"
+          commit-message: "chore: update Jira-Glitchtip integration data [bot]"
+          committer: "obsint-processing-app[bot] <274936164+obsint-processing-app[bot]@users.noreply.github.com>"
+          author: "obsint-processing-app[bot] <274936164+obsint-processing-app[bot]@users.noreply.github.com>"
+          delete-branch: true
