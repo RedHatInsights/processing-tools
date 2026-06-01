@@ -1,13 +1,11 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-05-31 05:34:20*
+*Last updated: 2026-06-01 05:41:35*
 
-**Total Konflux PRs: 24**
+**Total Konflux PRs: 22**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| insights-results-aggregator-exporter | [657](https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/657) | chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v43.205.2 | 2026-05-31 | app/red-hat-konflux | ✅ ok | ready |
-| content-service | [875](https://github.com/RedHatInsights/content-service/pull/875) | chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v43.205.2 | 2026-05-31 | app/red-hat-konflux | ✅ ok | ready |
 | ocp-advisor-frontend | [1122](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1122) | chore(deps): update dependency github.com/redhatinsights/konflux-pipelines to v1.68.0 | 2026-05-30 | app/red-hat-konflux | ✅ ok | ready |
 | insights-results-aggregator-exporter | [648](https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/648) | fix(deps): update go dependencies | 2026-05-28 | app/red-hat-konflux | ❌ failed | ready |
 | ocp-advisor-frontend | [1121](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1121) | chore(deps): update build-tools digest to 72c2bef | 2026-05-27 | app/red-hat-konflux | ✅ ok | ready |
