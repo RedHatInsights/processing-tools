@@ -1,28 +1,24 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-ocp-advisor-frontend,1122,chore(deps): update dependency github.com/redhatinsights/konflux-pipelines to v1.68.0,2026-05-30T05:39:42Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1122,app/red-hat-konflux,ok,ready
+obsint-mocks,268,chore(deps): update module github.com/golang-jwt/jwt/v4 to v5,2026-06-02T05:33:34Z,https://github.com/RedHatInsights/obsint-mocks/pull/268,app/red-hat-konflux,ok,ready
+parquet-factory,125,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v43.207.4,2026-06-02T01:19:56Z,https://github.com/RedHatInsights/parquet-factory/pull/125,app/red-hat-konflux,failed,ready
+insights-results-aggregator-mock,582,Update Go dependencies to v3,2026-06-01T17:31:46Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/582,app/red-hat-konflux,failed,ready
+content-service,877,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v43.207.4,2026-06-01T17:06:00Z,https://github.com/RedHatInsights/content-service/pull/877,app/red-hat-konflux,failed,ready
+insights-results-smart-proxy,1769,Update GitHub Actions,2026-06-01T13:36:53Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1769,app/red-hat-konflux,failed,ready
+ocp-advisor-frontend,1123,fix(deps): update npm minor and patch dependencies,2026-06-01T13:14:20Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1123,app/red-hat-konflux,failed,ready
+insights-results-aggregator,2506,Update used go version for tests,2026-06-01T11:47:08Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2506,joselsegura,failed,ready
 insights-results-aggregator-exporter,648,fix(deps): update go dependencies,2026-05-28T04:57:28Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/648,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1121,chore(deps): update build-tools digest to 72c2bef,2026-05-27T01:42:59Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1121,app/red-hat-konflux,ok,ready
 insights-results-aggregator-mock,572,Update registry.access.redhat.com/ubi8/ubi-minimal Docker tag to v8.10-1779857793,2026-05-26T08:24:15Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/572,app/red-hat-konflux,ok,ready
 insights-results-aggregator,2505,chore(deps): lock file maintenance ruby dependencies,2026-05-26T01:38:29Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2505,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1768,Lock file maintenance Ruby dependencies,2026-05-26T00:01:13Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1768,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1120,chore(deps): bump the cypress group across 1 directory with 2 updates,2026-05-25T12:53:01Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1120,app/dependabot,failed,ready
-insights-results-aggregator-mock,569,Update Go dependencies,2026-05-24T21:54:31Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/569,app/red-hat-konflux,failed,ready
 insights-results-aggregator,2504,fix(deps): update go dependencies,2026-05-21T18:00:17Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2504,app/red-hat-konflux,failed,ready
-insights-results-smart-proxy,1767,Update GitHub Actions,2026-05-21T17:56:38Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1767,app/red-hat-konflux,failed,ready
 insights-results-aggregator,2503,chore(deps): update pre-commit hooks,2026-05-21T17:56:13Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2503,app/red-hat-konflux,failed,ready
 ccx-notification-service,1206,fix(deps): update go dependencies,2026-05-21T10:07:37Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1206,app/red-hat-konflux,ok,ready
-ocp-advisor-frontend,1118,chore(deps): lock file maintenance,2026-05-21T01:55:37Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1118,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1117,fix(deps): update npm minor and patch dependencies,2026-05-20T17:40:39Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1117,app/red-hat-konflux,failed,ready
 insights-ccx-messaging,757,[CCXDEV-16284] Implement memleak workaround from insights-core,2026-05-20T14:00:41Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/757,matysek,ok,ready
-data-pipeline,94,"chore(deps): update dependency boto3 to >=1.43.18,<1.43.19",2026-05-19T22:38:10Z,https://github.com/RedHatInsights/data-pipeline/pull/94,app/red-hat-konflux,failed,ready
+data-pipeline,94,"chore(deps): update dependency boto3 to >=1.43.19,<1.43.20",2026-05-19T22:38:10Z,https://github.com/RedHatInsights/data-pipeline/pull/94,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1765,🔄 synced file(s) with RedHatInsights/processing-tools,2026-05-19T13:39:44Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1765,app/obsint-processing-app,failed,ready
-ocp-advisor-frontend,1114,chore(deps): bump the babel group across 1 directory with 8 updates,2026-05-19T11:11:14Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1114,app/dependabot,ok,ready
 insights-results-smart-proxy,1764,Update Go dependencies,2026-05-19T10:26:48Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1764,app/red-hat-konflux,ok,ready
 insights-results-smart-proxy,1761,Update Pre-commit hooks,2026-05-19T01:41:41Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1761,app/red-hat-konflux,ok,ready
 insights-ccx-messaging,753,chore(deps): update python dependencies,2026-05-18T10:23:20Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/753,app/red-hat-konflux,failed,ready
 insights-results-aggregator,2476,[HOLD] Use reusable workflow,2026-05-04T09:44:27Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2476,joselsegura,failed,ready
 data-pipeline,56,Test PR auto-merge flag,2026-04-15T07:13:13Z,https://github.com/RedHatInsights/data-pipeline/pull/56,app/obsint-processing-app,ok,ready
-ocp-advisor-frontend,1040,chore(deps): bump @eslint/js from 9.36.0 to 10.0.1,2025-10-20T12:08:39Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1040,app/dependabot,failed,ready
-ocp-advisor-frontend,1028,chore(deps): bump typescript from 5.8.3 to 5.9.3,2025-10-13T13:07:33Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1028,app/dependabot,failed,ready
-ocp-advisor-frontend,1004,chore(deps): bump the lint group across 1 directory with 8 updates,2025-10-06T11:39:32Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1004,app/dependabot,failed,ready
 insights-operator-gathering-conditions-service,371,Drop legacy building,2025-03-28T12:35:04Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/371,ikerreyes,failed,draft

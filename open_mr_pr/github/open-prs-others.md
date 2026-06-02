@@ -1,11 +1,12 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-06-01 05:41:35*
+*Last updated: 2026-06-02 05:38:02*
 
-**Total PRs: 5**
+**Total PRs: 6**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| insights-results-aggregator | [2506](https://github.com/RedHatInsights/insights-results-aggregator/pull/2506) | Update used go version for tests | 2026-06-01 | joselsegura | ❌ failed | ready |
 | insights-ccx-messaging | [757](https://github.com/RedHatInsights/insights-ccx-messaging/pull/757) | [CCXDEV-16284] Implement memleak workaround from insights-core | 2026-05-20 | matysek | ✅ ok | ready |
 | insights-results-smart-proxy | [1765](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1765) | 🔄 synced file(s) with RedHatInsights/processing-tools | 2026-05-19 | app/obsint-processing-app | ❌ failed | ready |
 | insights-results-aggregator | [2476](https://github.com/RedHatInsights/insights-results-aggregator/pull/2476) | [HOLD] Use reusable workflow | 2026-05-04 | joselsegura | ❌ failed | ready |
