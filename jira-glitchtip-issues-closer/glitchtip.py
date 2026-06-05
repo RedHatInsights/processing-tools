@@ -23,6 +23,10 @@ def get_issue(issue_id):
         f"https://{GLITCHTIP_DOMAIN}/api/0/issues/{issue_id}/",
         headers=glitchtip_headers,
     )
+
+    if response.status_code == 404:
+        return None
+
     return response.json()
 
 

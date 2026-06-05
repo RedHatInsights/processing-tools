@@ -1,0 +1,36 @@
+name: Update Jira-Glitchtip Integration Data
+
+on:
+  schedule:
+    - cron: '0 4 * * *'  # daily at 4AM UTC
+  workflow_dispatch:     # allow manual execution
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.14'
+
+      - name: Install dependencies
+        run: |
+          cd jira-glitchtip-issues-closer
+          pip install -r requirements.txt
+
+      - name: Update Jira issues severities
+        env:
+          JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+          GLITCHTIP_API_TOKEN: ${{ secrets.GLITCHTIP_API_TOKEN }}
+        run: |
+          cd jira-glitchtip-issues-closer
+          python3 set_severities.py --dry-run
