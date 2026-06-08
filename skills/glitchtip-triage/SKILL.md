@@ -196,9 +196,9 @@ Do NOT add this ticket to the triaged pool. Move to the next ticket.
 
 #### 4d. Find the source repository
 
-If not a duplicate, you need to investigate the code. First check the known repo mapping in `references/known_repos.md` — it maps `project:*` labels to repository URLs and saves time on discovery. If the service is listed there, use that mapping directly.
+If not a duplicate, you need to investigate the code. First load the `team-info` skill (`skills/team-info/SKILL.md` in the processing-tools repo) — its **Repositories** tables list all team repos and their descriptions, and the **Data Flow** section explains which services share codebases (e.g., archive-sync, dvo-extractor, rules-processing, and rules-uploader are all deployments of insights-ccx-messaging). Use the `project:*` label from the ticket to find the matching repo.
 
-If not in the known mapping, use these sources:
+If the team-info skill doesn't resolve it, use these sources:
 
 **Source 1 — the stack trace itself.** The stack trace file paths reveal the real package name:
 - Python: the top-level directory in the path (e.g., `ccx_messaging/watchers/stats_watcher.py` → package is `ccx_messaging`, repo is likely `ccx-messaging` or `insights-ccx-messaging`)
@@ -218,8 +218,6 @@ Look for YAML files whose name or content matches the service name. These files 
 - `git@gitlab.cee.redhat.com:ccx/{package-name}.git`
 
 If none of these work, ask the user which repo contains the service.
-
-**When you discover a new mapping**, update `references/known_repos.md` so future triage runs benefit.
 
 #### 4e. Investigate the root cause
 
@@ -327,4 +325,3 @@ rm -rf /tmp/glitchtip-triage/
 - **Never modify or delete existing comments.** Only add new `[AI suggestion]` comments.
 - **One comment per ticket.** If you find both a duplicate relationship and a root cause, prefer the duplicate comment (the original ticket should have the root cause analysis).
 - **Respect rate limits.** Space Glitchtip API calls with a brief pause (1-2 seconds between requests) if processing many tickets.
-- **Update the known repo mapping.** When you discover a service-to-repo mapping not in `references/known_repos.md`, add it so future runs skip the discovery step.
