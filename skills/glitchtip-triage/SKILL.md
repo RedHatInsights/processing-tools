@@ -192,6 +192,12 @@ Example:
 [AI suggestion] This seems to be duplicate of https://redhat.atlassian.net/browse/CCXDEV-12345. Both are "invalid request ID" validation errors from the same code path (`router_utils.go:193 ValidateRequestID`). Glitchtip creates a separate issue for each unique request ID because the ID is embedded in the error message string. To fix, change the log at `router_utils.go:193` from `log.Error().Err(err).Msg(message)` (where `message` contains the request ID) to `log.Error().Str("request_id", requestID).Msg("invalid request ID")` — this keeps the ID as a structured field but uses a static message string, so Glitchtip groups all occurrences into a single issue.
 ```
 
+Also set the priority to **Low** — the original ticket carries the real priority:
+
+```bash
+jira issue edit CCXDEV-XXXXX --priority Low --no-input
+```
+
 Do NOT add this ticket to the triaged pool. Move to the next ticket.
 
 #### 4d. Find the source repository
@@ -242,7 +248,30 @@ If already cloned from a previous ticket, reuse the existing clone.
 4. Run `git log --oneline -10 -- <file>` to see if a recent change introduced the issue.
 5. Formulate a specific, actionable fix.
 
-#### 4f. Post the triage comment
+#### 4f. Set priority and post the triage comment
+
+After classifying the error (step 4e), set the ticket priority. Consider these factors together — no single factor determines priority alone:
+
+- **Classification**: code bug, data quality, or infrastructure/transient
+- **Occurrence count**: from Glitchtip (`count`, `firstSeen`/`lastSeen`)
+- **Environment**: prod errors are more urgent than stage
+- **Data loss risk**: does the error cause data to be silently dropped, truncated, or written incorrectly?
+- **Service stability risk**: can the error crash the service, exhaust resources, or trigger a restart loop?
+- **User-facing impact**: does the error result in failed API responses, broken UI, or missed notifications?
+
+| Priority | When to use |
+|----------|-------------|
+| Blocker | Service crash or restart loop in prod; confirmed data loss in prod |
+| Critical | Data loss without crash (e.g., failed writes, dropped messages); very high frequency (>1000) user-facing error in prod |
+| High | Code bug in prod without data loss; data quality errors in prod with high frequency; infrastructure error indicating a persistent (non-transient) outage |
+| Normal | Code bugs in stage; moderate frequency data quality errors; infrastructure errors in prod that are transient and self-healing |
+| Low | Low frequency infrastructure/transient errors; infrastructure errors in stage; all duplicates (the original ticket carries the priority) |
+
+```bash
+jira issue edit CCXDEV-XXXXX --priority <Blocker|Critical|High|Normal|Low> --no-input
+```
+
+In dry-run mode, show the priority that would be set alongside the comment.
 
 **For code bugs and data quality errors**, use this template:
 
