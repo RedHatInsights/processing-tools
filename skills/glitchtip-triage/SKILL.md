@@ -198,6 +198,14 @@ Also set the priority to **Low** — the original ticket carries the real priori
 jira issue edit CCXDEV-XXXXX --priority Low --no-input
 ```
 
+Link the duplicate ticket to the original in Jira so the relationship is visible in both tickets' link sections:
+
+```bash
+jira issue link CCXDEV-XXXXX CCXDEV-YYYYY Duplicate
+```
+
+Where `CCXDEV-XXXXX` is the duplicate ticket and `CCXDEV-YYYYY` is the original. This creates a "duplicates / is duplicated by" relationship in Jira.
+
 Do NOT add this ticket to the triaged pool. Move to the next ticket.
 
 #### 4d. Find the source repository
