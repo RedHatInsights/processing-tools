@@ -1,5 +1,5 @@
 ---
-name: glitchtip-triage
+name: triage-glitchtip
 description: Triage Glitchtip-sourced Jira tickets in the CCXDEV project — detect duplicates, investigate root causes via stack traces and source code, and post "[AI suggestion]" comments. Use this skill whenever the user mentions triaging Glitchtip errors, reviewing ccx-processing/obsint-processing Jira tickets, deduplicating error reports, or investigating production/staging errors tracked in Jira with the glitchtip label.
 ---
 
