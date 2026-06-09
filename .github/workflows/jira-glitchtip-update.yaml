@@ -50,6 +50,7 @@ jobs:
         uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ steps.app_token.outputs.token }}
+          sign-commits: true
           title: "chore: update Jira-Glitchtip integration data [bot]"
           body: "This PR is automatically created by the obsint-processing-app bot."
           branch: obsint-processing-app/jira-glitchtip-integration-data
