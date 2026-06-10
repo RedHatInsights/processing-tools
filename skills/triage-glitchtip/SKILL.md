@@ -10,11 +10,7 @@ Automate triage of Jira tickets created by the "App SRE Jira bot" from Glitchtip
 ## Prerequisites
 
 - **jira CLI**: Must be configured and authenticated.
-- **Glitchtip API token**: Read from the file `~/.config/glitchtip/token` (a single-line file containing just the token). Environment variables do not persist between shell invocations in Claude Code, so the token must be stored in a file. If the file does not exist, ask the user to create it:
-  ```bash
-  mkdir -p ~/.config/glitchtip && echo "YOUR_TOKEN_HERE" > ~/.config/glitchtip/token && chmod 600 ~/.config/glitchtip/token
-  ```
-  The token can be obtained from `https://glitchtip.devshift.net` under Profile > Auth Tokens. In all `curl` commands, read the token inline: `-H "Authorization: Bearer $(cat ~/.config/glitchtip/token)"`.
+- **Glitchtip API token**: Read from the file `~/.config/glitchtip/token` (a single-line file containing just the token). Environment variables do not persist between shell invocations in Claude Code, so the token must be stored in a file. If the file does not exist, ask the user to save their token to `~/.config/glitchtip/token`. The token can be obtained from `https://glitchtip.devshift.net` under Profile > Auth Tokens. In all `curl` commands, read the token inline: `-H "Authorization: Bearer $(cat ~/.config/glitchtip/token)"`.
 - **Git access via SSH**: All repositories (both GitHub and gitlab.cee.redhat.com) are cloned over SSH. Always use SSH URLs:
   - GitHub: `git@github.com:RedHatInsights/{repo}.git`
   - GitLab: `git@gitlab.cee.redhat.com:{group}/{repo}.git`
