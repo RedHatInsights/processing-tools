@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Parse Glitchtip event JSON from stdin and print structured error data."""
+
 import json
 import sys
 
@@ -12,8 +13,8 @@ for ev in data:
                 print("Value:", val.get("value"))
                 for f in val.get("stacktrace", {}).get("frames") or []:
                     print(
-                        f'  {f.get("filename", "?")}:{f.get("lineNo", "?")}'
-                        f' in {f.get("function", "?")}'
+                        f"  {f.get('filename', '?')}:{f.get('lineNo', '?')}"
+                        f" in {f.get('function', '?')}"
                     )
         elif entry.get("type") == "message":
             print("Message:", entry.get("data", {}).get("formatted", ""))

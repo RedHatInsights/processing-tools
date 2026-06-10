@@ -54,29 +54,18 @@ Paginate if there are more than 100 results (increment the paginate offset).
 
 ### Phase 2: Separate triaged from untriaged
 
-For each ticket, fetch its **Jira comments** (this is where `[AI suggestion]` comments live — not in Glitchtip):
+Use the `ai-triaged` label to split tickets without fetching comments for every one:
 
-```bash
-jira issue view CCXDEV-XXXXX --comments 50 --plain
-```
+- **Untriaged**: Tickets from Phase 1 that do **not** have the `ai-triaged` label.
+- **Triaged candidates**: Tickets from Phase 1 that **do** have the `ai-triaged` label.
 
-To speed this up when there are many tickets, batch the comment checks — run several `jira issue view` commands in a single shell invocation using a for loop, piping through `grep` to check for `[AI suggestion]`:
+To build the triaged pool from the candidates, fetch their comments and check the content to distinguish root-cause tickets from duplicate-marked ones.
 
-```bash
-for ticket in CCXDEV-16388 CCXDEV-16387 CCXDEV-16386; do
-  echo "=== $ticket ==="
-  jira issue view $ticket --comments 50 --plain 2>&1 | grep -A2 "\[AI suggestion\]" || echo "No AI suggestion comment"
-done
-```
+Split the triaged candidates into:
+- **Triaged pool**: Tickets whose `[AI suggestion]` comment contains root-cause analysis (not a duplicate marker). These are the reference tickets for duplicate detection.
+- **Duplicates** (excluded from pool): Tickets whose comment starts with `[AI suggestion] This seems to be duplicate of`.
 
-Split into two groups based on whether the ticket has an `[AI suggestion]` Jira comment:
-
-- **Triaged pool**: Tickets whose `[AI suggestion]` comment contains root-cause analysis (not a duplicate marker). These are the reference tickets for duplicate detection. Only tickets with genuine root-cause investigation belong here — tickets that were themselves marked as duplicates do not enter the pool.
-- **Needs triage**: Tickets with no `[AI suggestion]` comment at all.
-
-When splitting tickets that already have `[AI suggestion]` comments, check the content: if it starts with `[AI suggestion] This seems to be duplicate of`, it is a duplicate marker — do not add it to the triaged pool. Only add tickets whose `[AI suggestion]` comment contains root-cause analysis.
-
-Apply the user's scope restriction (ticket IDs or count limit) to the "Needs triage" group only.
+Apply the user's scope restriction (ticket IDs or count limit) to the untriaged group only.
 
 ### Phase 3: Build the triaged-pool context
 
@@ -132,20 +121,8 @@ From the response, extract:
 
 ```bash
 curl -s -H "Authorization: Bearer $(cat ~/.config/glitchtip/token)" \
-  "https://glitchtip.devshift.net/api/0/issues/{issue_id}/events/?limit=3" | python3 -c "
-import json, sys
-data = json.load(sys.stdin)
-for ev in data:
-    for entry in ev.get('entries', []):
-        if entry.get('type') == 'exception':
-            for val in entry['data'].get('values', []):
-                print('Type:', val.get('type'))
-                print('Value:', val.get('value'))
-                for f in (val.get('stacktrace', {}).get('frames') or []):
-                    print(f'  {f.get(\"filename\",\"?\")}:{f.get(\"lineNo\",\"?\")} in {f.get(\"function\",\"?\")}')
-        elif entry.get('type') == 'message':
-            print('Message:', entry.get('data', {}).get('formatted', ''))
-"
+  "https://glitchtip.devshift.net/api/0/issues/{issue_id}/events/?limit=3" \
+  | python3 skills/triage-glitchtip/scripts/parse_events.py
 ```
 
 **Go stack traces often lack file paths.** Go binaries compiled without debug info show `?` as the filename — you get only `?:lineNo in functionName`. When this happens, search the repo by function name (`grep -rn "func.*functionName"`) rather than by file path.
@@ -168,7 +145,7 @@ Signs of a duplicate based on logs:
 
 **If duplicate — post this comment** (or show it in dry-run):
 
-```
+```text
 [AI suggestion] This seems to be duplicate of https://redhat.atlassian.net/browse/CCXDEV-YYYYY. {logging_fix}
 ```
 
@@ -177,14 +154,14 @@ Where `{logging_fix}` suggests how to prevent this duplicate ticket from being c
 **Pattern 1: Same error logged at multiple code paths.** The outer layer catches and re-logs the error at ERROR level, which triggers a separate Glitchtip issue. Suggest changing that outer log statement from ERROR to WARNING — this preserves the diagnostic information in logs but prevents Glitchtip from creating a separate issue for it (Glitchtip only captures ERROR and above).
 
 Example:
-```
+```text
 [AI suggestion] This seems to be duplicate of https://redhat.atlassian.net/browse/CCXDEV-12345. The error originates in `storage.go:142` (archive decompression) and is re-logged at ERROR level in `handler.go:89`. Consider lowering the log level in `handler.go:89` from ERROR to WARNING — the root error is already captured by Glitchtip via the original log in `storage.go`, so the second ERROR-level log just creates a duplicate ticket.
 ```
 
 **Pattern 2: Parametrized error messages.** The error message embeds variable data (e.g., a request ID, item ID, UUID), so Glitchtip treats each unique value as a separate issue. The fix is to remove the variable data from the message string and pass it as a structured field instead. Do NOT suggest lowering the log level — that would silence the error entirely, losing real issues. The error should still be logged at ERROR level, just with a static message so all occurrences group into one Glitchtip issue.
 
 Example:
-```
+```text
 [AI suggestion] This seems to be duplicate of https://redhat.atlassian.net/browse/CCXDEV-12345. Both are "invalid request ID" validation errors from the same code path (`router_utils.go:193 ValidateRequestID`). Glitchtip creates a separate issue for each unique request ID because the ID is embedded in the error message string. To fix, change the log at `router_utils.go:193` from `log.Error().Err(err).Msg(message)` (where `message` contains the request ID) to `log.Error().Str("request_id", requestID).Msg("invalid request ID")` — this keeps the ID as a structured field but uses a static message string, so Glitchtip groups all occurrences into a single issue.
 ```
 
@@ -201,6 +178,12 @@ jira issue link CCXDEV-XXXXX CCXDEV-YYYYY Duplicate
 ```
 
 Where `CCXDEV-XXXXX` is the duplicate ticket and `CCXDEV-YYYYY` is the original. This creates a "duplicates / is duplicated by" relationship in Jira.
+
+Unless in dry-run mode, add the `ai-triaged` label so the ticket is excluded from future triage runs:
+
+```bash
+jira issue edit CCXDEV-XXXXX --label ai-triaged --no-input
+```
 
 Do NOT add this ticket to the triaged pool. Move to the next ticket.
 
@@ -317,13 +300,19 @@ jira issue comment add CCXDEV-XXXXX --body "$(cat /tmp/glitchtip-comment.txt)" -
 
 In dry-run mode, display the comment content and target ticket without posting.
 
+Unless in dry-run mode, add the `ai-triaged` label so the ticket is recognized as triaged in future runs:
+
+```bash
+jira issue edit CCXDEV-XXXXX --label ai-triaged --no-input
+```
+
 **Add this ticket to the triaged pool** (with its stack trace and root-cause comment) so subsequent tickets can be matched against it.
 
 ### Phase 5: Summary
 
 After processing all tickets, present a summary:
 
-```
+```text
 ## Triage Summary
 
 **Processed**: X tickets
