@@ -23,17 +23,25 @@ If tools are unavailable, call `mcp_auth` first, then retry.
 Get `cloudId` via `getAccessibleAtlassianResources` (Red Hat site:
 `https://redhat.atlassian.net`).
 
+## Defaults
+
+- **Project:** CCXDEV (override with `--project KEY`)
+- **Epic status filter:** In Progress only (skip New, To Do, Closed, Done, Resolved)
+
 ## Step 1: Find in-progress epics
 
 Search with this JQL (adjust labels only if the user specifies otherwise):
 
 ```jql
-project = CCXDEV
+project = {PROJECT}
 AND issuetype = Epic
 AND status = "In Progress"
+AND fixVersion = "{CURRENT_QUARTER}"
 AND labels in (CCX-PROCESSING, ccx-processing, obsint-processing)
 ORDER BY due ASC
 ```
+
+Derive the fix version from today's date: {YEAR}Q{QUARTER} (e.g. 2026Q2 for April–June 2026).
 
 Call `searchJiraIssuesUsingJql` with fields:
 `summary`, `status`, `duedate`, `labels`, `assignee`, `priority`,
