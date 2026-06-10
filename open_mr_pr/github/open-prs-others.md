@@ -1,13 +1,12 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-06-09 09:20:32*
+*Last updated: 2026-06-10 05:35:46*
 
-**Total PRs: 5**
+**Total PRs: 4**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
 | data-pipeline | [103](https://github.com/RedHatInsights/data-pipeline/pull/103) |  [CCXDEV-16284] Update the ccx-messaging dependency - memleak fix part2 - insights-core workaround | 2026-06-08 | matysek | ❌ failed | ready |
-| ocp-advisor-frontend | [1130](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1130) | 🔄 synced file(s) with RedHatInsights/processing-tools | 2026-06-05 | app/obsint-processing-app | ✅ ok | ready |
-| insights-results-smart-proxy | [1765](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1765) | 🔄 synced file(s) with RedHatInsights/processing-tools | 2026-05-19 | app/obsint-processing-app | ✅ ok | ready |
+| ocp-advisor-frontend | [1130](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1130) | 🔄 synced file(s) with RedHatInsights/processing-tools | 2026-06-05 | app/obsint-processing-app | ❌ failed | ready |
 | data-pipeline | [56](https://github.com/RedHatInsights/data-pipeline/pull/56) | Test PR auto-merge flag | 2026-04-15 | app/obsint-processing-app | ✅ ok | ready |
 | insights-operator-gathering-conditions-service | [371](https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/371) | Drop legacy building | 2025-03-28 | ikerreyes | ❌ failed | draft |
