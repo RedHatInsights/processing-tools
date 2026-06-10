@@ -91,3 +91,11 @@ def get_glitchtip_issues_with_no_jira(max_days_of_inactivity: int):
             out.append({"glitchtip_url": glitchtip_url, "diff": last_seen_in_days})
 
     return out
+
+
+def get_glitchtip_issue_from_jira_issue(jira_issue):
+    for label in jira_issue.get_field("labels"):
+        if "https://glitchtip.devshift.net" in label:
+            return get_glitchtip_issue(label.split("/")[-1])
+
+    return None
