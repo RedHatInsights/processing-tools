@@ -1,4 +1,4 @@
-name: Update Jira-Glitchtip Integration Data
+name: Update Jira issues severity
 
 on:
   schedule:
@@ -33,4 +33,4 @@ jobs:
           GLITCHTIP_API_TOKEN: ${{ secrets.GLITCHTIP_API_TOKEN }}
         run: |
           cd jira-glitchtip-issues-closer
-          python3 set_severities.py --dry-run
+          python3 set_severities.py
