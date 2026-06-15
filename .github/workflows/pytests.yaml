@@ -80,7 +80,7 @@ jobs:
 
       - name: Push coverage report to Codecov
         if: inputs.coverage == true && inputs.python_version == '3.11'
-        uses: codecov/codecov-action@v6
+        uses: codecov/codecov-action@v7
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           flags: unit-tests
