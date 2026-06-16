@@ -1,11 +1,16 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-insights-ccx-messaging,783,Fix python-version and update badges,2026-06-12T14:53:29Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/783,joselsegura,failed,ready
-data-pipeline,104,Update badges,2026-06-12T14:30:03Z,https://github.com/RedHatInsights/data-pipeline/pull/104,joselsegura,ok,ready
-ocp-advisor-frontend,1131,fix(deps): update npm minor and patch dependencies,2026-06-05T17:31:49Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1131,app/red-hat-konflux,failed,ready
+obsint-mocks,286,chore(deps): update module github.com/golang-jwt/jwt/v4 to v5,2026-06-16T02:33:35Z,https://github.com/RedHatInsights/obsint-mocks/pull/286,app/red-hat-konflux,ok,ready
+ocp-advisor-frontend,1137,chore(deps): lock file maintenance,2026-06-16T02:07:34Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1137,app/red-hat-konflux,ok,ready
+ocp-advisor-frontend,1136,chore(deps): update codecov/codecov-action action to v7,2026-06-15T18:43:00Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1136,app/red-hat-konflux,ok,ready
+ocp-advisor-frontend,1135,chore(deps): update build-tools digest to 6bdef6f,2026-06-15T18:41:34Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1135,app/red-hat-konflux,ok,ready
+insights-results-smart-proxy,1770,Update Pre-commit hooks,2026-06-15T17:44:37Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1770,app/red-hat-konflux,ok,ready
+insights-behavioral-spec,799,Update pre-commit hook astral-sh/ruff-pre-commit to v0.15.17,2026-06-15T17:40:35Z,https://github.com/RedHatInsights/insights-behavioral-spec/pull/799,app/red-hat-konflux,failed,ready
+ccx-upgrades-inference,111,chore(deps): update pre-commit hooks,2026-06-15T17:31:00Z,https://github.com/RedHatInsights/ccx-upgrades-inference/pull/111,app/red-hat-konflux,failed,ready
+ocp-advisor-frontend,1131,fix(deps): update npm minor and patch dependencies,2026-06-05T17:31:49Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1131,app/red-hat-konflux,ok,ready
 ocp-advisor-frontend,1130,🔄 synced file(s) with RedHatInsights/processing-tools,2026-06-05T08:32:00Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1130,app/obsint-processing-app,failed,ready
 insights-results-smart-proxy,1769,Update GitHub Actions,2026-06-01T13:36:53Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1769,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1768,Lock file maintenance Ruby dependencies,2026-05-26T00:01:13Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1768,app/red-hat-konflux,failed,ready
-data-pipeline,94,"chore(deps): update dependency boto3 to >=1.43.23,<1.43.24",2026-05-19T22:38:10Z,https://github.com/RedHatInsights/data-pipeline/pull/94,app/red-hat-konflux,failed,ready
+data-pipeline,94,"chore(deps): update dependency boto3 to >=1.43.29,<1.43.30",2026-05-19T22:38:10Z,https://github.com/RedHatInsights/data-pipeline/pull/94,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1764,Update Go dependencies,2026-05-19T10:26:48Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1764,app/red-hat-konflux,ok,ready
 insights-ccx-messaging,753,chore(deps): update python dependencies,2026-05-18T10:23:20Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/753,app/red-hat-konflux,failed,ready
 data-pipeline,56,Test PR auto-merge flag,2026-04-15T07:13:13Z,https://github.com/RedHatInsights/data-pipeline/pull/56,app/obsint-processing-app,ok,ready
