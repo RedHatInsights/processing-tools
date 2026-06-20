@@ -41,7 +41,7 @@ jobs:
         image: registry.access.redhat.com/ubi9/go-toolset:latest
     name: Go tests
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Prepare Go env
         run: echo "$(go env GOPATH)/bin" >> ${GITHUB_PATH}
 
@@ -50,7 +50,7 @@ jobs:
 
       - name: Prepare workflow
         if: inputs.coverage == true
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           repository: RedHatInsights/processing-tools
           path: processing-tools
