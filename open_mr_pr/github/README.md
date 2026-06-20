@@ -1,12 +1,11 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-06-19 05:47:02*
+*Last updated: 2026-06-20 05:33:01*
 
-**Total Konflux PRs: 12**
+**Total Konflux PRs: 11**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| ccx-upgrades-inference | [116](https://github.com/RedHatInsights/ccx-upgrades-inference/pull/116) | chore(deps): update dependency fastapi to v0.137.1 | 2026-06-18 | app/red-hat-konflux | ❌ failed | ready |
 | ocp-advisor-frontend | [1139](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1139) | chore(deps): lock file maintenance | 2026-06-18 | app/red-hat-konflux | ✅ ok | ready |
 | ocp-advisor-frontend | [1138](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1138) | chore(deps): update build-tools digest to a97bacd | 2026-06-18 | app/red-hat-konflux | ✅ ok | ready |
 | insights-results-aggregator-mock | [602](https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/602) | Update registry.access.redhat.com/ubi8/ubi-minimal Docker tag to v8.10-1781701121 | 2026-06-17 | app/red-hat-konflux | ✅ ok | ready |
@@ -15,6 +14,6 @@
 | insights-results-smart-proxy | [1770](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1770) | Update Pre-commit hooks | 2026-06-15 | app/red-hat-konflux | ✅ ok | ready |
 | ocp-advisor-frontend | [1131](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1131) | fix(deps): update npm minor and patch dependencies | 2026-06-05 | app/red-hat-konflux | ✅ ok | ready |
 | insights-results-smart-proxy | [1768](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1768) | Lock file maintenance Ruby dependencies | 2026-05-26 | app/red-hat-konflux | ❌ failed | ready |
-| data-pipeline | [94](https://github.com/RedHatInsights/data-pipeline/pull/94) | chore(deps): update dependency boto3 to >=1.43.30,<1.43.31 | 2026-05-19 | app/red-hat-konflux | ❌ failed | ready |
+| data-pipeline | [94](https://github.com/RedHatInsights/data-pipeline/pull/94) | chore(deps): update dependency boto3 to >=1.43.31,<1.43.32 | 2026-05-19 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-smart-proxy | [1764](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1764) | Update Go dependencies | 2026-05-19 | app/red-hat-konflux | ✅ ok | ready |
 | insights-ccx-messaging | [753](https://github.com/RedHatInsights/insights-ccx-messaging/pull/753) | chore(deps): update python dependencies | 2026-05-18 | app/red-hat-konflux | ❌ failed | ready |
