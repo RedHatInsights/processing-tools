@@ -42,7 +42,7 @@ jobs:
     container:
       image: registry.access.redhat.com/ubi9/go-toolset:latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: golangci-lint
         uses: golangci/golangci-lint-action@v9
         with:
@@ -56,9 +56,9 @@ jobs:
       image: registry.access.redhat.com/ubi9/go-toolset:latest
     name: ABCgo
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Prepare workflow
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           repository: RedHatInsights/processing-tools
           path: processing-tools
