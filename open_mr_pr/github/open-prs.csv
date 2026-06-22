@@ -1,5 +1,6 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-insights-content-template-renderer,393,Update dependency boto3 to v1.43.32,2026-06-20T21:22:19Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/393,app/red-hat-konflux,failed,ready
+ccx-notification-service,1248,chore(deps): lock file maintenance,2026-06-22T02:37:45Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1248,app/red-hat-konflux,failed,ready
+parquet-factory,159,chore(deps): update pre-commit hook astral-sh/ruff-pre-commit to v0.15.18,2026-06-21T20:47:55Z,https://github.com/RedHatInsights/parquet-factory/pull/159,app/red-hat-konflux,failed,ready
 ccx-notification-service,1246,chore(deps): update actions/checkout action to v7,2026-06-20T21:14:08Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1246,app/red-hat-konflux,ok,ready
 ocp-advisor-frontend,1141,chore(deps): update actions/checkout action to v7,2026-06-20T21:12:16Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1141,app/red-hat-konflux,ok,ready
 ocp-advisor-frontend,1140,chore(deps): update dependency github.com/redhatinsights/konflux-pipelines to v1.69.0,2026-06-20T10:56:14Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1140,app/red-hat-konflux,ok,ready
@@ -12,7 +13,7 @@ insights-results-smart-proxy,1770,Update Pre-commit hooks,2026-06-15T17:44:37Z,h
 ocp-advisor-frontend,1131,fix(deps): update npm minor and patch dependencies,2026-06-05T17:31:49Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1131,app/red-hat-konflux,ok,ready
 ocp-advisor-frontend,1130,🔄 synced file(s) with RedHatInsights/processing-tools,2026-06-05T08:32:00Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1130,app/obsint-processing-app,failed,ready
 insights-results-smart-proxy,1768,Lock file maintenance Ruby dependencies,2026-05-26T00:01:13Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1768,app/red-hat-konflux,failed,ready
-data-pipeline,94,"chore(deps): update dependency boto3 to >=1.43.32,<1.43.33",2026-05-19T22:38:10Z,https://github.com/RedHatInsights/data-pipeline/pull/94,app/red-hat-konflux,failed,ready
+data-pipeline,94,"chore(deps): update dependency boto3 to >=1.43.33,<1.43.34",2026-05-19T22:38:10Z,https://github.com/RedHatInsights/data-pipeline/pull/94,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1764,Update Go dependencies,2026-05-19T10:26:48Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1764,app/red-hat-konflux,ok,ready
 insights-ccx-messaging,753,chore(deps): update python dependencies,2026-05-18T10:23:20Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/753,app/red-hat-konflux,failed,ready
 data-pipeline,56,Test PR auto-merge flag,2026-04-15T07:13:13Z,https://github.com/RedHatInsights/data-pipeline/pull/56,app/obsint-processing-app,ok,ready
