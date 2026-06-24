@@ -1,14 +1,12 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-ccx-upgrades-data-eng,154,chore(deps): update dependency fastapi to v0.138.0,2026-06-23T02:21:29Z,https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/154,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1142,fix(deps): update dependency semver to ^7.8.5,2026-06-23T01:50:55Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1142,app/red-hat-konflux,ok,ready
-ccx-upgrades-inference,122,chore(deps): update dependency fastapi to v0.138.0,2026-06-23T01:37:11Z,https://github.com/RedHatInsights/ccx-upgrades-inference/pull/122,app/red-hat-konflux,failed,ready
+insights-results-aggregator-exporter,692,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v43.233.4,2026-06-24T05:16:28Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/692,app/red-hat-konflux,ok,ready
 ccx-notification-service,1248,chore(deps): lock file maintenance,2026-06-22T02:37:45Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1248,app/red-hat-konflux,failed,ready
 parquet-factory,159,chore(deps): update pre-commit hook astral-sh/ruff-pre-commit to v0.15.18,2026-06-21T20:47:55Z,https://github.com/RedHatInsights/parquet-factory/pull/159,app/red-hat-konflux,failed,ready
 ccx-notification-service,1246,chore(deps): update actions/checkout action to v7,2026-06-20T21:14:08Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1246,app/red-hat-konflux,ok,ready
 ocp-advisor-frontend,1141,chore(deps): update actions/checkout action to v7,2026-06-20T21:12:16Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1141,app/red-hat-konflux,ok,ready
 ocp-advisor-frontend,1140,chore(deps): update dependency github.com/redhatinsights/konflux-pipelines to v1.69.0,2026-06-20T10:56:14Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1140,app/red-hat-konflux,ok,ready
 ocp-advisor-frontend,1139,chore(deps): lock file maintenance,2026-06-18T02:21:22Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1139,app/red-hat-konflux,ok,ready
-ocp-advisor-frontend,1138,chore(deps): update build-tools digest to a97bacd,2026-06-18T02:19:41Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1138,app/red-hat-konflux,ok,ready
+ocp-advisor-frontend,1138,chore(deps): update build-tools digest to 8b1653c,2026-06-18T02:19:41Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1138,app/red-hat-konflux,ok,ready
 insights-results-aggregator-mock,602,Update registry.access.redhat.com/ubi8/ubi-minimal Docker tag to v8.10-1781701121,2026-06-17T18:26:05Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/602,app/red-hat-konflux,ok,ready
 insights-results-smart-proxy,1771,Update GitHub Actions,2026-06-17T09:47:04Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1771,app/red-hat-konflux,failed,ready
 obsint-mocks,286,chore(deps): update module github.com/golang-jwt/jwt/v4 to v5,2026-06-16T02:33:35Z,https://github.com/RedHatInsights/obsint-mocks/pull/286,app/red-hat-konflux,ok,ready
