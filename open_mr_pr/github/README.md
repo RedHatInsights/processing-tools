@@ -1,14 +1,13 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-06-24 05:23:26*
+*Last updated: 2026-06-25 05:24:23*
 
-**Total Konflux PRs: 16**
+**Total Konflux PRs: 15**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| insights-results-aggregator-exporter | [692](https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/692) | chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v43.233.4 | 2026-06-24 | app/red-hat-konflux | ✅ ok | ready |
+| insights-results-aggregator | [2543](https://github.com/RedHatInsights/insights-results-aggregator/pull/2543) | chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v43.234.0 | 2026-06-24 | app/red-hat-konflux | ❌ failed | ready |
 | ccx-notification-service | [1248](https://github.com/RedHatInsights/ccx-notification-service/pull/1248) | chore(deps): lock file maintenance | 2026-06-22 | app/red-hat-konflux | ❌ failed | ready |
-| parquet-factory | [159](https://github.com/RedHatInsights/parquet-factory/pull/159) | chore(deps): update pre-commit hook astral-sh/ruff-pre-commit to v0.15.18 | 2026-06-21 | app/red-hat-konflux | ❌ failed | ready |
 | ccx-notification-service | [1246](https://github.com/RedHatInsights/ccx-notification-service/pull/1246) | chore(deps): update actions/checkout action to v7 | 2026-06-20 | app/red-hat-konflux | ✅ ok | ready |
 | ocp-advisor-frontend | [1141](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1141) | chore(deps): update actions/checkout action to v7 | 2026-06-20 | app/red-hat-konflux | ✅ ok | ready |
 | ocp-advisor-frontend | [1140](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1140) | chore(deps): update dependency github.com/redhatinsights/konflux-pipelines to v1.69.0 | 2026-06-20 | app/red-hat-konflux | ✅ ok | ready |
