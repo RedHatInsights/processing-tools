@@ -1,17 +1,21 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
+insights-operator-gathering-conditions-service,766,chore(deps): update pre-commit hooks,2026-06-27T05:17:57Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/766,app/red-hat-konflux,ok,ready
+insights-operator-gathering-conditions-service,765,chore(deps): update go dependencies to v2.4.2,2026-06-27T05:17:50Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/765,app/red-hat-konflux,ok,ready
+obsint-mocks,306,chore(deps): update pre-commit hooks,2026-06-27T05:14:57Z,https://github.com/RedHatInsights/obsint-mocks/pull/306,app/red-hat-konflux,ok,ready
+content-service,927,chore(deps): update go dependencies to v2.4.2,2026-06-27T04:44:54Z,https://github.com/RedHatInsights/content-service/pull/927,app/red-hat-konflux,failed,ready
+ocp-advisor-frontend,1146,chore(deps): update npm minor and patch dependencies to v15.18.0,2026-06-26T20:47:48Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1146,app/red-hat-konflux,ok,ready
+insights-results-smart-proxy,1773,Update Pre-commit hooks,2026-06-26T17:20:57Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1773,app/red-hat-konflux,ok,ready
+ocp-advisor-frontend,1145,chore(deps): replace dependency npm-run-all with npm-run-all2 5.0.0,2026-06-26T17:07:11Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1145,app/red-hat-konflux,ok,ready
+insights-results-aggregator-mock,623,Update dependency ring:ring-jetty-adapter to v1.15.5,2026-06-26T13:16:30Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/623,app/red-hat-konflux,ok,ready
+insights-results-aggregator-mock,622,Update dependency ring:ring-core to v1.15.5,2026-06-26T13:16:21Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/622,app/red-hat-konflux,ok,ready
 insights-results-aggregator-mock,621,Update slf4j monorepo to v2,2026-06-26T05:28:19Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/621,app/red-hat-konflux,ok,ready
-insights-results-aggregator-mock,620,Update Pre-commit hooks to v43.236.0,2026-06-26T05:28:08Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/620,app/red-hat-konflux,ok,ready
-ccx-upgrades-data-eng,160,chore(deps): update pre-commit hooks to v43.236.0,2026-06-26T05:23:33Z,https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/160,app/red-hat-konflux,failed,ready
-parquet-factory,167,chore(deps): update pre-commit hooks to v43.236.0,2026-06-26T05:22:43Z,https://github.com/RedHatInsights/parquet-factory/pull/167,app/red-hat-konflux,ok,ready
-insights-results-aggregator,2549,chore(deps): update go dependencies to v2,2026-06-26T01:23:48Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2549,app/red-hat-konflux,failed,ready
+insights-results-aggregator,2549,chore(deps): update go dependencies,2026-06-26T01:23:48Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2549,app/red-hat-konflux,failed,ready
 insights-results-aggregator-mock,619,Update slf4j monorepo to v1.7.36,2026-06-26T00:40:57Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/619,app/red-hat-konflux,ok,ready
-ocp-advisor-frontend,1143,fix(deps): update npm minor and patch dependencies,2026-06-25T21:23:01Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1143,app/red-hat-konflux,ok,ready
 ccx-notification-service,1246,chore(deps): update actions/checkout action to v7,2026-06-20T21:14:08Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1246,app/red-hat-konflux,ok,ready
 ocp-advisor-frontend,1141,chore(deps): update github actions to v7,2026-06-20T21:12:16Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1141,app/red-hat-konflux,ok,ready
 ocp-advisor-frontend,1139,chore(deps): lock file maintenance,2026-06-18T02:21:22Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1139,app/red-hat-konflux,ok,ready
 insights-results-smart-proxy,1771,Update GitHub Actions,2026-06-17T09:47:04Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1771,app/red-hat-konflux,failed,ready
 obsint-mocks,286,chore(deps): update module github.com/golang-jwt/jwt/v4 to v5,2026-06-16T02:33:35Z,https://github.com/RedHatInsights/obsint-mocks/pull/286,app/red-hat-konflux,ok,ready
-insights-results-smart-proxy,1770,Update Pre-commit hooks,2026-06-15T17:44:37Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1770,app/red-hat-konflux,ok,ready
 ocp-advisor-frontend,1130,🔄 synced file(s) with RedHatInsights/processing-tools,2026-06-05T08:32:00Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1130,app/obsint-processing-app,failed,ready
 insights-results-smart-proxy,1768,"Update Ruby dependencies to ""~> 0.5.0""",2026-05-26T00:01:13Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1768,app/red-hat-konflux,failed,ready
 data-pipeline,94,"Update Python dependencies to >=1.43.36,<1.43.37",2026-05-19T22:38:10Z,https://github.com/RedHatInsights/data-pipeline/pull/94,app/red-hat-konflux,failed,ready
