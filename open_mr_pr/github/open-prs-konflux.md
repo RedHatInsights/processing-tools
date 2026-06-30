@@ -1,19 +1,17 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-06-29 05:38:57*
+*Last updated: 2026-06-30 05:26:41*
 
-**Total Konflux PRs: 25**
+**Total Konflux PRs: 23**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| content-service | [935](https://github.com/RedHatInsights/content-service/pull/935) | chore(deps): update pre-commit hooks to v43.243.2 | 2026-06-29 | app/red-hat-konflux | ✅ ok | ready |
-| content-service | [934](https://github.com/RedHatInsights/content-service/pull/934) | chore(deps): update go dependencies to v0.23.2 | 2026-06-29 | app/red-hat-konflux | ✅ ok | ready |
-| insights-content-template-renderer | [416](https://github.com/RedHatInsights/insights-content-template-renderer/pull/416) | Update Pre-commit hooks to v43.243.2 | 2026-06-29 | app/red-hat-konflux | ✅ ok | ready |
-| insights-operator-gathering-conditions-service | [770](https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/770) | chore(deps): update pre-commit hooks to v43.243.2 | 2026-06-29 | app/red-hat-konflux | ❌ failed | ready |
-| ccx-upgrades-inference | [141](https://github.com/RedHatInsights/ccx-upgrades-inference/pull/141) | chore(deps): update pre-commit hooks to v43.243.2 | 2026-06-29 | app/red-hat-konflux | ❌ failed | ready |
-| insights-results-aggregator-cleaner | [825](https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/825) | chore(deps): update go dependencies to v0.23.2 | 2026-06-29 | app/red-hat-konflux | ❌ failed | ready |
-| insights-results-aggregator | [2559](https://github.com/RedHatInsights/insights-results-aggregator/pull/2559) | chore(deps): update pre-commit hooks to v43.243.2 | 2026-06-29 | app/red-hat-konflux | ❌ failed | ready |
-| ccx-notification-writer | [887](https://github.com/RedHatInsights/ccx-notification-writer/pull/887) | chore(deps): update go dependencies to v0.23.2 | 2026-06-29 | app/red-hat-konflux | ❌ failed | ready |
+| insights-operator-utils | [986](https://github.com/RedHatInsights/insights-operator-utils/pull/986) | chore(deps): update pre-commit hooks to v43.244.4 | 2026-06-30 | app/red-hat-konflux | ✅ ok | ready |
+| content-service | [938](https://github.com/RedHatInsights/content-service/pull/938) | chore(deps): update pre-commit hooks to v43.244.4 | 2026-06-30 | app/red-hat-konflux | ✅ ok | ready |
+| insights-results-aggregator-cleaner | [829](https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/829) | chore(deps): update pre-commit hooks to v43.244.4 | 2026-06-30 | app/red-hat-konflux | ✅ ok | ready |
+| ccx-upgrades-inference | [143](https://github.com/RedHatInsights/ccx-upgrades-inference/pull/143) | chore(deps): update pre-commit hooks to v43.244.4 | 2026-06-30 | app/red-hat-konflux | ✅ ok | ready |
+| insights-ccx-messaging | [814](https://github.com/RedHatInsights/insights-ccx-messaging/pull/814) | chore(deps): update pre-commit hooks to v43.244.4 | 2026-06-30 | app/red-hat-konflux | ✅ ok | ready |
+| insights-results-aggregator | [2561](https://github.com/RedHatInsights/insights-results-aggregator/pull/2561) | chore(deps): update pre-commit hooks to v43.244.3 | 2026-06-29 | app/red-hat-konflux | ❌ failed | ready |
 | data-pipeline | [110](https://github.com/RedHatInsights/data-pipeline/pull/110) | Update Pre-commit hooks to v0.15.20 | 2026-06-28 | app/red-hat-konflux | ❌ failed | ready |
 | ocp-advisor-frontend | [1146](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1146) | chore(deps): update npm minor and patch dependencies to v15.18.0 | 2026-06-26 | app/red-hat-konflux | ✅ ok | ready |
 | insights-results-smart-proxy | [1773](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1773) | Update Pre-commit hooks | 2026-06-26 | app/red-hat-konflux | ✅ ok | ready |
