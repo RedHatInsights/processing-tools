@@ -1,14 +1,15 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-07-01 05:36:30*
+*Last updated: 2026-07-02 05:22:00*
 
-**Total Konflux PRs: 22**
+**Total Konflux PRs: 23**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| ccx-upgrades-inference | [146](https://github.com/RedHatInsights/ccx-upgrades-inference/pull/146) | chore(deps): update pre-commit hooks to v43.246.1 | 2026-07-01 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-aggregator-mock | [641](https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/641) | Update registry.access.redhat.com/ubi8/ubi-minimal Docker tag to v8.10-1782840767 | 2026-07-01 | app/red-hat-konflux | ✅ ok | ready |
-| insights-results-aggregator | [2564](https://github.com/RedHatInsights/insights-results-aggregator/pull/2564) | chore(deps): update pre-commit hooks to v43.245.0 | 2026-06-30 | app/red-hat-konflux | ❌ failed | ready |
-| content-service | [941](https://github.com/RedHatInsights/content-service/pull/941) | chore(deps): update pre-commit hooks to v43.245.0 | 2026-06-30 | app/red-hat-konflux | ❌ failed | ready |
+| insights-results-aggregator | [2564](https://github.com/RedHatInsights/insights-results-aggregator/pull/2564) | chore(deps): update pre-commit hooks to v43.246.1 | 2026-06-30 | app/red-hat-konflux | ❌ failed | ready |
+| content-service | [941](https://github.com/RedHatInsights/content-service/pull/941) | chore(deps): update pre-commit hooks to v43.246.1 | 2026-06-30 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-aggregator | [2563](https://github.com/RedHatInsights/insights-results-aggregator/pull/2563) | chore(deps): update go dependencies to v2 | 2026-06-30 | app/red-hat-konflux | ❌ failed | ready |
 | ocp-advisor-frontend | [1147](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1147) | chore(deps): update build-tools digest to e2157f0 | 2026-06-30 | app/red-hat-konflux | ✅ ok | ready |
 | data-pipeline | [110](https://github.com/RedHatInsights/data-pipeline/pull/110) | Update Pre-commit hooks to v0.15.20 | 2026-06-28 | app/red-hat-konflux | ❌ failed | ready |
