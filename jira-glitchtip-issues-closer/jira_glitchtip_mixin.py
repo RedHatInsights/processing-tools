@@ -1,5 +1,5 @@
 from glitchtip import (
-    GLITCHTIP_DOMAIN,
+    get_issue_url,
     get_last_seen_in_days,
 )
 from glitchtip import (
@@ -24,10 +24,10 @@ class JiraGlitchtipComposite:
         return f"[{self.jira_issue.key}]({self.jira_issue.permalink()})"
 
     def glitchtip_link(self):
-        if "permalink" in self.glitchtip_issue:
-            return f"[Link]({self.glitchtip_issue['permalink']})"
-        else:
-            return f"[Link]({self.glitchtip_issue['glitchtip_url']})"
+        issue_id = self.glitchtip_issue.get("id")
+        if issue_id is not None:
+            return f"[Link]({get_issue_url(issue_id)})"
+        return f"[Link]({self.glitchtip_issue['glitchtip_url']})"
 
     def last_seen_in_days(self):
         return get_last_seen_in_days(self.glitchtip_issue)
@@ -62,7 +62,6 @@ def get_jira_issues_with_last_seen_older_than(
         issue_data = get_glitchtip_issue(glitchtip_url.split("/")[-1])
         if issue_data is None:
             # Probably issue was deleted from Glitchtip
-
             out.append(
                 JiraGlitchtipComposite(
                     issue, {"glitchtip_url": glitchtip_url, "last_seen_in_days": None}
@@ -93,7 +92,7 @@ def get_glitchtip_issues_with_no_jira(max_days_of_inactivity: int):
         if last_seen_in_days >= max_days_of_inactivity:
             continue
 
-        glitchtip_url = f"https://{GLITCHTIP_DOMAIN}/ccx/issues/{issue['id']}"
+        glitchtip_url = get_issue_url(issue["id"])
         jira_issues = get_jira_issues(
             f'project = CCXDEV AND labels = "{glitchtip_url}" AND status != CLOSED'
         )
