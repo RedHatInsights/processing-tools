@@ -1,7 +1,9 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
+ccx-upgrades-inference,146,chore(deps): update pre-commit hooks to v43.246.1,2026-07-01T21:39:05Z,https://github.com/RedHatInsights/ccx-upgrades-inference/pull/146,app/red-hat-konflux,failed,ready
+insights-ccx-messaging,816,[CCXDEV-16445] Fix botocore conflicts - use 1.43.1,2026-07-01T14:25:48Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/816,matysek,ok,ready
 insights-results-aggregator-mock,641,Update registry.access.redhat.com/ubi8/ubi-minimal Docker tag to v8.10-1782840767,2026-07-01T01:22:26Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/641,app/red-hat-konflux,ok,ready
-insights-results-aggregator,2564,chore(deps): update pre-commit hooks to v43.245.0,2026-06-30T21:10:44Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2564,app/red-hat-konflux,failed,ready
-content-service,941,chore(deps): update pre-commit hooks to v43.245.0,2026-06-30T16:50:28Z,https://github.com/RedHatInsights/content-service/pull/941,app/red-hat-konflux,failed,ready
+insights-results-aggregator,2564,chore(deps): update pre-commit hooks to v43.246.1,2026-06-30T21:10:44Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2564,app/red-hat-konflux,failed,ready
+content-service,941,chore(deps): update pre-commit hooks to v43.246.1,2026-06-30T16:50:28Z,https://github.com/RedHatInsights/content-service/pull/941,app/red-hat-konflux,failed,ready
 insights-results-aggregator,2563,chore(deps): update go dependencies to v2,2026-06-30T16:14:19Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2563,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1147,chore(deps): update build-tools digest to e2157f0,2026-06-30T14:35:01Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1147,app/red-hat-konflux,ok,ready
 data-pipeline,110,Update Pre-commit hooks to v0.15.20,2026-06-28T21:08:41Z,https://github.com/RedHatInsights/data-pipeline/pull/110,app/red-hat-konflux,failed,ready
