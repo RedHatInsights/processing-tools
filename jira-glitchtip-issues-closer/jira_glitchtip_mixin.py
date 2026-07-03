@@ -60,6 +60,16 @@ def get_jira_issues_with_last_seen_older_than(
             continue
 
         issue_data = get_glitchtip_issue(glitchtip_url.split("/")[-1])
+        if issue_data is None:
+            # Probably issue was deleted from Glitchtip
+
+            out.append(
+                JiraGlitchtipComposite(
+                    issue, {"glitchtip_url": glitchtip_url, "last_seen_in_days": None}
+                ),
+            )
+            continue
+
         last_seen_in_days = get_last_seen_in_days(issue_data)
 
         if last_seen_in_days is not None and last_seen_in_days < max_days_of_inactivity:

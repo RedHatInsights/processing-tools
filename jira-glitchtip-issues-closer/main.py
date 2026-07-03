@@ -39,6 +39,7 @@ def format_issues_as_markdown(data):
         jira_link = composite.jira_md_link()
         glitchtip_link = composite.glitchtip_link()
         days = composite.last_seen_in_days()
+        days = "N/A" if days is None else days
         rows.append(f"| {jira_link} | {glitchtip_link} | {days} |")
     return "\n".join(rows) if rows else "| No issues found | | |"
 
