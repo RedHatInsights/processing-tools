@@ -1,13 +1,14 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-07-05 05:21:53*
+*Last updated: 2026-07-06 05:29:16*
 
-**Total Konflux PRs: 18**
+**Total Konflux PRs: 19**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| insights-content-template-renderer | [439](https://github.com/RedHatInsights/insights-content-template-renderer/pull/439) | Update Python dependencies to v1.43.40 | 2026-07-06 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-aggregator | [2569](https://github.com/RedHatInsights/insights-results-aggregator/pull/2569) | chore(deps): update go dependencies to v2 | 2026-07-05 | app/red-hat-konflux | ❌ failed | ready |
-| data-pipeline | [113](https://github.com/RedHatInsights/data-pipeline/pull/113) | Update Python dependencies to >=1.43.39,<1.43.40 | 2026-07-03 | app/red-hat-konflux | ❌ failed | ready |
+| data-pipeline | [113](https://github.com/RedHatInsights/data-pipeline/pull/113) | Update Python dependencies to >=1.43.40,<1.43.41 | 2026-07-03 | app/red-hat-konflux | ❌ failed | ready |
 | obsint-mocks | [326](https://github.com/RedHatInsights/obsint-mocks/pull/326) | chore(deps): update go dependencies to v5 | 2026-07-03 | app/red-hat-konflux | ✅ ok | ready |
 | insights-results-smart-proxy | [1777](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1777) | Update Go dependencies | 2026-07-03 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-smart-proxy | [1776](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1776) | Update Pre-commit hooks | 2026-07-03 | app/red-hat-konflux | ❌ failed | ready |
