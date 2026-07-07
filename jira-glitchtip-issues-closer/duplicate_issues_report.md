@@ -36,8 +36,8 @@
 
 ## ccx-data-pipeline
 
-**Duplicate Groups:** 3  
-**Issues in Groups:** 19  
+**Duplicate Groups:** 3
+**Issues in Groups:** 19
 **Total Events:** 0
 
 ### 🟢 LOW: AttributeError: 'str' object has no attribute 'parent'
@@ -94,8 +94,8 @@
 
 ## ccx-notification-service
 
-**Duplicate Groups:** 1  
-**Issues in Groups:** 2  
+**Duplicate Groups:** 1
+**Issues in Groups:** 2
 **Total Events:** 0
 
 ### 🟢 LOW: Error: Post \'...': readfrom tc…
@@ -113,8 +113,8 @@
 
 ## ccx-notification-writer
 
-**Duplicate Groups:** 1  
-**Issues in Groups:** 4  
+**Duplicate Groups:** 1
+**Issues in Groups:** 4
 **Total Events:** 0
 
 ### 🟢 LOW: kafka: error while consuming ccx.ocp.results/0: EOF
@@ -134,8 +134,8 @@
 
 ## ccx-upgrades-data-eng
 
-**Duplicate Groups:** 1  
-**Issues in Groups:** 2  
+**Duplicate Groups:** 1
+**Issues in Groups:** 2
 **Total Events:** 0
 
 ### 🟢 LOW: ConnectionError: HTTPConnectionPool(host='ccx-upgrades-inference-svc', port=8...
@@ -153,8 +153,8 @@
 
 ## dvo-extractor
 
-**Duplicate Groups:** 2  
-**Issues in Groups:** 8  
+**Duplicate Groups:** 2
+**Issues in Groups:** 8
 **Total Events:** 0
 
 ### 🟢 LOW: ParseException: ccx_ocp_core.parsers.insights_operator.core.PodsIO couldn't p...
@@ -189,8 +189,8 @@
 
 ## dvo-writer
 
-**Duplicate Groups:** 2  
-**Issues in Groups:** 4  
+**Duplicate Groups:** 2
+**Issues in Groups:** 4
 **Total Events:** 0
 
 ### 🟢 LOW: Error: kafka server: Tried to send a message to a replica that is not the lea...
@@ -221,8 +221,8 @@
 
 ## insights-results-aggregator-db-writer
 
-**Duplicate Groups:** 3  
-**Issues in Groups:** 12  
+**Duplicate Groups:** 3
+**Issues in Groups:** 12
 **Total Events:** 0
 
 ### 🟢 LOW: Error: sql: database is closed
@@ -272,8 +272,8 @@
 
 ## parquet-factory
 
-**Duplicate Groups:** 1  
-**Issues in Groups:** 2  
+**Duplicate Groups:** 1
+**Issues in Groups:** 2
 **Total Events:** 0
 
 ### 🟢 LOW: Error: unexpected status code 503 while pushing to https://pushgateway.app-sr...
@@ -291,8 +291,8 @@
 
 ## rules-processing
 
-**Duplicate Groups:** 4  
-**Issues in Groups:** 148  
+**Duplicate Groups:** 4
+**Issues in Groups:** 148
 **Total Events:** 0
 
 ### 🟢 LOW: AttributeError: 'str' object has no attribute 'parent'
@@ -489,8 +489,8 @@
 
 ## valkey-writer
 
-**Duplicate Groups:** 2  
-**Issues in Groups:** 5  
+**Duplicate Groups:** 2
+**Issues in Groups:** 5
 **Total Events:** 0
 
 ### 🟢 LOW: Error: kafka server: Tried to send a message to a replica that is not the lea...

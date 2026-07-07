@@ -46,7 +46,6 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v8
         with:
-          add-paths: "jira-glitchtip-issues-closer/duplicate_issues_report.md"
           token: ${{ steps.app_token.outputs.token }}
           sign-commits: true
           title: "chore: update Jira-Glitchtip integration data [bot]"

@@ -1,9 +1,9 @@
 from glitchtip import (
-    get_issue_url,
-    get_last_seen_in_days,
+    get_issue as get_glitchtip_issue,
 )
 from glitchtip import (
-    get_issue as get_glitchtip_issue,
+    get_issue_url,
+    get_last_seen_in_days,
 )
 from glitchtip import (
     get_issues as get_glitchtip_issues,
