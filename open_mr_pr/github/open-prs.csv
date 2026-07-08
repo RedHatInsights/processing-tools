@@ -1,18 +1,13 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-parquet-factory,202,chore(deps): update go dependencies to v1.3.0,2026-07-07T05:15:52Z,https://github.com/RedHatInsights/parquet-factory/pull/202,app/red-hat-konflux,ok,ready
-insights-results-aggregator,2575,chore(deps): update go dependencies to v2,2026-07-06T21:15:19Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2575,app/red-hat-konflux,failed,ready
-obsint-mocks,337,chore(deps): update go dependencies to v5,2026-07-06T21:15:16Z,https://github.com/RedHatInsights/obsint-mocks/pull/337,app/red-hat-konflux,ok,ready
-data-pipeline,113,"Update Python dependencies to >=1.43.40,<1.43.41",2026-07-03T21:32:40Z,https://github.com/RedHatInsights/data-pipeline/pull/113,app/red-hat-konflux,failed,ready
+parquet-factory,203,chore(deps): update go dependencies to v2.4.3,2026-07-08T04:47:02Z,https://github.com/RedHatInsights/parquet-factory/pull/203,app/red-hat-konflux,failed,ready
+ocp-advisor-frontend,1150,chore(deps): update build-tools digest to d7be112,2026-07-07T17:31:01Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1150,app/red-hat-konflux,ok,ready
+insights-ccx-messaging,834,fix(deps): update python dependencies,2026-07-07T13:20:23Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/834,app/red-hat-konflux,failed,ready
+ocp-advisor-frontend,1149,chore(deps): update npm minor and patch dependencies to v5.0.2,2026-07-07T13:18:20Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1149,app/red-hat-konflux,ok,ready
+insights-results-smart-proxy,1781,Update GitHub Actions,2026-07-07T12:28:37Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1781,app/red-hat-konflux,failed,ready
+insights-results-smart-proxy,1780,Update Pre-commit hooks to v43.251.3,2026-07-07T09:19:08Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1780,app/red-hat-konflux,ok,ready
+insights-results-aggregator,2576,chore(deps): update go dependencies to v2,2026-07-07T09:13:16Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2576,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1777,Update Go dependencies,2026-07-03T09:18:05Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1777,app/red-hat-konflux,failed,ready
-insights-results-smart-proxy,1776,Update Pre-commit hooks,2026-07-03T09:11:22Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1776,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1148,chore(deps): lock file maintenance,2026-07-03T00:56:15Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1148,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1774,update codecov set up to not enforce target,2026-07-02T10:19:08Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1774,lenasolarova,failed,ready
-insights-ccx-messaging,819,fix(deps): update python dependencies,2026-07-02T09:12:24Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/819,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1146,fix(deps): update npm minor and patch dependencies,2026-06-26T20:47:48Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1146,app/red-hat-konflux,ok,ready
-ocp-advisor-frontend,1145,chore(deps): replace dependency npm-run-all with npm-run-all2 5.0.0,2026-06-26T17:07:11Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1145,app/red-hat-konflux,ok,ready
-insights-results-aggregator-mock,623,Update dependency ring:ring-jetty-adapter to v1.15.5,2026-06-26T13:16:30Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/623,app/red-hat-konflux,ok,ready
-insights-results-aggregator-mock,622,Update dependency ring:ring-core to v1.15.5,2026-06-26T13:16:21Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/622,app/red-hat-konflux,ok,ready
-insights-results-smart-proxy,1771,Update GitHub Actions,2026-06-17T09:47:04Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1771,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1130,🔄 synced file(s) with RedHatInsights/processing-tools,2026-06-05T08:32:00Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1130,app/obsint-processing-app,failed,ready
-insights-results-smart-proxy,1768,"Update Ruby dependencies to ""~> 0.5.0""",2026-05-26T00:01:13Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1768,app/red-hat-konflux,failed,ready
 insights-operator-gathering-conditions-service,371,Drop legacy building,2025-03-28T12:35:04Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/371,ikerreyes,failed,draft
