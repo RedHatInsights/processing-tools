@@ -1,6 +1,6 @@
 ---
 name: team-info
-description: ObsInt Processing team reference — repos, services, app-interface deployment, clusters, and related skills. Loaded by default for all work in team repositories.
+description: ObsInt Processing team reference — repos, services, deployment, clusters, shared coding standards, PR rules, and language conventions. Shared guidance for team repositories; repo-specific details live in each repo's AGENTS.md.
 ---
 
 # ObsInt Processing — Team Info
@@ -35,7 +35,7 @@ AWS MSK cluster managed by AppSRE, shared across tenants. Topics are configured 
 | CI/CD | Konflux (Tekton), GitHub Actions, Jenkins |
 | Testing | BDD with Behave (insights-behavioral-spec), IQE (iqe-ccx-plugin), pytest (Python services), Go standard testing |
 
-All new code requires tests and coverage. See each repo's AGENTS.md or documentation for testing standards, frameworks, and how to run locally / in ephemeral.
+All new code requires tests and coverage. See each repo's AGENTS.md (when present) or README for repo-specific setup and how to run locally / in ephemeral.
 
 ## Deployment
 
@@ -165,3 +165,66 @@ claude plugin install <skill-name>
 curl -sL https://raw.githubusercontent.com/RedHatInsights/processing-tools/master/skills/<skill-name>/SKILL.md \
   -o ~/.claude/skills/<skill-name>/SKILL.md --create-dirs
 ```
+
+---
+
+## Shared Standards
+
+Conventions for all team repositories. Individual repos' AGENTS.md files should cover only what's specific to that repo.
+
+### Agent Conventions
+
+When working on tasks in any team repository, create a TODO list to track progress and ensure all steps are completed systematically.
+
+### Pull Request Requirements
+
+- **Minimum 2 approvals** from maintainers before merging (reviewers are defined in each repo's `CODEOWNERS` file)
+- **Commit messages**: short summary line, optionally followed by a blank line and a body with additional context or reasoning
+  - If related to a Jira task, include the ticket ID: `[CCXDEV-12345] Summary`
+  - Focus on the "why" rather than the "what"
+- **Unfinished PRs**: use GitHub's draft PR feature to prevent accidental merging; if drafts are unavailable, prefix title with `[WIP]`
+- **Breaking changes**: must be documented and communicated to the team
+- **Coverage must not decrease** — [Codecov](https://codecov.io) reports on each PR make this easy to verify
+- **License headers** must be present on source files
+- **No direct commits** to the default branch — always use a feature branch
+
+#### Pre-Push Checklist
+
+Go repos have a `make before_commit` (or `before-commit`) target that runs the full suite of checks — run it before pushing. Python repos use `pre-commit` hooks instead (`pre-commit run --all-files`). Check the repo's Makefile for the exact target.
+
+### Security
+
+- **Never log sensitive data**: organization IDs must be sanitized, no auth tokens, no PII
+- **Credentials**: use environment variables or config files, never hardcode
+- **Input validation**: sanitize and validate all external input
+- **SQL injection**: use parameterized queries, never string concatenation
+
+### Shell Scripts
+
+All shell scripts must pass `shellcheck`. Go repos expose `make shellcheck`.
+
+### Build & Tooling
+
+- **Makefile** is the standard task runner across all repos — build, test, lint, and pre-push checks are all make targets
+- **Behavioral tests**: most services have BDD test coverage in [insights-behavioral-spec](https://github.com/RedHatInsights/insights-behavioral-spec)
+- **Monitoring**: Prometheus metrics and health endpoints (`/health`, `/ready`) are standard for all deployed services
+- **Pre-commit hooks**: this repo provides a shared [`.pre-commit-config.yaml`](https://github.com/RedHatInsights/processing-tools/blob/master/.pre-commit-config.yaml) covering both Go and Python (golangci-lint, abcgo, ruff, shellcheck, hadolint). It also exports custom hooks (abcgo, go-version-consistency) that repos can use via `repo: https://github.com/RedHatInsights/processing-tools`
+- **Shared CI workflows**: linter, test, and BDD workflow templates are synced to repos via [`.github/sync.yml`](https://github.com/RedHatInsights/processing-tools/blob/master/.github/sync.yml)
+
+### Go Standards
+
+- **Go version**: 1.22+
+- **Formatting**: `gofmt`
+- **Linting**: `golangci-lint` (specific linter set configured per repo)
+- **Documentation**: GoDoc comments required for all exported symbols
+- **Error handling**: return errors explicitly, no panics in production; use custom error types
+- **Logging**: `rs/zerolog` with structured context and request IDs
+- **Testing**: standard `go test`; check each repo's Makefile for integration test targets
+
+### Python Standards
+
+- **Line length**: 100 characters
+- **Linter + formatter**: `ruff`
+- **Docstrings**: Google style, required for all public methods
+- **Error handling**: custom exception classes, always log before raising, structured logging via `logging.getLogger(__name__)`
+- **Testing**: `pytest`; check each repo's Makefile for test targets and configuration
