@@ -1,4 +1,4 @@
-name: Update Jira-Glitchtip Integration Data
+name: Duplicate Issues Report generation
 
 on:
   schedule:
@@ -42,6 +42,7 @@ jobs:
           client-id: ${{ secrets.OBSINT_PROCESSING_APP_CLIENT_ID }}
           private-key: ${{ secrets.OBSINT_PROCESSING_APP_PRIVATE_KEY }}
           owner: RedHatInsights
+          repositories: ${{ github.repository }}
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v8

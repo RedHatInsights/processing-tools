@@ -297,11 +297,6 @@ def generate_group_title(group: list) -> str:
         display_title,
     )
     display_title = re.sub(r"\.\.\.+", "...", display_title)
-
-    # Truncate if too long
-    if len(display_title) > 80:
-        display_title = display_title[:77] + "..."
-
     return display_title or "Error Group"
 
 
@@ -349,6 +344,9 @@ def generate_markdown_report(groups_by_project: dict) -> str:
             "",
         ]
     )
+
+    if not groups_by_project:
+        return "\n".join(lines)
 
     # Table of Contents
     lines.extend(
@@ -508,10 +506,12 @@ def main():
     )
     print(f"Total issues in groups: {total_duplicates}")
 
+    # Save to file
+    output_filename = "duplicate_issues_report.md"
+
     if not groups_by_project:
         print("\nNo duplicate groups found with the current threshold.")
         print(f"Try lowering SIMILARITY_THRESHOLD (currently {SIMILARITY_THRESHOLD})")
-        return
 
     # Generate report
     print()
@@ -519,8 +519,6 @@ def main():
 
     report = generate_markdown_report(groups_by_project)
 
-    # Save to file
-    output_filename = "duplicate_issues_report.md"
     try:
         with open(output_filename, "w", encoding="utf-8") as f:
             f.write(report)
