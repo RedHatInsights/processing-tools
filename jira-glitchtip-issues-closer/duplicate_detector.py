@@ -216,7 +216,6 @@ def find_duplicate_groups(
                 continue
 
             group = [issue1]
-            processed_ids.add(issue1["id"])
 
             for _, issue2 in enumerate(type_issues[i + 1 :], start=i + 1):
                 if issue2["id"] in processed_ids:
@@ -228,10 +227,10 @@ def find_duplicate_groups(
 
                 if similarity >= threshold:
                     group.append(issue2)
-                    processed_ids.add(issue2["id"])
 
             if len(group) >= MIN_GROUP_SIZE:
                 all_groups.append(group)
+                processed_ids.update(issue["id"] for issue in group)
 
     # Also check for cross-type similarities (less common but possible)
     # This catches cases where the error type extraction might differ
@@ -242,7 +241,6 @@ def find_duplicate_groups(
             continue
 
         group = [issue1]
-        processed_ids.add(issue1["id"])
 
         for issue2 in ungrouped[i + 1 :]:
             if issue2["id"] in processed_ids:
@@ -254,10 +252,10 @@ def find_duplicate_groups(
 
             if similarity >= threshold:
                 group.append(issue2)
-                processed_ids.add(issue2["id"])
 
         if len(group) >= MIN_GROUP_SIZE:
             all_groups.append(group)
+            processed_ids.update(issue["id"] for issue in group)
 
     # Sort groups by total event count (descending)
     all_groups.sort(key=lambda g: sum(i.get("events", 0) for i in g), reverse=True)
