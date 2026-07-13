@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
         with:
-          persist-credentials: true
+          persist-credentials: false
           fetch-depth: 1
 
       - name: Set up Python
