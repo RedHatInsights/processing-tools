@@ -61,7 +61,8 @@ def get_jira_issues_with_last_seen_older_than(
 
         issue_data = get_glitchtip_issue(glitchtip_url.split("/")[-1])
         if issue_data is None:
-            # Probably issue was deleted from Glitchtip
+            # Issue was probably deleted from Glitchtip: either the API
+            # returned a 404, or a 200 with no usable issue data.
             out.append(
                 JiraGlitchtipComposite(
                     issue, {"glitchtip_url": glitchtip_url, "last_seen_in_days": None}

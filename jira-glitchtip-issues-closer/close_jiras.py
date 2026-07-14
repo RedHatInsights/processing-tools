@@ -1,4 +1,5 @@
 import os
+import sys
 
 from jira_glitchtip_mixin import get_jira_issues_with_last_seen_older_than
 from jira_helper import close_issue
@@ -9,12 +10,23 @@ MAX_DAYS_OF_INACTIVITY = int(
 )
 
 if __name__ == "__main__":
+    dry_run = "--dry-run" in sys.argv or os.environ.get("DRY_RUN", "").lower() in (
+        "1",
+        "true",
+    )
+
     jira_issues_with_last_seen = get_jira_issues_with_last_seen_older_than(
         MAX_DAYS_OF_INACTIVITY
     )
 
+    if dry_run:
+        print(
+            f"[DRY RUN] {len(jira_issues_with_last_seen)} issue(s) would be closed:\n"
+        )
+
     for issue in jira_issues_with_last_seen:
-        print(f"Closing {issue.jira_key}")
+        prefix = "[DRY RUN] Would close" if dry_run else "Closing"
+        print(f"{prefix} {issue.jira_key}")
         comment = (
             f"This issue has been inactive for {MAX_DAYS_OF_INACTIVITY} days so it might be a "
             "duplicate.\n"
@@ -22,4 +34,5 @@ if __name__ == "__main__":
             "happens again."
         )
 
-        close_issue(issue["id"], comment=comment)
+        if not dry_run:
+            close_issue(issue.jira_key, comment=comment)
