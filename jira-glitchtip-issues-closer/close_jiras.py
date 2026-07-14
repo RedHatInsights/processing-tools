@@ -22,4 +22,4 @@ if __name__ == "__main__":
             "happens again."
         )
 
-        close_issue(issue["id"], comment=comment)
+        close_issue(issue.jira_key, comment=comment)
