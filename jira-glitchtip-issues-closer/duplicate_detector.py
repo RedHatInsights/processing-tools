@@ -375,8 +375,8 @@ def generate_markdown_report(groups_by_project: dict) -> str:
             [
                 f"## {project_name}",
                 "",
-                f"**Duplicate Groups:** {len(groups)}  ",
-                f"**Issues in Groups:** {total_issues}  ",
+                f"**Duplicate Groups:** {len(groups)}",
+                f"**Issues in Groups:** {total_issues}",
                 f"**Total Events:** {total_events:,}",
                 "",
             ]
