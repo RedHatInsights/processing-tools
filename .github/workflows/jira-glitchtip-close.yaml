@@ -2,6 +2,12 @@ name: Close Inactive Jira Issues
 
 on:
   workflow_dispatch:     # manual execution only
+    inputs:
+      dry_run:
+        description: 'Dry run (log what would be closed, without actually closing anything)'
+        required: false
+        type: boolean
+        default: false
 
 jobs:
   close-inactive-jiras:
@@ -26,6 +32,7 @@ jobs:
       - name: Close inactive Jira issues
         env:
           MAX_DAYS_OF_INACTIVITY: 7
+          DRY_RUN: ${{ inputs.dry_run }}
           JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
           JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
           GLITCHTIP_API_TOKEN: ${{ secrets.GLITCHTIP_API_TOKEN }}
