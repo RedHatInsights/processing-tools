@@ -47,7 +47,19 @@ def get_issue(issue_id):
     if response.status_code == 404:
         return None
 
-    return _normalize_issue(response.json())
+    try:
+        data = response.json()
+    except ValueError:
+        # Some issues that no longer exist return a 200 with an empty or
+        # non-JSON body instead of a proper 404. Treat that the same way.
+        return None
+
+    if not isinstance(data, dict) or not data.get("id"):
+        # A 200 response without any usable issue data (e.g. an empty
+        # object) means the issue is effectively gone, just like a 404.
+        return None
+
+    return _normalize_issue(data)
 
 
 @lru_cache
