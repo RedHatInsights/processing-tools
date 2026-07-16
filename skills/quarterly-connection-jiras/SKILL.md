@@ -1,5 +1,5 @@
 ---
-name: quarterly-connection
+name: quarterly-connection-jiras
 description: >-
   Generate a report of what you have worked on in a given quarter.
   The Quarterly Connection is something all Red Hat users must complete
@@ -11,7 +11,7 @@ description: >-
   connection on Workday.
 ---
 
-# quarterly-connection
+# quarterly-connection-jiras
 
 Produce a quarter status report for CCX Core - Processing epics owned by the
 given user and for a given quarter.
@@ -129,7 +129,8 @@ blockers, epics that slipped (yellow/red), tasks with no movement.
   what is available and link to the epic for the full text.
 - Do not create or edit Jira issues unless the user explicitly asks.
 
-Export the report as a markdown file.
+Export the report as a markdown file named
+`quarterly-connection-{QUARTER}-jiras.md` (e.g. `quarterly-connection-2026Q2-jiras.md`).
 
 ## Example trigger phrases
 
