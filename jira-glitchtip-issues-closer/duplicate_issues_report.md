@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-07-17 05:09:06
+**Generated:** 2026-07-18 05:03:03
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -13,8 +13,8 @@
 | Metric | Value |
 |--------|-------|
 | Projects with duplicates | 10 |
-| Total duplicate groups | 19 |
-| Total issues in groups | 170 |
+| Total duplicate groups | 20 |
+| Total issues in groups | 171 |
 | Total events affected | 0 |
 
 ---
@@ -23,13 +23,13 @@
 
 - [ccx-data-pipeline](#ccx-data-pipeline) - 2 groups, 13 issues
 - [ccx-notification-service](#ccx-notification-service) - 1 groups, 2 issues
-- [ccx-notification-writer](#ccx-notification-writer) - 1 groups, 3 issues
-- [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 1 groups, 2 issues
+- [ccx-notification-writer](#ccx-notification-writer) - 2 groups, 4 issues
+- [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 2 groups, 5 issues
 - [dvo-extractor](#dvo-extractor) - 1 groups, 2 issues
-- [dvo-writer](#dvo-writer) - 2 groups, 4 issues
+- [dvo-writer](#dvo-writer) - 1 groups, 2 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 13 issues
 - [parquet-factory](#parquet-factory) - 1 groups, 2 issues
-- [rules-processing](#rules-processing) - 5 groups, 123 issues
+- [rules-processing](#rules-processing) - 5 groups, 122 issues
 - [valkey-writer](#valkey-writer) - 2 groups, 6 issues
 
 ---
@@ -46,8 +46,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 4,844 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
-| #3852210 | 3,771 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
+| #3852013 | 4,867 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
+| #3852210 | 3,783 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
 | #4520000 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520000) |
 | #4519999 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4519999) |
 | #4519998 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4519998) |
@@ -68,7 +68,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4319957 | 1,056 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319957) |
+| #4319957 | 1,064 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319957) |
 | #4513667 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator_hc... | [View](https://glitchtip.devshift.net/ccx/issues/4513667) |
 
 **Recommendation:** Consider merging into [#4319957](https://glitchtip.devshift.net/ccx/issues/4319957) (highest event count)
@@ -87,7 +87,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3997223 | 290 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
+| #3997223 | 291 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
 | #4519036 | 8 | Error: Get \"http://ccx-insights-content-service:10000/ap... | [View](https://glitchtip.devshift.net/ccx/issues/4519036) |
 
 **Recommendation:** Consider merging into [#3997223](https://glitchtip.devshift.net/ccx/issues/3997223) (highest event count)
@@ -96,19 +96,31 @@
 
 ## ccx-notification-writer
 
-**Duplicate Groups:** 1
-**Issues in Groups:** 3
+**Duplicate Groups:** 2
+**Issues in Groups:** 4
 **Total Events:** 0
+
+### 🟢 LOW: kafka: error while consuming ccx.ocp.results/0: read tcp ...->...: i/o …
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4491664 | 4 | kafka: error while consuming ccx.ocp.results/0: kafka ser... | [View](https://glitchtip.devshift.net/ccx/issues/4491664) |
+| #4494281 | 1 | kafka: error while consuming ccx.ocp.results/0: read tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4494281) |
+
+**Recommendation:** Consider merging into [#4491664](https://glitchtip.devshift.net/ccx/issues/4491664) (highest event count)
+
+---
 
 ### 🟢 LOW: kafka: error while consuming ccx.ocp.results/0: EOF
 
-**Issues:** 3 | **Total Events:** 0
+**Issues:** 2 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
 | #4434839 | 15 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4434839) |
 | #4506737 | 3 | kafka: error while consuming ccx.ocp.results/0: EOF | [View](https://glitchtip.devshift.net/ccx/issues/4506737) |
-| #4494281 | 1 | kafka: error while consuming ccx.ocp.results/0: read tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4494281) |
 
 **Recommendation:** Consider merging into [#4434839](https://glitchtip.devshift.net/ccx/issues/4434839) (highest event count)
 
@@ -116,9 +128,26 @@
 
 ## ccx-upgrades-data-eng
 
-**Duplicate Groups:** 1
-**Issues in Groups:** 2
+**Duplicate Groups:** 2
+**Issues in Groups:** 5
 **Total Events:** 0
+
+### 🟢 LOW: Unable to update SSO token: Error refreshing the token: (missing_token) Missing access token parame…
+
+**Issues:** 3 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4531944 | 1 | Unable to update SSO token: Error refreshing the token:
+(... | [View](https://glitchtip.devshift.net/ccx/issues/4531944) |
+| #4531940 | 1 | Unable to update SSO token: Error refreshing the token:
+(... | [View](https://glitchtip.devshift.net/ccx/issues/4531940) |
+| #4531938 | 1 | Unable to update SSO token: Error refreshing the token:
+(... | [View](https://glitchtip.devshift.net/ccx/issues/4531938) |
+
+**Recommendation:** Consider merging into [#4531944](https://glitchtip.devshift.net/ccx/issues/4531944) (highest event count)
+
+---
 
 ### 🟢 LOW: ConnectionError: HTTPConnectionPool(host='ccx-upgrades-inference-svc', port=8000): Max retries exce…
 
@@ -145,7 +174,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4319955 | 1,055 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319955) |
+| #4319955 | 1,063 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319955) |
 | #4513668 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator_hc... | [View](https://glitchtip.devshift.net/ccx/issues/4513668) |
 
 **Recommendation:** Consider merging into [#4319955](https://glitchtip.devshift.net/ccx/issues/4319955) (highest event count)
@@ -154,8 +183,8 @@
 
 ## dvo-writer
 
-**Duplicate Groups:** 2
-**Issues in Groups:** 4
+**Duplicate Groups:** 1
+**Issues in Groups:** 2
 **Total Events:** 0
 
 ### 🟢 LOW: Error: kafka server: Tried to send a message to a replica that is not the leader for some partition…
@@ -171,24 +200,25 @@
 
 ---
 
-### 🟢 LOW: Error: sql: database is closed
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4111096 | 172 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4111096) |
-| #4111095 | 53 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4111095) |
-
-**Recommendation:** Consider merging into [#4111096](https://glitchtip.devshift.net/ccx/issues/4111096) (highest event count)
-
----
-
 ## insights-results-aggregator-db-writer
 
 **Duplicate Groups:** 3
 **Issues in Groups:** 13
 **Total Events:** 0
+
+### 🟢 LOW: kafka: error while consuming ccx.ocp.results/0: EOF
+
+**Issues:** 3 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4523197 | 5 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4523197) |
+| #4506735 | 1 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4506735) |
+| #4367658 | 4 | kafka: error while consuming ccx.ocp.results/0: EOF | [View](https://glitchtip.devshift.net/ccx/issues/4367658) |
+
+**Recommendation:** Consider merging into [#4523197](https://glitchtip.devshift.net/ccx/issues/4523197) (highest event count)
+
+---
 
 ### 🟢 LOW: Error: kafka server: Tried to send a message to a replica that is not the leader for some partition…
 
@@ -222,20 +252,6 @@
 
 ---
 
-### 🟢 LOW: kafka: error while consuming ccx.ocp.results/0: EOF
-
-**Issues:** 3 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4523197 | 5 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4523197) |
-| #4506735 | 1 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4506735) |
-| #4367658 | 4 | kafka: error while consuming ccx.ocp.results/0: EOF | [View](https://glitchtip.devshift.net/ccx/issues/4367658) |
-
-**Recommendation:** Consider merging into [#4523197](https://glitchtip.devshift.net/ccx/issues/4523197) (highest event count)
-
----
-
 ## parquet-factory
 
 **Duplicate Groups:** 1
@@ -258,7 +274,7 @@
 ## rules-processing
 
 **Duplicate Groups:** 5
-**Issues in Groups:** 123
+**Issues in Groups:** 122
 **Total Events:** 0
 
 ### 🟢 LOW: AttributeError: 'str' object has no attribute 'parent'
@@ -267,8 +283,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 5,270 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
-| #3791585 | 4,000 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
+| #3781153 | 5,293 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
+| #3791585 | 4,012 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
 | #4520013 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520013) |
 | #4520012 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520012) |
 | #4520011 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520011) |
@@ -293,7 +309,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4319956 | 1,056 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319956) |
+| #4319956 | 1,064 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319956) |
 | #4513669 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator_hc... | [View](https://glitchtip.devshift.net/ccx/issues/4513669) |
 
 **Recommendation:** Consider merging into [#4319956](https://glitchtip.devshift.net/ccx/issues/4319956) (highest event count)
@@ -315,7 +331,7 @@
 
 ### 🟢 LOW: InvalidArchive: Cannot detect execution context: No files in path: /tmp/insights-717cz68w
 
-**Issues:** 100 | **Total Events:** 0
+**Issues:** 99 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
@@ -418,7 +434,6 @@
 | #4516704 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4516704) |
 | #4508323 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4508323) |
 | #4496236 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4496236) |
-| #4486324 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4486324) |
 
 **Recommendation:** Consider merging into [#4519922](https://glitchtip.devshift.net/ccx/issues/4519922) (highest event count)
 
