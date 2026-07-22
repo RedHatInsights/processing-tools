@@ -1,7 +1,13 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-insights-content-template-renderer,496,Update Python dependencies to v1.43.51,2026-07-20T21:15:47Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/496,app/red-hat-konflux,failed,ready
+insights-results-aggregator-mock,717,Update registry.access.redhat.com/ubi8/ubi-minimal Docker tag to v8.10-1784668437,2026-07-21T19:34:06Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/717,app/red-hat-konflux,ok,ready
+content-service,1010,chore(deps): update pre-commit hooks to v43.270.0,2026-07-21T19:32:01Z,https://github.com/RedHatInsights/content-service/pull/1010,app/red-hat-konflux,ok,ready
+obsint-mocks,393,chore(deps): update pre-commit hooks to v43.270.0,2026-07-21T19:30:11Z,https://github.com/RedHatInsights/obsint-mocks/pull/393,app/red-hat-konflux,ok,ready
+ccx-upgrades-inference,194,chore(deps): update pre-commit hooks to v43.270.0,2026-07-21T19:26:21Z,https://github.com/RedHatInsights/ccx-upgrades-inference/pull/194,app/red-hat-konflux,ok,ready
+ccx-upgrades-data-eng,227,chore(deps): update pre-commit hooks to v43.270.0,2026-07-21T13:59:59Z,https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/227,app/red-hat-konflux,ok,ready
+insights-behavioral-spec,808,chore: small changes to successfully pass sha-extractor tests,2026-07-21T13:17:17Z,https://github.com/RedHatInsights/insights-behavioral-spec/pull/808,RostyslavKachan,failed,ready
+insights-content-template-renderer,498,Update Pre-commit hooks to v43.270.0,2026-07-21T09:55:12Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/498,app/red-hat-konflux,ok,ready
 data-pipeline,119,Update Pre-commit hooks to v0.15.22,2026-07-19T16:57:33Z,https://github.com/RedHatInsights/data-pipeline/pull/119,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1155,chore(deps): update build-tools digest to 3d91265,2026-07-17T17:32:08Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1155,app/red-hat-konflux,ok,ready
+ocp-advisor-frontend,1155,chore(deps): update build-tools digest to bc9180e,2026-07-17T17:32:08Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1155,app/red-hat-konflux,ok,ready
 insights-results-smart-proxy,1792,Update Go dependencies,2026-07-17T13:16:44Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1792,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1791,Update GitHub Actions,2026-07-17T13:14:01Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1791,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1790,Update Pre-commit hooks,2026-07-17T09:19:54Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1790,app/red-hat-konflux,failed,ready
