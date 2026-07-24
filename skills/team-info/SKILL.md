@@ -178,15 +178,27 @@ When working on tasks in any team repository, create a TODO list to track progre
 
 ### Pull Request Requirements
 
+Branch protection and merge controls (CODEOWNERS, status checks, bot bypass) are documented in [ProdSec](https://ccx.pages.redhat.com/ccx-docs/docs/processing/prodsec/) and enforced via [github-rulesets](https://github.com/RedHatInsights/processing-tools/tree/master/github-rulesets). Team policy is stricter than the org floor:
+
 - **Minimum 2 approvals** from maintainers before merging (reviewers are defined in each repo's `CODEOWNERS` file)
 - **Commit messages**: short summary line, optionally followed by a blank line and a body with additional context or reasoning
   - If related to a Jira task, include the ticket ID: `[CCXDEV-12345] Summary`
   - Focus on the "why" rather than the "what"
+- **PR description**: what changed, why, how it was tested, and a Jira ID when applicable
 - **Unfinished PRs**: use GitHub's draft PR feature to prevent accidental merging; if drafts are unavailable, prefix title with `[WIP]`
 - **Breaking changes**: must be documented and communicated to the team
-- **Coverage must not decrease** — [Codecov](https://codecov.io) reports on each PR make this easy to verify
 - **License headers** must be present on source files
 - **No direct commits** to the default branch — always use a feature branch
+- **[CodeRabbit](https://www.coderabbit.ai/)** posts an initial summary/review on GitHub PRs — advisory only; it does **not** count toward the two required approvals, but authors should address useful findings
+
+#### What reviewers should check
+
+Human or agentic reviewers should understand the PR from its description, then verify:
+
+- Changes match the description and linked Jira context
+- Documentation is updated where needed (docstrings, README, or other)
+- Tests and coverage expectations in [Testing](#testing) are met for the size of the change — larger **functional** impact needs more thorough testing and review (not just more lines/files)
+- Full diffs are loaded for all files, including ones collapsed or hidden by default (supply-chain / sneaky-change risk)
 
 #### Pre-Push Checklist
 
@@ -228,3 +240,12 @@ All shell scripts must pass `shellcheck`. Go repos expose `make shellcheck`.
 - **Docstrings**: Google style, required for all public methods
 - **Error handling**: custom exception classes, always log before raising, structured logging via `logging.getLogger(__name__)`
 - **Testing**: `pytest`; check each repo's Makefile for test targets and configuration
+
+### Testing
+
+Normative rules for PRs; strategy and test-type detail live in [Quality](https://ccx.pages.redhat.com/ccx-docs/docs/processing/quality/).
+
+- **All changes need tests** appropriate to the change (unit in-repo; BDD / IQE / higher-level suites as described in Quality)
+- **Coverage must not decrease** — tracked with [Codecov](https://app.codecov.io/github/RedHatInsights) on repos that have unit tests. There is no fixed %-gate required on every repo; Codecov / related checks fail when coverage drops vs the base branch
+- **How to run tests**: see the repo's `AGENTS.md` or Makefile; frameworks are listed under Tech Stack above
+- Bigger functional changes need correspondingly stronger test coverage (see also [What reviewers should check](#what-reviewers-should-check))
