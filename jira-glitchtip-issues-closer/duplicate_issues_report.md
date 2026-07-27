@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-07-26 05:13:35
+**Generated:** 2026-07-27 05:23:46
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -46,7 +46,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4319957 | 1,139 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319957) |
+| #4319957 | 1,148 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319957) |
 | #4513667 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator_hc... | [View](https://glitchtip.devshift.net/ccx/issues/4513667) |
 
 **Recommendation:** Consider merging into [#4319957](https://glitchtip.devshift.net/ccx/issues/4319957) (highest event count)
@@ -59,8 +59,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 5,073 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
-| #3852210 | 3,879 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
+| #3852013 | 5,099 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
+| #3852210 | 3,891 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
 | #4520000 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520000) |
 | #4519999 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4519999) |
 | #4519998 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4519998) |
@@ -161,7 +161,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4319955 | 1,138 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319955) |
+| #4319955 | 1,147 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319955) |
 | #4513668 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator_hc... | [View](https://glitchtip.devshift.net/ccx/issues/4513668) |
 
 **Recommendation:** Consider merging into [#4319955](https://glitchtip.devshift.net/ccx/issues/4319955) (highest event count)
@@ -269,7 +269,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4319956 | 1,138 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319956) |
+| #4319956 | 1,147 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319956) |
 | #4513669 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator_hc... | [View](https://glitchtip.devshift.net/ccx/issues/4513669) |
 
 **Recommendation:** Consider merging into [#4319956](https://glitchtip.devshift.net/ccx/issues/4319956) (highest event count)
@@ -282,8 +282,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 5,500 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
-| #3791585 | 4,108 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
+| #3781153 | 5,526 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
+| #3791585 | 4,120 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
 | #4520013 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520013) |
 | #4520012 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520012) |
 | #4520011 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520011) |
@@ -308,7 +308,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4249305 | 107 | FileExpired: [Errno 16] The remote file corresponding to ... | [View](https://glitchtip.devshift.net/ccx/issues/4249305) |
+| #4249305 | 108 | FileExpired: [Errno 16] The remote file corresponding to ... | [View](https://glitchtip.devshift.net/ccx/issues/4249305) |
 | #4521056 | 7 | FileExpired: [Errno 16] The remote file corresponding to ... | [View](https://glitchtip.devshift.net/ccx/issues/4521056) |
 
 **Recommendation:** Consider merging into [#4249305](https://glitchtip.devshift.net/ccx/issues/4249305) (highest event count)
