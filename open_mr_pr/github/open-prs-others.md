@@ -1,12 +1,13 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-07-27 05:19:27*
+*Last updated: 2026-07-28 05:05:16*
 
-**Total PRs: 5**
+**Total PRs: 6**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| ccx-notification-service | [1262](https://github.com/RedHatInsights/ccx-notification-service/pull/1262) | improve `go-implement` and `AGENTS.md` based on more real runs with the workflow | 2026-07-24 | Bee-lee | ❌ failed | ready |
+| ccx-notification-service | [1265](https://github.com/RedHatInsights/ccx-notification-service/pull/1265) | dummy commit to test Konflux misbehavior | 2026-07-27 | Bee-lee | ❌ failed | ready |
+| ccx-notification-service | [1264](https://github.com/RedHatInsights/ccx-notification-service/pull/1264) | [CCXDEV-16562] Establish aggregator DB connection at startup | 2026-07-27 | Bee-lee | ❌ failed | ready |
 | insights-behavioral-spec | [808](https://github.com/RedHatInsights/insights-behavioral-spec/pull/808) | chore: small changes to successfully pass sha-extractor tests | 2026-07-21 | RostyslavKachan | ❌ failed | ready |
 | ccx-notification-service | [1256](https://github.com/RedHatInsights/ccx-notification-service/pull/1256) | add full `/go-implement` dynamic workflow for reference for incremental changes | 2026-07-13 | Bee-lee | ✅ ok | draft |
 | insights-results-smart-proxy | [1774](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1774) | update codecov set up to not enforce target | 2026-07-02 | lenasolarova | ❌ failed | ready |
