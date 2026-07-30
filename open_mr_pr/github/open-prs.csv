@@ -1,24 +1,18 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-ccx-upgrades-data-eng,247,fix(deps): update python dependencies to v8.1.0,2026-07-29T14:12:43Z,https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/247,app/red-hat-konflux,ok,ready
+ccx-upgrades-inference,213,chore(deps): update pre-commit hooks to v43.281.1,2026-07-29T21:34:37Z,https://github.com/RedHatInsights/ccx-upgrades-inference/pull/213,app/red-hat-konflux,failed,ready
+insights-ccx-messaging,885,fix(deps): update python dependencies,2026-07-29T18:41:56Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/885,app/red-hat-konflux,failed,ready
+ocp-advisor-frontend,1162,chore(deps): update build-tools digest to e6caefc,2026-07-29T17:40:53Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1162,app/red-hat-konflux,ok,ready
+ccx-notification-writer,915,chore(deps): update go dependencies to v3.0.5,2026-07-29T17:28:20Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/915,app/red-hat-konflux,failed,ready
 insights-results-aggregator-mock,750,Update registry.access.redhat.com/ubi8/ubi-minimal Docker tag to v8.10-1785302592,2026-07-29T10:13:56Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/750,app/red-hat-konflux,ok,ready
 content-service,1015,Bumped ccx-rules-ocp version to 2026.07.29,2026-07-29T07:38:56Z,https://github.com/RedHatInsights/content-service/pull/1015,app/obsint-processing-app,failed,ready
 data-pipeline,121,Bumped ccx-rules-ocp version to 2026.07.29,2026-07-29T07:38:53Z,https://github.com/RedHatInsights/data-pipeline/pull/121,app/obsint-processing-app,failed,ready
-insights-results-aggregator,2628,chore(deps): update pre-commit hooks to v43.281.0,2026-07-28T22:43:41Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2628,app/red-hat-konflux,failed,ready
 obsint-mocks,423,chore(deps): update go dependencies to v5,2026-07-28T05:19:55Z,https://github.com/RedHatInsights/obsint-mocks/pull/423,app/red-hat-konflux,ok,ready
-insights-content-template-renderer,500,Update Pre-commit hooks to v43.281.0,2026-07-27T21:00:30Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/500,app/red-hat-konflux,failed,ready
-ccx-notification-service,1265,dummy commit to test Konflux misbehavior,2026-07-27T19:49:38Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1265,Bee-lee,failed,ready
-ccx-notification-service,1264,[CCXDEV-16562] Establish aggregator DB connection at startup,2026-07-27T11:41:20Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1264,Bee-lee,ok,ready
-insights-content-template-renderer,499,Update Python dependencies,2026-07-23T21:17:13Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/499,app/red-hat-konflux,ok,ready
-insights-results-aggregator,2627,fix(deps): update go dependencies,2026-07-23T13:11:06Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2627,app/red-hat-konflux,failed,ready
-parquet-factory,258,chore(deps): update github actions to v7,2026-07-23T05:21:13Z,https://github.com/RedHatInsights/parquet-factory/pull/258,app/red-hat-konflux,ok,ready
-insights-ccx-messaging,884,chore(deps): update github actions to v7,2026-07-23T05:09:31Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/884,app/red-hat-konflux,ok,ready
+insights-content-template-renderer,500,Update Pre-commit hooks to v43.281.1,2026-07-27T21:00:30Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/500,app/red-hat-konflux,failed,ready
 insights-behavioral-spec,808,chore: small changes to successfully pass sha-extractor tests,2026-07-21T13:17:17Z,https://github.com/RedHatInsights/insights-behavioral-spec/pull/808,RostyslavKachan,failed,ready
 insights-results-smart-proxy,1792,Update Go dependencies,2026-07-17T13:16:44Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1792,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1791,Update GitHub Actions,2026-07-17T13:14:01Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1791,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1790,Update Pre-commit hooks,2026-07-17T09:19:54Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1790,app/red-hat-konflux,failed,ready
-data-pipeline,117,"Update Python dependencies to >=1.43.56,<1.43.57",2026-07-13T21:18:34Z,https://github.com/RedHatInsights/data-pipeline/pull/117,app/red-hat-konflux,failed,ready
 ccx-notification-service,1256,add full `/go-implement` dynamic workflow for reference for incremental changes,2026-07-13T12:17:53Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1256,Bee-lee,ok,draft
-insights-ccx-messaging,834,fix(deps): update python dependencies,2026-07-07T13:20:23Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/834,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1148,chore(deps): lock file maintenance,2026-07-03T00:56:15Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1148,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1774,update codecov set up to not enforce target,2026-07-02T10:19:08Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1774,lenasolarova,failed,ready
 insights-operator-gathering-conditions-service,371,Drop legacy building,2025-03-28T12:35:04Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/371,ikerreyes,failed,draft
