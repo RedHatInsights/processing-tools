@@ -1,20 +1,15 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-07-30 09:22:57*
+*Last updated: 2026-07-30 11:09:55*
 
-**Total Konflux PRs: 12**
+**Total Konflux PRs: 7**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| insights-content-template-renderer | [501](https://github.com/RedHatInsights/insights-content-template-renderer/pull/501) | Update Pre-commit hooks to v43.283.0 | 2026-07-30 | app/red-hat-konflux | ❌ failed | ready |
+| content-service | [1018](https://github.com/RedHatInsights/content-service/pull/1018) | chore(deps): update pre-commit hooks to v43.283.0 | 2026-07-30 | app/red-hat-konflux | ❌ failed | ready |
+| insights-ccx-messaging | [888](https://github.com/RedHatInsights/insights-ccx-messaging/pull/888) | fix(deps): update python dependencies | 2026-07-30 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-smart-proxy | [1793](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1793) | Update Go dependencies | 2026-07-30 | app/red-hat-konflux | ❌ failed | ready |
-| insights-results-aggregator-exporter | [819](https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/819) | chore(deps): update pre-commit hooks to v43.283.0 | 2026-07-30 | app/red-hat-konflux | ✅ ok | ready |
-| parquet-factory | [262](https://github.com/RedHatInsights/parquet-factory/pull/262) | chore(deps): update pre-commit hooks to v43.283.0 | 2026-07-30 | app/red-hat-konflux | ✅ ok | ready |
-| ccx-upgrades-inference | [213](https://github.com/RedHatInsights/ccx-upgrades-inference/pull/213) | chore(deps): update pre-commit hooks to v43.281.1 | 2026-07-29 | app/red-hat-konflux | ✅ ok | ready |
-| ocp-advisor-frontend | [1162](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1162) | chore(deps): update build-tools digest to e6caefc | 2026-07-29 | app/red-hat-konflux | ✅ ok | ready |
-| ccx-notification-writer | [915](https://github.com/RedHatInsights/ccx-notification-writer/pull/915) | chore(deps): update go dependencies to v3.0.5 | 2026-07-29 | app/red-hat-konflux | ✅ ok | ready |
-| insights-results-aggregator-mock | [750](https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/750) | Update registry.access.redhat.com/ubi8/ubi-minimal Docker tag to v8.10-1785302592 | 2026-07-29 | app/red-hat-konflux | ✅ ok | ready |
-| obsint-mocks | [423](https://github.com/RedHatInsights/obsint-mocks/pull/423) | chore(deps): update go dependencies to v5 | 2026-07-28 | app/red-hat-konflux | ✅ ok | ready |
-| insights-content-template-renderer | [500](https://github.com/RedHatInsights/insights-content-template-renderer/pull/500) | Update Pre-commit hooks to v43.281.1 | 2026-07-27 | app/red-hat-konflux | ✅ ok | ready |
 | insights-results-smart-proxy | [1791](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1791) | Update GitHub Actions | 2026-07-17 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-smart-proxy | [1790](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1790) | Update Pre-commit hooks | 2026-07-17 | app/red-hat-konflux | ❌ failed | ready |
 | ocp-advisor-frontend | [1148](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1148) | chore(deps): lock file maintenance | 2026-07-03 | app/red-hat-konflux | ❌ failed | ready |
