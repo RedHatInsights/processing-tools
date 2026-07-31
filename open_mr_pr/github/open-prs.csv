@@ -1,15 +1,20 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-ccx-notification-writer,917,chore(deps): update go dependencies,2026-07-30T21:42:27Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/917,app/red-hat-konflux,ok,ready
-parquet-factory,267,chore(deps): update go dependencies,2026-07-30T21:31:42Z,https://github.com/RedHatInsights/parquet-factory/pull/267,app/red-hat-konflux,ok,ready
+content-service,1025,chore(deps): update pre-commit hooks to v43.285.4,2026-07-31T09:32:09Z,https://github.com/RedHatInsights/content-service/pull/1025,app/red-hat-konflux,ok,ready
+content-service,1024,chore(deps): update go dependencies to v1.3.1,2026-07-31T09:32:01Z,https://github.com/RedHatInsights/content-service/pull/1024,app/red-hat-konflux,ok,ready
+insights-results-smart-proxy,1795,Update Go dependencies,2026-07-31T09:31:44Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1795,app/red-hat-konflux,failed,ready
+insights-content-template-renderer,508,Update Pre-commit hooks to v43.285.4,2026-07-31T09:31:37Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/508,app/red-hat-konflux,ok,ready
+ocp-advisor-frontend,1165,fix(deps): update npm minor and patch dependencies,2026-07-31T09:30:47Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1165,app/red-hat-konflux,ok,ready
+insights-results-aggregator,2637,chore(deps): update go dependencies,2026-07-31T09:24:44Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2637,app/red-hat-konflux,ok,ready
+insights-results-aggregator,2636,chore(deps): update pre-commit hooks to v43.285.4,2026-07-31T09:20:37Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2636,app/red-hat-konflux,ok,ready
+insights-results-aggregator-cleaner,951,chore(deps): update go dependencies to v1.3.1,2026-07-31T09:18:44Z,https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/951,app/red-hat-konflux,ok,ready
+ccx-notification-writer,917,chore(deps): update go dependencies to v1.3.1,2026-07-30T21:42:27Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/917,app/red-hat-konflux,ok,ready
 data-pipeline,122,"Update Python dependencies to >=1.43.57,<1.43.58",2026-07-30T21:30:23Z,https://github.com/RedHatInsights/data-pipeline/pull/122,app/red-hat-konflux,ok,ready
 ccx-notification-service,1266,[CCXDEV-16564] Part 1/2 -- add `storage` part for retrieving disabled rules from `cluster_rule_toggle` table,2026-07-30T20:12:44Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1266,Bee-lee,ok,ready
-ocp-advisor-frontend,1164,fix(deps): update npm minor and patch dependencies,2026-07-30T14:35:29Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1164,app/red-hat-konflux,ok,ready
-ocp-advisor-frontend,1163,chore(deps): update build-tools digest to 03578e4,2026-07-30T14:35:08Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1163,app/red-hat-konflux,ok,ready
-insights-ccx-messaging,888,fix(deps): update python dependencies,2026-07-30T09:24:05Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/888,app/red-hat-konflux,ok,ready
+ocp-advisor-frontend,1163,chore(deps): update build-tools digest to f16da96,2026-07-30T14:35:08Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1163,app/red-hat-konflux,ok,ready
+insights-ccx-messaging,888,fix(deps): update python dependencies,2026-07-30T09:24:05Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/888,app/red-hat-konflux,failed,ready
 content-service,1015,Bumped ccx-rules-ocp version to 2026.07.29,2026-07-29T07:38:56Z,https://github.com/RedHatInsights/content-service/pull/1015,app/obsint-processing-app,failed,ready
 data-pipeline,121,Bumped ccx-rules-ocp version to 2026.07.29,2026-07-29T07:38:53Z,https://github.com/RedHatInsights/data-pipeline/pull/121,app/obsint-processing-app,failed,ready
-insights-results-smart-proxy,1790,Update Pre-commit hooks,2026-07-17T09:19:54Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1790,app/red-hat-konflux,ok,ready
+insights-results-smart-proxy,1790,Update Pre-commit hooks,2026-07-17T09:19:54Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1790,app/red-hat-konflux,failed,ready
 ccx-notification-service,1256,add full `/go-implement` dynamic workflow for reference for incremental changes,2026-07-13T12:17:53Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1256,Bee-lee,ok,draft
 ocp-advisor-frontend,1148,chore(deps): lock file maintenance,2026-07-03T00:56:15Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1148,app/red-hat-konflux,failed,ready
-insights-results-smart-proxy,1774,update codecov set up to not enforce target,2026-07-02T10:19:08Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1774,lenasolarova,failed,ready
 insights-operator-gathering-conditions-service,371,Drop legacy building,2025-03-28T12:35:04Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/371,ikerreyes,failed,draft
