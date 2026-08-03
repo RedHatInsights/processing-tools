@@ -1,13 +1,15 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-insights-results-aggregator,2649,chore(deps): update pre-commit hooks to v44.2.2,2026-08-02T02:05:21Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2649,app/red-hat-konflux,failed,ready
-content-service,1039,chore(deps): update pre-commit hooks to v44.2.2,2026-08-02T01:23:57Z,https://github.com/RedHatInsights/content-service/pull/1039,app/red-hat-konflux,failed,ready
+ccx-upgrades-data-eng,273,chore(deps): update pre-commit hooks to v44.4.5,2026-08-03T02:05:21Z,https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/273,app/red-hat-konflux,failed,ready
+insights-results-aggregator-cleaner,973,chore(deps): update pre-commit hooks to v44.4.5,2026-08-03T02:04:49Z,https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/973,app/red-hat-konflux,failed,ready
+insights-results-aggregator,2654,chore(deps): update pre-commit hooks to v44.4.5,2026-08-03T02:04:10Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2654,app/red-hat-konflux,failed,ready
+content-service,1044,chore(deps): update pre-commit hooks to v44.4.4,2026-08-03T01:13:05Z,https://github.com/RedHatInsights/content-service/pull/1044,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1167,chore(deps): lock file maintenance,2026-08-01T01:28:50Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1167,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1166,fix(deps): update npm minor and patch dependencies,2026-07-31T21:09:46Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1166,app/red-hat-konflux,ok,ready
 ccx-notification-service,1268,[CCXDEV-16624] prevent PostgreSQL password to be printed in the logs,2026-07-31T14:12:35Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1268,Bee-lee,ok,ready
 ccx-notification-service,1267,[CCXDEV-16564] Part 2/2 -- add differ part for retrieving disabled rules from `cluster_rule_toggle` table,2026-07-31T14:03:45Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1267,Bee-lee,ok,ready
 insights-results-smart-proxy,1796,Update GitHub Actions to v7,2026-07-31T13:19:49Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1796,app/red-hat-konflux,ok,ready
 insights-results-smart-proxy,1795,Update Go dependencies,2026-07-31T09:31:44Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1795,app/red-hat-konflux,failed,ready
-data-pipeline,122,"Update Python dependencies to >=1.43.59,<1.43.60",2026-07-30T21:30:23Z,https://github.com/RedHatInsights/data-pipeline/pull/122,app/red-hat-konflux,failed,ready
+data-pipeline,122,"Update Python dependencies to >=1.43.60,<1.43.61",2026-07-30T21:30:23Z,https://github.com/RedHatInsights/data-pipeline/pull/122,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1163,chore(deps): update build-tools digest to fcbeac5,2026-07-30T14:35:08Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1163,app/red-hat-konflux,ok,ready
 insights-ccx-messaging,888,fix(deps): update python dependencies,2026-07-30T09:24:05Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/888,app/red-hat-konflux,failed,ready
 content-service,1015,Bumped ccx-rules-ocp version to 2026.07.29,2026-07-29T07:38:56Z,https://github.com/RedHatInsights/content-service/pull/1015,app/obsint-processing-app,failed,ready
