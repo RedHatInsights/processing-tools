@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-08-03 05:19:45
+**Generated:** 2026-08-04 05:09:31
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -12,9 +12,9 @@
 
 | Metric | Value |
 |--------|-------|
-| Projects with duplicates | 10 |
-| Total duplicate groups | 19 |
-| Total issues in groups | 165 |
+| Projects with duplicates | 11 |
+| Total duplicate groups | 24 |
+| Total issues in groups | 182 |
 | Total events affected | 0 |
 
 ---
@@ -22,12 +22,13 @@
 ## Table of Contents
 
 - [ccx-data-pipeline](#ccx-data-pipeline) - 2 groups, 13 issues
-- [ccx-notification-service](#ccx-notification-service) - 1 groups, 2 issues
-- [ccx-notification-writer](#ccx-notification-writer) - 1 groups, 2 issues
+- [ccx-notification-service](#ccx-notification-service) - 2 groups, 7 issues
+- [ccx-notification-writer](#ccx-notification-writer) - 2 groups, 4 issues
 - [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 2 groups, 5 issues
 - [dvo-extractor](#dvo-extractor) - 1 groups, 2 issues
-- [dvo-writer](#dvo-writer) - 1 groups, 2 issues
-- [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 12 issues
+- [dvo-writer](#dvo-writer) - 2 groups, 4 issues
+- [insights-results-aggregator](#insights-results-aggregator) - 1 groups, 6 issues
+- [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 4 groups, 14 issues
 - [parquet-factory](#parquet-factory) - 1 groups, 2 issues
 - [rules-processing](#rules-processing) - 5 groups, 120 issues
 - [valkey-writer](#valkey-writer) - 2 groups, 5 issues
@@ -40,27 +41,14 @@
 **Issues in Groups:** 13
 **Total Events:** 0
 
-### 🟢 LOW: ParseException: ccx_ocp_core.parsers.insights_operator.core.PodsIO couldn't parse json.
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4319957 | 1,219 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319957) |
-| #4513667 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator_hc... | [View](https://glitchtip.devshift.net/ccx/issues/4513667) |
-
-**Recommendation:** Consider merging into [#4319957](https://glitchtip.devshift.net/ccx/issues/4319957) (highest event count)
-
----
-
 ### 🟢 LOW: AttributeError: 'str' object has no attribute 'parent'
 
 **Issues:** 11 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 5,268 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
-| #3852210 | 3,975 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
+| #3852013 | 5,294 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
+| #3852210 | 3,987 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
 | #4520000 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520000) |
 | #4519999 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4519999) |
 | #4519998 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4519998) |
@@ -75,11 +63,40 @@
 
 ---
 
+### 🟢 LOW: ParseException: ccx_ocp_core.parsers.insights_operator.core.PodsIO couldn't parse json.
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4319957 | 1,228 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319957) |
+| #4513667 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator_hc... | [View](https://glitchtip.devshift.net/ccx/issues/4513667) |
+
+**Recommendation:** Consider merging into [#4319957](https://glitchtip.devshift.net/ccx/issues/4319957) (highest event count)
+
+---
+
 ## ccx-notification-service
 
-**Duplicate Groups:** 1
-**Issues in Groups:** 2
+**Duplicate Groups:** 2
+**Issues in Groups:** 7
 **Total Events:** 0
+
+### 🟢 LOW: Error: dial tcp ...: connect: connection refused
+
+**Issues:** 5 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4571134 | 13 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4571134) |
+| #4408130 | 617 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
+| #4571289 | 92 | Error: read tcp 10.129.23.117:49636->10.0.216.215:5432: r... | [View](https://glitchtip.devshift.net/ccx/issues/4571289) |
+| #4571410 | 89 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4571410) |
+| #4571411 | 88 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4571411) |
+
+**Recommendation:** Consider merging into [#4571134](https://glitchtip.devshift.net/ccx/issues/4571134) (highest event count)
+
+---
 
 ### 🟢 LOW: Error: Post \'...': readfrom tc…
 
@@ -87,7 +104,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3997223 | 296 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
+| #3997223 | 299 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
 | #4519036 | 8 | Error: Get \"http://ccx-insights-content-service:10000/ap... | [View](https://glitchtip.devshift.net/ccx/issues/4519036) |
 
 **Recommendation:** Consider merging into [#3997223](https://glitchtip.devshift.net/ccx/issues/3997223) (highest event count)
@@ -96,9 +113,22 @@
 
 ## ccx-notification-writer
 
-**Duplicate Groups:** 1
-**Issues in Groups:** 2
+**Duplicate Groups:** 2
+**Issues in Groups:** 4
 **Total Events:** 0
+
+### 🟢 LOW: Error: dial tcp ...: connect: connection refused
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4571290 | 2 | Error: read tcp 10.131.0.86:56666->10.0.216.215:5432: rea... | [View](https://glitchtip.devshift.net/ccx/issues/4571290) |
+| #4017706 | 25 | Error: dial tcp 10.0.184.48:9096: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4017706) |
+
+**Recommendation:** Consider merging into [#4571290](https://glitchtip.devshift.net/ccx/issues/4571290) (highest event count)
+
+---
 
 ### 🟢 LOW: kafka: error while consuming ccx.ocp.results/0: EOF
 
@@ -161,7 +191,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4319955 | 1,218 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319955) |
+| #4319955 | 1,227 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319955) |
 | #4513668 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator_hc... | [View](https://glitchtip.devshift.net/ccx/issues/4513668) |
 
 **Recommendation:** Consider merging into [#4319955](https://glitchtip.devshift.net/ccx/issues/4319955) (highest event count)
@@ -170,9 +200,22 @@
 
 ## dvo-writer
 
-**Duplicate Groups:** 1
-**Issues in Groups:** 2
+**Duplicate Groups:** 2
+**Issues in Groups:** 4
 **Total Events:** 0
+
+### 🟢 LOW: Error: write tcp ...->...: write: broken pipe
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4571108 | 1 | Error: write tcp 10.128.29.91:38490->10.0.216.46:5432: wr... | [View](https://glitchtip.devshift.net/ccx/issues/4571108) |
+| #4571110 | 1 | Error: write tcp 10.128.29.91:38490->10.0.216.46:5432: wr... | [View](https://glitchtip.devshift.net/ccx/issues/4571110) |
+
+**Recommendation:** Consider merging into [#4571108](https://glitchtip.devshift.net/ccx/issues/4571108) (highest event count)
+
+---
 
 ### 🟢 LOW: Error: kafka server: Tried to send a message to a replica that is not the leader for some partition…
 
@@ -187,22 +230,45 @@
 
 ---
 
-## insights-results-aggregator-db-writer
+## insights-results-aggregator
 
-**Duplicate Groups:** 3
-**Issues in Groups:** 12
+**Duplicate Groups:** 1
+**Issues in Groups:** 6
 **Total Events:** 0
 
-### 🟢 LOW: kafka: error while consuming ccx.ocp.results/0: dial tcp ...: connect: connection refu…
+### 🟢 LOW: Error: dial tcp ...: connect: connection refused
+
+**Issues:** 6 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4571092 | 22 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571092) |
+| #4571096 | 2 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571096) |
+| #4571097 | 2 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571097) |
+| #4571095 | 2 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571095) |
+| #4571093 | 3 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571093) |
+| #4571094 | 1 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571094) |
+
+**Recommendation:** Consider merging into [#4571092](https://glitchtip.devshift.net/ccx/issues/4571092) (highest event count)
+
+---
+
+## insights-results-aggregator-db-writer
+
+**Duplicate Groups:** 4
+**Issues in Groups:** 14
+**Total Events:** 0
+
+### 🟢 LOW: Error: write tcp ...->...: write: broken pipe
 
 **Issues:** 2 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4506735 | 2 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4506735) |
-| #4523197 | 5 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4523197) |
+| #4571111 | 1 | Error: write tcp 10.131.26.136:52622->10.0.216.46:5432: w... | [View](https://glitchtip.devshift.net/ccx/issues/4571111) |
+| #4571109 | 1 | Error: write tcp 10.131.26.136:52622->10.0.216.46:5432: w... | [View](https://glitchtip.devshift.net/ccx/issues/4571109) |
 
-**Recommendation:** Consider merging into [#4506735](https://glitchtip.devshift.net/ccx/issues/4506735) (highest event count)
+**Recommendation:** Consider merging into [#4571111](https://glitchtip.devshift.net/ccx/issues/4571111) (highest event count)
 
 ---
 
@@ -238,6 +304,19 @@
 
 ---
 
+### 🟢 LOW: kafka: error while consuming ccx.ocp.results/0: dial tcp ...: connect: connection refu…
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4506735 | 2 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4506735) |
+| #4523197 | 5 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4523197) |
+
+**Recommendation:** Consider merging into [#4506735](https://glitchtip.devshift.net/ccx/issues/4506735) (highest event count)
+
+---
+
 ## parquet-factory
 
 **Duplicate Groups:** 1
@@ -263,27 +342,14 @@
 **Issues in Groups:** 120
 **Total Events:** 0
 
-### 🟢 LOW: ParseException: ccx_ocp_core.parsers.insights_operator.core.PodsIO couldn't parse json.
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4319956 | 1,218 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319956) |
-| #4513669 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator_hc... | [View](https://glitchtip.devshift.net/ccx/issues/4513669) |
-
-**Recommendation:** Consider merging into [#4319956](https://glitchtip.devshift.net/ccx/issues/4319956) (highest event count)
-
----
-
 ### 🟢 LOW: AttributeError: 'str' object has no attribute 'parent'
 
 **Issues:** 15 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 5,695 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
-| #3791585 | 4,204 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
+| #3781153 | 5,722 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
+| #3791585 | 4,216 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
 | #4520013 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520013) |
 | #4520012 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520012) |
 | #4520011 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520011) |
@@ -299,6 +365,19 @@
 | #4520001 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520001) |
 
 **Recommendation:** Consider merging into [#3781153](https://glitchtip.devshift.net/ccx/issues/3781153) (highest event count)
+
+---
+
+### 🟢 LOW: ParseException: ccx_ocp_core.parsers.insights_operator.core.PodsIO couldn't parse json.
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4319956 | 1,227 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319956) |
+| #4513669 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator_hc... | [View](https://glitchtip.devshift.net/ccx/issues/4513669) |
+
+**Recommendation:** Consider merging into [#4319956](https://glitchtip.devshift.net/ccx/issues/4319956) (highest event count)
 
 ---
 
