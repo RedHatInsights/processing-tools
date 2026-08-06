@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-08-05 05:08:43
+**Generated:** 2026-08-06 05:08:40
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -13,8 +13,8 @@
 | Metric | Value |
 |--------|-------|
 | Projects with duplicates | 11 |
-| Total duplicate groups | 24 |
-| Total issues in groups | 182 |
+| Total duplicate groups | 26 |
+| Total issues in groups | 190 |
 | Total events affected | 0 |
 
 ---
@@ -26,8 +26,8 @@
 - [ccx-notification-writer](#ccx-notification-writer) - 2 groups, 4 issues
 - [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 2 groups, 5 issues
 - [dvo-extractor](#dvo-extractor) - 1 groups, 2 issues
-- [dvo-writer](#dvo-writer) - 2 groups, 4 issues
-- [insights-results-aggregator](#insights-results-aggregator) - 1 groups, 6 issues
+- [dvo-writer](#dvo-writer) - 4 groups, 9 issues
+- [insights-results-aggregator](#insights-results-aggregator) - 1 groups, 9 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 4 groups, 14 issues
 - [parquet-factory](#parquet-factory) - 1 groups, 2 issues
 - [rules-processing](#rules-processing) - 5 groups, 120 issues
@@ -47,8 +47,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 5,319 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
-| #3852210 | 3,998 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
+| #3852013 | 5,345 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
+| #3852210 | 4,010 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
 | #4520000 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520000) |
 | #4519999 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4519999) |
 | #4519998 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4519998) |
@@ -69,7 +69,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4319957 | 1,237 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319957) |
+| #4319957 | 1,246 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319957) |
 | #4513667 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator_hc... | [View](https://glitchtip.devshift.net/ccx/issues/4513667) |
 
 **Recommendation:** Consider merging into [#4319957](https://glitchtip.devshift.net/ccx/issues/4319957) (highest event count)
@@ -82,32 +82,32 @@
 **Issues in Groups:** 7
 **Total Events:** 0
 
-### 🟢 LOW: Error: dial tcp ...: connect: connection refused
-
-**Issues:** 5 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4408130 | 620 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
-| #4571134 | 13 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4571134) |
-| #4571289 | 92 | Error: read tcp 10.129.23.117:49636->10.0.216.215:5432: r... | [View](https://glitchtip.devshift.net/ccx/issues/4571289) |
-| #4571410 | 89 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4571410) |
-| #4571411 | 88 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4571411) |
-
-**Recommendation:** Consider merging into [#4408130](https://glitchtip.devshift.net/ccx/issues/4408130) (highest event count)
-
----
-
 ### 🟢 LOW: Error: Post \'...': readfrom tc…
 
 **Issues:** 2 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3997223 | 299 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
+| #3997223 | 300 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
 | #4519036 | 8 | Error: Get \"http://ccx-insights-content-service:10000/ap... | [View](https://glitchtip.devshift.net/ccx/issues/4519036) |
 
 **Recommendation:** Consider merging into [#3997223](https://glitchtip.devshift.net/ccx/issues/3997223) (highest event count)
+
+---
+
+### 🟢 LOW: Error: dial tcp ...: connect: connection refused
+
+**Issues:** 5 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4571411 | 5,362 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4571411) |
+| #4571289 | 1,772 | Error: read tcp 10.129.23.117:49636->10.0.216.215:5432: r... | [View](https://glitchtip.devshift.net/ccx/issues/4571289) |
+| #4571410 | 8,178 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4571410) |
+| #4408130 | 620 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
+| #4571134 | 13 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4571134) |
+
+**Recommendation:** Consider merging into [#4571411](https://glitchtip.devshift.net/ccx/issues/4571411) (highest event count)
 
 ---
 
@@ -123,7 +123,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4571290 | 2 | Error: read tcp 10.131.0.86:56666->10.0.216.215:5432: rea... | [View](https://glitchtip.devshift.net/ccx/issues/4571290) |
+| #4571290 | 1,519 | Error: read tcp 10.131.0.86:56666->10.0.216.215:5432: rea... | [View](https://glitchtip.devshift.net/ccx/issues/4571290) |
 | #4017706 | 25 | Error: dial tcp 10.0.184.48:9096: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4017706) |
 
 **Recommendation:** Consider merging into [#4571290](https://glitchtip.devshift.net/ccx/issues/4571290) (highest event count)
@@ -191,7 +191,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4319955 | 1,236 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319955) |
+| #4319955 | 1,245 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319955) |
 | #4513668 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator_hc... | [View](https://glitchtip.devshift.net/ccx/issues/4513668) |
 
 **Recommendation:** Consider merging into [#4319955](https://glitchtip.devshift.net/ccx/issues/4319955) (highest event count)
@@ -200,9 +200,36 @@
 
 ## dvo-writer
 
-**Duplicate Groups:** 2
-**Issues in Groups:** 4
+**Duplicate Groups:** 4
+**Issues in Groups:** 9
 **Total Events:** 0
+
+### 🟢 LOW: Error: pq: the database system is shutting down (57P03)
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4572840 | 1,336 | Error: pq: the database system is shutting down (57P03) | [View](https://glitchtip.devshift.net/ccx/issues/4572840) |
+| #4572839 | 1,335 | Error: pq: the database system is shutting down (57P03) | [View](https://glitchtip.devshift.net/ccx/issues/4572839) |
+
+**Recommendation:** Consider merging into [#4572840](https://glitchtip.devshift.net/ccx/issues/4572840) (highest event count)
+
+---
+
+### 🟢 LOW: Error: driver: bad connection
+
+**Issues:** 3 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4572838 | 1 | Error: driver: bad connection | [View](https://glitchtip.devshift.net/ccx/issues/4572838) |
+| #4572841 | 1 | Error: driver: bad connection | [View](https://glitchtip.devshift.net/ccx/issues/4572841) |
+| #4572837 | 1 | Error: driver: bad connection | [View](https://glitchtip.devshift.net/ccx/issues/4572837) |
+
+**Recommendation:** Consider merging into [#4572838](https://glitchtip.devshift.net/ccx/issues/4572838) (highest event count)
+
+---
 
 ### 🟢 LOW: Error: write tcp ...->...: write: broken pipe
 
@@ -233,19 +260,22 @@
 ## insights-results-aggregator
 
 **Duplicate Groups:** 1
-**Issues in Groups:** 6
+**Issues in Groups:** 9
 **Total Events:** 0
 
 ### 🟢 LOW: Error: dial tcp ...: connect: connection refused
 
-**Issues:** 6 | **Total Events:** 0
+**Issues:** 9 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4571092 | 22 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571092) |
-| #4571096 | 2 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571096) |
-| #4571097 | 2 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571097) |
-| #4571095 | 2 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571095) |
+| #4571092 | 2,880 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571092) |
+| #4572842 | 153 | Error: dial tcp 10.0.217.160:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4572842) |
+| #4572843 | 153 | Error: dial tcp 10.0.217.160:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4572843) |
+| #4572844 | 153 | Error: dial tcp 10.0.217.160:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4572844) |
+| #4571096 | 154 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571096) |
+| #4571097 | 9 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571097) |
+| #4571095 | 9 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571095) |
 | #4571093 | 3 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571093) |
 | #4571094 | 1 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571094) |
 
@@ -258,6 +288,25 @@
 **Duplicate Groups:** 4
 **Issues in Groups:** 14
 **Total Events:** 0
+
+### 🟢 LOW: Error: sql: database is closed
+
+**Issues:** 8 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4127668 | 1,569 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4127668) |
+| #4293672 | 1,448 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4293672) |
+| #4486496 | 1,365 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4486496) |
+| #4427981 | 3 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4427981) |
+| #4515056 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4515056) |
+| #4515055 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4515055) |
+| #4515054 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4515054) |
+| #4515053 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4515053) |
+
+**Recommendation:** Consider merging into [#4127668](https://glitchtip.devshift.net/ccx/issues/4127668) (highest event count)
+
+---
 
 ### 🟢 LOW: Error: write tcp ...->...: write: broken pipe
 
@@ -282,25 +331,6 @@
 | #4129668 | 98 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4129668) |
 
 **Recommendation:** Consider merging into [#4129671](https://glitchtip.devshift.net/ccx/issues/4129671) (highest event count)
-
----
-
-### 🟢 LOW: Error: sql: database is closed
-
-**Issues:** 8 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4127668 | 207 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4127668) |
-| #4293672 | 86 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4293672) |
-| #4427981 | 3 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4427981) |
-| #4486496 | 3 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4486496) |
-| #4515056 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4515056) |
-| #4515055 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4515055) |
-| #4515054 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4515054) |
-| #4515053 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4515053) |
-
-**Recommendation:** Consider merging into [#4127668](https://glitchtip.devshift.net/ccx/issues/4127668) (highest event count)
 
 ---
 
@@ -348,8 +378,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 5,748 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
-| #3791585 | 4,227 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
+| #3781153 | 5,773 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
+| #3791585 | 4,239 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
 | #4520013 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520013) |
 | #4520012 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520012) |
 | #4520011 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520011) |
@@ -374,7 +404,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4319956 | 1,236 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319956) |
+| #4319956 | 1,245 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319956) |
 | #4513669 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator_hc... | [View](https://glitchtip.devshift.net/ccx/issues/4513669) |
 
 **Recommendation:** Consider merging into [#4319956](https://glitchtip.devshift.net/ccx/issues/4319956) (highest event count)
@@ -387,7 +417,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4249305 | 116 | FileExpired: [Errno 16] The remote file corresponding to ... | [View](https://glitchtip.devshift.net/ccx/issues/4249305) |
+| #4249305 | 119 | FileExpired: [Errno 16] The remote file corresponding to ... | [View](https://glitchtip.devshift.net/ccx/issues/4249305) |
 | #4521056 | 7 | FileExpired: [Errno 16] The remote file corresponding to ... | [View](https://glitchtip.devshift.net/ccx/issues/4521056) |
 
 **Recommendation:** Consider merging into [#4249305](https://glitchtip.devshift.net/ccx/issues/4249305) (highest event count)
