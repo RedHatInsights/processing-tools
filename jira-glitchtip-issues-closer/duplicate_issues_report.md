@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-08-06 05:08:40
+**Generated:** 2026-08-07 04:43:35
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -14,7 +14,7 @@
 |--------|-------|
 | Projects with duplicates | 11 |
 | Total duplicate groups | 26 |
-| Total issues in groups | 190 |
+| Total issues in groups | 191 |
 | Total events affected | 0 |
 
 ---
@@ -28,7 +28,7 @@
 - [dvo-extractor](#dvo-extractor) - 1 groups, 2 issues
 - [dvo-writer](#dvo-writer) - 4 groups, 9 issues
 - [insights-results-aggregator](#insights-results-aggregator) - 1 groups, 9 issues
-- [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 4 groups, 14 issues
+- [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 4 groups, 15 issues
 - [parquet-factory](#parquet-factory) - 1 groups, 2 issues
 - [rules-processing](#rules-processing) - 5 groups, 120 issues
 - [valkey-writer](#valkey-writer) - 2 groups, 5 issues
@@ -47,8 +47,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 5,345 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
-| #3852210 | 4,010 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
+| #3852210 | 4,022 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
+| #3852013 | 5,371 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
 | #4520000 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520000) |
 | #4519999 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4519999) |
 | #4519998 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4519998) |
@@ -59,7 +59,7 @@
 | #4519993 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4519993) |
 | #4519992 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4519992) |
 
-**Recommendation:** Consider merging into [#3852013](https://glitchtip.devshift.net/ccx/issues/3852013) (highest event count)
+**Recommendation:** Consider merging into [#3852210](https://glitchtip.devshift.net/ccx/issues/3852210) (highest event count)
 
 ---
 
@@ -69,7 +69,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4319957 | 1,246 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319957) |
+| #4319957 | 1,255 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319957) |
 | #4513667 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator_hc... | [View](https://glitchtip.devshift.net/ccx/issues/4513667) |
 
 **Recommendation:** Consider merging into [#4319957](https://glitchtip.devshift.net/ccx/issues/4319957) (highest event count)
@@ -191,7 +191,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4319955 | 1,245 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319955) |
+| #4319955 | 1,254 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319955) |
 | #4513668 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator_hc... | [View](https://glitchtip.devshift.net/ccx/issues/4513668) |
 
 **Recommendation:** Consider merging into [#4319955](https://glitchtip.devshift.net/ccx/issues/4319955) (highest event count)
@@ -210,10 +210,10 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4572840 | 1,336 | Error: pq: the database system is shutting down (57P03) | [View](https://glitchtip.devshift.net/ccx/issues/4572840) |
-| #4572839 | 1,335 | Error: pq: the database system is shutting down (57P03) | [View](https://glitchtip.devshift.net/ccx/issues/4572839) |
+| #4572839 | 1,349 | Error: pq: the database system is shutting down (57P03) | [View](https://glitchtip.devshift.net/ccx/issues/4572839) |
+| #4572840 | 1,349 | Error: pq: the database system is shutting down (57P03) | [View](https://glitchtip.devshift.net/ccx/issues/4572840) |
 
-**Recommendation:** Consider merging into [#4572840](https://glitchtip.devshift.net/ccx/issues/4572840) (highest event count)
+**Recommendation:** Consider merging into [#4572839](https://glitchtip.devshift.net/ccx/issues/4572839) (highest event count)
 
 ---
 
@@ -286,25 +286,26 @@
 ## insights-results-aggregator-db-writer
 
 **Duplicate Groups:** 4
-**Issues in Groups:** 14
+**Issues in Groups:** 15
 **Total Events:** 0
 
 ### 🟢 LOW: Error: sql: database is closed
 
-**Issues:** 8 | **Total Events:** 0
+**Issues:** 9 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4127668 | 1,569 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4127668) |
-| #4293672 | 1,448 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4293672) |
-| #4486496 | 1,365 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4486496) |
+| #4486496 | 1,388 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4486496) |
+| #4127668 | 1,592 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4127668) |
+| #4293672 | 1,471 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4293672) |
+| #4574517 | 2 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4574517) |
 | #4427981 | 3 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4427981) |
 | #4515056 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4515056) |
 | #4515055 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4515055) |
 | #4515054 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4515054) |
 | #4515053 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4515053) |
 
-**Recommendation:** Consider merging into [#4127668](https://glitchtip.devshift.net/ccx/issues/4127668) (highest event count)
+**Recommendation:** Consider merging into [#4486496](https://glitchtip.devshift.net/ccx/issues/4486496) (highest event count)
 
 ---
 
@@ -314,8 +315,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4571111 | 1 | Error: write tcp 10.131.26.136:52622->10.0.216.46:5432: w... | [View](https://glitchtip.devshift.net/ccx/issues/4571111) |
-| #4571109 | 1 | Error: write tcp 10.131.26.136:52622->10.0.216.46:5432: w... | [View](https://glitchtip.devshift.net/ccx/issues/4571109) |
+| #4571111 | 2 | Error: write tcp 10.131.26.136:52622->10.0.216.46:5432: w... | [View](https://glitchtip.devshift.net/ccx/issues/4571111) |
+| #4571109 | 2 | Error: write tcp 10.131.26.136:52622->10.0.216.46:5432: w... | [View](https://glitchtip.devshift.net/ccx/issues/4571109) |
 
 **Recommendation:** Consider merging into [#4571111](https://glitchtip.devshift.net/ccx/issues/4571111) (highest event count)
 
@@ -378,8 +379,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 5,773 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
-| #3791585 | 4,239 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
+| #3791585 | 4,251 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
+| #3781153 | 5,799 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
 | #4520013 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520013) |
 | #4520012 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520012) |
 | #4520011 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520011) |
@@ -394,7 +395,7 @@
 | #4520002 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520002) |
 | #4520001 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520001) |
 
-**Recommendation:** Consider merging into [#3781153](https://glitchtip.devshift.net/ccx/issues/3781153) (highest event count)
+**Recommendation:** Consider merging into [#3791585](https://glitchtip.devshift.net/ccx/issues/3791585) (highest event count)
 
 ---
 
@@ -404,7 +405,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4319956 | 1,245 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319956) |
+| #4319956 | 1,254 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319956) |
 | #4513669 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator_hc... | [View](https://glitchtip.devshift.net/ccx/issues/4513669) |
 
 **Recommendation:** Consider merging into [#4319956](https://glitchtip.devshift.net/ccx/issues/4319956) (highest event count)
@@ -417,7 +418,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4249305 | 119 | FileExpired: [Errno 16] The remote file corresponding to ... | [View](https://glitchtip.devshift.net/ccx/issues/4249305) |
+| #4249305 | 122 | FileExpired: [Errno 16] The remote file corresponding to ... | [View](https://glitchtip.devshift.net/ccx/issues/4249305) |
 | #4521056 | 7 | FileExpired: [Errno 16] The remote file corresponding to ... | [View](https://glitchtip.devshift.net/ccx/issues/4521056) |
 
 **Recommendation:** Consider merging into [#4249305](https://glitchtip.devshift.net/ccx/issues/4249305) (highest event count)
