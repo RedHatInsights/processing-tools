@@ -124,9 +124,8 @@ RedHatInsights/insights-core-messaging:
 # RedHatInsights/insights-data-schemas:
 #   - CODEOWNERS
 
-RedHatInsights/insights-on-prem:
+RedHatInsights/lightspeed-advisor-on-premise-ocp:
   - CODEOWNERS
-  - renovate.json
   - source: workflows_examples/linters.yaml
     dest: .github/workflows/linters.yaml
   - source: workflows_examples/bots-auto-merge.yaml
