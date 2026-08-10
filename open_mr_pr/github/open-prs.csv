@@ -1,13 +1,9 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-insights-results-smart-proxy,1803,Update Go dependencies,2026-08-10T09:58:21Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1803,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1168,chore(deps): update build-tools digest to 979ac56,2026-08-10T09:39:34Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1168,app/red-hat-konflux,ok,ready
 ccx-notification-service,1271,[CCXDEV-16563] add aggregator database configuration to Clowdapp,2026-08-07T13:37:22Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1271,Bee-lee,failed,draft
 insights-ccx-messaging,915,Using new dependencies from insights-core-messaging,2026-08-06T13:52:02Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/915,joselsegura,failed,ready
 insights-results-smart-proxy,1800,Update Pre-commit hooks,2026-08-04T19:08:30Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1800,app/red-hat-konflux,ok,ready
 insights-results-aggregator-mock,779,Update registry.access.redhat.com/ubi8/ubi-minimal Docker tag to v8.10-1785825911,2026-08-04T09:21:12Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/779,app/red-hat-konflux,ok,ready
 insights-operator-gathering-conditions-service,922,[CCXDEV-16644] Remove unused in-process authentication middleware,2026-08-03T12:24:25Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/922,juandspy,ok,draft
-ocp-advisor-frontend,1167,chore(deps): lock file maintenance,2026-08-01T01:28:50Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1167,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1166,fix(deps): update npm minor and patch dependencies,2026-07-31T21:09:46Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1166,app/red-hat-konflux,failed,ready
 data-pipeline,122,"Update dependency boto3 to >=1.43.66,<1.43.67",2026-07-30T21:30:23Z,https://github.com/RedHatInsights/data-pipeline/pull/122,app/red-hat-konflux,failed,ready
 insights-ccx-messaging,888,fix(deps): update python dependencies,2026-07-30T09:24:05Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/888,app/red-hat-konflux,failed,ready
 content-service,1015,Bumped ccx-rules-ocp version to 2026.07.29,2026-07-29T07:38:56Z,https://github.com/RedHatInsights/content-service/pull/1015,app/obsint-processing-app,failed,ready
