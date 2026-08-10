@@ -150,6 +150,7 @@ The [processing-tools](https://github.com/RedHatInsights/processing-tools) repo 
 | `konflux-dep-bumps` | Triage and fix failing Konflux/MintMaker dependency bump PRs. |
 | `resolve-cve` | Resolve CVE vulnerability issues from Jira — assess, bump, or mark not-affected. |
 | `update-refs` | Update refs of deployments to the latest commit SHA |
+| `create-agents-md` | Create or update a repo-specific `AGENTS.md` (loads team-info; does not duplicate Shared Standards). |
 
 To install a skill from processing-tools (Claude-specific):
 
