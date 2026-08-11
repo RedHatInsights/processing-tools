@@ -18,6 +18,10 @@ RedHatInsights/ccx-notification-service:
         use_postgres: true
 
 RedHatInsights/ccx-notification-writer:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: ccx-notification-writer
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -36,6 +40,10 @@ RedHatInsights/ccx-notification-writer:
         use_postgres: true
 
 RedHatInsights/ccx-upgrades-data-eng:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: ccx-upgrades-data-eng
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -52,6 +60,10 @@ RedHatInsights/ccx-upgrades-data-eng:
         use_mock-oauth2-server: true
 
 RedHatInsights/ccx-upgrades-inference:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: ccx-upgrades-inference
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -66,6 +78,10 @@ RedHatInsights/ccx-upgrades-inference:
       service: inference-service
 
 RedHatInsights/content-service:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: content-service
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -100,6 +116,10 @@ RedHatInsights/insights-ccx-messaging:
     dest: .github/workflows/pytests.yaml
 
 RedHatInsights/insights-content-template-renderer:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: insights-content-template-renderer
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -114,6 +134,10 @@ RedHatInsights/insights-content-template-renderer:
       service: content-template-renderer
 
 RedHatInsights/insights-core-messaging:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: insights-core-messaging
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -132,6 +156,10 @@ RedHatInsights/lightspeed-advisor-on-premise-ocp:
     dest: .github/workflows/bots-auto-merge.yaml
 
 RedHatInsights/insights-operator-gathering-conditions:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: insights-operator-gathering-conditions
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -140,6 +168,10 @@ RedHatInsights/insights-operator-gathering-conditions:
     dest: .github/workflows/bots-auto-merge.yaml
 
 RedHatInsights/insights-operator-gathering-conditions-service:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: insights-operator-gathering-conditions-service
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -152,6 +184,10 @@ RedHatInsights/insights-operator-gathering-conditions-service:
       coverage_threshold: 85
 
 RedHatInsights/insights-operator-utils:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: insights-operator-utils
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -186,6 +222,10 @@ RedHatInsights/insights-results-aggregator:
         use_postgres: true
 
 RedHatInsights/insights-results-aggregator-cleaner:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: insights-results-aggregator-cleaner
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -207,6 +247,10 @@ RedHatInsights/insights-results-aggregator-cleaner:
 #   - CODEOWNERS
 
 RedHatInsights/insights-results-aggregator-exporter:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: insights-results-aggregator-exporter
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -226,6 +270,10 @@ RedHatInsights/insights-results-aggregator-exporter:
         use_minio: true
 
 RedHatInsights/insights-results-aggregator-mock:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: insights-results-aggregator-mock
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -241,6 +289,10 @@ RedHatInsights/insights-results-aggregator-mock:
       service: aggregator-mock
 
 RedHatInsights/insights-results-aggregator-utils:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: insights-results-aggregator-utils
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -268,6 +320,10 @@ RedHatInsights/insights-results-smart-proxy:
       service: smart-proxy
 
 RedHatInsights/obsint-mocks:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: obsint-mocks
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -276,6 +332,10 @@ RedHatInsights/obsint-mocks:
     dest: .github/workflows/bots-auto-merge.yaml
 
 RedHatInsights/parquet-factory:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: parquet-factory
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/bots-auto-merge.yaml
@@ -304,6 +364,10 @@ RedHatInsights/insights-behavioral-spec:
     dest: .github/workflows/pytests.yaml
 
 RedHatInsights/ocp-advisor-frontend:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: ocp-advisor-frontend
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/bots-auto-merge.yaml

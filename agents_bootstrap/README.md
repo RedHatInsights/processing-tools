@@ -1,50 +1,39 @@
-# AGENTS.md bootstrap
+# AGENTS.md sync
 
-One-shot helper that opens **draft** PRs adding a **minimal** root `AGENTS.md` to ObsInt service repos that do not already have one.
+Minimal root `AGENTS.md` for ObsInt service repos, distributed by the existing
+[repo-file-sync](../.github/workflows/sync.yaml) / [`.github/sync.yml`](../.github/sync.yml)
+mechanism (same as CODEOWNERS and CI workflow wrappers).
 
-This is **not** continuous file-sync (unlike [`.github/sync.yml`](../.github/sync.yml) for CODEOWNERS / CI wrappers). Existing `AGENTS.md` files are never overwritten.
+## How it works
 
-## What gets written
+1. [`AGENTS.md.tmpl`](./AGENTS.md.tmpl) is rendered with Jinja `{{ repo_name }}`
+   (Pages URL: `https://redhatinsights.github.io/<repo_name>/`).
+2. Only repos that list this file in [`.github/sync.yml`](../.github/sync.yml)
+   receive it — that list **is** the allowlist. Repos that already maintain their
+   own `AGENTS.md` simply omit this entry.
+3. On push to `master` / `main` (or manual sync dispatch), sync opens PRs in those
+   targets via `obsint-processing-app`.
 
-From [`AGENTS.md.tmpl`](./AGENTS.md.tmpl) via simple `{{ repo_name }}` text replacement (same placeholder style as `workflows_examples/*.tmpl`):
+## Adding a repo
 
-- Short pointer to `./README.md`
-- Shared **Team context** (team-info skill links)
-- External references:
-  - `./README.md`
-  - GitHub Pages at `https://redhatinsights.github.io/<repo-name>/` (conventional URL; may 404 until Pages are enabled)
+In `.github/sync.yml`, under that repo, add:
 
-No architecture inventing, Common Tasks, or Makefile scraping — enrich later by hand or with the `create-agents-md` skill.
-
-## Target list
-
-Repos are the top-level keys of [`.github/sync.yml`](../.github/sync.yml) (same fleet as CODEOWNERS / reusable workflow sync). Repos that already have `AGENTS.md` are skipped automatically, so the list can grow when new sync targets are added; re-run the workflow anytime.
-
-## How to run
-
-### GitHub Actions (preferred)
-
-Actions → **Bootstrap AGENTS.md** → Run workflow:
-
-| Input | Meaning |
-|-------|---------|
-| `dry_run` | Default `true` — log skips / would-create only |
-| `repo` | Optional `Owner/name` to limit to one repo; empty = all sync.yml targets |
-
-Set `dry_run` to `false` when you want draft PRs opened as `obsint-processing-app`.
-
-### Locally
-
-Needs [`gh`](https://cli.github.com/) and `jq` (both available on GitHub-hosted runners):
-
-```bash
-./agents_bootstrap/bootstrap.sh --dry-run
-./agents_bootstrap/bootstrap.sh --dry-run --repo RedHatInsights/some-repo
-# Live (opens draft PRs):
-./agents_bootstrap/bootstrap.sh --repo RedHatInsights/some-repo
+```yaml
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: <github-repo-name>
 ```
 
-## Branch / PR shape
+## Taking ownership / enriching AGENTS.md
 
-- Branch: `obsint-processing-app/bootstrap-agents-md`
-- Draft PR title: `docs: bootstrap minimal AGENTS.md`
+If a repo replaces the stub with a richer hand-written `AGENTS.md`, **remove** the
+`agents_bootstrap/AGENTS.md.tmpl` entry from `.github/sync.yml` for that repo so
+sync does not overwrite it.
+
+## Local preview
+
+```bash
+# same substitution sync performs for repo_name
+sed 's/{{ repo_name }}/insights-results-aggregator-exporter/g' agents_bootstrap/AGENTS.md.tmpl
+```
