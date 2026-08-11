@@ -6,7 +6,7 @@ This is **not** continuous file-sync (unlike [`.github/sync.yml`](../.github/syn
 
 ## What gets written
 
-From [`AGENTS.md.tmpl`](./AGENTS.md.tmpl):
+From [`AGENTS.md.tmpl`](./AGENTS.md.tmpl) via simple `{{ repo_name }}` text replacement (same placeholder style as `workflows_examples/*.tmpl`):
 
 - Short pointer to `./README.md`
 - Shared **Team context** (team-info skill links)
@@ -35,14 +35,13 @@ Set `dry_run` to `false` when you want draft PRs opened as `obsint-processing-ap
 
 ### Locally
 
-Needs [`gh`](https://cli.github.com/) authenticated with rights to open PRs on the targets, plus `pyyaml`:
+Needs [`gh`](https://cli.github.com/) and `jq` (both available on GitHub-hosted runners):
 
 ```bash
-pip install pyyaml
-python3 agents_bootstrap/bootstrap.py --dry-run
-python3 agents_bootstrap/bootstrap.py --dry-run --repo RedHatInsights/some-repo
+./agents_bootstrap/bootstrap.sh --dry-run
+./agents_bootstrap/bootstrap.sh --dry-run --repo RedHatInsights/some-repo
 # Live (opens draft PRs):
-python3 agents_bootstrap/bootstrap.py --repo RedHatInsights/some-repo
+./agents_bootstrap/bootstrap.sh --repo RedHatInsights/some-repo
 ```
 
 ## Branch / PR shape
