@@ -25,5 +25,7 @@ Use whichever of these exist for this repository:
 {% if pages_url is defined %}
 - [GitHub Pages]({{ pages_url }})
 {% endif %}
-- Architecture / design docs under `docs/` when present
+{% if architecture_path is defined %}
+- [Architecture]({{ architecture_path }})
+{% endif %}
 - [team-info skill](https://github.com/RedHatInsights/processing-tools/blob/master/skills/team-info/SKILL.md)

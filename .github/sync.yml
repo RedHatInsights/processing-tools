@@ -23,6 +23,7 @@ RedHatInsights/ccx-notification-writer:
     template:
       repo_name: ccx-notification-writer
       pages_url: https://redhatinsights.github.io/ccx-notification-writer/
+      architecture_path: ./docs/architecture.md
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -84,6 +85,7 @@ RedHatInsights/content-service:
     template:
       repo_name: content-service
       pages_url: https://redhatinsights.github.io/content-service/
+      architecture_path: ./docs/architecture.md
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -344,6 +346,7 @@ RedHatInsights/parquet-factory:
     dest: AGENTS.md
     template:
       repo_name: parquet-factory
+      architecture_path: ./docs/architecture.md
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/bots-auto-merge.yaml
@@ -376,6 +379,7 @@ RedHatInsights/ocp-advisor-frontend:
     dest: AGENTS.md
     template:
       repo_name: ocp-advisor-frontend
+      architecture_path: ./ARCHITECTURE.md
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/bots-auto-merge.yaml

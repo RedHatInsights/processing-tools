@@ -6,9 +6,9 @@ mechanism (same as CODEOWNERS and CI workflow wrappers).
 
 ## How it works
 
-1. [`AGENTS.md.tmpl`](./AGENTS.md.tmpl) is rendered with Jinja. Optional
-   `pages_url` includes a GitHub Pages link only when that variable is set in
-   `sync.yml` (omit it when the repo has no Pages site).
+1. [`AGENTS.md.tmpl`](./AGENTS.md.tmpl) is rendered with Jinja. Optional vars:
+   - `pages_url` — GitHub Pages link (omit when the repo has no Pages site)
+   - `architecture_path` — relative path to an architecture doc (omit when none)
 2. Only repos that list this file in [`.github/sync.yml`](../.github/sync.yml)
    receive it — that list **is** the allowlist. Repos that already maintain their
    own `AGENTS.md` simply omit this entry.
@@ -24,8 +24,10 @@ In `.github/sync.yml`, under that repo, add:
     dest: AGENTS.md
     template:
       repo_name: <github-repo-name>
-      # only if Pages are enabled (check: gh api repos/RedHatInsights/<name>/pages):
+      # only if Pages are enabled (gh api repos/RedHatInsights/<name>/pages):
       pages_url: https://redhatinsights.github.io/<github-repo-name>/
+      # only if an architecture doc exists (e.g. docs/architecture.md):
+      architecture_path: ./docs/architecture.md
 ```
 
 ## Taking ownership / enriching AGENTS.md
