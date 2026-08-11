@@ -11,7 +11,6 @@ The [GitLab - processing-tools](https://gitlab.cee.redhat.com/ccx/processing-tea
 - Open PRs for GitHub repositories action running once per day
 - Open MRs for GitLab repositories commited from GitLab CICD once per day
 - GlitchTip <-> Jira integration tool action running once per day (and a separate action to close issues to possibly be run manually)
-- [AGENTS.md sync](./agents_bootstrap/README.md) — minimal `AGENTS.md` stub synced via `.github/sync.yml` to listed repos only
 
 ## Related
 - [GitLab processing-tools](https://gitlab.cee.redhat.com/ccx/processing-team/processing-tools) - running scraping from GL repositiories such as open MRs
