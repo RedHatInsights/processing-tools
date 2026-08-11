@@ -22,6 +22,7 @@ RedHatInsights/ccx-notification-writer:
     dest: AGENTS.md
     template:
       repo_name: ccx-notification-writer
+      pages_url: https://redhatinsights.github.io/ccx-notification-writer/
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -82,6 +83,7 @@ RedHatInsights/content-service:
     dest: AGENTS.md
     template:
       repo_name: content-service
+      pages_url: https://redhatinsights.github.io/content-service/
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -172,6 +174,7 @@ RedHatInsights/insights-operator-gathering-conditions-service:
     dest: AGENTS.md
     template:
       repo_name: insights-operator-gathering-conditions-service
+      pages_url: https://redhatinsights.github.io/insights-operator-gathering-conditions-service/
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -188,6 +191,7 @@ RedHatInsights/insights-operator-utils:
     dest: AGENTS.md
     template:
       repo_name: insights-operator-utils
+      pages_url: https://redhatinsights.github.io/insights-operator-utils/
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -226,6 +230,7 @@ RedHatInsights/insights-results-aggregator-cleaner:
     dest: AGENTS.md
     template:
       repo_name: insights-results-aggregator-cleaner
+      pages_url: https://redhatinsights.github.io/insights-results-aggregator-cleaner/
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -251,6 +256,7 @@ RedHatInsights/insights-results-aggregator-exporter:
     dest: AGENTS.md
     template:
       repo_name: insights-results-aggregator-exporter
+      pages_url: https://redhatinsights.github.io/insights-results-aggregator-exporter/
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -274,6 +280,7 @@ RedHatInsights/insights-results-aggregator-mock:
     dest: AGENTS.md
     template:
       repo_name: insights-results-aggregator-mock
+      pages_url: https://redhatinsights.github.io/insights-results-aggregator-mock/
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
@@ -293,6 +300,7 @@ RedHatInsights/insights-results-aggregator-utils:
     dest: AGENTS.md
     template:
       repo_name: insights-results-aggregator-utils
+      pages_url: https://redhatinsights.github.io/insights-results-aggregator-utils/
   - CODEOWNERS
   - renovate.json
   - source: workflows_examples/linters.yaml
