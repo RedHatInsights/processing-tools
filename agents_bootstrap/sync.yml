@@ -119,9 +119,4 @@ RedHatInsights/parquet-factory:
 
 # RedHatInsights/insights-behavioral-spec:  # has AGENTS.md
 
-RedHatInsights/ocp-advisor-frontend:
-  - source: agents_bootstrap/AGENTS.md.tmpl
-    dest: AGENTS.md
-    template:
-      repo_name: ocp-advisor-frontend
-      architecture_path: ./ARCHITECTURE.md
+# RedHatInsights/ocp-advisor-frontend:  # has agents.md (lowercase)
