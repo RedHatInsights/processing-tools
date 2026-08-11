@@ -1,5 +1,10 @@
-# Manual one-shot AGENTS.md stub sync (see .github/workflows/bootstrap-agents-md.yaml).
-# Not part of continuous .github/sync.yml — run the workflow once via workflow_dispatch.
+# Manual one-shot AGENTS.md stub sync (workflow: Bootstrap AGENTS.md / workflow_dispatch).
+# Not part of continuous .github/sync.yml.
+#
+# Inventory = same fleet as .github/sync.yml. Active entries get the stub; commented
+# entries already have their own AGENTS.md (tracked here so nothing is forgotten).
+
+# RedHatInsights/ccx-notification-service:  # has AGENTS.md
 
 RedHatInsights/ccx-notification-writer:
   - source: agents_bootstrap/AGENTS.md.tmpl
@@ -29,6 +34,10 @@ RedHatInsights/content-service:
       pages_url: https://redhatinsights.github.io/content-service/
       architecture_path: ./docs/architecture.md
 
+# RedHatInsights/data-pipeline:  # has AGENTS.md
+
+# RedHatInsights/insights-ccx-messaging:  # has AGENTS.md
+
 RedHatInsights/insights-content-template-renderer:
   - source: agents_bootstrap/AGENTS.md.tmpl
     dest: AGENTS.md
@@ -40,6 +49,8 @@ RedHatInsights/insights-core-messaging:
     dest: AGENTS.md
     template:
       repo_name: insights-core-messaging
+
+# RedHatInsights/lightspeed-advisor-on-premise-ocp:  # has AGENTS.md
 
 RedHatInsights/insights-operator-gathering-conditions:
   - source: agents_bootstrap/AGENTS.md.tmpl
@@ -60,6 +71,8 @@ RedHatInsights/insights-operator-utils:
     template:
       repo_name: insights-operator-utils
       pages_url: https://redhatinsights.github.io/insights-operator-utils/
+
+# RedHatInsights/insights-results-aggregator:  # has AGENTS.md
 
 RedHatInsights/insights-results-aggregator-cleaner:
   - source: agents_bootstrap/AGENTS.md.tmpl
@@ -89,6 +102,8 @@ RedHatInsights/insights-results-aggregator-utils:
       repo_name: insights-results-aggregator-utils
       pages_url: https://redhatinsights.github.io/insights-results-aggregator-utils/
 
+# RedHatInsights/insights-results-smart-proxy:  # has AGENTS.md
+
 RedHatInsights/obsint-mocks:
   - source: agents_bootstrap/AGENTS.md.tmpl
     dest: AGENTS.md
@@ -102,10 +117,11 @@ RedHatInsights/parquet-factory:
       repo_name: parquet-factory
       architecture_path: ./docs/architecture.md
 
+# RedHatInsights/insights-behavioral-spec:  # has AGENTS.md
+
 RedHatInsights/ocp-advisor-frontend:
   - source: agents_bootstrap/AGENTS.md.tmpl
     dest: AGENTS.md
     template:
       repo_name: ocp-advisor-frontend
       architecture_path: ./ARCHITECTURE.md
-
