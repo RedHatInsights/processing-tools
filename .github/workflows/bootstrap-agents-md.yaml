@@ -1,0 +1,58 @@
+name: Bootstrap AGENTS.md
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only report what would happen; do not open PRs"
+        required: false
+        type: boolean
+        default: true
+      repo:
+        description: "Optional single Owner/repo (empty = all .github/sync.yml targets)"
+        required: false
+        type: string
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    name: Bootstrap minimal AGENTS.md
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.14"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - id: app_token
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: ${{ secrets.OBSINT_PROCESSING_APP_CLIENT_ID }}
+          private-key: ${{ secrets.OBSINT_PROCESSING_APP_PRIVATE_KEY }}
+          owner: RedHatInsights
+
+      - name: Run bootstrap
+        env:
+          GH_TOKEN: ${{ steps.app_token.outputs.token }}
+          GITHUB_TOKEN: ${{ steps.app_token.outputs.token }}
+        run: |
+          set -euo pipefail
+          ARGS=(--sync-yml .github/sync.yml --template agents_bootstrap/AGENTS.md.tmpl)
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            ARGS+=(--dry-run)
+          fi
+          REPO="${{ inputs.repo }}"
+          if [ -n "${REPO}" ]; then
+            ARGS+=(--repo "${REPO}")
+          fi
+          python3 agents_bootstrap/bootstrap.py "${ARGS[@]}"
