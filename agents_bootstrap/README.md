@@ -37,3 +37,5 @@ sync does not overwrite it.
 # same substitution sync performs for repo_name
 sed 's/{{ repo_name }}/insights-results-aggregator-exporter/g' agents_bootstrap/AGENTS.md.tmpl
 ```
+
+Sync only **writes** `AGENTS.md`. It does not open or require `README.md`, architecture docs, or live Pages — missing docs are fine (links may simply 404 until added).
