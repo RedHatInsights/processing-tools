@@ -1,0 +1,111 @@
+# Manual one-shot AGENTS.md stub sync (see .github/workflows/bootstrap-agents-md.yaml).
+# Not part of continuous .github/sync.yml — run the workflow once via workflow_dispatch.
+
+RedHatInsights/ccx-notification-writer:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: ccx-notification-writer
+      pages_url: https://redhatinsights.github.io/ccx-notification-writer/
+      architecture_path: ./docs/architecture.md
+
+RedHatInsights/ccx-upgrades-data-eng:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: ccx-upgrades-data-eng
+
+RedHatInsights/ccx-upgrades-inference:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: ccx-upgrades-inference
+
+RedHatInsights/content-service:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: content-service
+      pages_url: https://redhatinsights.github.io/content-service/
+      architecture_path: ./docs/architecture.md
+
+RedHatInsights/insights-content-template-renderer:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: insights-content-template-renderer
+
+RedHatInsights/insights-core-messaging:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: insights-core-messaging
+
+RedHatInsights/insights-operator-gathering-conditions:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: insights-operator-gathering-conditions
+
+RedHatInsights/insights-operator-gathering-conditions-service:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: insights-operator-gathering-conditions-service
+      pages_url: https://redhatinsights.github.io/insights-operator-gathering-conditions-service/
+
+RedHatInsights/insights-operator-utils:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: insights-operator-utils
+      pages_url: https://redhatinsights.github.io/insights-operator-utils/
+
+RedHatInsights/insights-results-aggregator-cleaner:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: insights-results-aggregator-cleaner
+      pages_url: https://redhatinsights.github.io/insights-results-aggregator-cleaner/
+
+RedHatInsights/insights-results-aggregator-exporter:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: insights-results-aggregator-exporter
+      pages_url: https://redhatinsights.github.io/insights-results-aggregator-exporter/
+
+RedHatInsights/insights-results-aggregator-mock:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: insights-results-aggregator-mock
+      pages_url: https://redhatinsights.github.io/insights-results-aggregator-mock/
+
+RedHatInsights/insights-results-aggregator-utils:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: insights-results-aggregator-utils
+      pages_url: https://redhatinsights.github.io/insights-results-aggregator-utils/
+
+RedHatInsights/obsint-mocks:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: obsint-mocks
+
+RedHatInsights/parquet-factory:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: parquet-factory
+      architecture_path: ./docs/architecture.md
+
+RedHatInsights/ocp-advisor-frontend:
+  - source: agents_bootstrap/AGENTS.md.tmpl
+    dest: AGENTS.md
+    template:
+      repo_name: ocp-advisor-frontend
+      architecture_path: ./ARCHITECTURE.md
+
