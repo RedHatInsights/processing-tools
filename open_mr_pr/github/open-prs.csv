@@ -1,15 +1,9 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-parquet-factory,313,chore(deps): update pre-commit hooks,2026-08-11T01:46:15Z,https://github.com/RedHatInsights/parquet-factory/pull/313,app/red-hat-konflux,failed,ready
+insights-results-aggregator,2681,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.14.10,2026-08-11T05:49:50Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2681,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1805,Update Go dependencies,2026-08-11T01:44:13Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1805,app/red-hat-konflux,failed,ready
-content-service,1066,chore(deps): update module github.com/aws/smithy-go to v1.27.7,2026-08-11T01:36:46Z,https://github.com/RedHatInsights/content-service/pull/1066,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1171,chore(deps): lock file maintenance,2026-08-11T01:12:03Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1171,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1170,fix(deps): update npm minor and patch dependencies,2026-08-11T01:10:19Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1170,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1169,🔄 synced file(s) with RedHatInsights/processing-tools,2026-08-10T13:42:13Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1169,app/obsint-processing-app,failed,ready
 insights-results-smart-proxy,1804,🔄 synced file(s) with RedHatInsights/processing-tools,2026-08-10T13:41:40Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1804,app/obsint-processing-app,failed,ready
-data-pipeline,125,🔄 synced file(s) with RedHatInsights/processing-tools,2026-08-10T13:39:55Z,https://github.com/RedHatInsights/data-pipeline/pull/125,app/obsint-processing-app,failed,ready
-content-service,1065,🔄 synced file(s) with RedHatInsights/processing-tools,2026-08-10T13:39:47Z,https://github.com/RedHatInsights/content-service/pull/1065,app/obsint-processing-app,failed,ready
 ccx-notification-writer,934,🔄 synced file(s) with RedHatInsights/processing-tools,2026-08-10T13:39:22Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/934,app/obsint-processing-app,failed,ready
-ccx-notification-service,1272,🔄 synced file(s) with RedHatInsights/processing-tools,2026-08-10T13:39:13Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1272,app/obsint-processing-app,failed,ready
 insights-results-aggregator-cleaner,999,docs: add AGENTS.md,2026-08-10T11:53:57Z,https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/999,lenasolarova,ok,draft
 ccx-notification-service,1271,[CCXDEV-16563] add aggregator database configuration to Clowdapp,2026-08-07T13:37:22Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1271,Bee-lee,failed,draft
 insights-ccx-messaging,915,Using new dependencies from insights-core-messaging,2026-08-06T13:52:02Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/915,joselsegura,failed,ready
