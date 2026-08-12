@@ -1,11 +1,12 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-08-11 08:42:11*
+*Last updated: 2026-08-12 04:35:40*
 
-**Total PRs: 7**
+**Total PRs: 8**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| insights-ccx-messaging | [930](https://github.com/RedHatInsights/insights-ccx-messaging/pull/930) | [CCXDEV-16623] solve ccx-messaging glasswing findings | 2026-08-11 | joselsegura | ✅ ok | ready |
 | ocp-advisor-frontend | [1169](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1169) | 🔄 synced file(s) with RedHatInsights/processing-tools | 2026-08-10 | app/obsint-processing-app | ❌ failed | ready |
 | ccx-notification-service | [1271](https://github.com/RedHatInsights/ccx-notification-service/pull/1271) | [CCXDEV-16563] add aggregator database configuration to Clowdapp | 2026-08-07 | Bee-lee | ❌ failed | draft |
 | insights-ccx-messaging | [915](https://github.com/RedHatInsights/insights-ccx-messaging/pull/915) | Using new dependencies from insights-core-messaging | 2026-08-06 | joselsegura | ❌ failed | ready |
