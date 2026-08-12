@@ -109,6 +109,8 @@ RedHatInsights/insights-results-aggregator:
     replace: false
     template:
       repo_name: insights-results-aggregator
+      pages_url: https://redhatinsights.github.io/insights-results-aggregator/
+      architecture_path: ./docs/architecture.md
 
 RedHatInsights/insights-results-aggregator-cleaner:
   - source: agents_bootstrap/AGENTS.md.tmpl
