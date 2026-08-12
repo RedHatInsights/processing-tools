@@ -9,6 +9,8 @@ RedHatInsights/ccx-notification-service:
     replace: false
     template:
       repo_name: ccx-notification-service
+      pages_url: https://redhatinsights.github.io/ccx-notification-service/
+      architecture_path: ./docs/architecture.md
 
 RedHatInsights/ccx-notification-writer:
   - source: agents_bootstrap/AGENTS.md.tmpl
@@ -55,6 +57,7 @@ RedHatInsights/insights-ccx-messaging:
     replace: false
     template:
       repo_name: insights-ccx-messaging
+      pages_url: https://redhatinsights.github.io/insights-ccx-messaging/
 
 RedHatInsights/insights-content-template-renderer:
   - source: agents_bootstrap/AGENTS.md.tmpl
@@ -145,6 +148,8 @@ RedHatInsights/insights-results-smart-proxy:
     replace: false
     template:
       repo_name: insights-results-smart-proxy
+      pages_url: https://redhatinsights.github.io/insights-results-smart-proxy/
+      architecture_path: ./docs/architecture.md
 
 RedHatInsights/obsint-mocks:
   - source: agents_bootstrap/AGENTS.md.tmpl
@@ -167,6 +172,7 @@ RedHatInsights/insights-behavioral-spec:
     replace: false
     template:
       repo_name: insights-behavioral-spec
+      pages_url: https://redhatinsights.github.io/insights-behavioral-spec/
 
 RedHatInsights/ocp-advisor-frontend:
   - source: agents_bootstrap/AGENTS.md.tmpl
