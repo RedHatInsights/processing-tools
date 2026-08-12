@@ -1,0 +1,31 @@
+name: Bootstrap AGENTS.md
+
+# Manual one-shot: opens sync PRs for agents_bootstrap/sync.yml only.
+# Not triggered on push — continuous sync stays on .github/sync.yml (CODEOWNERS, CI, …).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sync-agents:
+    runs-on: ubuntu-latest
+    name: Sync AGENTS.md stubs
+
+    steps:
+      - id: app_token
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: ${{ secrets.OBSINT_PROCESSING_APP_CLIENT_ID }}
+          private-key: ${{ secrets.OBSINT_PROCESSING_APP_PRIVATE_KEY }}
+          owner: RedHatInsights
+
+      - name: Checkout Repository
+        uses: actions/checkout@v7
+
+      - name: Sync AGENTS.md
+        uses: BetaHuhn/repo-file-sync-action@v1
+        with:
+          GH_INSTALLATION_TOKEN: ${{ steps.app_token.outputs.token }}
+          CONFIG_PATH: agents_bootstrap/sync.yml
