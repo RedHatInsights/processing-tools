@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-08-12 04:39:15
+**Generated:** 2026-08-13 04:41:10
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -12,15 +12,16 @@
 
 | Metric | Value |
 |--------|-------|
-| Projects with duplicates | 10 |
-| Total duplicate groups | 24 |
-| Total issues in groups | 139 |
+| Projects with duplicates | 11 |
+| Total duplicate groups | 25 |
+| Total issues in groups | 118 |
 | Total events affected | 0 |
 
 ---
 
 ## Table of Contents
 
+- [archive-sync](#archive-sync) - 1 groups, 3 issues
 - [ccx-data-pipeline](#ccx-data-pipeline) - 1 groups, 12 issues
 - [ccx-notification-service](#ccx-notification-service) - 2 groups, 7 issues
 - [ccx-notification-writer](#ccx-notification-writer) - 3 groups, 6 issues
@@ -29,8 +30,28 @@
 - [insights-results-aggregator](#insights-results-aggregator) - 1 groups, 9 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 4 groups, 10 issues
 - [parquet-factory](#parquet-factory) - 1 groups, 2 issues
-- [rules-processing](#rules-processing) - 4 groups, 74 issues
+- [rules-processing](#rules-processing) - 4 groups, 50 issues
 - [valkey-writer](#valkey-writer) - 2 groups, 5 issues
+
+---
+
+## archive-sync
+
+**Duplicate Groups:** 1
+**Issues in Groups:** 3
+**Total Events:** 0
+
+### 🟢 LOW: error: Error -3 while decompressing data: invalid block type
+
+**Issues:** 3 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4582128 | 1 | error: Error -3 while decompressing data: invalid distanc... | [View](https://glitchtip.devshift.net/ccx/issues/4582128) |
+| #4582018 | 2 | error: Error -3 while decompressing data: invalid block type | [View](https://glitchtip.devshift.net/ccx/issues/4582018) |
+| #4538382 | 1 | error: Error -3 while decompressing data: invalid code le... | [View](https://glitchtip.devshift.net/ccx/issues/4538382) |
+
+**Recommendation:** Consider merging into [#4582128](https://glitchtip.devshift.net/ccx/issues/4582128) (highest event count)
 
 ---
 
@@ -46,9 +67,9 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4580828 | 85,348 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580828) |
-| #3852210 | 4,082 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
-| #3852013 | 5,487 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
+| #4580828 | 227,185 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580828) |
+| #3852210 | 4,094 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
+| #3852013 | 5,493 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
 | #4520000 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520000) |
 | #4519999 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4519999) |
 | #4519998 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4519998) |
@@ -75,7 +96,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3997223 | 301 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
+| #3997223 | 302 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
 | #4519036 | 8 | Error: Get \"http://ccx-insights-content-service:10000/ap... | [View](https://glitchtip.devshift.net/ccx/issues/4519036) |
 
 **Recommendation:** Consider merging into [#3997223](https://glitchtip.devshift.net/ccx/issues/3997223) (highest event count)
@@ -88,7 +109,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4408130 | 677 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
+| #4408130 | 702 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
 | #4571411 | 5,362 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4571411) |
 | #4571289 | 1,772 | Error: read tcp 10.129.23.117:49636->10.0.216.215:5432: r... | [View](https://glitchtip.devshift.net/ccx/issues/4571289) |
 | #4571410 | 8,178 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4571410) |
@@ -346,7 +367,7 @@
 ## rules-processing
 
 **Duplicate Groups:** 4
-**Issues in Groups:** 74
+**Issues in Groups:** 50
 **Total Events:** 0
 
 ### 🟢 LOW: AttributeError: 'str' object has no attribute 'parent'
@@ -355,9 +376,9 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4580829 | 85,335 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580829) |
-| #3791585 | 4,311 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
-| #3781153 | 5,915 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
+| #4580829 | 227,172 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580829) |
+| #3791585 | 4,323 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
+| #3781153 | 5,921 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
 | #4520013 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520013) |
 | #4520012 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520012) |
 | #4520011 | 1 | AttributeError: 'NoneType' object has no attribute 'lower' | [View](https://glitchtip.devshift.net/ccx/issues/4520011) |
@@ -382,7 +403,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4249305 | 131 | FileExpired: [Errno 16] The remote file corresponding to ... | [View](https://glitchtip.devshift.net/ccx/issues/4249305) |
+| #4249305 | 132 | FileExpired: [Errno 16] The remote file corresponding to ... | [View](https://glitchtip.devshift.net/ccx/issues/4249305) |
 | #4521056 | 7 | FileExpired: [Errno 16] The remote file corresponding to ... | [View](https://glitchtip.devshift.net/ccx/issues/4521056) |
 
 **Recommendation:** Consider merging into [#4249305](https://glitchtip.devshift.net/ccx/issues/4249305) (highest event count)
@@ -391,7 +412,7 @@
 
 ### 🟢 LOW: InvalidArchive: Cannot detect execution context: No files in path: /tmp/insights-717cz68w
 
-**Issues:** 52 | **Total Events:** 0
+**Issues:** 28 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
@@ -423,30 +444,6 @@
 | #4519047 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4519047) |
 | #4518994 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518994) |
 | #4518967 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518967) |
-| #4518948 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518948) |
-| #4518933 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518933) |
-| #4518919 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518919) |
-| #4518902 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518902) |
-| #4518892 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518892) |
-| #4518883 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518883) |
-| #4518864 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518864) |
-| #4518809 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518809) |
-| #4518784 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518784) |
-| #4518757 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518757) |
-| #4518729 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518729) |
-| #4518707 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518707) |
-| #4518671 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518671) |
-| #4518650 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518650) |
-| #4518619 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518619) |
-| #4518592 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518592) |
-| #4518481 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518481) |
-| #4518451 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518451) |
-| #4518410 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518410) |
-| #4518354 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518354) |
-| #4518309 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518309) |
-| #4518262 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518262) |
-| #4518224 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518224) |
-| #4518198 | 1 | InvalidArchive: Cannot detect execution context: No files... | [View](https://glitchtip.devshift.net/ccx/issues/4518198) |
 
 **Recommendation:** Consider merging into [#4519922](https://glitchtip.devshift.net/ccx/issues/4519922) (highest event count)
 
@@ -458,8 +455,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4509971 | 25 | Rule response make_fail(NODES_CONTAINER_RUNTIME_VERSION) ... | [View](https://glitchtip.devshift.net/ccx/issues/4509971) |
-| #4198802 | 159 | Rule response make_fail(OPERATOR_ISSUE) exceeds the size ... | [View](https://glitchtip.devshift.net/ccx/issues/4198802) |
+| #4509971 | 37 | Rule response make_fail(NODES_CONTAINER_RUNTIME_VERSION) ... | [View](https://glitchtip.devshift.net/ccx/issues/4509971) |
+| #4198802 | 161 | Rule response make_fail(OPERATOR_ISSUE) exceeds the size ... | [View](https://glitchtip.devshift.net/ccx/issues/4198802) |
 | #4526281 | 4 | Rule response make_fail(CERTIFICATES_EXPIRING_SOON) excee... | [View](https://glitchtip.devshift.net/ccx/issues/4526281) |
 | #4233800 | 373 | Rule response make_fail(MACHINE_POOL_NOT_OK) exceeds the ... | [View](https://glitchtip.devshift.net/ccx/issues/4233800) |
 
