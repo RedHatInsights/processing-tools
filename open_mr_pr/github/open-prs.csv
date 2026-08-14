@@ -1,11 +1,5 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
 insights-results-smart-proxy,1809,Update Go dependencies,2026-08-14T02:43:21Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1809,app/red-hat-konflux,failed,ready
-content-service,1075,chore(deps): update go dependencies,2026-08-14T01:51:36Z,https://github.com/RedHatInsights/content-service/pull/1075,app/red-hat-konflux,failed,ready
-ccx-upgrades-data-eng,296,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.23.0,2026-08-14T01:39:52Z,https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/296,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1180,chore(deps): update npm minor and patch dependencies,2026-08-14T01:37:12Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1180,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1179,chore(deps): update build-tools digest to 1e388d9,2026-08-14T01:36:38Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1179,app/red-hat-konflux,failed,ready
-parquet-factory,317,fix(deps): update go dependencies,2026-08-14T01:36:24Z,https://github.com/RedHatInsights/parquet-factory/pull/317,app/red-hat-konflux,failed,ready
-insights-results-aggregator,2685,chore(deps): update go dependencies,2026-08-14T01:24:06Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2685,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1178,🔄 synced file(s) with RedHatInsights/processing-tools,2026-08-13T04:38:34Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1178,app/obsint-processing-app,failed,ready
 ocp-advisor-frontend,1177,chore(deps): lock file maintenance,2026-08-13T01:30:55Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1177,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1808,Update Pre-commit hooks,2026-08-12T01:37:20Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1808,app/red-hat-konflux,failed,ready
