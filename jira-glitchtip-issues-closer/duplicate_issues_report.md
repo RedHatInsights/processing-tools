@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-08-15 04:13:11
+**Generated:** 2026-08-16 04:16:48
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -13,8 +13,8 @@
 | Metric | Value |
 |--------|-------|
 | Projects with duplicates | 11 |
-| Total duplicate groups | 25 |
-| Total issues in groups | 70 |
+| Total duplicate groups | 24 |
+| Total issues in groups | 68 |
 | Total events affected | 0 |
 
 ---
@@ -23,7 +23,7 @@
 
 - [archive-sync](#archive-sync) - 1 groups, 3 issues
 - [ccx-data-pipeline](#ccx-data-pipeline) - 1 groups, 3 issues
-- [ccx-notification-service](#ccx-notification-service) - 2 groups, 7 issues
+- [ccx-notification-service](#ccx-notification-service) - 1 groups, 5 issues
 - [ccx-notification-writer](#ccx-notification-writer) - 3 groups, 6 issues
 - [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 2 groups, 5 issues
 - [dvo-writer](#dvo-writer) - 5 groups, 11 issues
@@ -67,18 +67,18 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 5,541 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
-| #3852210 | 4,117 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
+| #3852210 | 4,129 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
+| #3852013 | 5,566 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
 | #4580828 | 237,551 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580828) |
 
-**Recommendation:** Consider merging into [#3852013](https://glitchtip.devshift.net/ccx/issues/3852013) (highest event count)
+**Recommendation:** Consider merging into [#3852210](https://glitchtip.devshift.net/ccx/issues/3852210) (highest event count)
 
 ---
 
 ## ccx-notification-service
 
-**Duplicate Groups:** 2
-**Issues in Groups:** 7
+**Duplicate Groups:** 1
+**Issues in Groups:** 5
 **Total Events:** 0
 
 ### 🟢 LOW: Error: dial tcp ...: connect: connection refused
@@ -87,26 +87,13 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4408130 | 779 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
+| #4408130 | 780 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
 | #4571411 | 5,362 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4571411) |
 | #4571289 | 1,772 | Error: read tcp 10.129.23.117:49636->10.0.216.215:5432: r... | [View](https://glitchtip.devshift.net/ccx/issues/4571289) |
 | #4571410 | 8,178 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4571410) |
 | #4571134 | 13 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4571134) |
 
 **Recommendation:** Consider merging into [#4408130](https://glitchtip.devshift.net/ccx/issues/4408130) (highest event count)
-
----
-
-### 🟢 LOW: Error: Post \'...': readfrom tc…
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #3997223 | 304 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
-| #4519036 | 8 | Error: Get \"http://ccx-insights-content-service:10000/ap... | [View](https://glitchtip.devshift.net/ccx/issues/4519036) |
-
-**Recommendation:** Consider merging into [#3997223](https://glitchtip.devshift.net/ccx/issues/3997223) (highest event count)
 
 ---
 
@@ -380,11 +367,11 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 5,969 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
-| #3791585 | 4,346 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
+| #3791585 | 4,358 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
+| #3781153 | 5,994 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
 | #4580829 | 237,443 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580829) |
 
-**Recommendation:** Consider merging into [#3781153](https://glitchtip.devshift.net/ccx/issues/3781153) (highest event count)
+**Recommendation:** Consider merging into [#3791585](https://glitchtip.devshift.net/ccx/issues/3791585) (highest event count)
 
 ---
 
@@ -394,7 +381,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4249305 | 133 | FileExpired: [Errno 16] The remote file corresponding to ... | [View](https://glitchtip.devshift.net/ccx/issues/4249305) |
+| #4249305 | 134 | FileExpired: [Errno 16] The remote file corresponding to ... | [View](https://glitchtip.devshift.net/ccx/issues/4249305) |
 | #4521056 | 7 | FileExpired: [Errno 16] The remote file corresponding to ... | [View](https://glitchtip.devshift.net/ccx/issues/4521056) |
 
 **Recommendation:** Consider merging into [#4249305](https://glitchtip.devshift.net/ccx/issues/4249305) (highest event count)
@@ -407,7 +394,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4198802 | 183 | Rule response make_fail(OPERATOR_ISSUE) exceeds the size ... | [View](https://glitchtip.devshift.net/ccx/issues/4198802) |
+| #4198802 | 198 | Rule response make_fail(OPERATOR_ISSUE) exceeds the size ... | [View](https://glitchtip.devshift.net/ccx/issues/4198802) |
 | #4509971 | 44 | Rule response make_fail(NODES_CONTAINER_RUNTIME_VERSION) ... | [View](https://glitchtip.devshift.net/ccx/issues/4509971) |
 | #4526281 | 4 | Rule response make_fail(CERTIFICATES_EXPIRING_SOON) excee... | [View](https://glitchtip.devshift.net/ccx/issues/4526281) |
 | #4233800 | 373 | Rule response make_fail(MACHINE_POOL_NOT_OK) exceeds the ... | [View](https://glitchtip.devshift.net/ccx/issues/4233800) |
