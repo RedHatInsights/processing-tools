@@ -1,6 +1,6 @@
 # Glitchtip <-> Jira integration checker
 
-*Last updated: 2026-08-18 04:15:23 UTC*
+*Last updated: 2026-08-19 04:15:36 UTC*
 
 ## Open Jira issues for Glitchtip events
 
@@ -20,16 +20,16 @@
 | [Link](https://glitchtip.devshift.net/ccx/issues/3832544) | 0 |
 | [Link](https://glitchtip.devshift.net/ccx/issues/3781153) | 0 |
 | [Link](https://glitchtip.devshift.net/ccx/issues/4198802) | 0 |
+| [Link](https://glitchtip.devshift.net/ccx/issues/4249305) | 0 |
 | [Link](https://glitchtip.devshift.net/ccx/issues/3791585) | 0 |
 | [Link](https://glitchtip.devshift.net/ccx/issues/834719) | 0 |
 | [Link](https://glitchtip.devshift.net/ccx/issues/834727) | 0 |
 | [Link](https://glitchtip.devshift.net/ccx/issues/4319956) | 0 |
-| [Link](https://glitchtip.devshift.net/ccx/issues/3805165) | 0 |
-| [Link](https://glitchtip.devshift.net/ccx/issues/835478) | 0 |
-| [Link](https://glitchtip.devshift.net/ccx/issues/4249305) | 0 |
-| [Link](https://glitchtip.devshift.net/ccx/issues/3766741) | 1 |
-| [Link](https://glitchtip.devshift.net/ccx/issues/4129671) | 3 |
-| [Link](https://glitchtip.devshift.net/ccx/issues/4129668) | 3 |
-| [Link](https://glitchtip.devshift.net/ccx/issues/4017705) | 3 |
-| [Link](https://glitchtip.devshift.net/ccx/issues/4509971) | 4 |
-| [Link](https://glitchtip.devshift.net/ccx/issues/4580829) | 4 |
+| [Link](https://glitchtip.devshift.net/ccx/issues/3766741) | 0 |
+| [Link](https://glitchtip.devshift.net/ccx/issues/4127668) | 0 |
+| [Link](https://glitchtip.devshift.net/ccx/issues/4293672) | 0 |
+| [Link](https://glitchtip.devshift.net/ccx/issues/4593659) | 0 |
+| [Link](https://glitchtip.devshift.net/ccx/issues/3805165) | 1 |
+| [Link](https://glitchtip.devshift.net/ccx/issues/835478) | 1 |
+| [Link](https://glitchtip.devshift.net/ccx/issues/4129671) | 4 |
+| [Link](https://glitchtip.devshift.net/ccx/issues/4129668) | 4 |
