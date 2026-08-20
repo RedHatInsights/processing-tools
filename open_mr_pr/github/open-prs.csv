@@ -1,10 +1,9 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
+ocp-advisor-frontend,1187,chore(deps): update dependency @formatjs/cli to v6.16.18,2026-08-20T01:30:27Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1187,app/red-hat-konflux,failed,ready
+ocp-advisor-frontend,1186,chore(deps): update build-tools digest to 6aad292,2026-08-20T01:30:08Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1186,app/red-hat-konflux,ok,ready
+insights-results-aggregator,2694,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.31.0,2026-08-20T01:27:53Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2694,app/red-hat-konflux,failed,ready
 insights-content-template-renderer,571,Update dependency python-json-logger to v4.2.0,2026-08-19T01:50:55Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/571,app/red-hat-konflux,failed,ready
 ccx-notification-service,1273,CCXDEV-16664: Migrate OCM Service Log severities to HCC labels,2026-08-18T09:18:14Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1273,platex-rehor-bot,failed,ready
-ccx-upgrades-data-eng,302,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.30.3,2026-08-18T06:31:35Z,https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/302,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1185,chore(deps): lock file maintenance,2026-08-18T01:54:34Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1185,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1184,chore(deps): update build-tools digest to f6aa7ce,2026-08-18T01:52:22Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1184,app/red-hat-konflux,ok,ready
-ocp-advisor-frontend,1182,fix(deps): update npm minor and patch dependencies,2026-08-15T01:43:24Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1182,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1809,Update Go dependencies,2026-08-14T02:43:21Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1809,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1808,Update Pre-commit hooks,2026-08-12T01:37:20Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1808,app/red-hat-konflux,failed,ready
 ccx-notification-service,1271,[CCXDEV-16563] add aggregator database configuration to Clowdapp,2026-08-07T13:37:22Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1271,Bee-lee,failed,draft
