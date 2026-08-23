@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-08-22 04:15:30
+**Generated:** 2026-08-23 04:17:20
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -13,8 +13,8 @@
 | Metric | Value |
 |--------|-------|
 | Projects with duplicates | 11 |
-| Total duplicate groups | 23 |
-| Total issues in groups | 66 |
+| Total duplicate groups | 22 |
+| Total issues in groups | 62 |
 | Total events affected | 0 |
 
 ---
@@ -25,12 +25,12 @@
 - [ccx-data-pipeline](#ccx-data-pipeline) - 1 groups, 3 issues
 - [ccx-notification-service](#ccx-notification-service) - 1 groups, 5 issues
 - [ccx-notification-writer](#ccx-notification-writer) - 3 groups, 6 issues
-- [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 2 groups, 5 issues
+- [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 1 groups, 3 issues
 - [dvo-writer](#dvo-writer) - 5 groups, 11 issues
 - [insights-results-aggregator](#insights-results-aggregator) - 1 groups, 9 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 4 groups, 11 issues
 - [parquet-factory](#parquet-factory) - 1 groups, 2 issues
-- [rules-processing](#rules-processing) - 2 groups, 7 issues
+- [rules-processing](#rules-processing) - 2 groups, 5 issues
 - [valkey-writer](#valkey-writer) - 2 groups, 4 issues
 
 ---
@@ -67,8 +67,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 5,720 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
-| #3852210 | 4,201 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
+| #3852013 | 5,745 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
+| #3852210 | 4,213 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
 | #4580828 | 237,551 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580828) |
 
 **Recommendation:** Consider merging into [#3852013](https://glitchtip.devshift.net/ccx/issues/3852013) (highest event count)
@@ -144,22 +144,9 @@
 
 ## ccx-upgrades-data-eng
 
-**Duplicate Groups:** 2
-**Issues in Groups:** 5
+**Duplicate Groups:** 1
+**Issues in Groups:** 3
 **Total Events:** 0
-
-### 🟢 LOW: ConnectionError: HTTPConnectionPool(host='ccx-upgrades-inference-svc', port=8000): Max retries exce…
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4466473 | 22 | ConnectionError: HTTPConnectionPool(host='ccx-upgrades-in... | [View](https://glitchtip.devshift.net/ccx/issues/4466473) |
-| #4466472 | 33 | ConnectionError: HTTPConnectionPool(host='ccx-upgrades-in... | [View](https://glitchtip.devshift.net/ccx/issues/4466472) |
-
-**Recommendation:** Consider merging into [#4466473](https://glitchtip.devshift.net/ccx/issues/4466473) (highest event count)
-
----
 
 ### 🟢 LOW: Unable to update SSO token: Error refreshing the token: (missing_token) Missing access token parame…
 
@@ -359,7 +346,7 @@
 ## rules-processing
 
 **Duplicate Groups:** 2
-**Issues in Groups:** 7
+**Issues in Groups:** 5
 **Total Events:** 0
 
 ### 🟢 LOW: AttributeError: 'str' object has no attribute 'parent'
@@ -368,8 +355,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 6,148 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
-| #3791585 | 4,430 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
+| #3781153 | 6,173 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
+| #3791585 | 4,442 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
 | #4580829 | 237,443 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580829) |
 
 **Recommendation:** Consider merging into [#3781153](https://glitchtip.devshift.net/ccx/issues/3781153) (highest event count)
@@ -378,14 +365,12 @@
 
 ### 🟢 LOW: Rule response make_fail(OPERATOR_ISSUE) exceeds the size limit of ... characters.
 
-**Issues:** 4 | **Total Events:** 0
+**Issues:** 2 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4198802 | 267 | Rule response make_fail(OPERATOR_ISSUE) exceeds the size ... | [View](https://glitchtip.devshift.net/ccx/issues/4198802) |
+| #4198802 | 286 | Rule response make_fail(OPERATOR_ISSUE) exceeds the size ... | [View](https://glitchtip.devshift.net/ccx/issues/4198802) |
 | #4509971 | 44 | Rule response make_fail(NODES_CONTAINER_RUNTIME_VERSION) ... | [View](https://glitchtip.devshift.net/ccx/issues/4509971) |
-| #4526281 | 4 | Rule response make_fail(CERTIFICATES_EXPIRING_SOON) excee... | [View](https://glitchtip.devshift.net/ccx/issues/4526281) |
-| #4233800 | 373 | Rule response make_fail(MACHINE_POOL_NOT_OK) exceeds the ... | [View](https://glitchtip.devshift.net/ccx/issues/4233800) |
 
 **Recommendation:** Consider merging into [#4198802](https://glitchtip.devshift.net/ccx/issues/4198802) (highest event count)
 
