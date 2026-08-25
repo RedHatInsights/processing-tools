@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-08-24 04:19:58
+**Generated:** 2026-08-25 04:18:01
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -12,9 +12,9 @@
 
 | Metric | Value |
 |--------|-------|
-| Projects with duplicates | 11 |
-| Total duplicate groups | 22 |
-| Total issues in groups | 62 |
+| Projects with duplicates | 10 |
+| Total duplicate groups | 21 |
+| Total issues in groups | 59 |
 | Total events affected | 0 |
 
 ---
@@ -25,7 +25,6 @@
 - [ccx-data-pipeline](#ccx-data-pipeline) - 1 groups, 3 issues
 - [ccx-notification-service](#ccx-notification-service) - 1 groups, 5 issues
 - [ccx-notification-writer](#ccx-notification-writer) - 3 groups, 6 issues
-- [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 1 groups, 3 issues
 - [dvo-writer](#dvo-writer) - 5 groups, 11 issues
 - [insights-results-aggregator](#insights-results-aggregator) - 1 groups, 9 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 4 groups, 11 issues
@@ -67,8 +66,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 5,770 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
-| #3852210 | 4,225 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
+| #3852013 | 5,797 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
+| #3852210 | 4,237 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
 | #4580828 | 237,551 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580828) |
 
 **Recommendation:** Consider merging into [#3852013](https://glitchtip.devshift.net/ccx/issues/3852013) (highest event count)
@@ -139,29 +138,6 @@
 | #4434839 | 16 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4434839) |
 
 **Recommendation:** Consider merging into [#4506737](https://glitchtip.devshift.net/ccx/issues/4506737) (highest event count)
-
----
-
-## ccx-upgrades-data-eng
-
-**Duplicate Groups:** 1
-**Issues in Groups:** 3
-**Total Events:** 0
-
-### 🟢 LOW: Unable to update SSO token: Error refreshing the token: (missing_token) Missing access token parame…
-
-**Issues:** 3 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4531944 | 1 | Unable to update SSO token: Error refreshing the token:
-(... | [View](https://glitchtip.devshift.net/ccx/issues/4531944) |
-| #4531940 | 1 | Unable to update SSO token: Error refreshing the token:
-(... | [View](https://glitchtip.devshift.net/ccx/issues/4531940) |
-| #4531938 | 1 | Unable to update SSO token: Error refreshing the token:
-(... | [View](https://glitchtip.devshift.net/ccx/issues/4531938) |
-
-**Recommendation:** Consider merging into [#4531944](https://glitchtip.devshift.net/ccx/issues/4531944) (highest event count)
 
 ---
 
@@ -355,8 +331,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 6,199 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
-| #3791585 | 4,454 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
+| #3781153 | 6,226 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
+| #3791585 | 4,466 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
 | #4580829 | 237,443 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580829) |
 
 **Recommendation:** Consider merging into [#3781153](https://glitchtip.devshift.net/ccx/issues/3781153) (highest event count)
