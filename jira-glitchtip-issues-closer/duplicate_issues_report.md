@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-08-25 04:18:01
+**Generated:** 2026-08-26 04:18:19
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -14,14 +14,14 @@
 |--------|-------|
 | Projects with duplicates | 10 |
 | Total duplicate groups | 21 |
-| Total issues in groups | 59 |
+| Total issues in groups | 60 |
 | Total events affected | 0 |
 
 ---
 
 ## Table of Contents
 
-- [archive-sync](#archive-sync) - 1 groups, 3 issues
+- [archive-sync](#archive-sync) - 1 groups, 4 issues
 - [ccx-data-pipeline](#ccx-data-pipeline) - 1 groups, 3 issues
 - [ccx-notification-service](#ccx-notification-service) - 1 groups, 5 issues
 - [ccx-notification-writer](#ccx-notification-writer) - 3 groups, 6 issues
@@ -37,20 +37,21 @@
 ## archive-sync
 
 **Duplicate Groups:** 1
-**Issues in Groups:** 3
+**Issues in Groups:** 4
 **Total Events:** 0
 
 ### 🟢 LOW: error: Error -3 while decompressing data: invalid block type
 
-**Issues:** 3 | **Total Events:** 0
+**Issues:** 4 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
+| #4604390 | 1 | error: Error -3 while decompressing data: invalid literal... | [View](https://glitchtip.devshift.net/ccx/issues/4604390) |
 | #4582128 | 1 | error: Error -3 while decompressing data: invalid distanc... | [View](https://glitchtip.devshift.net/ccx/issues/4582128) |
 | #4582018 | 2 | error: Error -3 while decompressing data: invalid block type | [View](https://glitchtip.devshift.net/ccx/issues/4582018) |
 | #4538382 | 1 | error: Error -3 while decompressing data: invalid code le... | [View](https://glitchtip.devshift.net/ccx/issues/4538382) |
 
-**Recommendation:** Consider merging into [#4582128](https://glitchtip.devshift.net/ccx/issues/4582128) (highest event count)
+**Recommendation:** Consider merging into [#4604390](https://glitchtip.devshift.net/ccx/issues/4604390) (highest event count)
 
 ---
 
@@ -66,11 +67,11 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 5,797 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
-| #3852210 | 4,237 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
+| #3852210 | 4,249 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
+| #3852013 | 5,812 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
 | #4580828 | 237,551 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580828) |
 
-**Recommendation:** Consider merging into [#3852013](https://glitchtip.devshift.net/ccx/issues/3852013) (highest event count)
+**Recommendation:** Consider merging into [#3852210](https://glitchtip.devshift.net/ccx/issues/3852210) (highest event count)
 
 ---
 
@@ -108,7 +109,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4017706 | 26 | Error: dial tcp 10.0.184.48:9096: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4017706) |
+| #4017706 | 27 | Error: dial tcp 10.0.184.48:9096: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4017706) |
 | #4571290 | 1,519 | Error: read tcp 10.131.0.86:56666->10.0.216.215:5432: rea... | [View](https://glitchtip.devshift.net/ccx/issues/4571290) |
 
 **Recommendation:** Consider merging into [#4017706](https://glitchtip.devshift.net/ccx/issues/4017706) (highest event count)
@@ -293,7 +294,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4017705 | 71 | Error: dial tcp 10.0.184.48:9096: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4017705) |
+| #4017705 | 74 | Error: dial tcp 10.0.184.48:9096: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4017705) |
 | #4506735 | 2 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4506735) |
 
 **Recommendation:** Consider merging into [#4017705](https://glitchtip.devshift.net/ccx/issues/4017705) (highest event count)
@@ -331,11 +332,11 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 6,226 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
-| #3791585 | 4,466 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
+| #3791585 | 4,478 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
+| #3781153 | 6,241 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
 | #4580829 | 237,443 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580829) |
 
-**Recommendation:** Consider merging into [#3781153](https://glitchtip.devshift.net/ccx/issues/3781153) (highest event count)
+**Recommendation:** Consider merging into [#3791585](https://glitchtip.devshift.net/ccx/issues/3791585) (highest event count)
 
 ---
 
@@ -377,7 +378,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4017718 | 25 | Error: dial tcp 10.0.186.167:9096: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4017718) |
+| #4017718 | 27 | Error: dial tcp 10.0.186.167:9096: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4017718) |
 | #4506736 | 2 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4506736) |
 
 **Recommendation:** Consider merging into [#4017718](https://glitchtip.devshift.net/ccx/issues/4017718) (highest event count)
