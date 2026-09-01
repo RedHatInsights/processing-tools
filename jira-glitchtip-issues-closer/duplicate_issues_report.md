@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-08-31 04:23:03
+**Generated:** 2026-09-01 04:21:31
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -13,8 +13,8 @@
 | Metric | Value |
 |--------|-------|
 | Projects with duplicates | 10 |
-| Total duplicate groups | 21 |
-| Total issues in groups | 59 |
+| Total duplicate groups | 23 |
+| Total issues in groups | 63 |
 | Total events affected | 0 |
 
 ---
@@ -23,14 +23,14 @@
 
 - [archive-sync](#archive-sync) - 1 groups, 3 issues
 - [ccx-data-pipeline](#ccx-data-pipeline) - 1 groups, 3 issues
-- [ccx-notification-service](#ccx-notification-service) - 1 groups, 5 issues
+- [ccx-notification-service](#ccx-notification-service) - 2 groups, 7 issues
 - [ccx-notification-writer](#ccx-notification-writer) - 3 groups, 6 issues
 - [dvo-writer](#dvo-writer) - 5 groups, 11 issues
 - [insights-results-aggregator](#insights-results-aggregator) - 1 groups, 9 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 4 groups, 11 issues
 - [parquet-factory](#parquet-factory) - 1 groups, 2 issues
 - [rules-processing](#rules-processing) - 2 groups, 5 issues
-- [valkey-writer](#valkey-writer) - 2 groups, 4 issues
+- [valkey-writer](#valkey-writer) - 3 groups, 6 issues
 
 ---
 
@@ -66,8 +66,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 5,939 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
-| #3852210 | 4,309 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
+| #3852013 | 5,966 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
+| #3852210 | 4,321 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
 | #4580828 | 237,551 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580828) |
 
 **Recommendation:** Consider merging into [#3852013](https://glitchtip.devshift.net/ccx/issues/3852013) (highest event count)
@@ -76,9 +76,22 @@
 
 ## ccx-notification-service
 
-**Duplicate Groups:** 1
-**Issues in Groups:** 5
+**Duplicate Groups:** 2
+**Issues in Groups:** 7
 **Total Events:** 0
+
+### 🟢 LOW: Error: kafka server: Tried to send a message to a replica that is not the leader for some partition…
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4613971 | 3 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4613971) |
+| #4613965 | 3 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4613965) |
+
+**Recommendation:** Consider merging into [#4613971](https://glitchtip.devshift.net/ccx/issues/4613971) (highest event count)
+
+---
 
 ### 🟢 LOW: Error: dial tcp ...: connect: connection refused
 
@@ -147,6 +160,19 @@
 **Issues in Groups:** 11
 **Total Events:** 0
 
+### 🟢 LOW: Error: kafka server: Tried to send a message to a replica that is not the leader for some partition…
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4129705 | 183 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4129705) |
+| #4129707 | 183 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4129707) |
+
+**Recommendation:** Consider merging into [#4129705](https://glitchtip.devshift.net/ccx/issues/4129705) (highest event count)
+
+---
+
 ### 🟢 LOW: Error: pq: the database system is shutting down (57P03)
 
 **Issues:** 2 | **Total Events:** 0
@@ -157,19 +183,6 @@
 | #4572839 | 1,351 | Error: pq: the database system is shutting down (57P03) | [View](https://glitchtip.devshift.net/ccx/issues/4572839) |
 
 **Recommendation:** Consider merging into [#4572840](https://glitchtip.devshift.net/ccx/issues/4572840) (highest event count)
-
----
-
-### 🟢 LOW: Error: kafka server: Tried to send a message to a replica that is not the leader for some partition…
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4129705 | 132 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4129705) |
-| #4129707 | 132 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4129707) |
-
-**Recommendation:** Consider merging into [#4129705](https://glitchtip.devshift.net/ccx/issues/4129705) (highest event count)
 
 ---
 
@@ -245,6 +258,19 @@
 **Issues in Groups:** 11
 **Total Events:** 0
 
+### 🟢 LOW: Error: kafka server: Tried to send a message to a replica that is not the leader for some partition…
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4129671 | 159 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4129671) |
+| #4129668 | 159 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4129668) |
+
+**Recommendation:** Consider merging into [#4129671](https://glitchtip.devshift.net/ccx/issues/4129671) (highest event count)
+
+---
+
 ### 🟢 LOW: Error: sql: database is closed
 
 **Issues:** 5 | **Total Events:** 0
@@ -258,19 +284,6 @@
 | #4574517 | 2 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4574517) |
 
 **Recommendation:** Consider merging into [#4127668](https://glitchtip.devshift.net/ccx/issues/4127668) (highest event count)
-
----
-
-### 🟢 LOW: Error: kafka server: Tried to send a message to a replica that is not the leader for some partition…
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4129671 | 109 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4129671) |
-| #4129668 | 109 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4129668) |
-
-**Recommendation:** Consider merging into [#4129671](https://glitchtip.devshift.net/ccx/issues/4129671) (highest event count)
 
 ---
 
@@ -331,8 +344,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 6,368 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
-| #3791585 | 4,538 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
+| #3781153 | 6,395 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
+| #3791585 | 4,550 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
 | #4580829 | 237,443 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580829) |
 
 **Recommendation:** Consider merging into [#3781153](https://glitchtip.devshift.net/ccx/issues/3781153) (highest event count)
@@ -354,8 +367,8 @@
 
 ## valkey-writer
 
-**Duplicate Groups:** 2
-**Issues in Groups:** 4
+**Duplicate Groups:** 3
+**Issues in Groups:** 6
 **Total Events:** 0
 
 ### 🟢 LOW: Error: kafka server: Tried to send a message to a replica that is not the leader for some partition…
@@ -364,22 +377,35 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4129669 | 56 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4129669) |
-| #4129667 | 56 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4129667) |
+| #4129669 | 65 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4129669) |
+| #4129667 | 65 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4129667) |
 
 **Recommendation:** Consider merging into [#4129669](https://glitchtip.devshift.net/ccx/issues/4129669) (highest event count)
 
 ---
 
-### 🟢 LOW: Error: dial tcp ...: connect: connection refused
+### 🟢 LOW: kafka: error while consuming ccx.ocp.results/0: kafka server: The provided member is not known in t…
 
 **Issues:** 2 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4017718 | 27 | Error: dial tcp 10.0.186.167:9096: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4017718) |
+| #4613862 | 137 | kafka: error while consuming ccx.ocp.results/0: kafka ser... | [View](https://glitchtip.devshift.net/ccx/issues/4613862) |
+| #4575613 | 4 | kafka: error while consuming ccx.ocp.results/0: kafka ser... | [View](https://glitchtip.devshift.net/ccx/issues/4575613) |
+
+**Recommendation:** Consider merging into [#4613862](https://glitchtip.devshift.net/ccx/issues/4613862) (highest event count)
+
+---
+
+### 🟢 LOW: kafka: error while consuming ccx.ocp.results/0: read tcp ...->...: i/o …
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4613845 | 1 | kafka: error while consuming ccx.ocp.results/0: read tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4613845) |
 | #4506736 | 2 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4506736) |
 
-**Recommendation:** Consider merging into [#4017718](https://glitchtip.devshift.net/ccx/issues/4017718) (highest event count)
+**Recommendation:** Consider merging into [#4613845](https://glitchtip.devshift.net/ccx/issues/4613845) (highest event count)
 
 ---
