@@ -21,7 +21,7 @@ on:
         description: Version of Go to be used to run the linters
         required: false
         type: string
-        default: "1.25"
+        default: "1.26"
 
       python-version:
         description: Version of Python to be used to run the linters
@@ -44,5 +44,5 @@ jobs:
           python-version: ${{ inputs.python-version || '3.13' }}
       - uses: actions/setup-go@v7
         with:
-          go-version: ${{ inputs.go-version || '1.25' }}
+          go-version: ${{ inputs.go-version || '1.26' }}
       - uses: pre-commit/action@v3.0.1
