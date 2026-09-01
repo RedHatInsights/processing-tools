@@ -1,12 +1,12 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-08-31 04:14:49*
+*Last updated: 2026-09-01 04:13:59*
 
 **Total PRs: 9**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| insights-behavioral-spec | [817](https://github.com/RedHatInsights/insights-behavioral-spec/pull/817) | [CCXDEV-16732] Add BDD tests for Service Log severity levels | 2026-08-27 | jrosecky | ❌ failed | ready |
+| insights-results-aggregator | [2705](https://github.com/RedHatInsights/insights-results-aggregator/pull/2705) | [CCXDEV-16662] conf: set DEBUG=false by default | 2026-08-31 | juandspy | ❌ failed | ready |
 | parquet-factory | [336](https://github.com/RedHatInsights/parquet-factory/pull/336) | fix(deps): bump kin-openapi to v0.147.0 | 2026-08-27 | platex-rehor-bot | ✅ ok | ready |
 | insights-results-smart-proxy | [1810](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1810) | fix(deps): CCXDEV-16761 bump kin-openapi for CVE-2026-73501 | 2026-08-27 | platex-rehor-bot | ✅ ok | ready |
 | insights-results-aggregator-exporter | [905](https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/905) | fix(deps): bump kin-openapi to v0.147.0 for CVE-2026-73501 | 2026-08-27 | platex-rehor-bot | ✅ ok | ready |
