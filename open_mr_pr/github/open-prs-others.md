@@ -1,8 +1,8 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-09-03 05:15:12*
+*Last updated: 2026-09-04 04:13:47*
 
-**Total PRs: 15**
+**Total PRs: 14**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
@@ -13,7 +13,6 @@
 | insights-results-aggregator | [2707](https://github.com/RedHatInsights/insights-results-aggregator/pull/2707) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-02 | app/obsint-processing-app | ❌ failed | ready |
 | insights-operator-utils | [1201](https://github.com/RedHatInsights/insights-operator-utils/pull/1201) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-02 | app/obsint-processing-app | ❌ failed | ready |
 | insights-operator-gathering-conditions-service | [979](https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/979) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-02 | app/obsint-processing-app | ❌ failed | ready |
-| ccx-upgrades-inference | [272](https://github.com/RedHatInsights/ccx-upgrades-inference/pull/272) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-02 | app/obsint-processing-app | ❌ failed | ready |
 | ccx-notification-writer | [955](https://github.com/RedHatInsights/ccx-notification-writer/pull/955) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-02 | app/obsint-processing-app | ❌ failed | ready |
 | ccx-notification-service | [1275](https://github.com/RedHatInsights/ccx-notification-service/pull/1275) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-02 | app/obsint-processing-app | ❌ failed | ready |
 | insights-results-smart-proxy | [1810](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1810) | fix(deps): CCXDEV-16761 bump kin-openapi for CVE-2026-73501 | 2026-08-27 | platex-rehor-bot | ❌ failed | ready |
