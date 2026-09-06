@@ -1,12 +1,11 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-09-05 04:12:35*
+*Last updated: 2026-09-06 04:12:51*
 
-**Total PRs: 14**
+**Total PRs: 13**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| insights-results-smart-proxy | [1811](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1811) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-02 | app/obsint-processing-app | ❌ failed | ready |
 | insights-results-aggregator-mock | [829](https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/829) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-02 | app/obsint-processing-app | ❌ failed | ready |
 | insights-results-aggregator-exporter | [912](https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/912) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-02 | app/obsint-processing-app | ❌ failed | ready |
 | insights-results-aggregator-cleaner | [1031](https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/1031) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-02 | app/obsint-processing-app | ❌ failed | ready |
