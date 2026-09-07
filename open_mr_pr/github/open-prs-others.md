@@ -1,6 +1,6 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-09-06 04:12:51*
+*Last updated: 2026-09-07 04:14:32*
 
 **Total PRs: 13**
 
@@ -14,7 +14,7 @@
 | insights-operator-gathering-conditions-service | [979](https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/979) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-02 | app/obsint-processing-app | ❌ failed | ready |
 | ccx-notification-writer | [955](https://github.com/RedHatInsights/ccx-notification-writer/pull/955) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-02 | app/obsint-processing-app | ❌ failed | ready |
 | ccx-notification-service | [1275](https://github.com/RedHatInsights/ccx-notification-service/pull/1275) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-02 | app/obsint-processing-app | ❌ failed | ready |
-| insights-results-smart-proxy | [1810](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1810) | fix(deps): CCXDEV-16761 bump kin-openapi for CVE-2026-73501 | 2026-08-27 | platex-rehor-bot | ❌ failed | ready |
+| insights-results-smart-proxy | [1810](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1810) | fix(deps): CCXDEV-16761 bump kin-openapi for CVE-2026-73501 | 2026-08-27 | platex-rehor-bot | ✅ ok | ready |
 | ccx-notification-service | [1271](https://github.com/RedHatInsights/ccx-notification-service/pull/1271) | [CCXDEV-16563] add aggregator database configuration to Clowdapp | 2026-08-07 | Bee-lee | ❌ failed | draft |
 | insights-ccx-messaging | [915](https://github.com/RedHatInsights/insights-ccx-messaging/pull/915) | Using new dependencies from insights-core-messaging | 2026-08-06 | joselsegura | ❌ failed | ready |
 | insights-operator-gathering-conditions-service | [922](https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/922) | [CCXDEV-16644] Remove unused in-process authentication middleware | 2026-08-03 | juandspy | ✅ ok | draft |
