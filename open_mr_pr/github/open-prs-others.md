@@ -1,11 +1,13 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-09-08 04:13:32*
+*Last updated: 2026-09-09 04:13:48*
 
-**Total PRs: 13**
+**Total PRs: 15**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| ccx-notification-service | [1276](https://github.com/RedHatInsights/ccx-notification-service/pull/1276) | [CCXDEV-16567] Filter disabled rules in the Kafka processing path | 2026-09-08 | Bee-lee | ✅ ok | ready |
+| ocp-advisor-frontend | [1197](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1197) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-08 | app/obsint-processing-app | ❌ failed | ready |
 | insights-results-aggregator-mock | [829](https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/829) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-02 | app/obsint-processing-app | ❌ failed | ready |
 | insights-results-aggregator-exporter | [912](https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/912) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-02 | app/obsint-processing-app | ❌ failed | ready |
 | insights-results-aggregator-cleaner | [1031](https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/1031) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-02 | app/obsint-processing-app | ❌ failed | ready |
