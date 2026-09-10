@@ -1,11 +1,12 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-09-09 04:13:48*
+*Last updated: 2026-09-10 04:13:36*
 
 **Total Konflux PRs: 41**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| ocp-advisor-frontend | [1199](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1199) | chore(deps): update build-tools digest to db24a1d | 2026-09-10 | app/red-hat-konflux | ✅ ok | ready |
 | insights-results-smart-proxy | [1820](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1820) | Update Pre-commit hooks | 2026-09-08 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-smart-proxy | [1819](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1819) | Update Go dependencies | 2026-09-08 | app/red-hat-konflux | ❌ failed | ready |
 | obsint-mocks | [523](https://github.com/RedHatInsights/obsint-mocks/pull/523) | chore(deps): update redhatinsights/processing-tools action to v0.4.5 | 2026-09-08 | app/red-hat-konflux | ✅ ok | ready |
@@ -44,6 +45,5 @@
 | ocp-advisor-frontend | [1192](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1192) | chore(deps): update dependency github.com/redhatinsights/konflux-pipelines to v1.73.0 | 2026-08-22 | app/red-hat-konflux | ✅ ok | ready |
 | ocp-advisor-frontend | [1191](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1191) | fix(deps): update npm minor and patch dependencies | 2026-08-21 | app/red-hat-konflux | ❌ failed | ready |
 | ocp-advisor-frontend | [1190](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1190) | chore(deps): lock file maintenance | 2026-08-21 | app/red-hat-konflux | ❌ failed | ready |
-| ocp-advisor-frontend | [1189](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1189) | chore(deps): update build-tools digest to a264c87 | 2026-08-21 | app/red-hat-konflux | ✅ ok | ready |
 | data-pipeline | [122](https://github.com/RedHatInsights/data-pipeline/pull/122) | Update dependency boto3 to >=1.43.89,<1.43.90 | 2026-07-30 | app/red-hat-konflux | ❌ failed | ready |
 | insights-ccx-messaging | [888](https://github.com/RedHatInsights/insights-ccx-messaging/pull/888) | fix(deps): update python dependencies | 2026-07-30 | app/red-hat-konflux | ❌ failed | ready |
