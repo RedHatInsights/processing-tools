@@ -1,5 +1,7 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-ocp-advisor-frontend,1199,chore(deps): update build-tools digest to db24a1d,2026-09-10T01:40:29Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1199,app/red-hat-konflux,ok,ready
+insights-ccx-messaging,957,[CCXDEV-16673] Use URL from the correct field,2026-09-10T14:34:15Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/957,joselsegura,ok,ready
+data-pipeline,136,[CCXDEV-16673] Use HTTP links instead of S3 path for rules-processing,2026-09-10T10:53:03Z,https://github.com/RedHatInsights/data-pipeline/pull/136,joselsegura,failed,ready
+ocp-advisor-frontend,1199,chore(deps): update build-tools digest to 5307281,2026-09-10T01:40:29Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1199,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1820,Update Pre-commit hooks,2026-09-08T05:39:56Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1820,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1819,Update Go dependencies,2026-09-08T05:39:45Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1819,app/red-hat-konflux,failed,ready
 obsint-mocks,523,chore(deps): update redhatinsights/processing-tools action to v0.4.5,2026-09-08T05:23:14Z,https://github.com/RedHatInsights/obsint-mocks/pull/523,app/red-hat-konflux,ok,ready
@@ -32,7 +34,6 @@ insights-operator-utils,1201,chore(sync): synced file(s) with RedHatInsights/pro
 insights-operator-gathering-conditions-service,979,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-09-02T06:12:58Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/979,app/obsint-processing-app,failed,ready
 ccx-notification-writer,955,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-09-02T06:11:33Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/955,app/obsint-processing-app,failed,ready
 ccx-notification-service,1275,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-09-02T06:11:25Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1275,app/obsint-processing-app,failed,ready
-insights-results-smart-proxy,1810,fix(deps): CCXDEV-16761 bump kin-openapi for CVE-2026-73501,2026-08-27T06:40:26Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1810,platex-rehor-bot,ok,ready
 data-pipeline,132,Update Pre-commit hooks,2026-08-23T02:01:22Z,https://github.com/RedHatInsights/data-pipeline/pull/132,app/red-hat-konflux,failed,ready
 ccx-upgrades-inference,271,chore(deps): update pre-commit hooks,2026-08-23T01:54:29Z,https://github.com/RedHatInsights/ccx-upgrades-inference/pull/271,app/red-hat-konflux,failed,ready
 ccx-upgrades-inference,270,fix(deps): update dependency uvicorn to v0.52.4,2026-08-23T01:54:22Z,https://github.com/RedHatInsights/ccx-upgrades-inference/pull/270,app/red-hat-konflux,failed,ready

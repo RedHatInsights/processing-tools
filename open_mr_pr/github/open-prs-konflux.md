@@ -1,12 +1,12 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-09-10 04:13:36*
+*Last updated: 2026-09-11 04:14:37*
 
 **Total Konflux PRs: 41**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| ocp-advisor-frontend | [1199](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1199) | chore(deps): update build-tools digest to db24a1d | 2026-09-10 | app/red-hat-konflux | ✅ ok | ready |
+| ocp-advisor-frontend | [1199](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1199) | chore(deps): update build-tools digest to 5307281 | 2026-09-10 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-smart-proxy | [1820](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1820) | Update Pre-commit hooks | 2026-09-08 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-smart-proxy | [1819](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1819) | Update Go dependencies | 2026-09-08 | app/red-hat-konflux | ❌ failed | ready |
 | obsint-mocks | [523](https://github.com/RedHatInsights/obsint-mocks/pull/523) | chore(deps): update redhatinsights/processing-tools action to v0.4.5 | 2026-09-08 | app/red-hat-konflux | ✅ ok | ready |
