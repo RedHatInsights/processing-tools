@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-09-10 04:21:15
+**Generated:** 2026-09-11 04:21:57
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -13,8 +13,8 @@
 | Metric | Value |
 |--------|-------|
 | Projects with duplicates | 10 |
-| Total duplicate groups | 22 |
-| Total issues in groups | 62 |
+| Total duplicate groups | 21 |
+| Total issues in groups | 57 |
 | Total events affected | 0 |
 
 ---
@@ -23,10 +23,10 @@
 
 - [archive-sync](#archive-sync) - 1 groups, 3 issues
 - [ccx-data-pipeline](#ccx-data-pipeline) - 1 groups, 3 issues
-- [ccx-notification-service](#ccx-notification-service) - 3 groups, 9 issues
+- [ccx-notification-service](#ccx-notification-service) - 3 groups, 8 issues
 - [ccx-notification-writer](#ccx-notification-writer) - 3 groups, 6 issues
-- [dvo-writer](#dvo-writer) - 5 groups, 11 issues
-- [insights-results-aggregator](#insights-results-aggregator) - 1 groups, 9 issues
+- [dvo-writer](#dvo-writer) - 4 groups, 9 issues
+- [insights-results-aggregator](#insights-results-aggregator) - 1 groups, 7 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 9 issues
 - [parquet-factory](#parquet-factory) - 1 groups, 2 issues
 - [rules-processing](#rules-processing) - 2 groups, 6 issues
@@ -66,8 +66,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 6,203 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
-| #3852210 | 4,429 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
+| #3852013 | 6,229 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
+| #3852210 | 4,441 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
 | #4580828 | 237,551 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580828) |
 
 **Recommendation:** Consider merging into [#3852013](https://glitchtip.devshift.net/ccx/issues/3852013) (highest event count)
@@ -77,8 +77,23 @@
 ## ccx-notification-service
 
 **Duplicate Groups:** 3
-**Issues in Groups:** 9
+**Issues in Groups:** 8
 **Total Events:** 0
+
+### 🟢 LOW: Error: dial tcp ...: connect: connection refused
+
+**Issues:** 4 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4408130 | 865 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
+| #4571411 | 5,362 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4571411) |
+| #4571289 | 1,772 | Error: read tcp 10.129.23.117:49636->10.0.216.215:5432: r... | [View](https://glitchtip.devshift.net/ccx/issues/4571289) |
+| #4571410 | 8,178 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4571410) |
+
+**Recommendation:** Consider merging into [#4408130](https://glitchtip.devshift.net/ccx/issues/4408130) (highest event count)
+
+---
 
 ### 🟢 LOW: Error: Post \'...': readfrom tc…
 
@@ -86,26 +101,10 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3997223 | 321 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
+| #3997223 | 322 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
 | #4649219 | 1 | Error: Get \"http://ccx-insights-content-service:10000/ap... | [View](https://glitchtip.devshift.net/ccx/issues/4649219) |
 
 **Recommendation:** Consider merging into [#3997223](https://glitchtip.devshift.net/ccx/issues/3997223) (highest event count)
-
----
-
-### 🟢 LOW: Error: dial tcp ...: connect: connection refused
-
-**Issues:** 5 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4408130 | 857 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
-| #4571411 | 5,362 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4571411) |
-| #4571289 | 1,772 | Error: read tcp 10.129.23.117:49636->10.0.216.215:5432: r... | [View](https://glitchtip.devshift.net/ccx/issues/4571289) |
-| #4571410 | 8,178 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4571410) |
-| #4571134 | 13 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4571134) |
-
-**Recommendation:** Consider merging into [#4408130](https://glitchtip.devshift.net/ccx/issues/4408130) (highest event count)
 
 ---
 
@@ -169,8 +168,8 @@
 
 ## dvo-writer
 
-**Duplicate Groups:** 5
-**Issues in Groups:** 11
+**Duplicate Groups:** 4
+**Issues in Groups:** 9
 **Total Events:** 0
 
 ### 🟢 LOW: Error: pq: the database system is shutting down (57P03)
@@ -213,19 +212,6 @@
 
 ---
 
-### 🟢 LOW: Error: write tcp ...->...: write: broken pipe
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4571108 | 1 | Error: write tcp 10.128.29.91:38490->10.0.216.46:5432: wr... | [View](https://glitchtip.devshift.net/ccx/issues/4571108) |
-| #4571110 | 1 | Error: write tcp 10.128.29.91:38490->10.0.216.46:5432: wr... | [View](https://glitchtip.devshift.net/ccx/issues/4571110) |
-
-**Recommendation:** Consider merging into [#4571108](https://glitchtip.devshift.net/ccx/issues/4571108) (highest event count)
-
----
-
 ### 🟢 LOW: Error: dial tcp ...: connect: connection refused
 
 **Issues:** 2 | **Total Events:** 0
@@ -242,12 +228,12 @@
 ## insights-results-aggregator
 
 **Duplicate Groups:** 1
-**Issues in Groups:** 9
+**Issues in Groups:** 7
 **Total Events:** 0
 
 ### 🟢 LOW: Error: dial tcp ...: connect: connection refused
 
-**Issues:** 9 | **Total Events:** 0
+**Issues:** 7 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
@@ -258,8 +244,6 @@
 | #4571096 | 154 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571096) |
 | #4571097 | 9 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571097) |
 | #4571095 | 9 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571095) |
-| #4571093 | 3 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571093) |
-| #4571094 | 1 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571094) |
 
 **Recommendation:** Consider merging into [#4571092](https://glitchtip.devshift.net/ccx/issues/4571092) (highest event count)
 
@@ -344,8 +328,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 6,632 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
-| #3791585 | 4,658 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
+| #3781153 | 6,659 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
+| #3791585 | 4,670 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
 | #4580829 | 237,443 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580829) |
 
 **Recommendation:** Consider merging into [#3781153](https://glitchtip.devshift.net/ccx/issues/3781153) (highest event count)
