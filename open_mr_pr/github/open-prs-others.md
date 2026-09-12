@@ -1,13 +1,12 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-09-11 04:14:37*
+*Last updated: 2026-09-12 04:12:37*
 
-**Total PRs: 15**
+**Total PRs: 13**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| insights-ccx-messaging | [957](https://github.com/RedHatInsights/insights-ccx-messaging/pull/957) | [CCXDEV-16673] Use URL from the correct field | 2026-09-10 | joselsegura | ✅ ok | ready |
-| data-pipeline | [136](https://github.com/RedHatInsights/data-pipeline/pull/136) | [CCXDEV-16673] Use HTTP links instead of S3 path for rules-processing | 2026-09-10 | joselsegura | ❌ failed | ready |
+| data-pipeline | [138](https://github.com/RedHatInsights/data-pipeline/pull/138) | [CCXDEV-16673] Using latest ccx-messaging | 2026-09-11 | joselsegura | ✅ ok | ready |
 | ocp-advisor-frontend | [1197](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1197) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-08 | app/obsint-processing-app | ❌ failed | ready |
 | insights-results-aggregator-mock | [829](https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/829) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-02 | app/obsint-processing-app | ❌ failed | ready |
 | insights-results-aggregator-exporter | [912](https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/912) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-02 | app/obsint-processing-app | ❌ failed | ready |
@@ -18,6 +17,5 @@
 | ccx-notification-writer | [955](https://github.com/RedHatInsights/ccx-notification-writer/pull/955) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-02 | app/obsint-processing-app | ❌ failed | ready |
 | ccx-notification-service | [1275](https://github.com/RedHatInsights/ccx-notification-service/pull/1275) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-02 | app/obsint-processing-app | ❌ failed | ready |
 | ccx-notification-service | [1271](https://github.com/RedHatInsights/ccx-notification-service/pull/1271) | [CCXDEV-16563] add aggregator database configuration to Clowdapp | 2026-08-07 | Bee-lee | ❌ failed | draft |
-| insights-ccx-messaging | [915](https://github.com/RedHatInsights/insights-ccx-messaging/pull/915) | Using new dependencies from insights-core-messaging | 2026-08-06 | joselsegura | ❌ failed | ready |
 | insights-operator-gathering-conditions-service | [922](https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/922) | [CCXDEV-16644] Remove unused in-process authentication middleware | 2026-08-03 | juandspy | ✅ ok | draft |
 | insights-operator-gathering-conditions-service | [371](https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/371) | Drop legacy building | 2025-03-28 | ikerreyes | ❌ failed | draft |
