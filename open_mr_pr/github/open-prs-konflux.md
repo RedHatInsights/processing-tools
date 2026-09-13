@@ -1,6 +1,6 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-09-12 04:12:37*
+*Last updated: 2026-09-13 04:13:14*
 
 **Total Konflux PRs: 40**
 
@@ -42,7 +42,7 @@
 | content-service | [1090](https://github.com/RedHatInsights/content-service/pull/1090) | chore(deps): update pre-commit hooks | 2026-08-23 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-aggregator-mock | [822](https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/822) | Update Pre-commit hooks | 2026-08-23 | app/red-hat-konflux | ❌ failed | ready |
 | insights-operator-gathering-conditions-service | [969](https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/969) | chore(deps): update pre-commit hooks | 2026-08-23 | app/red-hat-konflux | ❌ failed | ready |
-| ocp-advisor-frontend | [1192](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1192) | chore(deps): update dependency github.com/redhatinsights/konflux-pipelines to v1.73.0 | 2026-08-22 | app/red-hat-konflux | ✅ ok | ready |
+| ocp-advisor-frontend | [1192](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1192) | chore(deps): update dependency github.com/redhatinsights/konflux-pipelines to v1.74.0 | 2026-08-22 | app/red-hat-konflux | ❌ failed | ready |
 | ocp-advisor-frontend | [1191](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1191) | fix(deps): update npm minor and patch dependencies | 2026-08-21 | app/red-hat-konflux | ❌ failed | ready |
 | ocp-advisor-frontend | [1190](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1190) | chore(deps): lock file maintenance | 2026-08-21 | app/red-hat-konflux | ❌ failed | ready |
-| data-pipeline | [122](https://github.com/RedHatInsights/data-pipeline/pull/122) | Update dependency boto3 to >=1.43.90,<1.43.91 | 2026-07-30 | app/red-hat-konflux | ❌ failed | ready |
+| data-pipeline | [122](https://github.com/RedHatInsights/data-pipeline/pull/122) | Update dependency boto3 to >=1.43.91,<1.43.92 | 2026-07-30 | app/red-hat-konflux | ❌ failed | ready |
