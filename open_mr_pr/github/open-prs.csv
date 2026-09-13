@@ -45,10 +45,10 @@ insights-results-aggregator-exporter,902,chore(deps): update pre-commit hooks,20
 content-service,1090,chore(deps): update pre-commit hooks,2026-08-23T01:24:28Z,https://github.com/RedHatInsights/content-service/pull/1090,app/red-hat-konflux,failed,ready
 insights-results-aggregator-mock,822,Update Pre-commit hooks,2026-08-23T01:21:50Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/822,app/red-hat-konflux,failed,ready
 insights-operator-gathering-conditions-service,969,chore(deps): update pre-commit hooks,2026-08-23T01:20:32Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/969,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1192,chore(deps): update dependency github.com/redhatinsights/konflux-pipelines to v1.73.0,2026-08-22T05:30:28Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1192,app/red-hat-konflux,ok,ready
+ocp-advisor-frontend,1192,chore(deps): update dependency github.com/redhatinsights/konflux-pipelines to v1.74.0,2026-08-22T05:30:28Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1192,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1191,fix(deps): update npm minor and patch dependencies,2026-08-21T06:00:05Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1191,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1190,chore(deps): lock file maintenance,2026-08-21T01:46:03Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1190,app/red-hat-konflux,failed,ready
 ccx-notification-service,1271,[CCXDEV-16563] add aggregator database configuration to Clowdapp,2026-08-07T13:37:22Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1271,Bee-lee,failed,draft
 insights-operator-gathering-conditions-service,922,[CCXDEV-16644] Remove unused in-process authentication middleware,2026-08-03T12:24:25Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/922,juandspy,ok,draft
-data-pipeline,122,"Update dependency boto3 to >=1.43.90,<1.43.91",2026-07-30T21:30:23Z,https://github.com/RedHatInsights/data-pipeline/pull/122,app/red-hat-konflux,failed,ready
+data-pipeline,122,"Update dependency boto3 to >=1.43.91,<1.43.92",2026-07-30T21:30:23Z,https://github.com/RedHatInsights/data-pipeline/pull/122,app/red-hat-konflux,failed,ready
 insights-operator-gathering-conditions-service,371,Drop legacy building,2025-03-28T12:35:04Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/371,ikerreyes,failed,draft
