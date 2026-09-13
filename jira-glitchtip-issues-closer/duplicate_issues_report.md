@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-09-12 04:19:32
+**Generated:** 2026-09-13 04:20:18
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -12,9 +12,9 @@
 
 | Metric | Value |
 |--------|-------|
-| Projects with duplicates | 10 |
-| Total duplicate groups | 21 |
-| Total issues in groups | 57 |
+| Projects with duplicates | 9 |
+| Total duplicate groups | 17 |
+| Total issues in groups | 41 |
 | Total events affected | 0 |
 
 ---
@@ -23,10 +23,9 @@
 
 - [archive-sync](#archive-sync) - 1 groups, 3 issues
 - [ccx-data-pipeline](#ccx-data-pipeline) - 1 groups, 3 issues
-- [ccx-notification-service](#ccx-notification-service) - 3 groups, 8 issues
-- [ccx-notification-writer](#ccx-notification-writer) - 3 groups, 6 issues
-- [dvo-writer](#dvo-writer) - 4 groups, 9 issues
-- [insights-results-aggregator](#insights-results-aggregator) - 1 groups, 7 issues
+- [ccx-notification-service](#ccx-notification-service) - 2 groups, 4 issues
+- [ccx-notification-writer](#ccx-notification-writer) - 2 groups, 4 issues
+- [dvo-writer](#dvo-writer) - 3 groups, 6 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 9 issues
 - [parquet-factory](#parquet-factory) - 1 groups, 2 issues
 - [rules-processing](#rules-processing) - 2 groups, 6 issues
@@ -66,8 +65,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 6,252 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
-| #3852210 | 4,453 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
+| #3852013 | 6,278 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
+| #3852210 | 4,465 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
 | #4580828 | 237,551 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580828) |
 
 **Recommendation:** Consider merging into [#3852013](https://glitchtip.devshift.net/ccx/issues/3852013) (highest event count)
@@ -76,24 +75,9 @@
 
 ## ccx-notification-service
 
-**Duplicate Groups:** 3
-**Issues in Groups:** 8
+**Duplicate Groups:** 2
+**Issues in Groups:** 4
 **Total Events:** 0
-
-### 🟢 LOW: Error: dial tcp ...: connect: connection refused
-
-**Issues:** 4 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4408130 | 900 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
-| #4571411 | 5,362 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4571411) |
-| #4571289 | 1,772 | Error: read tcp 10.129.23.117:49636->10.0.216.215:5432: r... | [View](https://glitchtip.devshift.net/ccx/issues/4571289) |
-| #4571410 | 8,178 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4571410) |
-
-**Recommendation:** Consider merging into [#4408130](https://glitchtip.devshift.net/ccx/issues/4408130) (highest event count)
-
----
 
 ### 🟢 LOW: Error: Post \'...': readfrom tc…
 
@@ -123,22 +107,9 @@
 
 ## ccx-notification-writer
 
-**Duplicate Groups:** 3
-**Issues in Groups:** 6
+**Duplicate Groups:** 2
+**Issues in Groups:** 4
 **Total Events:** 0
-
-### 🟢 LOW: Error: dial tcp ...: connect: connection refused
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4017706 | 27 | Error: dial tcp 10.0.184.48:9096: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4017706) |
-| #4571290 | 1,519 | Error: read tcp 10.131.0.86:56666->10.0.216.215:5432: rea... | [View](https://glitchtip.devshift.net/ccx/issues/4571290) |
-
-**Recommendation:** Consider merging into [#4017706](https://glitchtip.devshift.net/ccx/issues/4017706) (highest event count)
-
----
 
 ### 🟢 LOW: kafka: error while consuming ccx.ocp.results/0: kafka server: Request exceeded the user-specified t…
 
@@ -168,8 +139,8 @@
 
 ## dvo-writer
 
-**Duplicate Groups:** 4
-**Issues in Groups:** 9
+**Duplicate Groups:** 3
+**Issues in Groups:** 6
 **Total Events:** 0
 
 ### 🟢 LOW: Error: pq: the database system is shutting down (57P03)
@@ -198,20 +169,6 @@
 
 ---
 
-### 🟢 LOW: Error: driver: bad connection
-
-**Issues:** 3 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4572838 | 1 | Error: driver: bad connection | [View](https://glitchtip.devshift.net/ccx/issues/4572838) |
-| #4572841 | 1 | Error: driver: bad connection | [View](https://glitchtip.devshift.net/ccx/issues/4572841) |
-| #4572837 | 1 | Error: driver: bad connection | [View](https://glitchtip.devshift.net/ccx/issues/4572837) |
-
-**Recommendation:** Consider merging into [#4572838](https://glitchtip.devshift.net/ccx/issues/4572838) (highest event count)
-
----
-
 ### 🟢 LOW: Error: dial tcp ...: connect: connection refused
 
 **Issues:** 2 | **Total Events:** 0
@@ -222,30 +179,6 @@
 | #4586489 | 5 | kafka: error while consuming ccx.dvo.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4586489) |
 
 **Recommendation:** Consider merging into [#4565631](https://glitchtip.devshift.net/ccx/issues/4565631) (highest event count)
-
----
-
-## insights-results-aggregator
-
-**Duplicate Groups:** 1
-**Issues in Groups:** 7
-**Total Events:** 0
-
-### 🟢 LOW: Error: dial tcp ...: connect: connection refused
-
-**Issues:** 7 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4571092 | 2,880 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571092) |
-| #4572842 | 153 | Error: dial tcp 10.0.217.160:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4572842) |
-| #4572843 | 153 | Error: dial tcp 10.0.217.160:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4572843) |
-| #4572844 | 153 | Error: dial tcp 10.0.217.160:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4572844) |
-| #4571096 | 154 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571096) |
-| #4571097 | 9 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571097) |
-| #4571095 | 9 | Error: dial tcp 10.0.216.46:5432: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4571095) |
-
-**Recommendation:** Consider merging into [#4571092](https://glitchtip.devshift.net/ccx/issues/4571092) (highest event count)
 
 ---
 
@@ -328,8 +261,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 6,682 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
-| #3791585 | 4,682 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
+| #3781153 | 6,708 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
+| #3791585 | 4,694 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
 | #4580829 | 237,443 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580829) |
 
 **Recommendation:** Consider merging into [#3781153](https://glitchtip.devshift.net/ccx/issues/3781153) (highest event count)
