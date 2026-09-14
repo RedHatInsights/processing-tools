@@ -1,6 +1,6 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-09-13 04:13:14*
+*Last updated: 2026-09-14 04:14:49*
 
 **Total Konflux PRs: 40**
 
@@ -45,4 +45,4 @@
 | ocp-advisor-frontend | [1192](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1192) | chore(deps): update dependency github.com/redhatinsights/konflux-pipelines to v1.74.0 | 2026-08-22 | app/red-hat-konflux | ❌ failed | ready |
 | ocp-advisor-frontend | [1191](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1191) | fix(deps): update npm minor and patch dependencies | 2026-08-21 | app/red-hat-konflux | ❌ failed | ready |
 | ocp-advisor-frontend | [1190](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1190) | chore(deps): lock file maintenance | 2026-08-21 | app/red-hat-konflux | ❌ failed | ready |
-| data-pipeline | [122](https://github.com/RedHatInsights/data-pipeline/pull/122) | Update dependency boto3 to >=1.43.91,<1.43.92 | 2026-07-30 | app/red-hat-konflux | ❌ failed | ready |
+| data-pipeline | [122](https://github.com/RedHatInsights/data-pipeline/pull/122) | Update dependency boto3 to >=1.43.92,<1.43.93 | 2026-07-30 | app/red-hat-konflux | ❌ failed | ready |
