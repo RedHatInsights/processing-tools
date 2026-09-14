@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-09-13 04:20:18
+**Generated:** 2026-09-14 04:23:06
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -14,7 +14,7 @@
 |--------|-------|
 | Projects with duplicates | 9 |
 | Total duplicate groups | 17 |
-| Total issues in groups | 41 |
+| Total issues in groups | 40 |
 | Total events affected | 0 |
 
 ---
@@ -26,7 +26,7 @@
 - [ccx-notification-service](#ccx-notification-service) - 2 groups, 4 issues
 - [ccx-notification-writer](#ccx-notification-writer) - 2 groups, 4 issues
 - [dvo-writer](#dvo-writer) - 3 groups, 6 issues
-- [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 9 issues
+- [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 8 issues
 - [parquet-factory](#parquet-factory) - 1 groups, 2 issues
 - [rules-processing](#rules-processing) - 2 groups, 6 issues
 - [valkey-writer](#valkey-writer) - 2 groups, 4 issues
@@ -65,8 +65,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 6,278 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
-| #3852210 | 4,465 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
+| #3852013 | 6,296 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
+| #3852210 | 4,477 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
 | #4580828 | 237,551 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580828) |
 
 **Recommendation:** Consider merging into [#3852013](https://glitchtip.devshift.net/ccx/issues/3852013) (highest event count)
@@ -185,7 +185,7 @@
 ## insights-results-aggregator-db-writer
 
 **Duplicate Groups:** 3
-**Issues in Groups:** 9
+**Issues in Groups:** 8
 **Total Events:** 0
 
 ### 🟢 LOW: Error: write tcp ...->...: write: broken pipe
@@ -203,7 +203,7 @@
 
 ### 🟢 LOW: Error: sql: database is closed
 
-**Issues:** 5 | **Total Events:** 0
+**Issues:** 4 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
@@ -211,7 +211,6 @@
 | #4293672 | 1,473 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4293672) |
 | #4486496 | 1,389 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4486496) |
 | #4593659 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4593659) |
-| #4574517 | 2 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4574517) |
 
 **Recommendation:** Consider merging into [#4127668](https://glitchtip.devshift.net/ccx/issues/4127668) (highest event count)
 
@@ -261,8 +260,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 6,708 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
-| #3791585 | 4,694 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
+| #3781153 | 6,726 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
+| #3791585 | 4,706 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
 | #4580829 | 237,443 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580829) |
 
 **Recommendation:** Consider merging into [#3781153](https://glitchtip.devshift.net/ccx/issues/3781153) (highest event count)
