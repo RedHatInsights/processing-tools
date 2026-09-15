@@ -1,11 +1,15 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-09-14 04:14:49*
+*Last updated: 2026-09-15 04:13:49*
 
-**Total Konflux PRs: 40**
+**Total Konflux PRs: 43**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| insights-content-template-renderer | [621](https://github.com/RedHatInsights/insights-content-template-renderer/pull/621) | Update pre-commit hook renovatebot/pre-commit-hooks to v44.82.0 | 2026-09-15 | app/red-hat-konflux | ❌ failed | ready |
+| insights-content-template-renderer | [620](https://github.com/RedHatInsights/insights-content-template-renderer/pull/620) | Update dependency boto3 to v1.43.93 | 2026-09-15 | app/red-hat-konflux | ❌ failed | ready |
+| insights-ccx-messaging | [966](https://github.com/RedHatInsights/insights-ccx-messaging/pull/966) | chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.82.0 | 2026-09-15 | app/red-hat-konflux | ❌ failed | ready |
+| obsint-mocks | [537](https://github.com/RedHatInsights/obsint-mocks/pull/537) | chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.82.0 | 2026-09-15 | app/red-hat-konflux | ❌ failed | ready |
 | ocp-advisor-frontend | [1199](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1199) | chore(deps): update build-tools digest to 5307281 | 2026-09-10 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-smart-proxy | [1820](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1820) | Update Pre-commit hooks | 2026-09-08 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-smart-proxy | [1819](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1819) | Update Go dependencies | 2026-09-08 | app/red-hat-konflux | ❌ failed | ready |
@@ -45,4 +49,3 @@
 | ocp-advisor-frontend | [1192](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1192) | chore(deps): update dependency github.com/redhatinsights/konflux-pipelines to v1.74.0 | 2026-08-22 | app/red-hat-konflux | ❌ failed | ready |
 | ocp-advisor-frontend | [1191](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1191) | fix(deps): update npm minor and patch dependencies | 2026-08-21 | app/red-hat-konflux | ❌ failed | ready |
 | ocp-advisor-frontend | [1190](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1190) | chore(deps): lock file maintenance | 2026-08-21 | app/red-hat-konflux | ❌ failed | ready |
-| data-pipeline | [122](https://github.com/RedHatInsights/data-pipeline/pull/122) | Update dependency boto3 to >=1.43.92,<1.43.93 | 2026-07-30 | app/red-hat-konflux | ❌ failed | ready |
