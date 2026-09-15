@@ -1,12 +1,12 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-09-14 04:14:49*
+*Last updated: 2026-09-15 04:13:49*
 
 **Total PRs: 13**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| data-pipeline | [138](https://github.com/RedHatInsights/data-pipeline/pull/138) | [CCXDEV-16673] Using latest ccx-messaging | 2026-09-11 | joselsegura | ✅ ok | ready |
+| insights-results-aggregator | [2712](https://github.com/RedHatInsights/insights-results-aggregator/pull/2712) | CCXDEV-16817: Bump mongo-driver to v1.17.10 (CVE-2026-88031) | 2026-09-14 | platex-rehor-bot | ✅ ok | ready |
 | ocp-advisor-frontend | [1197](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1197) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-08 | app/obsint-processing-app | ❌ failed | ready |
 | insights-results-aggregator-mock | [829](https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/829) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-02 | app/obsint-processing-app | ❌ failed | ready |
 | insights-results-aggregator-exporter | [912](https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/912) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-02 | app/obsint-processing-app | ❌ failed | ready |
