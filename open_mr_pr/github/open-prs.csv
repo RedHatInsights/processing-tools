@@ -1,44 +1,7 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-insights-results-smart-proxy,1821,Update GitHub Actions,2026-09-16T02:27:53Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1821,app/red-hat-konflux,failed,ready
-parquet-factory,345,chore(deps): update pre-commit hooks,2026-09-16T02:01:06Z,https://github.com/RedHatInsights/parquet-factory/pull/345,app/red-hat-konflux,failed,ready
-insights-results-aggregator-cleaner,1036,chore(deps): update pre-commit hooks and processing-tools to v0.4.5,2026-09-15T12:05:58Z,https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/1036,ikerreyes,ok,ready
-insights-results-aggregator-mock,840,Update processing-tools to v0.4.5 and pre-commit hooks,2026-09-15T12:05:15Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/840,ikerreyes,ok,ready
-insights-results-aggregator,2713,chore(deps): update processing-tools and pre-commit hooks,2026-09-15T10:15:32Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2713,ikerreyes,ok,ready
-insights-results-aggregator-exporter,917,chore(deps): bump processing-tools to v0.4.5 and update pre-commit hooks,2026-09-15T10:07:58Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/917,ikerreyes,ok,ready
-ocp-advisor-frontend,1199,chore(deps): update build-tools digest to ecf451a,2026-09-10T01:40:29Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1199,app/red-hat-konflux,ok,ready
-insights-results-smart-proxy,1820,Update Pre-commit hooks,2026-09-08T05:39:56Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1820,app/red-hat-konflux,failed,ready
-insights-results-smart-proxy,1819,Update Go dependencies,2026-09-08T05:39:45Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1819,app/red-hat-konflux,failed,ready
-obsint-mocks,523,chore(deps): update redhatinsights/processing-tools action to v0.4.5,2026-09-08T05:23:14Z,https://github.com/RedHatInsights/obsint-mocks/pull/523,app/red-hat-konflux,ok,ready
 insights-behavioral-spec,823,Update RedHatInsights/processing-tools action to v0.4.5,2026-09-08T05:14:10Z,https://github.com/RedHatInsights/insights-behavioral-spec/pull/823,app/red-hat-konflux,ok,ready
-ocp-advisor-frontend,1197,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-09-08T04:16:27Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1197,app/obsint-processing-app,failed,ready
-insights-results-aggregator-mock,835,Update Go dependencies,2026-09-08T01:25:42Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/835,app/red-hat-konflux,failed,ready
-insights-results-aggregator-mock,834,Update dependency org.slf4j:slf4j-log4j12 to v2.0.19,2026-09-08T01:25:16Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/834,app/red-hat-konflux,ok,ready
-insights-results-aggregator,2711,chore(deps): update pre-commit hooks,2026-09-08T01:15:08Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2711,app/red-hat-konflux,failed,ready
-insights-results-aggregator-exporter,916,chore(deps): update go dependencies,2026-09-06T01:28:21Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/916,app/red-hat-konflux,failed,ready
-insights-results-aggregator-cleaner,1035,chore(deps): update go dependencies,2026-09-06T01:25:10Z,https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/1035,app/red-hat-konflux,failed,ready
-insights-operator-gathering-conditions-service,983,fix(deps): update go dependencies,2026-09-06T01:21:45Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/983,app/red-hat-konflux,failed,ready
-ccx-notification-writer,958,chore(deps): update go dependencies,2026-09-06T01:20:49Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/958,app/red-hat-konflux,failed,ready
-insights-results-aggregator,2710,fix(deps): update go dependencies,2026-09-06T01:15:50Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2710,app/red-hat-konflux,failed,ready
-insights-results-aggregator-exporter,915,chore(deps): update redhatinsights/processing-tools action to v0.4.5,2026-09-05T04:22:37Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/915,app/red-hat-konflux,failed,ready
-insights-results-aggregator-cleaner,1034,chore(deps): update redhatinsights/processing-tools action to v0.4.5,2026-09-05T04:08:09Z,https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/1034,app/red-hat-konflux,failed,ready
-insights-results-aggregator-mock,832,Update RedHatInsights/processing-tools action to v0.4.5,2026-09-05T02:55:45Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/832,app/red-hat-konflux,failed,ready
-insights-results-aggregator-mock,829,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-09-02T06:13:40Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/829,app/obsint-processing-app,failed,ready
-insights-results-aggregator-exporter,912,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-09-02T06:13:31Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/912,app/obsint-processing-app,failed,ready
-insights-results-aggregator-cleaner,1031,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-09-02T06:13:23Z,https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/1031,app/obsint-processing-app,failed,ready
-insights-results-aggregator,2707,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-09-02T06:13:15Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2707,app/obsint-processing-app,failed,ready
 ccx-notification-service,1275,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-09-02T06:11:25Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1275,app/obsint-processing-app,failed,ready
-data-pipeline,132,Update Pre-commit hooks,2026-08-23T02:01:22Z,https://github.com/RedHatInsights/data-pipeline/pull/132,app/red-hat-konflux,failed,ready
-ccx-upgrades-inference,271,chore(deps): update pre-commit hooks,2026-08-23T01:54:29Z,https://github.com/RedHatInsights/ccx-upgrades-inference/pull/271,app/red-hat-konflux,failed,ready
-ccx-upgrades-inference,270,fix(deps): update dependency uvicorn to v0.52.4,2026-08-23T01:54:22Z,https://github.com/RedHatInsights/ccx-upgrades-inference/pull/270,app/red-hat-konflux,failed,ready
-insights-results-aggregator-cleaner,1021,chore(deps): update pre-commit hooks,2026-08-23T01:36:57Z,https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/1021,app/red-hat-konflux,failed,ready
 insights-behavioral-spec,816,Update Pre-commit hooks,2026-08-23T01:35:27Z,https://github.com/RedHatInsights/insights-behavioral-spec/pull/816,app/red-hat-konflux,failed,ready
-ccx-upgrades-data-eng,307,chore(deps): update pre-commit hooks,2026-08-23T01:34:53Z,https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/307,app/red-hat-konflux,failed,ready
-insights-results-aggregator-exporter,902,chore(deps): update pre-commit hooks,2026-08-23T01:24:44Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/902,app/red-hat-konflux,failed,ready
-content-service,1090,chore(deps): update pre-commit hooks,2026-08-23T01:24:28Z,https://github.com/RedHatInsights/content-service/pull/1090,app/red-hat-konflux,failed,ready
-insights-results-aggregator-mock,822,Update Pre-commit hooks,2026-08-23T01:21:50Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/822,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1192,chore(deps): update dependency github.com/redhatinsights/konflux-pipelines to v1.74.0,2026-08-22T05:30:28Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1192,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1191,fix(deps): update npm minor and patch dependencies,2026-08-21T06:00:05Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1191,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1190,chore(deps): lock file maintenance,2026-08-21T01:46:03Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1190,app/red-hat-konflux,failed,ready
 ccx-notification-service,1271,[CCXDEV-16563] add aggregator database configuration to Clowdapp,2026-08-07T13:37:22Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1271,Bee-lee,failed,draft
 insights-operator-gathering-conditions-service,922,[CCXDEV-16644] Remove unused in-process authentication middleware,2026-08-03T12:24:25Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/922,juandspy,ok,draft
 insights-operator-gathering-conditions-service,371,Drop legacy building,2025-03-28T12:35:04Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/371,ikerreyes,failed,draft
