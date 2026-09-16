@@ -170,7 +170,7 @@ curl -s -H "Authorization: Bearer $(oc whoami -t)" \
 
 ## Edge cases
 
-- **Konflux UI URL without `?task=`**: script fetches the first matching taskrun; ask user which task if multiple failed.
+- **Konflux UI URL without `?task=`**: script defaults to `build-container`, then `clone-repository`, then the first listed task; ask user which task if multiple failed.
 - **Multiple failed tasks**: script lists taskruns and requires `--task` when more than one failed; re-run with `--task <name>`.
 - **No logs in KubeArchive**: pod logs may have been purged; use TaskRun status/message only.
 - **Wrong cluster**: this skill targets `stone-prd-rh01` only. Other clusters need different API/KubeArchive hosts.

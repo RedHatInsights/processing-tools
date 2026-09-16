@@ -144,20 +144,24 @@ fetch_archived_task_logs() {
     | jq -r '[.spec.containers[].name | select(startswith("step-"))] | last // .spec.containers[0].name')"
 
   curl -sf -H "Authorization: Bearer ${token}" \
-    "${KA_HOST}/api/v1/namespaces/${NAMESPACE}/pods/${pod}/log?container=${container}"
+    "${KA_HOST}/api/v1/namespaces/${NAMESPACE}/pods/${pod}/log?container=${container}" || {
+    echo "warning: no logs available for ${container}" >&2
+    return 1
+  }
 }
 
 resolve_taskrun() {
   local -a taskruns=()
   local -a failed=()
-  local line taskrun task_name status reason
+  local -a preferred=(build-container clone-repository prefetch-dependencies)
+  local line taskrun task_name status reason pref
 
   while IFS=$'\t' read -r taskrun task_name status reason; do
     [[ -z "$taskrun" ]] && continue
     if [[ -n "$TASK" && "$task_name" != "$TASK" ]]; then
       continue
     fi
-    taskruns+=("$taskrun")
+    taskruns+=("${taskrun}"$'\t'"${task_name}")
     if [[ "$status" == "False" ]]; then
       failed+=("$taskrun")
     fi
@@ -174,8 +178,26 @@ resolve_taskrun() {
     return 0
   fi
 
+  if [[ -z "$TASK" ]]; then
+    for pref in "${preferred[@]}"; do
+      for line in "${taskruns[@]}"; do
+        taskrun="${line%%$'\t'*}"
+        task_name="${line#*$'\t'}"
+        if [[ "$task_name" == "$pref" ]]; then
+          TASK="$task_name"
+          echo "$taskrun"
+          return 0
+        fi
+      done
+    done
+  fi
+
   if [[ ${#taskruns[@]} -ge 1 ]]; then
-    echo "${taskruns[0]}"
+    line="${taskruns[0]}"
+    taskrun="${line%%$'\t'*}"
+    task_name="${line#*$'\t'}"
+    [[ -z "$TASK" ]] && TASK="$task_name"
+    echo "$taskrun"
     return 0
   fi
 
@@ -215,7 +237,9 @@ oc project "$NAMESPACE" >/dev/null
 
 header() {
   echo "=== PipelineRun: ${PIPELINERUN} (namespace: ${NAMESPACE}) ==="
-  [[ -n "$TASK" ]] && echo "=== Task: ${TASK} ==="
+  if [[ -n "$TASK" ]]; then
+    echo "=== Task: ${TASK} ==="
+  fi
 }
 
 write_output() {
@@ -261,5 +285,5 @@ fi
     exit 1
   }
   echo "=== Logs: ${taskrun} ==="
-  fetch_archived_task_logs "$taskrun"
+  fetch_archived_task_logs "$taskrun" || echo "warning: could not fetch archived logs for ${taskrun}" >&2
 } | write_output
