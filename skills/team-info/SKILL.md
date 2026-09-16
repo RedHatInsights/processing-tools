@@ -147,6 +147,7 @@ The [processing-tools](https://github.com/RedHatInsights/processing-tools) repo 
 
 | Skill | What it does |
 |-------|-------------|
+| `konflux-troubleshooting` | Troubleshoot Konflux PipelineRun failures (logs, KubeArchive, obsint-processing). |
 | `konflux-dep-bumps` | Triage and fix failing Konflux/MintMaker dependency bump PRs. |
 | `resolve-cve` | Resolve CVE vulnerability issues from Jira — assess, bump, or mark not-affected. |
 | `update-refs` | Update refs of deployments to the latest commit SHA |

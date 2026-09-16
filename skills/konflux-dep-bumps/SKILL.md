@@ -125,52 +125,29 @@ Beyond that:
 
 ### Konflux / bonfire failures
 
-**YOU MUST INVOKE BOTH OF THESE SKILLS VIA THE SKILL TOOL. DO NOT INLINE THEIR LOGIC. DO NOT CALL `gh api`, `kubectl`, OR `oc` DIRECTLY WITHOUT GOING THROUGH THEM FIRST.**
+**YOU MUST INVOKE SKILLS VIA THE SKILL TOOL. DO NOT INLINE THEIR LOGIC. DO NOT CALL `gh api`, `kubectl`, OR `oc` DIRECTLY WITHOUT GOING THROUGH THEM FIRST.**
 
-**The user must install these before starting a session** — the agent cannot run `npx` interactively. Ask the user to run this in their terminal (replace `claude-code` with their agent name):
+1. **`konflux-troubleshooting`** (local, processing-tools) — invoke first for obsint-processing PipelineRuns: fetch logs, summarize failure, cluster constants.
+2. **`navigating-github-to-konflux-pipelines`** (upstream) — when starting from a GitHub PR without a Konflux URL.
+3. **`investigating-failed-plrs`** (upstream) — when logs alone are not enough for a failed/stuck PipelineRun.
+4. **`investigating-slow-builds`** (upstream) — when the failure looks like queue/quota slowness rather than a task error.
+
+**The user must install upstream skills before starting a session** — the agent cannot run `npx` interactively. Ask the user to run this in their terminal (replace `claude-code` with their agent name):
 ```bash
-npx skills add konflux-ci/skills --skill navigating-github-to-konflux-pipelines -g -a claude-code -y
-npx skills add konflux-ci/skills --skill debugging-pipeline-failures -g -a claude-code -y
+npx skills add konflux-ci/agent-plugins --skill navigating-github-to-konflux-pipelines -g -a claude-code -y
+npx skills add konflux-ci/agent-plugins --skill investigating-failed-plrs -g -a claude-code -y
+npx skills add konflux-ci/agent-plugins --skill investigating-slow-builds -g -a claude-code -y
 ```
 
 **Mid-session install (Claude Code only)** — via the plugin system:
 ```bash
-claude plugin marketplace add https://github.com/konflux-ci/skills
+claude plugin marketplace add https://github.com/konflux-ci/agent-plugins
 claude plugin install navigating-github-to-konflux-pipelines
-claude plugin install debugging-pipeline-failures
+claude plugin install investigating-failed-plrs
+claude plugin install investigating-slow-builds
 ```
 
-Skills can also be installed via `curl` from the raw GitHub URLs into the agent's skills directory (for other agents replace `.claude` with the appropriate folder name).
-
-1. **`navigating-github-to-konflux-pipelines`** — invoke via Skill tool.
-2. **`debugging-pipeline-failures`** — invoke via Skill tool.
-
-Pods from Konflux pipeline runs are retained for a short period after completion. After TTL cleanup `oc get pipelinerun` returns NotFound, but the run is still accessible via **KubeArchive** which archives completed PipelineRuns, TaskRuns, and related Pods outside etcd.
-
-**Accessing archived pipeline runs via KubeArchive:**
-
-```bash
-# 1. Get the KubeArchive API host
-KA_HOST=$(oc get cm -n product-kubearchive kubearchive-api-url -o jsonpath='{.data.URL}')
-
-# 2. Install kubectl-ka if not present (macOS ARM64 example — see https://kubearchive.github.io/kubearchive/main/cli/installation.html)
-curl -LO https://github.com/kubearchive/kubearchive/releases/latest/download/kubectl-ka-darwin-arm64
-chmod +x kubectl-ka-darwin-arm64 && xattr -d com.apple.quarantine kubectl-ka-darwin-arm64 2>/dev/null
-mv kubectl-ka-darwin-arm64 ~/bin/kubectl-ka
-
-# 3. Configure the plugin
-kubectl-ka config set host "${KA_HOST}"
-
-# 4. Query archived resources
-kubectl-ka get pipelinerun <name> -n obsint-processing-tenant -o yaml
-kubectl-ka get taskrun -n obsint-processing-tenant -l tekton.dev/pipelineRun=<pr-name> -o yaml
-
-# 5. Get logs — use the pod name from the TaskRun's .status.podName field
-POD=$(kubectl-ka get taskrun <taskrun-name> -n obsint-processing-tenant -o yaml | grep podName | awk '{print $2}')
-kubectl-ka logs ${POD} -n obsint-processing-tenant -c step-<step-name>
-```
-
-If the token is expired, run `oc login --web --server=https://api.stone-prd-rh01.pg1f.p1.openshiftapps.com:6443` to refresh it — the user handles the browser part.
+Skills can also be installed via `curl` from the raw GitHub URLs into the agent's skills directory (for other agents replace `.claude` with the appropriate folder name). Upstream skills live in [konflux-ci/agent-plugins](https://github.com/konflux-ci/agent-plugins/tree/main/skills) ([PR #44](https://github.com/konflux-ci/agent-plugins/pull/44) replaced `debugging-pipeline-failures` with the investigating-* skills). Local obsint-processing workflow: `konflux-troubleshooting` in processing-tools.
 
 **WRONG:**
 - ❌ Saying "I cannot access the logs"
@@ -179,8 +156,10 @@ If the token is expired, run `oc login --web --server=https://api.stone-prd-rh01
 - ❌ Guessing the root cause without reading the logs
 
 **CORRECT:**
-- ✅ Invoke `navigating-github-to-konflux-pipelines` via Skill tool → get PipelineRun details
-- ✅ Invoke `debugging-pipeline-failures` via Skill tool → read the actual logs
+- ✅ Invoke `konflux-troubleshooting` via Skill tool → fetch logs and summarize
+- ✅ Invoke `navigating-github-to-konflux-pipelines` via Skill tool → get PipelineRun details from a PR
+- ✅ Invoke `investigating-failed-plrs` via Skill tool → deeper root-cause analysis
+- ✅ Invoke `investigating-slow-builds` via Skill tool → when builds are slow/queued, not failing
 - ✅ If token is expired: refresh it and retry
 - ✅ Report what the logs actually say
 
