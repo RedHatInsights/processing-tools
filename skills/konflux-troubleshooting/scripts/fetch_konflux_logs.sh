@@ -2,8 +2,8 @@
 # Fetch Konflux PipelineRun task logs from the live cluster or KubeArchive.
 set -euo pipefail
 
-KA_HOST="${KA_HOST:-https://kubearchive-api-server-product-kubearchive.apps.stone-prd-rh01.pg1f.p1.openshiftapps.com}"
-CLUSTER_API="${CLUSTER_API:-https://api.stone-prd-rh01.pg1f.p1.openshiftapps.com:6443}"
+readonly KA_HOST="https://kubearchive-api-server-product-kubearchive.apps.stone-prd-rh01.pg1f.p1.openshiftapps.com"
+readonly CLUSTER_API="https://api.stone-prd-rh01.pg1f.p1.openshiftapps.com:6443"
 
 usage() {
   cat <<'EOF'
@@ -26,6 +26,13 @@ require_cmd() {
   }
 }
 
+normalize_server() {
+  local url="${1%/}"
+  url="${url#https://}"
+  url="${url#http://}"
+  echo "$url"
+}
+
 parse_url() {
   local url="$1"
   [[ "$url" =~ /ns/([^/]+)/applications/[^/]+/pipelineruns/([^/?]+) ]] || {
@@ -45,12 +52,39 @@ ensure_logged_in() {
     echo "  oc login ${CLUSTER_API} --web" >&2
     exit 1
   fi
+
+  local current expected
+  current="$(normalize_server "$(oc whoami --show-server)")"
+  expected="$(normalize_server "$CLUSTER_API")"
+  if [[ "$current" != "$expected" ]]; then
+    echo "error: logged in to wrong cluster (${current}). Run:" >&2
+    echo "  oc login ${CLUSTER_API} --web" >&2
+    exit 1
+  fi
 }
 
 fetch_live() {
   local args=(-n "$NAMESPACE")
   [[ -n "$TASK" ]] && args+=(-t "$TASK")
-  tkn pipelinerun logs "$PIPELINERUN" "${args[@]}" 2>/dev/null
+
+  local stderr_file logs err
+  stderr_file="$(mktemp)"
+  if logs="$(tkn pipelinerun logs "$PIPELINERUN" "${args[@]}" 2>"$stderr_file")"; then
+    rm -f "$stderr_file"
+    echo "$logs"
+    return 0
+  fi
+
+  err="$(cat "$stderr_file")"
+  rm -f "$stderr_file"
+
+  if echo "$err" | grep -qiE 'not found|doesn.t exist|couldn.t find|no pipelinerun'; then
+    return 2
+  fi
+
+  echo "error: failed to fetch live logs:" >&2
+  echo "$err" >&2
+  return 1
 }
 
 fetch_archived_status() {
@@ -66,40 +100,85 @@ list_archived_taskruns() {
   token="$(oc whoami -t)"
   curl -sf -H "Authorization: Bearer ${token}" \
     "${KA_HOST}/apis/tekton.dev/v1/namespaces/${NAMESPACE}/taskruns?labelSelector=tekton.dev/pipelineRun=${PIPELINERUN}" \
-    | jq -r '.items[] | "\(.metadata.name)\t\(.metadata.labels["tekton.dev/pipelineTask"])\t\(.status.conditions[-1].reason // "?")"'
+    | jq -r '.items[] | "\(.metadata.name)\t\(.metadata.labels["tekton.dev/pipelineTask"])\t\(.status.conditions[-1].status // "?")\t\(.status.conditions[-1].reason // "?")"'
 }
 
 fetch_archived_task_logs() {
   local taskrun="$1"
-  local token pod container
+  local token pod taskrun_json failed_steps step container
   token="$(oc whoami -t)"
 
-  pod="$(curl -sf -H "Authorization: Bearer ${token}" \
-    "${KA_HOST}/api/v1/namespaces/${NAMESPACE}/pods?labelSelector=tekton.dev/taskRun=${taskrun}" \
-    | jq -r '.items[0].metadata.name')"
+  taskrun_json="$(curl -sf -H "Authorization: Bearer ${token}" \
+    "${KA_HOST}/apis/tekton.dev/v1/namespaces/${NAMESPACE}/taskruns/${taskrun}")"
+
+  pod="$(echo "$taskrun_json" | jq -r '.status.podName // empty')"
+  if [[ -z "$pod" || "$pod" == "null" ]]; then
+    pod="$(curl -sf -H "Authorization: Bearer ${token}" \
+      "${KA_HOST}/api/v1/namespaces/${NAMESPACE}/pods?labelSelector=tekton.dev/taskRun=${taskrun}" \
+      | jq -r '.items[0].metadata.name')"
+  fi
 
   if [[ -z "$pod" || "$pod" == "null" ]]; then
     echo "error: no archived pod found for taskrun ${taskrun}" >&2
     return 1
   fi
 
-  # step-build is the main container for build-container; fall back to all containers.
+  failed_steps="$(echo "$taskrun_json" | jq -r '
+    .status.steps[]? | select(.terminated.exitCode != 0 and .terminated.exitCode != null) | .name
+  ')"
+
+  if [[ -n "$failed_steps" ]]; then
+    while IFS= read -r step; do
+      [[ -z "$step" ]] && continue
+      container="step-${step}"
+      echo "=== ${container} ==="
+      curl -sf -H "Authorization: Bearer ${token}" \
+        "${KA_HOST}/api/v1/namespaces/${NAMESPACE}/pods/${pod}/log?container=${container}" || \
+        echo "warning: no logs for ${container}" >&2
+    done <<< "$failed_steps"
+    return 0
+  fi
+
   container="$(curl -sf -H "Authorization: Bearer ${token}" \
     "${KA_HOST}/api/v1/namespaces/${NAMESPACE}/pods/${pod}" \
-    | jq -r '.spec.containers[0].name')"
+    | jq -r '[.spec.containers[].name | select(startswith("step-"))] | last // .spec.containers[0].name')"
 
   curl -sf -H "Authorization: Bearer ${token}" \
     "${KA_HOST}/api/v1/namespaces/${NAMESPACE}/pods/${pod}/log?container=${container}"
 }
 
 resolve_taskrun() {
-  local line taskrun task_name
-  while IFS=$'\t' read -r taskrun task_name _; do
-    if [[ -z "$TASK" || "$task_name" == "$TASK" ]]; then
-      echo "$taskrun"
-      return 0
+  local -a taskruns=()
+  local -a failed=()
+  local line taskrun task_name status reason
+
+  while IFS=$'\t' read -r taskrun task_name status reason; do
+    [[ -z "$taskrun" ]] && continue
+    if [[ -n "$TASK" && "$task_name" != "$TASK" ]]; then
+      continue
+    fi
+    taskruns+=("$taskrun")
+    if [[ "$status" == "False" ]]; then
+      failed+=("$taskrun")
     fi
   done < <(list_archived_taskruns)
+
+  if [[ ${#failed[@]} -gt 1 && -z "$TASK" ]]; then
+    echo "error: multiple failed tasks; specify --task:" >&2
+    list_archived_taskruns >&2
+    return 1
+  fi
+
+  if [[ ${#failed[@]} -eq 1 ]]; then
+    echo "${failed[0]}"
+    return 0
+  fi
+
+  if [[ ${#taskruns[@]} -ge 1 ]]; then
+    echo "${taskruns[0]}"
+    return 0
+  fi
+
   return 1
 }
 
@@ -149,13 +228,20 @@ write_output() {
 }
 
 # Try live cluster first.
-if logs="$(fetch_live)"; then
+fetch_live_result=0
+logs="$(fetch_live)" || fetch_live_result=$?
+
+if [[ "$fetch_live_result" -eq 0 ]]; then
   {
     header
     echo "=== Source: live cluster ==="
     echo "$logs"
   } | write_output
   exit 0
+fi
+
+if [[ "$fetch_live_result" -eq 1 ]]; then
+  exit 1
 fi
 
 # Fall back to KubeArchive (PipelineRuns are GC'd quickly on stone-prd-rh01).

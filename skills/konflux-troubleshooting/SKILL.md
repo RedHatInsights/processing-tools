@@ -140,6 +140,8 @@ Common namespace for obsint-processing: `obsint-processing-tenant`
 oc project <namespace>
 tkn pipelinerun logs <pipelinerun> -n <namespace> -t <task>
 
+KA_HOST="https://kubearchive-api-server-product-kubearchive.apps.stone-prd-rh01.pg1f.p1.openshiftapps.com"
+
 # KubeArchive — PipelineRun status
 curl -s -H "Authorization: Bearer $(oc whoami -t)" \
   "${KA_HOST}/apis/tekton.dev/v1/namespaces/<ns>/pipelineruns/<pr>"
@@ -169,6 +171,6 @@ curl -s -H "Authorization: Bearer $(oc whoami -t)" \
 ## Edge cases
 
 - **Konflux UI URL without `?task=`**: script fetches the first matching taskrun; ask user which task if multiple failed.
-- **Multiple failed tasks**: list taskruns from script output, re-run with `--task <name>`.
+- **Multiple failed tasks**: script lists taskruns and requires `--task` when more than one failed; re-run with `--task <name>`.
 - **No logs in KubeArchive**: pod logs may have been purged; use TaskRun status/message only.
 - **Wrong cluster**: this skill targets `stone-prd-rh01` only. Other clusters need different API/KubeArchive hosts.
