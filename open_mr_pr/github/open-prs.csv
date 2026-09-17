@@ -1,7 +1,20 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
+ccx-upgrades-data-eng,309,chore(deps): update pre-commit hooks,2026-09-17T03:47:41Z,https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/309,app/red-hat-konflux,failed,ready
+obsint-mocks,541,chore(deps): update redhatinsights/processing-tools action to v0.4.5,2026-09-17T03:37:52Z,https://github.com/RedHatInsights/obsint-mocks/pull/541,app/red-hat-konflux,ok,ready
+insights-results-aggregator,2715,fix(deps): update go dependencies,2026-09-17T03:36:36Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2715,app/red-hat-konflux,failed,ready
+insights-results-aggregator-mock,843,Update Go dependencies,2026-09-17T03:35:25Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/843,app/red-hat-konflux,failed,ready
+insights-behavioral-spec,826,Update Pre-commit hooks,2026-09-17T03:21:09Z,https://github.com/RedHatInsights/insights-behavioral-spec/pull/826,app/red-hat-konflux,failed,ready
+insights-results-smart-proxy,1823,Update Go dependencies,2026-09-17T03:16:49Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1823,app/red-hat-konflux,failed,ready
+insights-results-aggregator-exporter,919,chore(deps): update go dependencies,2026-09-17T03:11:01Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/919,app/red-hat-konflux,failed,ready
+ocp-advisor-frontend,1202,chore(deps): update redhatinsights/processing-tools action to v0.4.5,2026-09-17T03:04:13Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1202,app/red-hat-konflux,failed,ready
+ocp-advisor-frontend,1201,chore(deps): update build-tools digest to 91ada64,2026-09-17T03:04:06Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1201,app/red-hat-konflux,ok,ready
+ccx-notification-writer,962,chore(deps): update go dependencies,2026-09-17T02:31:17Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/962,app/red-hat-konflux,failed,ready
+insights-results-aggregator-cleaner,1038,chore(deps): update go dependencies,2026-09-17T02:20:09Z,https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/1038,app/red-hat-konflux,failed,ready
+insights-ccx-messaging,972,chore(deps): update redhatinsights/processing-tools action to v0.4.5,2026-09-17T01:47:10Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/972,app/red-hat-konflux,ok,ready
+insights-content-template-renderer,626,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-09-16T10:43:30Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/626,app/obsint-processing-app,ok,ready
+ccx-notification-writer,961,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-09-16T10:43:02Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/961,app/obsint-processing-app,ok,ready
 insights-behavioral-spec,823,Update RedHatInsights/processing-tools action to v0.4.5,2026-09-08T05:14:10Z,https://github.com/RedHatInsights/insights-behavioral-spec/pull/823,app/red-hat-konflux,ok,ready
 ccx-notification-service,1275,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-09-02T06:11:25Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1275,app/obsint-processing-app,failed,ready
-insights-behavioral-spec,816,Update Pre-commit hooks,2026-08-23T01:35:27Z,https://github.com/RedHatInsights/insights-behavioral-spec/pull/816,app/red-hat-konflux,failed,ready
 ccx-notification-service,1271,[CCXDEV-16563] add aggregator database configuration to Clowdapp,2026-08-07T13:37:22Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1271,Bee-lee,failed,draft
 insights-operator-gathering-conditions-service,922,[CCXDEV-16644] Remove unused in-process authentication middleware,2026-08-03T12:24:25Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/922,juandspy,ok,draft
 insights-operator-gathering-conditions-service,371,Drop legacy building,2025-03-28T12:35:04Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/371,ikerreyes,failed,draft
