@@ -1,6 +1,6 @@
 # Glitchtip <-> Jira integration checker
 
-*Last updated: 2026-09-17 09:41:46 UTC*
+*Last updated: 2026-09-17 09:57:55 UTC*
 
 ## Open Jira issues for Glitchtip events
 
@@ -17,7 +17,7 @@
 | [CCXDEV-16780](https://redhat.atlassian.net/browse/CCXDEV-16780) | [Link](https://glitchtip.devshift.net/ccx/issues/4613862) | 16 |
 | [CCXDEV-16779](https://redhat.atlassian.net/browse/CCXDEV-16779) | [Link](https://glitchtip.devshift.net/ccx/issues/4613845) | 16 |
 | [CCXDEV-16778](https://redhat.atlassian.net/browse/CCXDEV-16778) | [Link](https://glitchtip.devshift.net/ccx/issues/4613654) | 16 |
-| [CCXDEV-16756](https://redhat.atlassian.net/browse/CCXDEV-16756) | [Link](https://glitchtip.devshift.net/ccx/issues/4479936) | 21 |
+| [CCXDEV-16756](https://redhat.atlassian.net/browse/CCXDEV-16756) | [Link](https://glitchtip.devshift.net/ccx/issues/4479936) | 22 |
 | [CCXDEV-16753](https://redhat.atlassian.net/browse/CCXDEV-16753) | [Link](https://glitchtip.devshift.net/ccx/issues/4604390) | 22 |
 | [CCXDEV-16735](https://redhat.atlassian.net/browse/CCXDEV-16735) | [Link](https://glitchtip.devshift.net/ccx/issues/4572840) | 13 |
 | [CCXDEV-16734](https://redhat.atlassian.net/browse/CCXDEV-16734) | [Link](https://glitchtip.devshift.net/ccx/issues/4572839) | 13 |
