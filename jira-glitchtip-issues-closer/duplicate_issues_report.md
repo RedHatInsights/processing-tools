@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-09-16 04:21:14
+**Generated:** 2026-09-17 04:21:28
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -12,9 +12,9 @@
 
 | Metric | Value |
 |--------|-------|
-| Projects with duplicates | 9 |
-| Total duplicate groups | 17 |
-| Total issues in groups | 40 |
+| Projects with duplicates | 10 |
+| Total duplicate groups | 18 |
+| Total issues in groups | 42 |
 | Total events affected | 0 |
 
 ---
@@ -25,6 +25,7 @@
 - [ccx-data-pipeline](#ccx-data-pipeline) - 1 groups, 3 issues
 - [ccx-notification-service](#ccx-notification-service) - 2 groups, 4 issues
 - [ccx-notification-writer](#ccx-notification-writer) - 2 groups, 4 issues
+- [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 1 groups, 2 issues
 - [dvo-writer](#dvo-writer) - 3 groups, 6 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 8 issues
 - [parquet-factory](#parquet-factory) - 1 groups, 2 issues
@@ -65,8 +66,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 6,349 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
-| #3852210 | 4,501 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
+| #3852013 | 6,375 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
+| #3852210 | 4,513 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
 | #4580828 | 237,551 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580828) |
 
 **Recommendation:** Consider merging into [#3852013](https://glitchtip.devshift.net/ccx/issues/3852013) (highest event count)
@@ -85,7 +86,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3997223 | 324 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
+| #3997223 | 325 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
 | #4649219 | 1 | Error: Get \"http://ccx-insights-content-service:10000/ap... | [View](https://glitchtip.devshift.net/ccx/issues/4649219) |
 
 **Recommendation:** Consider merging into [#3997223](https://glitchtip.devshift.net/ccx/issues/3997223) (highest event count)
@@ -134,6 +135,25 @@
 | #4434839 | 16 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4434839) |
 
 **Recommendation:** Consider merging into [#4506737](https://glitchtip.devshift.net/ccx/issues/4506737) (highest event count)
+
+---
+
+## ccx-upgrades-data-eng
+
+**Duplicate Groups:** 1
+**Issues in Groups:** 2
+**Total Events:** 0
+
+### 🟢 LOW: ConnectionError: HTTPConnectionPool(host='ccx-upgrades-inference-svc', port=8000): Max retries exce…
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4693164 | 1 | ConnectionError: HTTPConnectionPool(host='ccx-upgrades-in... | [View](https://glitchtip.devshift.net/ccx/issues/4693164) |
+| #4693160 | 3 | ConnectionError: HTTPConnectionPool(host='ccx-upgrades-in... | [View](https://glitchtip.devshift.net/ccx/issues/4693160) |
+
+**Recommendation:** Consider merging into [#4693164](https://glitchtip.devshift.net/ccx/issues/4693164) (highest event count)
 
 ---
 
@@ -260,8 +280,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 6,779 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
-| #3791585 | 4,730 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
+| #3781153 | 6,805 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
+| #3791585 | 4,742 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
 | #4580829 | 237,443 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580829) |
 
 **Recommendation:** Consider merging into [#3781153](https://glitchtip.devshift.net/ccx/issues/3781153) (highest event count)
@@ -274,7 +294,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4675824 | 8 | IndexError: list index out of range | [View](https://glitchtip.devshift.net/ccx/issues/4675824) |
+| #4675824 | 12 | IndexError: list index out of range | [View](https://glitchtip.devshift.net/ccx/issues/4675824) |
 | #4594819 | 2 | IndexError: list index out of range | [View](https://glitchtip.devshift.net/ccx/issues/4594819) |
 
 **Recommendation:** Consider merging into [#4675824](https://glitchtip.devshift.net/ccx/issues/4675824) (highest event count)
