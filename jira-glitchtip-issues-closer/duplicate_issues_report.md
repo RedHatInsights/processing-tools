@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-09-17 04:21:28
+**Generated:** 2026-09-18 04:20:42
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -13,18 +13,18 @@
 | Metric | Value |
 |--------|-------|
 | Projects with duplicates | 10 |
-| Total duplicate groups | 18 |
-| Total issues in groups | 42 |
+| Total duplicate groups | 17 |
+| Total issues in groups | 41 |
 | Total events affected | 0 |
 
 ---
 
 ## Table of Contents
 
-- [archive-sync](#archive-sync) - 1 groups, 3 issues
+- [archive-sync](#archive-sync) - 1 groups, 4 issues
 - [ccx-data-pipeline](#ccx-data-pipeline) - 1 groups, 3 issues
 - [ccx-notification-service](#ccx-notification-service) - 2 groups, 4 issues
-- [ccx-notification-writer](#ccx-notification-writer) - 2 groups, 4 issues
+- [ccx-notification-writer](#ccx-notification-writer) - 1 groups, 2 issues
 - [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 1 groups, 2 issues
 - [dvo-writer](#dvo-writer) - 3 groups, 6 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 8 issues
@@ -37,20 +37,21 @@
 ## archive-sync
 
 **Duplicate Groups:** 1
-**Issues in Groups:** 3
+**Issues in Groups:** 4
 **Total Events:** 0
 
 ### 🟢 LOW: error: Error -3 while decompressing data: invalid block type
 
-**Issues:** 3 | **Total Events:** 0
+**Issues:** 4 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
+| #4582018 | 3 | error: Error -3 while decompressing data: invalid block type | [View](https://glitchtip.devshift.net/ccx/issues/4582018) |
+| #4696802 | 1 | error: Error -3 while decompressing data: invalid code le... | [View](https://glitchtip.devshift.net/ccx/issues/4696802) |
 | #4604390 | 1 | error: Error -3 while decompressing data: invalid literal... | [View](https://glitchtip.devshift.net/ccx/issues/4604390) |
 | #4582128 | 1 | error: Error -3 while decompressing data: invalid distanc... | [View](https://glitchtip.devshift.net/ccx/issues/4582128) |
-| #4582018 | 2 | error: Error -3 while decompressing data: invalid block type | [View](https://glitchtip.devshift.net/ccx/issues/4582018) |
 
-**Recommendation:** Consider merging into [#4604390](https://glitchtip.devshift.net/ccx/issues/4604390) (highest event count)
+**Recommendation:** Consider merging into [#4582018](https://glitchtip.devshift.net/ccx/issues/4582018) (highest event count)
 
 ---
 
@@ -66,11 +67,11 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 6,375 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
-| #3852210 | 4,513 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
+| #3852210 | 4,525 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
+| #3852013 | 6,396 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
 | #4580828 | 237,551 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580828) |
 
-**Recommendation:** Consider merging into [#3852013](https://glitchtip.devshift.net/ccx/issues/3852013) (highest event count)
+**Recommendation:** Consider merging into [#3852210](https://glitchtip.devshift.net/ccx/issues/3852210) (highest event count)
 
 ---
 
@@ -108,22 +109,9 @@
 
 ## ccx-notification-writer
 
-**Duplicate Groups:** 2
-**Issues in Groups:** 4
+**Duplicate Groups:** 1
+**Issues in Groups:** 2
 **Total Events:** 0
-
-### 🟢 LOW: kafka: error while consuming ccx.ocp.results/0: kafka server: Request exceeded the user-specified t…
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4491664 | 6 | kafka: error while consuming ccx.ocp.results/0: kafka ser... | [View](https://glitchtip.devshift.net/ccx/issues/4491664) |
-| #4580574 | 6 | kafka: error while consuming ccx.ocp.results/0: kafka ser... | [View](https://glitchtip.devshift.net/ccx/issues/4580574) |
-
-**Recommendation:** Consider merging into [#4491664](https://glitchtip.devshift.net/ccx/issues/4491664) (highest event count)
-
----
 
 ### 🟢 LOW: kafka: error while consuming ccx.ocp.results/0: EOF
 
@@ -280,11 +268,11 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 6,805 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
-| #3791585 | 4,742 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
+| #3791585 | 4,754 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
+| #3781153 | 6,826 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
 | #4580829 | 237,443 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580829) |
 
-**Recommendation:** Consider merging into [#3781153](https://glitchtip.devshift.net/ccx/issues/3781153) (highest event count)
+**Recommendation:** Consider merging into [#3791585](https://glitchtip.devshift.net/ccx/issues/3791585) (highest event count)
 
 ---
 
@@ -294,7 +282,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4675824 | 12 | IndexError: list index out of range | [View](https://glitchtip.devshift.net/ccx/issues/4675824) |
+| #4675824 | 20 | IndexError: list index out of range | [View](https://glitchtip.devshift.net/ccx/issues/4675824) |
 | #4594819 | 2 | IndexError: list index out of range | [View](https://glitchtip.devshift.net/ccx/issues/4594819) |
 
 **Recommendation:** Consider merging into [#4675824](https://glitchtip.devshift.net/ccx/issues/4675824) (highest event count)
