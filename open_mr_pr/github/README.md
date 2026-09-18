@@ -1,24 +1,10 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-09-18 04:13:22*
+*Last updated: 2026-09-18 11:37:09*
 
-**Total Konflux PRs: 16**
+**Total Konflux PRs: 2**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| insights-results-smart-proxy | [1827](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1827) | Update Pre-commit hooks | 2026-09-18 | app/red-hat-konflux | ✅ ok | ready |
-| ocp-advisor-frontend | [1204](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1204) | chore(deps): lock file maintenance | 2026-09-18 | app/red-hat-konflux | ❌ failed | ready |
-| content-service | [1097](https://github.com/RedHatInsights/content-service/pull/1097) | chore(deps): update pre-commit hooks | 2026-09-17 | app/red-hat-konflux | ❌ failed | ready |
-| ocp-advisor-frontend | [1203](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1203) | fix(deps): update npm minor and patch dependencies | 2026-09-17 | app/red-hat-konflux | ❌ failed | ready |
-| ccx-upgrades-data-eng | [309](https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/309) | chore(deps): update pre-commit hooks | 2026-09-17 | app/red-hat-konflux | ❌ failed | ready |
-| obsint-mocks | [541](https://github.com/RedHatInsights/obsint-mocks/pull/541) | chore(deps): update redhatinsights/processing-tools action to v0.4.5 | 2026-09-17 | app/red-hat-konflux | ✅ ok | ready |
-| insights-results-aggregator | [2715](https://github.com/RedHatInsights/insights-results-aggregator/pull/2715) | fix(deps): update go dependencies | 2026-09-17 | app/red-hat-konflux | ❌ failed | ready |
-| insights-results-aggregator-mock | [843](https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/843) | Update Go dependencies | 2026-09-17 | app/red-hat-konflux | ❌ failed | ready |
 | insights-behavioral-spec | [826](https://github.com/RedHatInsights/insights-behavioral-spec/pull/826) | Update Pre-commit hooks | 2026-09-17 | app/red-hat-konflux | ❌ failed | ready |
-| insights-results-smart-proxy | [1823](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1823) | Update Go dependencies | 2026-09-17 | app/red-hat-konflux | ❌ failed | ready |
-| insights-results-aggregator-exporter | [919](https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/919) | chore(deps): update go dependencies | 2026-09-17 | app/red-hat-konflux | ❌ failed | ready |
-| ocp-advisor-frontend | [1202](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1202) | chore(deps): update redhatinsights/processing-tools action to v0.4.5 | 2026-09-17 | app/red-hat-konflux | ❌ failed | ready |
-| ocp-advisor-frontend | [1201](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1201) | chore(deps): update build-tools digest to 49d9006 | 2026-09-17 | app/red-hat-konflux | ✅ ok | ready |
 | ccx-notification-writer | [962](https://github.com/RedHatInsights/ccx-notification-writer/pull/962) | chore(deps): update go dependencies | 2026-09-17 | app/red-hat-konflux | ❌ failed | ready |
-| insights-results-aggregator-cleaner | [1038](https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/1038) | chore(deps): update go dependencies | 2026-09-17 | app/red-hat-konflux | ❌ failed | ready |
-| insights-behavioral-spec | [823](https://github.com/RedHatInsights/insights-behavioral-spec/pull/823) | Update RedHatInsights/processing-tools action to v0.4.5 | 2026-09-08 | app/red-hat-konflux | ✅ ok | ready |
