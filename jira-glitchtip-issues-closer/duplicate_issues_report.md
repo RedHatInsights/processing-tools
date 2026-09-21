@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-09-20 04:20:30
+**Generated:** 2026-09-21 04:23:31
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -14,7 +14,7 @@
 |--------|-------|
 | Projects with duplicates | 10 |
 | Total duplicate groups | 17 |
-| Total issues in groups | 40 |
+| Total issues in groups | 37 |
 | Total events affected | 0 |
 
 ---
@@ -22,14 +22,14 @@
 ## Table of Contents
 
 - [archive-sync](#archive-sync) - 1 groups, 3 issues
-- [ccx-data-pipeline](#ccx-data-pipeline) - 1 groups, 3 issues
+- [ccx-data-pipeline](#ccx-data-pipeline) - 1 groups, 2 issues
 - [ccx-notification-service](#ccx-notification-service) - 2 groups, 4 issues
 - [ccx-notification-writer](#ccx-notification-writer) - 1 groups, 2 issues
 - [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 1 groups, 2 issues
 - [dvo-writer](#dvo-writer) - 3 groups, 6 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 8 issues
 - [parquet-factory](#parquet-factory) - 1 groups, 2 issues
-- [rules-processing](#rules-processing) - 3 groups, 8 issues
+- [rules-processing](#rules-processing) - 3 groups, 6 issues
 - [valkey-writer](#valkey-writer) - 1 groups, 2 issues
 
 ---
@@ -46,7 +46,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4582018 | 4 | error: Error -3 while decompressing data: invalid block type | [View](https://glitchtip.devshift.net/ccx/issues/4582018) |
+| #4582018 | 5 | error: Error -3 while decompressing data: invalid block type | [View](https://glitchtip.devshift.net/ccx/issues/4582018) |
 | #4696802 | 1 | error: Error -3 while decompressing data: invalid code le... | [View](https://glitchtip.devshift.net/ccx/issues/4696802) |
 | #4604390 | 1 | error: Error -3 while decompressing data: invalid literal... | [View](https://glitchtip.devshift.net/ccx/issues/4604390) |
 
@@ -57,18 +57,17 @@
 ## ccx-data-pipeline
 
 **Duplicate Groups:** 1
-**Issues in Groups:** 3
+**Issues in Groups:** 2
 **Total Events:** 0
 
 ### 🟢 LOW: AttributeError: 'str' object has no attribute 'parent'
 
-**Issues:** 3 | **Total Events:** 0
+**Issues:** 2 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 6,445 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
+| #3852013 | 6,471 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
 | #3852210 | 4,542 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
-| #4580828 | 237,551 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580828) |
 
 **Recommendation:** Consider merging into [#3852013](https://glitchtip.devshift.net/ccx/issues/3852013) (highest event count)
 
@@ -258,18 +257,17 @@
 ## rules-processing
 
 **Duplicate Groups:** 3
-**Issues in Groups:** 8
+**Issues in Groups:** 6
 **Total Events:** 0
 
 ### 🟢 LOW: AttributeError: 'str' object has no attribute 'parent'
 
-**Issues:** 3 | **Total Events:** 0
+**Issues:** 2 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 6,875 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
+| #3781153 | 6,901 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
 | #3791585 | 4,771 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
-| #4580829 | 237,443 | AttributeError: 'NoneType' object has no attribute 'group' | [View](https://glitchtip.devshift.net/ccx/issues/4580829) |
 
 **Recommendation:** Consider merging into [#3781153](https://glitchtip.devshift.net/ccx/issues/3781153) (highest event count)
 
@@ -281,7 +279,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4675824 | 32 | IndexError: list index out of range | [View](https://glitchtip.devshift.net/ccx/issues/4675824) |
+| #4675824 | 36 | IndexError: list index out of range | [View](https://glitchtip.devshift.net/ccx/issues/4675824) |
 | #4594819 | 2 | IndexError: list index out of range | [View](https://glitchtip.devshift.net/ccx/issues/4594819) |
 
 **Recommendation:** Consider merging into [#4675824](https://glitchtip.devshift.net/ccx/issues/4675824) (highest event count)
@@ -290,13 +288,12 @@
 
 ### 🟢 LOW: Rule response make_fail(OPERATOR_ISSUE) exceeds the size limit of ... characters.
 
-**Issues:** 3 | **Total Events:** 0
+**Issues:** 2 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
 | #4615774 | 3 | Rule response make_fail(CERTIFICATES_EXPIRING_SOON) excee... | [View](https://glitchtip.devshift.net/ccx/issues/4615774) |
 | #4198802 | 298 | Rule response make_fail(OPERATOR_ISSUE) exceeds the size ... | [View](https://glitchtip.devshift.net/ccx/issues/4198802) |
-| #4509971 | 44 | Rule response make_fail(NODES_CONTAINER_RUNTIME_VERSION) ... | [View](https://glitchtip.devshift.net/ccx/issues/4509971) |
 
 **Recommendation:** Consider merging into [#4615774](https://glitchtip.devshift.net/ccx/issues/4615774) (highest event count)
 
