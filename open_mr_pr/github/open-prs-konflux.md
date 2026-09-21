@@ -1,11 +1,13 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-09-20 04:13:08*
+*Last updated: 2026-09-21 04:14:58*
 
-**Total Konflux PRs: 13**
+**Total Konflux PRs: 14**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| ccx-upgrades-data-eng | [315](https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/315) | chore(deps): update pre-commit hooks | 2026-09-21 | app/red-hat-konflux | ❌ failed | ready |
+| insights-ccx-messaging | [979](https://github.com/RedHatInsights/insights-ccx-messaging/pull/979) | chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.97.4 | 2026-09-21 | app/red-hat-konflux | ❌ failed | ready |
 | data-pipeline | [146](https://github.com/RedHatInsights/data-pipeline/pull/146) | Update Pre-commit hooks | 2026-09-20 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-aggregator | [2722](https://github.com/RedHatInsights/insights-results-aggregator/pull/2722) | chore(deps): update pre-commit hooks | 2026-09-20 | app/red-hat-konflux | ❌ failed | ready |
 | ccx-upgrades-inference | [280](https://github.com/RedHatInsights/ccx-upgrades-inference/pull/280) | chore(deps): update pre-commit hooks | 2026-09-19 | app/red-hat-konflux | ❌ failed | ready |
@@ -18,4 +20,3 @@
 | insights-results-smart-proxy | [1830](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1830) | Update Go dependencies | 2026-09-19 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-aggregator-mock | [848](https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/848) | Update Go dependencies | 2026-09-19 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-aggregator | [2721](https://github.com/RedHatInsights/insights-results-aggregator/pull/2721) | fix(deps): update go dependencies | 2026-09-19 | app/red-hat-konflux | ❌ failed | ready |
-| ccx-notification-writer | [945](https://github.com/RedHatInsights/ccx-notification-writer/pull/945) | chore(deps): update pre-commit hook astral-sh/ruff-pre-commit to v0.16.8 | 2026-08-23 | app/red-hat-konflux | ✅ ok | ready |
