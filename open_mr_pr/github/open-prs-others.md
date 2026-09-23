@@ -1,11 +1,12 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-09-22 04:13:32*
+*Last updated: 2026-09-23 04:14:05*
 
-**Total PRs: 5**
+**Total PRs: 6**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| ccx-notification-service | [1279](https://github.com/RedHatInsights/ccx-notification-service/pull/1279) | [chore] Update several dependencies by hand | 2026-09-22 | joselsegura | ❌ failed | ready |
 | ocp-advisor-frontend | [1208](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1208) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-21 | app/obsint-processing-app | ❌ failed | ready |
 | ccx-notification-service | [1277](https://github.com/RedHatInsights/ccx-notification-service/pull/1277) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-09-21 | app/obsint-processing-app | ❌ failed | ready |
 | ccx-notification-service | [1271](https://github.com/RedHatInsights/ccx-notification-service/pull/1271) | [CCXDEV-16563] add aggregator database configuration to Clowdapp | 2026-08-07 | Bee-lee | ❌ failed | draft |

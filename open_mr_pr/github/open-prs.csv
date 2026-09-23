@@ -1,9 +1,7 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-ccx-notification-writer,967,chore(deps): update module github.com/aws/smithy-go to v1.28.2,2026-09-22T03:16:44Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/967,app/red-hat-konflux,ok,ready
-insights-operator-gathering-conditions-service,1000,chore(deps): update module github.com/aws/smithy-go to v1.28.2,2026-09-22T03:15:31Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/1000,app/red-hat-konflux,ok,ready
-insights-results-smart-proxy,1834,Update Pre-commit hooks,2026-09-22T01:49:23Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1834,app/red-hat-konflux,ok,ready
+ccx-notification-service,1279,[chore] Update several dependencies by hand,2026-09-22T14:24:06Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1279,joselsegura,failed,ready
+insights-results-smart-proxy,1836,Update Pre-commit hooks,2026-09-22T08:19:24Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1836,app/red-hat-konflux,ok,ready
 insights-results-smart-proxy,1833,Update Go dependencies,2026-09-22T01:48:14Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1833,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1209,chore(deps): update build-tools digest to 4f13726,2026-09-22T01:22:52Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1209,app/red-hat-konflux,ok,ready
 ocp-advisor-frontend,1208,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-09-21T10:43:44Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1208,app/obsint-processing-app,failed,ready
 ccx-notification-service,1277,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-09-21T10:38:26Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1277,app/obsint-processing-app,failed,ready
 ocp-advisor-frontend,1207,chore(deps): lock file maintenance,2026-09-19T02:37:13Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1207,app/red-hat-konflux,failed,ready
