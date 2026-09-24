@@ -1,6 +1,4 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-ocp-advisor-frontend,1210,chore(deps): update build-tools digest to f1e45ad,2026-09-24T00:54:15Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1210,app/red-hat-konflux,failed,ready
-insights-results-aggregator,2727,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.104.0,2026-09-23T08:42:48Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2727,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1836,Update Pre-commit hooks,2026-09-22T08:19:24Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1836,app/red-hat-konflux,ok,ready
 insights-results-smart-proxy,1833,Update Go dependencies,2026-09-22T01:48:14Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1833,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1208,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-09-21T10:43:44Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1208,app/obsint-processing-app,failed,ready
