@@ -1,13 +1,7 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-ccx-notification-writer,969,fix(deps): update go dependencies,2026-09-25T01:19:11Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/969,app/red-hat-konflux,failed,ready
-ccx-upgrades-data-eng,323,chore(deps): update pre-commit hooks,2026-09-25T01:13:01Z,https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/323,app/red-hat-konflux,failed,ready
 insights-results-aggregator,2729,fix(deps): update go dependencies,2026-09-25T01:03:18Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2729,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1213,chore(deps): update redhatinsights/processing-tools action to v0.4.6,2026-09-25T00:51:22Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1213,app/red-hat-konflux,ok,ready
-ocp-advisor-frontend,1212,chore(deps): update build-tools digest to 8039562,2026-09-25T00:51:12Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1212,app/red-hat-konflux,ok,ready
 insights-results-smart-proxy,1836,Update Pre-commit hooks,2026-09-22T08:19:24Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1836,app/red-hat-konflux,ok,ready
 insights-results-smart-proxy,1833,Update Go dependencies,2026-09-22T01:48:14Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1833,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1208,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-09-21T10:43:44Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1208,app/obsint-processing-app,failed,ready
-ocp-advisor-frontend,1207,chore(deps): lock file maintenance,2026-09-19T02:37:13Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1207,app/red-hat-konflux,ok,ready
 ocp-advisor-frontend,1206,fix(deps): update npm minor and patch dependencies,2026-09-19T02:35:29Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1206,app/red-hat-konflux,failed,ready
 ccx-notification-service,1271,[CCXDEV-16563] add aggregator database configuration to Clowdapp,2026-08-07T13:37:22Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1271,Bee-lee,failed,draft
 insights-operator-gathering-conditions-service,922,[CCXDEV-16644] Remove unused in-process authentication middleware,2026-08-03T12:24:25Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/922,juandspy,ok,draft
