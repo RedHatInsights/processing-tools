@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-09-24 04:21:54
+**Generated:** 2026-09-25 04:22:01
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -14,7 +14,7 @@
 |--------|-------|
 | Projects with duplicates | 10 |
 | Total duplicate groups | 18 |
-| Total issues in groups | 41 |
+| Total issues in groups | 42 |
 | Total events affected | 0 |
 
 ---
@@ -29,7 +29,7 @@
 - [dvo-writer](#dvo-writer) - 2 groups, 4 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 4 groups, 10 issues
 - [parquet-factory](#parquet-factory) - 1 groups, 2 issues
-- [rules-processing](#rules-processing) - 3 groups, 7 issues
+- [rules-processing](#rules-processing) - 3 groups, 8 issues
 - [valkey-writer](#valkey-writer) - 2 groups, 4 issues
 
 ---
@@ -46,12 +46,12 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
+| #4729727 | 3 | error: Error -3 while decompressing data: invalid stored ... | [View](https://glitchtip.devshift.net/ccx/issues/4729727) |
 | #4582018 | 6 | error: Error -3 while decompressing data: invalid block type | [View](https://glitchtip.devshift.net/ccx/issues/4582018) |
-| #4729727 | 2 | error: Error -3 while decompressing data: invalid stored ... | [View](https://glitchtip.devshift.net/ccx/issues/4729727) |
 | #4696802 | 1 | error: Error -3 while decompressing data: invalid code le... | [View](https://glitchtip.devshift.net/ccx/issues/4696802) |
 | #4604390 | 1 | error: Error -3 while decompressing data: invalid literal... | [View](https://glitchtip.devshift.net/ccx/issues/4604390) |
 
-**Recommendation:** Consider merging into [#4582018](https://glitchtip.devshift.net/ccx/issues/4582018) (highest event count)
+**Recommendation:** Consider merging into [#4729727](https://glitchtip.devshift.net/ccx/issues/4729727) (highest event count)
 
 ---
 
@@ -67,7 +67,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 6,544 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
+| #3852013 | 6,570 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
 | #3852210 | 4,542 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
 
 **Recommendation:** Consider merging into [#3852013](https://glitchtip.devshift.net/ccx/issues/3852013) (highest event count)
@@ -258,7 +258,7 @@
 ## rules-processing
 
 **Duplicate Groups:** 3
-**Issues in Groups:** 7
+**Issues in Groups:** 8
 **Total Events:** 0
 
 ### 🟢 LOW: AttributeError: 'str' object has no attribute 'parent'
@@ -267,7 +267,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 6,974 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
+| #3781153 | 7,000 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
 | #3791585 | 4,771 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
 
 **Recommendation:** Consider merging into [#3781153](https://glitchtip.devshift.net/ccx/issues/3781153) (highest event count)
@@ -289,11 +289,12 @@
 
 ### 🟢 LOW: Rule response make_fail(OPERATOR_ISSUE) exceeds the size limit of ... characters.
 
-**Issues:** 3 | **Total Events:** 0
+**Issues:** 4 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4729746 | 26 | Rule response make_fail(NODES_CONTAINER_RUNTIME_VERSION) ... | [View](https://glitchtip.devshift.net/ccx/issues/4729746) |
+| #4729746 | 33 | Rule response make_fail(NODES_CONTAINER_RUNTIME_VERSION) ... | [View](https://glitchtip.devshift.net/ccx/issues/4729746) |
+| #4732746 | 1 | Rule response make_info(CLUSTER_STATUS_OVERVIEW_PODS) exc... | [View](https://glitchtip.devshift.net/ccx/issues/4732746) |
 | #4615774 | 3 | Rule response make_fail(CERTIFICATES_EXPIRING_SOON) excee... | [View](https://glitchtip.devshift.net/ccx/issues/4615774) |
 | #4198802 | 298 | Rule response make_fail(OPERATOR_ISSUE) exceeds the size ... | [View](https://glitchtip.devshift.net/ccx/issues/4198802) |
 
