@@ -7,6 +7,7 @@ import ssl
 import urllib.error
 import urllib.request
 from datetime import datetime
+from pathlib import Path
 
 
 class GitLabMRFetcher:
@@ -197,8 +198,10 @@ def main():
     konflux_mrs = [mr for mr in all_mrs if mr["author"] == "app/konflux-ci"]
     other_mrs = [mr for mr in all_mrs if mr["author"] != "app/konflux-ci"]
 
+    script_dir = Path(__file__).parent
+
     # Generate CSV output (all MRs)
-    csv_file = "open_mr/open-mrs.csv"
+    csv_file = script_dir / "open-mrs.csv"
     with open(csv_file, "w") as f:
         f.write("project,mr_id,title,date_created,url,author,ci_status,draft_status\n")
         for mr in all_mrs:
@@ -215,7 +218,7 @@ def main():
     print(f"💾 CSV report saved to: {csv_file}")
 
     # Generate Konflux Markdown file
-    konflux_md_file = "open_mr/open-mrs-konflux.md"
+    konflux_md_file = script_dir / "open-mrs-konflux.md"
     with open(konflux_md_file, "w") as f:
         f.write("# Open Merge Requests (Konflux)\n\n")
         f.write(f"*Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*\n\n")
@@ -243,8 +246,13 @@ def main():
 
     print(f"💾 Markdown report (Konflux) saved to: {konflux_md_file}")
 
+    # Copy Konflux report to README for easy viewing
+    readme_file = script_dir / "README.md"
+    readme_file.write_text(konflux_md_file.read_text())
+    print(f"💾 README updated from: {konflux_md_file.name}")
+
     # Generate Others Markdown file
-    others_md_file = "open_mr/open-mrs-others.md"
+    others_md_file = script_dir / "open-mrs-others.md"
     with open(others_md_file, "w") as f:
         f.write("# Open Merge Requests (Others)\n\n")
         f.write(f"*Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*\n\n")

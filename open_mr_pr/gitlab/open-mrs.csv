@@ -1,4 +1,9 @@
 project,mr_id,title,date_created,url,author,ci_status,draft_status
+insights-qe/iqe-ccx-plugin,1283,dummy change,2026-09-24T12:24:30.723Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1283,ireyes,failed,no
+insights-qe/iqe-ccx-plugin,1273,Draft: IQE-4191: build FROM the shared iqe-base image,2026-08-14T16:22:26.731Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1273,rpfannsc,failed,draft
+insights-qe/iqe-ccx-plugin,1264,block `test_notification_event` to check whether servicelog tests behave the same way,2026-07-28T17:31:39.912Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1264,dbily,failed,no
+insights-qe/iqe-ccx-plugin,1262,fix(tests): add waits to fix intermittent UI test failures on stage,2026-07-23T12:02:17.272Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1262,jdrobena,failed,no
+insights-qe/iqe-ccx-plugin,1223,Revert doc changes from MR !1217,2026-04-30T11:40:58.939Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/1223,ireyes,ok,no
 insights-qe/iqe-ccx-plugin,872,Draft: [CCXDEV-10509] CI job to check that API code has been generated,2024-05-02T12:44:13.224Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/872,ireyes,ok,draft
 insights-qe/iqe-ccx-plugin,427,Draft: Ouia table safe demo,2022-07-15T08:40:30.152Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/427,ireyes,ok,draft
 insights-qe/iqe-ccx-plugin,287,WIP: Notification redirections,2022-02-21T12:50:50.834Z,https://gitlab.cee.redhat.com/insights-qe/iqe-ccx-plugin/-/merge_requests/287,ireyes,ok,no
