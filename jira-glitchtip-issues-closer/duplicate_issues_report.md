@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-09-25 04:22:01
+**Generated:** 2026-09-26 04:20:09
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -12,9 +12,9 @@
 
 | Metric | Value |
 |--------|-------|
-| Projects with duplicates | 10 |
-| Total duplicate groups | 18 |
-| Total issues in groups | 42 |
+| Projects with duplicates | 9 |
+| Total duplicate groups | 17 |
+| Total issues in groups | 39 |
 | Total events affected | 0 |
 
 ---
@@ -27,8 +27,7 @@
 - [ccx-notification-writer](#ccx-notification-writer) - 1 groups, 2 issues
 - [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 1 groups, 2 issues
 - [dvo-writer](#dvo-writer) - 2 groups, 4 issues
-- [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 4 groups, 10 issues
-- [parquet-factory](#parquet-factory) - 1 groups, 2 issues
+- [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 4 groups, 9 issues
 - [rules-processing](#rules-processing) - 3 groups, 8 issues
 - [valkey-writer](#valkey-writer) - 2 groups, 4 issues
 
@@ -46,12 +45,12 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
+| #4582018 | 7 | error: Error -3 while decompressing data: invalid block type | [View](https://glitchtip.devshift.net/ccx/issues/4582018) |
 | #4729727 | 3 | error: Error -3 while decompressing data: invalid stored ... | [View](https://glitchtip.devshift.net/ccx/issues/4729727) |
-| #4582018 | 6 | error: Error -3 while decompressing data: invalid block type | [View](https://glitchtip.devshift.net/ccx/issues/4582018) |
 | #4696802 | 1 | error: Error -3 while decompressing data: invalid code le... | [View](https://glitchtip.devshift.net/ccx/issues/4696802) |
 | #4604390 | 1 | error: Error -3 while decompressing data: invalid literal... | [View](https://glitchtip.devshift.net/ccx/issues/4604390) |
 
-**Recommendation:** Consider merging into [#4729727](https://glitchtip.devshift.net/ccx/issues/4729727) (highest event count)
+**Recommendation:** Consider merging into [#4582018](https://glitchtip.devshift.net/ccx/issues/4582018) (highest event count)
 
 ---
 
@@ -67,7 +66,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 6,570 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
+| #3852013 | 6,595 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
 | #3852210 | 4,542 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
 
 **Recommendation:** Consider merging into [#3852013](https://glitchtip.devshift.net/ccx/issues/3852013) (highest event count)
@@ -179,7 +178,7 @@
 ## insights-results-aggregator-db-writer
 
 **Duplicate Groups:** 4
-**Issues in Groups:** 10
+**Issues in Groups:** 9
 **Total Events:** 0
 
 ### 🟢 LOW: Error: write tcp ...->...: write: broken pipe
@@ -197,14 +196,13 @@
 
 ### 🟢 LOW: Error: sql: database is closed
 
-**Issues:** 4 | **Total Events:** 0
+**Issues:** 3 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
 | #4127668 | 1,594 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4127668) |
 | #4293672 | 1,473 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4293672) |
 | #4486496 | 1,389 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4486496) |
-| #4593659 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4593659) |
 
 **Recommendation:** Consider merging into [#4127668](https://glitchtip.devshift.net/ccx/issues/4127668) (highest event count)
 
@@ -236,25 +234,6 @@
 
 ---
 
-## parquet-factory
-
-**Duplicate Groups:** 1
-**Issues in Groups:** 2
-**Total Events:** 0
-
-### 🟢 LOW: Error: unexpected status code 503 while pushing to https://pushgateway.app-sre.devshift.net/metrics…
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4081087 | 187 | Error: unexpected status code 503 while pushing to https:... | [View](https://glitchtip.devshift.net/ccx/issues/4081087) |
-| #4081088 | 141 | Error: unexpected status code 503 while pushing to https:... | [View](https://glitchtip.devshift.net/ccx/issues/4081088) |
-
-**Recommendation:** Consider merging into [#4081087](https://glitchtip.devshift.net/ccx/issues/4081087) (highest event count)
-
----
-
 ## rules-processing
 
 **Duplicate Groups:** 3
@@ -267,7 +246,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 7,000 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
+| #3781153 | 7,025 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
 | #3791585 | 4,771 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
 
 **Recommendation:** Consider merging into [#3781153](https://glitchtip.devshift.net/ccx/issues/3781153) (highest event count)
@@ -280,7 +259,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4675824 | 60 | IndexError: list index out of range | [View](https://glitchtip.devshift.net/ccx/issues/4675824) |
+| #4675824 | 68 | IndexError: list index out of range | [View](https://glitchtip.devshift.net/ccx/issues/4675824) |
 | #4594819 | 2 | IndexError: list index out of range | [View](https://glitchtip.devshift.net/ccx/issues/4594819) |
 
 **Recommendation:** Consider merging into [#4675824](https://glitchtip.devshift.net/ccx/issues/4675824) (highest event count)
