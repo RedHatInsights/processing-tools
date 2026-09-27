@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-09-26 04:20:09
+**Generated:** 2026-09-27 04:21:30
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -66,7 +66,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 6,595 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
+| #3852013 | 6,620 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
 | #3852210 | 4,542 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
 
 **Recommendation:** Consider merging into [#3852013](https://glitchtip.devshift.net/ccx/issues/3852013) (highest event count)
@@ -246,7 +246,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 7,025 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
+| #3781153 | 7,050 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
 | #3791585 | 4,771 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
 
 **Recommendation:** Consider merging into [#3781153](https://glitchtip.devshift.net/ccx/issues/3781153) (highest event count)
@@ -259,7 +259,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4675824 | 68 | IndexError: list index out of range | [View](https://glitchtip.devshift.net/ccx/issues/4675824) |
+| #4675824 | 72 | IndexError: list index out of range | [View](https://glitchtip.devshift.net/ccx/issues/4675824) |
 | #4594819 | 2 | IndexError: list index out of range | [View](https://glitchtip.devshift.net/ccx/issues/4594819) |
 
 **Recommendation:** Consider merging into [#4675824](https://glitchtip.devshift.net/ccx/issues/4675824) (highest event count)
