@@ -1,11 +1,13 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-09-26 04:13:11*
+*Last updated: 2026-09-27 04:13:48*
 
-**Total Konflux PRs: 7**
+**Total Konflux PRs: 9**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| obsint-mocks | [564](https://github.com/RedHatInsights/obsint-mocks/pull/564) | chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.111.4 | 2026-09-27 | app/red-hat-konflux | ❌ failed | ready |
+| insights-results-aggregator | [2734](https://github.com/RedHatInsights/insights-results-aggregator/pull/2734) | chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.111.4 | 2026-09-27 | app/red-hat-konflux | ❌ failed | ready |
 | ocp-advisor-frontend | [1216](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1216) | chore(deps): lock file maintenance | 2026-09-26 | app/red-hat-konflux | ✅ ok | ready |
 | ocp-advisor-frontend | [1215](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1215) | chore(deps): update dependency github.com/redhatinsights/konflux-pipelines to v1.75.0 | 2026-09-26 | app/red-hat-konflux | ✅ ok | ready |
 | ocp-advisor-frontend | [1214](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1214) | fix(deps): update npm minor and patch dependencies | 2026-09-25 | app/red-hat-konflux | ❌ failed | ready |
