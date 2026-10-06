@@ -141,6 +141,7 @@ failing outright; only flag issues your edit introduced.
 ```python
 import yaml
 from datetime import datetime
+
 f = "/tmp/app-interface/data/teams/insights/schedules/ccx-processing-ic.yml"
 sched = yaml.safe_load(open(f))["schedule"]
 p = lambda s: datetime.strptime(str(s), "%Y-%m-%d %H:%M")
