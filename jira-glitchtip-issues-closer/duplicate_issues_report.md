@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-10-06 04:22:39
+**Generated:** 2026-10-07 04:22:55
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -13,22 +13,22 @@
 | Metric | Value |
 |--------|-------|
 | Projects with duplicates | 10 |
-| Total duplicate groups | 17 |
-| Total issues in groups | 41 |
+| Total duplicate groups | 18 |
+| Total issues in groups | 44 |
 | Total events affected | 0 |
 
 ---
 
 ## Table of Contents
 
-- [archive-sync](#archive-sync) - 1 groups, 5 issues
+- [archive-sync](#archive-sync) - 1 groups, 6 issues
 - [ccx-data-pipeline](#ccx-data-pipeline) - 1 groups, 2 issues
 - [ccx-notification-service](#ccx-notification-service) - 2 groups, 4 issues
 - [ccx-notification-writer](#ccx-notification-writer) - 1 groups, 2 issues
 - [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 1 groups, 2 issues
 - [dvo-writer](#dvo-writer) - 2 groups, 4 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 4 groups, 10 issues
-- [parquet-factory](#parquet-factory) - 1 groups, 2 issues
+- [parquet-factory](#parquet-factory) - 2 groups, 4 issues
 - [rules-processing](#rules-processing) - 2 groups, 6 issues
 - [valkey-writer](#valkey-writer) - 2 groups, 4 issues
 
@@ -37,22 +37,23 @@
 ## archive-sync
 
 **Duplicate Groups:** 1
-**Issues in Groups:** 5
+**Issues in Groups:** 6
 **Total Events:** 0
 
 ### 🟢 LOW: error: Error -3 while decompressing data: invalid block type
 
-**Issues:** 5 | **Total Events:** 0
+**Issues:** 6 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
+| #4782079 | 1 | error: Error -3 while decompressing data: invalid literal... | [View](https://glitchtip.devshift.net/ccx/issues/4782079) |
+| #4768590 | 3 | error: Error -3 while decompressing data: invalid distanc... | [View](https://glitchtip.devshift.net/ccx/issues/4768590) |
 | #4729727 | 8 | error: Error -3 while decompressing data: invalid stored ... | [View](https://glitchtip.devshift.net/ccx/issues/4729727) |
-| #4768590 | 2 | error: Error -3 while decompressing data: invalid distanc... | [View](https://glitchtip.devshift.net/ccx/issues/4768590) |
 | #4582018 | 17 | error: Error -3 while decompressing data: invalid block type | [View](https://glitchtip.devshift.net/ccx/issues/4582018) |
 | #4696802 | 3 | error: Error -3 while decompressing data: invalid code le... | [View](https://glitchtip.devshift.net/ccx/issues/4696802) |
 | #4772158 | 1 | error: Error -3 while decompressing data: too many length... | [View](https://glitchtip.devshift.net/ccx/issues/4772158) |
 
-**Recommendation:** Consider merging into [#4729727](https://glitchtip.devshift.net/ccx/issues/4729727) (highest event count)
+**Recommendation:** Consider merging into [#4782079](https://glitchtip.devshift.net/ccx/issues/4782079) (highest event count)
 
 ---
 
@@ -68,7 +69,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 6,845 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
+| #3852013 | 6,862 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
 | #3852210 | 4,542 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
 
 **Recommendation:** Consider merging into [#3852013](https://glitchtip.devshift.net/ccx/issues/3852013) (highest event count)
@@ -239,9 +240,22 @@
 
 ## parquet-factory
 
-**Duplicate Groups:** 1
-**Issues in Groups:** 2
+**Duplicate Groups:** 2
+**Issues in Groups:** 4
 **Total Events:** 0
+
+### 🟢 LOW: Error: unexpected status code 503 while pushing to https://pushgateway.app-sre.devshift.net/metrics…
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4781142 | 1 | Error: unexpected status code 503 while pushing to https:... | [View](https://glitchtip.devshift.net/ccx/issues/4781142) |
+| #4081087 | 188 | Error: unexpected status code 503 while pushing to https:... | [View](https://glitchtip.devshift.net/ccx/issues/4081087) |
+
+**Recommendation:** Consider merging into [#4781142](https://glitchtip.devshift.net/ccx/issues/4781142) (highest event count)
+
+---
 
 ### 🟢 LOW: kafka: error while consuming ccx.insights.rules.results/0: kafka: broker not connected
 
@@ -268,7 +282,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 7,275 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
+| #3781153 | 7,292 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
 | #3791585 | 4,771 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
 
 **Recommendation:** Consider merging into [#3781153](https://glitchtip.devshift.net/ccx/issues/3781153) (highest event count)
