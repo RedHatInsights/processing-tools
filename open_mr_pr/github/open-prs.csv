@@ -1,13 +1,7 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-insights-behavioral-spec,836,[CCXDEV-16556] insert/update for cluster_rule_toggle,2026-10-07T08:05:30Z,https://github.com/RedHatInsights/insights-behavioral-spec/pull/836,Bee-lee,ok,ready
-insights-results-aggregator-mock,883,Update pre-commit hook renovatebot/pre-commit-hooks to v44.132.5,2026-10-07T04:57:12Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/883,app/red-hat-konflux,ok,ready
-insights-results-aggregator-cleaner,1079,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.132.5,2026-10-07T04:45:44Z,https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/1079,app/red-hat-konflux,ok,ready
-insights-results-aggregator,2745,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.132.5,2026-10-07T01:49:33Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2745,app/red-hat-konflux,failed,ready
-insights-content-template-renderer,670,Update pre-commit hook renovatebot/pre-commit-hooks to v44.132.5,2026-10-07T01:30:46Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/670,app/red-hat-konflux,ok,ready
-insights-results-smart-proxy,1846,Update Pre-commit hooks,2026-10-07T01:16:03Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1846,app/red-hat-konflux,failed,ready
+insights-behavioral-spec,837,[CCXDEV-16557] inserting and deleting from rule_disable table (rule acks),2026-10-07T12:32:36Z,https://github.com/RedHatInsights/insights-behavioral-spec/pull/837,Bee-lee,ok,ready
 ocp-advisor-frontend,1223,chore(deps): lock file maintenance,2026-10-06T04:30:04Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1223,app/red-hat-konflux,ok,ready
 insights-results-smart-proxy,1845,Update Go dependencies,2026-10-06T01:48:04Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1845,app/red-hat-konflux,failed,ready
-insights-results-smart-proxy,1844,Update Ruby dependencies,2026-10-06T01:33:33Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1844,app/red-hat-konflux,ok,ready
 ocp-advisor-frontend,1220,fix(deps): update npm minor and patch dependencies,2026-10-02T01:15:18Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1220,app/red-hat-konflux,ok,ready
 ccx-notification-service,1271,[CCXDEV-16563] add aggregator database configuration to Clowdapp,2026-08-07T13:37:22Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1271,Bee-lee,failed,draft
 insights-operator-gathering-conditions-service,371,Drop legacy building,2025-03-28T12:35:04Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/371,ikerreyes,failed,draft
