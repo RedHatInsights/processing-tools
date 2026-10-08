@@ -1,7 +1,10 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-insights-behavioral-spec,837,[CCXDEV-16557] inserting and deleting from rule_disable table (rule acks),2026-10-07T12:32:36Z,https://github.com/RedHatInsights/insights-behavioral-spec/pull/837,Bee-lee,ok,ready
+insights-results-smart-proxy,1848,Update Go dependencies,2026-10-08T00:56:24Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1848,app/red-hat-konflux,failed,ready
+ocp-advisor-frontend,1224,chore(deps): update build-tools digest to a63e0d2,2026-10-08T00:44:09Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1224,app/red-hat-konflux,ok,ready
+insights-content-template-renderer,671,Update pre-commit hook renovatebot/pre-commit-hooks to v44.133.0,2026-10-08T00:43:33Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/671,app/red-hat-konflux,failed,ready
+insights-results-aggregator,2746,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.133.0,2026-10-08T00:43:04Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2746,app/red-hat-konflux,failed,ready
+insights-results-smart-proxy,1847,Update Ruby dependencies,2026-10-08T00:40:59Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1847,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1223,chore(deps): lock file maintenance,2026-10-06T04:30:04Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1223,app/red-hat-konflux,ok,ready
-insights-results-smart-proxy,1845,Update Go dependencies,2026-10-06T01:48:04Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1845,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1220,fix(deps): update npm minor and patch dependencies,2026-10-02T01:15:18Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1220,app/red-hat-konflux,ok,ready
 ccx-notification-service,1271,[CCXDEV-16563] add aggregator database configuration to Clowdapp,2026-08-07T13:37:22Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1271,Bee-lee,failed,draft
 insights-operator-gathering-conditions-service,371,Drop legacy building,2025-03-28T12:35:04Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/371,ikerreyes,failed,draft
