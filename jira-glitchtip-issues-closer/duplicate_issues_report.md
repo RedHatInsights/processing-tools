@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-10-11 04:22:56
+**Generated:** 2026-10-12 04:29:46
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -13,8 +13,8 @@
 | Metric | Value |
 |--------|-------|
 | Projects with duplicates | 10 |
-| Total duplicate groups | 18 |
-| Total issues in groups | 44 |
+| Total duplicate groups | 17 |
+| Total issues in groups | 41 |
 | Total events affected | 0 |
 
 ---
@@ -26,8 +26,8 @@
 - [ccx-notification-service](#ccx-notification-service) - 2 groups, 4 issues
 - [ccx-notification-writer](#ccx-notification-writer) - 1 groups, 2 issues
 - [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 1 groups, 2 issues
-- [dvo-writer](#dvo-writer) - 3 groups, 6 issues
-- [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 4 groups, 10 issues
+- [dvo-writer](#dvo-writer) - 2 groups, 4 issues
+- [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 4 groups, 9 issues
 - [parquet-factory](#parquet-factory) - 1 groups, 2 issues
 - [rules-processing](#rules-processing) - 2 groups, 6 issues
 - [valkey-writer](#valkey-writer) - 2 groups, 4 issues
@@ -46,14 +46,14 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
+| #4729727 | 11 | error: Error -3 while decompressing data: invalid stored ... | [View](https://glitchtip.devshift.net/ccx/issues/4729727) |
 | #4582018 | 20 | error: Error -3 while decompressing data: invalid block type | [View](https://glitchtip.devshift.net/ccx/issues/4582018) |
-| #4729727 | 10 | error: Error -3 while decompressing data: invalid stored ... | [View](https://glitchtip.devshift.net/ccx/issues/4729727) |
 | #4768590 | 5 | error: Error -3 while decompressing data: invalid distanc... | [View](https://glitchtip.devshift.net/ccx/issues/4768590) |
 | #4782079 | 2 | error: Error -3 while decompressing data: invalid literal... | [View](https://glitchtip.devshift.net/ccx/issues/4782079) |
 | #4696802 | 3 | error: Error -3 while decompressing data: invalid code le... | [View](https://glitchtip.devshift.net/ccx/issues/4696802) |
 | #4772158 | 1 | error: Error -3 while decompressing data: too many length... | [View](https://glitchtip.devshift.net/ccx/issues/4772158) |
 
-**Recommendation:** Consider merging into [#4582018](https://glitchtip.devshift.net/ccx/issues/4582018) (highest event count)
+**Recommendation:** Consider merging into [#4729727](https://glitchtip.devshift.net/ccx/issues/4729727) (highest event count)
 
 ---
 
@@ -69,7 +69,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 6,932 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
+| #3852013 | 6,959 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
 | #3852210 | 4,542 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
 
 **Recommendation:** Consider merging into [#3852013](https://glitchtip.devshift.net/ccx/issues/3852013) (highest event count)
@@ -82,6 +82,19 @@
 **Issues in Groups:** 4
 **Total Events:** 0
 
+### 🟢 LOW: Error: Post \'...': readfrom tc…
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #3997223 | 338 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
+| #4649219 | 2 | Error: Get \"http://ccx-insights-content-service:10000/ap... | [View](https://glitchtip.devshift.net/ccx/issues/4649219) |
+
+**Recommendation:** Consider merging into [#3997223](https://glitchtip.devshift.net/ccx/issues/3997223) (highest event count)
+
+---
+
 ### 🟢 LOW: Error: kafka server: Tried to send a message to a replica that is not the leader for some partition…
 
 **Issues:** 2 | **Total Events:** 0
@@ -92,19 +105,6 @@
 | #4793833 | 1 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4793833) |
 
 **Recommendation:** Consider merging into [#4793836](https://glitchtip.devshift.net/ccx/issues/4793836) (highest event count)
-
----
-
-### 🟢 LOW: Error: Post \'...': readfrom tc…
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #3997223 | 336 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
-| #4649219 | 2 | Error: Get \"http://ccx-insights-content-service:10000/ap... | [View](https://glitchtip.devshift.net/ccx/issues/4649219) |
-
-**Recommendation:** Consider merging into [#3997223](https://glitchtip.devshift.net/ccx/issues/3997223) (highest event count)
 
 ---
 
@@ -148,8 +148,8 @@
 
 ## dvo-writer
 
-**Duplicate Groups:** 3
-**Issues in Groups:** 6
+**Duplicate Groups:** 2
+**Issues in Groups:** 4
 **Total Events:** 0
 
 ### 🟢 LOW: kafka: error while consuming ccx.dvo.results/0: write tcp ...->...: w…
@@ -178,23 +178,10 @@
 
 ---
 
-### 🟢 LOW: Error: pq: the database system is shutting down (57P03)
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4572840 | 1,352 | Error: pq: the database system is shutting down (57P03) | [View](https://glitchtip.devshift.net/ccx/issues/4572840) |
-| #4572839 | 1,352 | Error: pq: the database system is shutting down (57P03) | [View](https://glitchtip.devshift.net/ccx/issues/4572839) |
-
-**Recommendation:** Consider merging into [#4572840](https://glitchtip.devshift.net/ccx/issues/4572840) (highest event count)
-
----
-
 ## insights-results-aggregator-db-writer
 
 **Duplicate Groups:** 4
-**Issues in Groups:** 10
+**Issues in Groups:** 9
 **Total Events:** 0
 
 ### 🟢 LOW: Error: kafka server: Tried to send a message to a replica that is not the leader for some partition…
@@ -212,14 +199,13 @@
 
 ### 🟢 LOW: Error: sql: database is closed
 
-**Issues:** 4 | **Total Events:** 0
+**Issues:** 3 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
 | #4127668 | 1,595 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4127668) |
 | #4293672 | 1,474 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4293672) |
 | #4768423 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4768423) |
-| #4486496 | 1,389 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4486496) |
 
 **Recommendation:** Consider merging into [#4127668](https://glitchtip.devshift.net/ccx/issues/4127668) (highest event count)
 
@@ -282,7 +268,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 7,362 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
+| #3781153 | 7,389 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
 | #3791585 | 4,771 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
 
 **Recommendation:** Consider merging into [#3781153](https://glitchtip.devshift.net/ccx/issues/3781153) (highest event count)
