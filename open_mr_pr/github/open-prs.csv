@@ -1,7 +1,6 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-insights-content-template-renderer,679,Update Pre-commit hooks,2026-10-13T01:29:13Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/679,app/red-hat-konflux,failed,ready
-ccx-notification-writer,985,chore(deps): update pre-commit hook astral-sh/ruff-pre-commit to v0.17.0,2026-10-13T01:05:19Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/985,app/red-hat-konflux,ok,ready
-ccx-notification-writer,984,chore(deps): update go dependencies,2026-10-13T01:05:09Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/984,app/red-hat-konflux,failed,ready
+insights-content-template-renderer,680,Update pre-commit hook renovatebot/pre-commit-hooks to v44.149.3,2026-10-14T01:02:22Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/680,app/red-hat-konflux,failed,ready
+insights-results-aggregator,2756,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.149.3,2026-10-14T00:56:46Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2756,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1854,Update Pre-commit hooks,2026-10-10T07:16:04Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1854,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1853,Update Go dependencies,2026-10-10T07:14:11Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1853,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1852,Update Ruby dependencies,2026-10-10T02:20:23Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1852,app/red-hat-konflux,failed,ready
