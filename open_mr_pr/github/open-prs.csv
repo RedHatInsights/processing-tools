@@ -1,13 +1,10 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-insights-content-template-renderer,680,Update pre-commit hook renovatebot/pre-commit-hooks to v44.149.3,2026-10-14T01:02:22Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/680,app/red-hat-konflux,failed,ready
-insights-results-aggregator,2756,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.149.3,2026-10-14T00:56:46Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2756,app/red-hat-konflux,failed,ready
+ocp-advisor-frontend,1227,chore(deps): update build-tools digest to 1a7a216,2026-10-15T01:24:31Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1227,app/red-hat-konflux,ok,ready
 insights-results-smart-proxy,1854,Update Pre-commit hooks,2026-10-10T07:16:04Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1854,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1853,Update Go dependencies,2026-10-10T07:14:11Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1853,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1852,Update Ruby dependencies,2026-10-10T02:20:23Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1852,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1226,chore(deps): update build-tools digest to 61c0745,2026-10-10T02:03:43Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1226,app/red-hat-konflux,ok,ready
 ocp-advisor-frontend,1225,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-10-08T15:24:35Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1225,app/obsint-processing-app,ok,ready
 ccx-upgrades-data-eng,325,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-10-08T15:21:51Z,https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/325,app/obsint-processing-app,failed,ready
 ocp-advisor-frontend,1223,chore(deps): lock file maintenance,2026-10-06T04:30:04Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1223,app/red-hat-konflux,ok,ready
-ocp-advisor-frontend,1220,fix(deps): update npm minor and patch dependencies,2026-10-02T01:15:18Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1220,app/red-hat-konflux,ok,ready
 ccx-notification-service,1271,[CCXDEV-16563] add aggregator database configuration to Clowdapp,2026-08-07T13:37:22Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1271,Bee-lee,failed,draft
 insights-operator-gathering-conditions-service,371,Drop legacy building,2025-03-28T12:35:04Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/371,ikerreyes,failed,draft
