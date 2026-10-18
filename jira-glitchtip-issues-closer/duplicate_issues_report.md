@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-10-17 04:18:44
+**Generated:** 2026-10-18 04:18:56
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -46,14 +46,14 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4582018 | 22 | error: Error -3 while decompressing data: invalid block type | [View](https://glitchtip.devshift.net/ccx/issues/4582018) |
+| #4696802 | 6 | error: Error -3 while decompressing data: invalid code le... | [View](https://glitchtip.devshift.net/ccx/issues/4696802) |
+| #4582018 | 23 | error: Error -3 while decompressing data: invalid block type | [View](https://glitchtip.devshift.net/ccx/issues/4582018) |
 | #4768590 | 7 | error: Error -3 while decompressing data: invalid distanc... | [View](https://glitchtip.devshift.net/ccx/issues/4768590) |
-| #4696802 | 4 | error: Error -3 while decompressing data: invalid code le... | [View](https://glitchtip.devshift.net/ccx/issues/4696802) |
 | #4729727 | 11 | error: Error -3 while decompressing data: invalid stored ... | [View](https://glitchtip.devshift.net/ccx/issues/4729727) |
 | #4782079 | 2 | error: Error -3 while decompressing data: invalid literal... | [View](https://glitchtip.devshift.net/ccx/issues/4782079) |
 | #4772158 | 1 | error: Error -3 while decompressing data: too many length... | [View](https://glitchtip.devshift.net/ccx/issues/4772158) |
 
-**Recommendation:** Consider merging into [#4582018](https://glitchtip.devshift.net/ccx/issues/4582018) (highest event count)
+**Recommendation:** Consider merging into [#4696802](https://glitchtip.devshift.net/ccx/issues/4696802) (highest event count)
 
 ---
 
@@ -69,7 +69,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 7,082 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
+| #3852013 | 7,107 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
 | #3852210 | 4,542 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
 
 **Recommendation:** Consider merging into [#3852013](https://glitchtip.devshift.net/ccx/issues/3852013) (highest event count)
@@ -258,7 +258,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 7,512 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
+| #3781153 | 7,537 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
 | #3791585 | 4,771 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
 
 **Recommendation:** Consider merging into [#3781153](https://glitchtip.devshift.net/ccx/issues/3781153) (highest event count)
@@ -286,19 +286,6 @@
 **Issues in Groups:** 4
 **Total Events:** 0
 
-### 🟢 LOW: Error: kafka server: Tried to send a message to a replica that is not the leader for some partition…
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4793832 | 10 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4793832) |
-| #4793834 | 10 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4793834) |
-
-**Recommendation:** Consider merging into [#4793832](https://glitchtip.devshift.net/ccx/issues/4793832) (highest event count)
-
----
-
 ### 🟢 LOW: kafka: error while consuming ccx.ocp.results/0: dial tcp ...: connect: connection ref…
 
 **Issues:** 2 | **Total Events:** 0
@@ -309,5 +296,18 @@
 | #4730621 | 1 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4730621) |
 
 **Recommendation:** Consider merging into [#4793697](https://glitchtip.devshift.net/ccx/issues/4793697) (highest event count)
+
+---
+
+### 🟢 LOW: Error: kafka server: Tried to send a message to a replica that is not the leader for some partition…
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4793832 | 10 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4793832) |
+| #4793834 | 10 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4793834) |
+
+**Recommendation:** Consider merging into [#4793832](https://glitchtip.devshift.net/ccx/issues/4793832) (highest event count)
 
 ---
