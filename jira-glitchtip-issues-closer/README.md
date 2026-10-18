@@ -1,36 +1,35 @@
 # Glitchtip <-> Jira integration checker
 
-*Last updated: 2026-10-17 04:13:48 UTC*
+*Last updated: 2026-10-18 04:14:14 UTC*
 
 ## Open Jira issues for Glitchtip events
 
-**Total: 56 issue(s)**
+**Total: 55 issue(s)**
 
 | Jira | Glitchtip | Days since last event |
 |------|-----------|----------------------|
-| [CCXDEV-16934](https://redhat.atlassian.net/browse/CCXDEV-16934) | [Link](https://glitchtip.devshift.net/ccx/issues/4793834) | 7 |
-| [CCXDEV-16933](https://redhat.atlassian.net/browse/CCXDEV-16933) | [Link](https://glitchtip.devshift.net/ccx/issues/4793835) | 7 |
-| [CCXDEV-16932](https://redhat.atlassian.net/browse/CCXDEV-16932) | [Link](https://glitchtip.devshift.net/ccx/issues/4793833) | 7 |
-| [CCXDEV-16931](https://redhat.atlassian.net/browse/CCXDEV-16931) | [Link](https://glitchtip.devshift.net/ccx/issues/4793836) | 7 |
-| [CCXDEV-16930](https://redhat.atlassian.net/browse/CCXDEV-16930) | [Link](https://glitchtip.devshift.net/ccx/issues/4793697) | 7 |
-| [CCXDEV-16929](https://redhat.atlassian.net/browse/CCXDEV-16929) | [Link](https://glitchtip.devshift.net/ccx/issues/4793704) | 7 |
-| [CCXDEV-16928](https://redhat.atlassian.net/browse/CCXDEV-16928) | [Link](https://glitchtip.devshift.net/ccx/issues/4793311) | 7 |
-| [CCXDEV-16927](https://redhat.atlassian.net/browse/CCXDEV-16927) | [Link](https://glitchtip.devshift.net/ccx/issues/4793249) | 7 |
-| [CCXDEV-16926](https://redhat.atlassian.net/browse/CCXDEV-16926) | [Link](https://glitchtip.devshift.net/ccx/issues/4793121) | 7 |
-| [CCXDEV-16925](https://redhat.atlassian.net/browse/CCXDEV-16925) | [Link](https://glitchtip.devshift.net/ccx/issues/4793109) | 7 |
-| [CCXDEV-16914](https://redhat.atlassian.net/browse/CCXDEV-16914) | [Link](https://glitchtip.devshift.net/ccx/issues/4782079) | 9 |
-| [CCXDEV-16907](https://redhat.atlassian.net/browse/CCXDEV-16907) | [Link](https://glitchtip.devshift.net/ccx/issues/4781142) | 10 |
-| [CCXDEV-16899](https://redhat.atlassian.net/browse/CCXDEV-16899) | [Link](https://glitchtip.devshift.net/ccx/issues/4772158) | 14 |
-| [CCXDEV-16891](https://redhat.atlassian.net/browse/CCXDEV-16891) | [Link](https://glitchtip.devshift.net/ccx/issues/4769693) | 15 |
-| [CCXDEV-16881](https://redhat.atlassian.net/browse/CCXDEV-16881) | [Link](https://glitchtip.devshift.net/ccx/issues/4734959) | 21 |
-| [CCXDEV-16870](https://redhat.atlassian.net/browse/CCXDEV-16870) | [Link](https://glitchtip.devshift.net/ccx/issues/4730833) | 7 |
-| [CCXDEV-16869](https://redhat.atlassian.net/browse/CCXDEV-16869) | [Link](https://glitchtip.devshift.net/ccx/issues/4730620) | 24 |
-| [CCXDEV-16868](https://redhat.atlassian.net/browse/CCXDEV-16868) | [Link](https://glitchtip.devshift.net/ccx/issues/4730621) | 24 |
-| [CCXDEV-16848](https://redhat.atlassian.net/browse/CCXDEV-16848) | [Link](https://glitchtip.devshift.net/ccx/issues/4693164) | 30 |
-| [CCXDEV-16821](https://redhat.atlassian.net/browse/CCXDEV-16821) | [Link](https://glitchtip.devshift.net/ccx/issues/4675823) | 20 |
-| [CCXDEV-16820](https://redhat.atlassian.net/browse/CCXDEV-16820) | [Link](https://glitchtip.devshift.net/ccx/issues/4675826) | 20 |
-| [CCXDEV-16811](https://redhat.atlassian.net/browse/CCXDEV-16811) | [Link](https://glitchtip.devshift.net/ccx/issues/4649219) | 28 |
-| [CCXDEV-16799](https://redhat.atlassian.net/browse/CCXDEV-16799) | [Link](https://glitchtip.devshift.net/ccx/issues/4619510) | 22 |
+| [CCXDEV-16934](https://redhat.atlassian.net/browse/CCXDEV-16934) | [Link](https://glitchtip.devshift.net/ccx/issues/4793834) | 8 |
+| [CCXDEV-16933](https://redhat.atlassian.net/browse/CCXDEV-16933) | [Link](https://glitchtip.devshift.net/ccx/issues/4793835) | 8 |
+| [CCXDEV-16932](https://redhat.atlassian.net/browse/CCXDEV-16932) | [Link](https://glitchtip.devshift.net/ccx/issues/4793833) | 8 |
+| [CCXDEV-16931](https://redhat.atlassian.net/browse/CCXDEV-16931) | [Link](https://glitchtip.devshift.net/ccx/issues/4793836) | 8 |
+| [CCXDEV-16930](https://redhat.atlassian.net/browse/CCXDEV-16930) | [Link](https://glitchtip.devshift.net/ccx/issues/4793697) | 8 |
+| [CCXDEV-16929](https://redhat.atlassian.net/browse/CCXDEV-16929) | [Link](https://glitchtip.devshift.net/ccx/issues/4793704) | 8 |
+| [CCXDEV-16927](https://redhat.atlassian.net/browse/CCXDEV-16927) | [Link](https://glitchtip.devshift.net/ccx/issues/4793249) | 8 |
+| [CCXDEV-16926](https://redhat.atlassian.net/browse/CCXDEV-16926) | [Link](https://glitchtip.devshift.net/ccx/issues/4793121) | 8 |
+| [CCXDEV-16925](https://redhat.atlassian.net/browse/CCXDEV-16925) | [Link](https://glitchtip.devshift.net/ccx/issues/4793109) | 8 |
+| [CCXDEV-16914](https://redhat.atlassian.net/browse/CCXDEV-16914) | [Link](https://glitchtip.devshift.net/ccx/issues/4782079) | 10 |
+| [CCXDEV-16907](https://redhat.atlassian.net/browse/CCXDEV-16907) | [Link](https://glitchtip.devshift.net/ccx/issues/4781142) | 11 |
+| [CCXDEV-16899](https://redhat.atlassian.net/browse/CCXDEV-16899) | [Link](https://glitchtip.devshift.net/ccx/issues/4772158) | 15 |
+| [CCXDEV-16891](https://redhat.atlassian.net/browse/CCXDEV-16891) | [Link](https://glitchtip.devshift.net/ccx/issues/4769693) | 16 |
+| [CCXDEV-16881](https://redhat.atlassian.net/browse/CCXDEV-16881) | [Link](https://glitchtip.devshift.net/ccx/issues/4734959) | 22 |
+| [CCXDEV-16870](https://redhat.atlassian.net/browse/CCXDEV-16870) | [Link](https://glitchtip.devshift.net/ccx/issues/4730833) | 8 |
+| [CCXDEV-16869](https://redhat.atlassian.net/browse/CCXDEV-16869) | [Link](https://glitchtip.devshift.net/ccx/issues/4730620) | 25 |
+| [CCXDEV-16868](https://redhat.atlassian.net/browse/CCXDEV-16868) | [Link](https://glitchtip.devshift.net/ccx/issues/4730621) | 25 |
+| [CCXDEV-16848](https://redhat.atlassian.net/browse/CCXDEV-16848) | [Link](https://glitchtip.devshift.net/ccx/issues/4693164) | 31 |
+| [CCXDEV-16821](https://redhat.atlassian.net/browse/CCXDEV-16821) | [Link](https://glitchtip.devshift.net/ccx/issues/4675823) | 21 |
+| [CCXDEV-16820](https://redhat.atlassian.net/browse/CCXDEV-16820) | [Link](https://glitchtip.devshift.net/ccx/issues/4675826) | 21 |
+| [CCXDEV-16811](https://redhat.atlassian.net/browse/CCXDEV-16811) | [Link](https://glitchtip.devshift.net/ccx/issues/4649219) | 29 |
+| [CCXDEV-16799](https://redhat.atlassian.net/browse/CCXDEV-16799) | [Link](https://glitchtip.devshift.net/ccx/issues/4619510) | 23 |
 | [CCXDEV-16784](https://redhat.atlassian.net/browse/CCXDEV-16784) | [Link](https://glitchtip.devshift.net/ccx/issues/4614782) | N/A |
 | [CCXDEV-16783](https://redhat.atlassian.net/browse/CCXDEV-16783) | [Link](https://glitchtip.devshift.net/ccx/issues/4613967) | N/A |
 | [CCXDEV-16782](https://redhat.atlassian.net/browse/CCXDEV-16782) | [Link](https://glitchtip.devshift.net/ccx/issues/4613971) | N/A |
@@ -38,7 +37,7 @@
 | [CCXDEV-16780](https://redhat.atlassian.net/browse/CCXDEV-16780) | [Link](https://glitchtip.devshift.net/ccx/issues/4613862) | N/A |
 | [CCXDEV-16779](https://redhat.atlassian.net/browse/CCXDEV-16779) | [Link](https://glitchtip.devshift.net/ccx/issues/4613845) | N/A |
 | [CCXDEV-16778](https://redhat.atlassian.net/browse/CCXDEV-16778) | [Link](https://glitchtip.devshift.net/ccx/issues/4613654) | N/A |
-| [CCXDEV-16772](https://redhat.atlassian.net/browse/CCXDEV-16772) | [Link](https://glitchtip.devshift.net/ccx/issues/4578658) | 34 |
+| [CCXDEV-16772](https://redhat.atlassian.net/browse/CCXDEV-16772) | [Link](https://glitchtip.devshift.net/ccx/issues/4578658) | 35 |
 | [CCXDEV-16756](https://redhat.atlassian.net/browse/CCXDEV-16756) | [Link](https://glitchtip.devshift.net/ccx/issues/4479936) | N/A |
 | [CCXDEV-16753](https://redhat.atlassian.net/browse/CCXDEV-16753) | [Link](https://glitchtip.devshift.net/ccx/issues/4604390) | N/A |
 | [CCXDEV-16735](https://redhat.atlassian.net/browse/CCXDEV-16735) | [Link](https://glitchtip.devshift.net/ccx/issues/4572840) | N/A |
@@ -59,11 +58,11 @@
 | [CCXDEV-16034](https://redhat.atlassian.net/browse/CCXDEV-16034) | [Link](https://glitchtip.devshift.net/ccx/issues/4129667) | N/A |
 | [CCXDEV-16033](https://redhat.atlassian.net/browse/CCXDEV-16033) | [Link](https://glitchtip.devshift.net/ccx/issues/4129669) | N/A |
 | [CCXDEV-15918](https://redhat.atlassian.net/browse/CCXDEV-15918) | [Link](https://glitchtip.devshift.net/ccx/issues/4081088) | N/A |
-| [CCXDEV-15917](https://redhat.atlassian.net/browse/CCXDEV-15917) | [Link](https://glitchtip.devshift.net/ccx/issues/4081087) | 10 |
-| [CCXDEV-15740](https://redhat.atlassian.net/browse/CCXDEV-15740) | [Link](https://glitchtip.devshift.net/ccx/issues/4017718) | 24 |
-| [CCXDEV-15738](https://redhat.atlassian.net/browse/CCXDEV-15738) | [Link](https://glitchtip.devshift.net/ccx/issues/4017706) | 7 |
-| [CCXDEV-15647](https://redhat.atlassian.net/browse/CCXDEV-15647) | [Link](https://glitchtip.devshift.net/ccx/issues/3978984) | 27 |
-| [CCXDEV-15406](https://redhat.atlassian.net/browse/CCXDEV-15406) | [Link](https://glitchtip.devshift.net/ccx/issues/3852210) | 27 |
+| [CCXDEV-15917](https://redhat.atlassian.net/browse/CCXDEV-15917) | [Link](https://glitchtip.devshift.net/ccx/issues/4081087) | 11 |
+| [CCXDEV-15740](https://redhat.atlassian.net/browse/CCXDEV-15740) | [Link](https://glitchtip.devshift.net/ccx/issues/4017718) | 25 |
+| [CCXDEV-15738](https://redhat.atlassian.net/browse/CCXDEV-15738) | [Link](https://glitchtip.devshift.net/ccx/issues/4017706) | 8 |
+| [CCXDEV-15647](https://redhat.atlassian.net/browse/CCXDEV-15647) | [Link](https://glitchtip.devshift.net/ccx/issues/3978984) | 28 |
+| [CCXDEV-15406](https://redhat.atlassian.net/browse/CCXDEV-15406) | [Link](https://glitchtip.devshift.net/ccx/issues/3852210) | 28 |
 
 ## Glitchtip events with no Jira issues
 
@@ -74,15 +73,15 @@
 | [Link](https://glitchtip.devshift.net/ccx/issues/3832544) | 0 |
 | [Link](https://glitchtip.devshift.net/ccx/issues/834719) | 0 |
 | [Link](https://glitchtip.devshift.net/ccx/issues/3781153) | 0 |
-| [Link](https://glitchtip.devshift.net/ccx/issues/3805165) | 0 |
 | [Link](https://glitchtip.devshift.net/ccx/issues/834727) | 0 |
 | [Link](https://glitchtip.devshift.net/ccx/issues/4319956) | 0 |
-| [Link](https://glitchtip.devshift.net/ccx/issues/4235166) | 2 |
-| [Link](https://glitchtip.devshift.net/ccx/issues/4729746) | 3 |
-| [Link](https://glitchtip.devshift.net/ccx/issues/4127668) | 4 |
-| [Link](https://glitchtip.devshift.net/ccx/issues/4293672) | 4 |
-| [Link](https://glitchtip.devshift.net/ccx/issues/4768423) | 4 |
-| [Link](https://glitchtip.devshift.net/ccx/issues/4802967) | 4 |
-| [Link](https://glitchtip.devshift.net/ccx/issues/4802965) | 4 |
-| [Link](https://glitchtip.devshift.net/ccx/issues/4802966) | 4 |
-| [Link](https://glitchtip.devshift.net/ccx/issues/835478) | 5 |
+| [Link](https://glitchtip.devshift.net/ccx/issues/3805165) | 0 |
+| [Link](https://glitchtip.devshift.net/ccx/issues/4235166) | 3 |
+| [Link](https://glitchtip.devshift.net/ccx/issues/4729746) | 4 |
+| [Link](https://glitchtip.devshift.net/ccx/issues/4127668) | 5 |
+| [Link](https://glitchtip.devshift.net/ccx/issues/4293672) | 5 |
+| [Link](https://glitchtip.devshift.net/ccx/issues/4768423) | 5 |
+| [Link](https://glitchtip.devshift.net/ccx/issues/4802967) | 5 |
+| [Link](https://glitchtip.devshift.net/ccx/issues/4802965) | 5 |
+| [Link](https://glitchtip.devshift.net/ccx/issues/4802966) | 5 |
+| [Link](https://glitchtip.devshift.net/ccx/issues/835478) | 6 |
