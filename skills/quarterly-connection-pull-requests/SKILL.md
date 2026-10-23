@@ -13,14 +13,29 @@ description: >-
 Collect and report all PRs (GitHub) and MRs (GitLab) authored by the
 given user during a given quarter across team repositories.
 
-## Pre-requisites
+## Access requirements
 
-- **gh CLI**: Must be authenticated. Verify with `gh auth status`. The
-  user's GitHub username is obtained via `gh api user --jq '.login'`.
-- **glab CLI**: Must be authenticated for `gitlab.cee.redhat.com`. Verify
-  with `glab auth status --hostname gitlab.cee.redhat.com`. The token
-  needs `read_api` scope. If not authenticated, ask the user to run
+- **GitHub (`gh`)**: Must be authenticated for `github.com`. Verify with:
+  ```bash
+  gh auth status -h github.com
+  gh api user --jq '.login'
+  ```
+  The user's GitHub username is obtained via `gh api user --jq '.login'`.
+- **GitLab CEE (`glab`)**: Must be authenticated for
+  `gitlab.cee.redhat.com`. Always pass `--hostname gitlab.cee.redhat.com`
+  unless the command is running inside a repo whose authenticated host is
+  known to be CEE. Verify with:
+  ```bash
+  glab auth status --hostname gitlab.cee.redhat.com
+  glab api --hostname gitlab.cee.redhat.com user
+  ```
+  The token needs `read_api` scope. If not authenticated, ask the user to run
   `glab auth login --hostname gitlab.cee.redhat.com`.
+
+Do not scrape tokens from `glab` config files. If a raw token is absolutely
+needed for a fallback `curl`, derive it with
+`glab config get token --host gitlab.cee.redhat.com` and never print it.
+This report is read-only; do not review, approve, comment on, or merge PRs/MRs.
 
 ## Defaults
 
@@ -87,26 +102,22 @@ sorting PRs into the "Closed / superseded" theme section.
 
 ## Step 2: Collect GitLab MRs
 
-### 2a. Get the GitLab token and user ID
+### 2a. Get the GitLab user ID
 
-Extract the token from glab config and resolve the user ID:
+Resolve the authenticated GitLab user through `glab`; do not extract or print
+raw tokens:
 
 ```bash
-GL_TOKEN=$(grep -A1 'gitlab.cee.redhat.com' \
-  ~/Library/Application\ Support/glab-cli/config.yml \
-  | grep 'token:' | awk '{print $2}')
-
-curl -s --header "PRIVATE-TOKEN: $GL_TOKEN" \
-  "https://gitlab.cee.redhat.com/api/v4/user"
+glab api --hostname gitlab.cee.redhat.com user
 ```
 
-If the config path does not exist (Linux), check `~/.config/glab-cli/config.yml`.
+Record `.id`, `.username`, and `.name` from the JSON response.
 
 ### 2b. Search for authored MRs
 
 ```bash
-curl -s --header "PRIVATE-TOKEN: $GL_TOKEN" \
-  "https://gitlab.cee.redhat.com/api/v4/merge_requests?author_id={user_id}&created_after={start}T00:00:00Z&created_before={end}T23:59:59Z&scope=all&per_page=100&state=all"
+glab api --hostname gitlab.cee.redhat.com \
+  'merge_requests?author_id={user_id}&created_after={start}T00:00:00Z&created_before={end}T23:59:59Z&scope=all&per_page=100&state=all'
 ```
 
 This returns MRs across all projects the user has access to. Filter to
@@ -117,16 +128,16 @@ only those in team-relevant projects (see below).
 List all active projects in the `ccx` GitLab group:
 
 ```bash
-curl -s --header "PRIVATE-TOKEN: $GL_TOKEN" \
-  "https://gitlab.cee.redhat.com/api/v4/groups/ccx/projects?per_page=100&include_subgroups=true"
+glab api --hostname gitlab.cee.redhat.com \
+  'groups/ccx/projects?per_page=100&include_subgroups=true'
 ```
 
 For each project with `last_activity_at` within or after the quarter,
 search for the user's MRs:
 
 ```bash
-curl -s --header "PRIVATE-TOKEN: $GL_TOKEN" \
-  "https://gitlab.cee.redhat.com/api/v4/projects/{project_id}/merge_requests?author_id={user_id}&created_after={start}T00:00:00Z&created_before={end}T23:59:59Z&state=all&per_page=50"
+glab api --hostname gitlab.cee.redhat.com \
+  'projects/{project_id}/merge_requests?author_id={user_id}&created_after={start}T00:00:00Z&created_before={end}T23:59:59Z&state=all&per_page=50'
 ```
 
 ### 2d. Include repos outside the ccx group
@@ -140,8 +151,8 @@ Also search these team-relevant repos that live outside `ccx/`:
 Use URL-encoded project paths:
 
 ```bash
-curl -s --header "PRIVATE-TOKEN: $GL_TOKEN" \
-  "https://gitlab.cee.redhat.com/api/v4/projects/insights-qe%2Fiqe-ccx-plugin/merge_requests?author_id={user_id}&created_after={start}T00:00:00Z&created_before={end}T23:59:59Z&state=all&per_page=50"
+glab api --hostname gitlab.cee.redhat.com \
+  'projects/insights-qe%2Fiqe-ccx-plugin/merge_requests?author_id={user_id}&created_after={start}T00:00:00Z&created_before={end}T23:59:59Z&state=all&per_page=50'
 ```
 
 ### 2e. Deduplicate MRs
@@ -198,11 +209,14 @@ Export the report as a markdown file named
 
 ## Quick reference — CLI commands
 
-```
-gh api user                    → GitHub username (Step 1)
-gh search prs                  → GitHub PRs (Step 1)
-gh pr view                     → PR details (Step 1)
-curl gitlab.cee.redhat.com/api/v4/user          → GitLab user ID (Step 2)
-curl gitlab.cee.redhat.com/api/v4/merge_requests → GitLab MRs (Step 2)
-curl gitlab.cee.redhat.com/api/v4/groups/ccx/projects → ccx repos (Step 2)
+```bash
+gh auth status -h github.com
+gh api user --jq '.login'                         # GitHub username
+gh search prs --author={username} ...             # GitHub PRs
+gh pr view {number} --repo {owner/repo} --json ... # PR details
+
+glab auth status --hostname gitlab.cee.redhat.com
+glab api --hostname gitlab.cee.redhat.com user                    # GitLab user ID
+glab api --hostname gitlab.cee.redhat.com 'merge_requests?...'    # GitLab MRs
+glab api --hostname gitlab.cee.redhat.com 'groups/ccx/projects?...' # ccx repos
 ```

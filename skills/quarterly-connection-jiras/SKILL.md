@@ -16,13 +16,31 @@ description: >-
 Produce a quarter status report for CCX Core - Processing epics owned by the
 given user and for a given quarter.
 
-## Pre-requisites
+## Access requirements
 
-Use the **Atlassian MCP** server (`plugin-atlassian-atlassian`).
-If tools are unavailable, call `mcp_auth` first, then retry.
+Default Jira site: `https://redhat.atlassian.net`.
+Default project: `CCXDEV`.
+Default board: `1553` / **CCX Core - Processing**.
 
-Get `cloudId` via `getAccessibleAtlassianResources` (Red Hat site:
-`https://redhat.atlassian.net`).
+Preferred Pi-compatible access path:
+
+- **`acli`** for Jira searches and issue reads. Verify with:
+  ```bash
+  acli jira auth status
+  acli jira project view --key CCXDEV --json
+  acli jira board view --id 1553 --json
+  ```
+- **`curl --netrc`** for read-only Jira REST fallback when `acli` cannot fetch
+  a needed field such as changelog/comments. Verify with:
+  ```bash
+  curl --netrc https://redhat.atlassian.net/rest/api/3/myself
+  ```
+- **Atlassian MCP** (`plugin-atlassian-atlassian`) is optional. If MCP tools are
+  available, you may use `getAccessibleAtlassianResources`,
+  `searchJiraIssuesUsingJql`, and `getJiraIssue`; otherwise use `acli`/REST.
+
+Do not create, edit, comment on, link, or transition Jira issues for this report
+unless the user explicitly asks. Never ask the user to paste Jira tokens.
 
 ## Defaults
 
@@ -51,14 +69,39 @@ AND labels in (CCX-PROCESSING, ccx-processing, obsint-processing)
 ORDER BY due ASC
 ```
 
-Call `searchJiraIssuesUsingJql` with fields:
-`summary`, `status`, `duedate`, `labels`, `assignee`, `priority`,
-`updated`.
+Collect these fields: `key`, `summary`, `status`, `duedate`, `labels`,
+`assignee`, `priority`, `updated`.
+
+Use one of these access paths:
+
+- MCP, if available: call `searchJiraIssuesUsingJql` with the fields above.
+- Pi default: use `acli` and JSON output:
+  ```bash
+  acli jira workitem search \
+    --jql '<JQL from above>' \
+    --fields key,summary,status,duedate,labels,assignee,priority,updated \
+    --paginate \
+    --json
+  ```
 
 ### Step 1.1: Gather information about the epics
 
 Use the epic summary, description, comments and status updates to understand
-what the epic is about.
+what the epic is about. With `acli`, fetch issue details like this:
+
+```bash
+acli jira workitem view {EPIC_KEY} \
+  --fields key,summary,status,assignee,description,comment,updated \
+  --json
+```
+
+If changelog/status-history detail is needed and not available through `acli`,
+use read-only Jira REST with `curl --netrc`:
+
+```bash
+curl --netrc \
+  'https://redhat.atlassian.net/rest/api/3/issue/{EPIC_KEY}?expand=changelog&fields=summary,status,assignee,description,comment,updated'
+```
 
 Also, collect the number of tasks assigned to the user in that epic vs the total
 number of tasks in that epic.
@@ -73,12 +116,12 @@ Sometimes users work on epics that are assigned to others. We need to gather
 these tasks as well.
 
 ```jql
-project = CCXDEV
+project = {PROJECT}
 AND issuetype != Epic
-AND fixVersion = "2026Q1"
-AND assignee = "Juan Díaz Suárez"
+AND fixVersion = "{QUARTER}"
+AND assignee = "{ASSIGNEE}"
 AND parent is not EMPTY
-AND assignee was "Juan Díaz Suárez"
+AND assignee was "{ASSIGNEE}"
 ORDER BY parent ASC, updated DESC
 ```
 
@@ -86,7 +129,7 @@ Use the "Parent" column to group the tasks by epic. You can then use the
 Parent key to query the API and get more information about the epics:
 
 ```jql
-project = CCXDEV
+project = {PROJECT}
 AND issuetype = Epic
 AND key in (CCXDEV-123, CCXDEV-456, CCXDEV-789)
 ORDER BY due ASC
@@ -137,11 +180,21 @@ Export the report as a markdown file named
 - "Generate the quarterly connection report for 2026Q1 and Juan Díaz Suárez"
 - "Help me write my quarterly connection?"
 
-## Quick reference — MCP calls
+## Quick reference — Jira access
 
+Preferred Pi CLI path:
+
+```bash
+acli jira auth status
+acli jira workitem search --jql '<JQL>' --fields key,summary,status,duedate,labels,assignee,priority,updated --paginate --json
+acli jira workitem view CCXDEV-123 --fields key,summary,status,assignee,description,comment,updated --json
+curl --netrc 'https://redhat.atlassian.net/rest/api/3/issue/CCXDEV-123?expand=changelog&fields=summary,status,assignee,description,comment,updated'
 ```
+
+Optional MCP path, when available:
+
+```text
 getAccessibleAtlassianResources → cloudId
-searchJiraIssuesUsingJql       → epic list (Step 1)
-searchJiraIssuesUsingJql       → child issues, one epic per call, paginate
+searchJiraIssuesUsingJql       → epic/task lists
 getJiraIssue(expand=changelog,comments) → status updates per epic
 ```
