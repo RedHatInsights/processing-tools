@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-10-24 04:18:31
+**Generated:** 2026-10-25 04:19:19
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -13,8 +13,8 @@
 | Metric | Value |
 |--------|-------|
 | Projects with duplicates | 10 |
-| Total duplicate groups | 16 |
-| Total issues in groups | 43 |
+| Total duplicate groups | 18 |
+| Total issues in groups | 50 |
 | Total events affected | 0 |
 
 ---
@@ -23,8 +23,8 @@
 
 - [archive-sync](#archive-sync) - 1 groups, 6 issues
 - [ccx-data-pipeline](#ccx-data-pipeline) - 1 groups, 2 issues
-- [ccx-notification-service](#ccx-notification-service) - 2 groups, 4 issues
-- [ccx-notification-writer](#ccx-notification-writer) - 1 groups, 2 issues
+- [ccx-notification-service](#ccx-notification-service) - 3 groups, 9 issues
+- [ccx-notification-writer](#ccx-notification-writer) - 2 groups, 4 issues
 - [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 1 groups, 2 issues
 - [dvo-writer](#dvo-writer) - 2 groups, 4 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 11 issues
@@ -46,14 +46,14 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
+| #4696802 | 7 | error: Error -3 while decompressing data: invalid code le... | [View](https://glitchtip.devshift.net/ccx/issues/4696802) |
 | #4582018 | 24 | error: Error -3 while decompressing data: invalid block type | [View](https://glitchtip.devshift.net/ccx/issues/4582018) |
-| #4696802 | 6 | error: Error -3 while decompressing data: invalid code le... | [View](https://glitchtip.devshift.net/ccx/issues/4696802) |
 | #4768590 | 7 | error: Error -3 while decompressing data: invalid distanc... | [View](https://glitchtip.devshift.net/ccx/issues/4768590) |
 | #4729727 | 11 | error: Error -3 while decompressing data: invalid stored ... | [View](https://glitchtip.devshift.net/ccx/issues/4729727) |
 | #4782079 | 2 | error: Error -3 while decompressing data: invalid literal... | [View](https://glitchtip.devshift.net/ccx/issues/4782079) |
 | #4772158 | 1 | error: Error -3 while decompressing data: too many length... | [View](https://glitchtip.devshift.net/ccx/issues/4772158) |
 
-**Recommendation:** Consider merging into [#4582018](https://glitchtip.devshift.net/ccx/issues/4582018) (highest event count)
+**Recommendation:** Consider merging into [#4696802](https://glitchtip.devshift.net/ccx/issues/4696802) (highest event count)
 
 ---
 
@@ -69,7 +69,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3852013 | 7,258 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
+| #3852013 | 7,284 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
 | #3852210 | 4,542 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
 
 **Recommendation:** Consider merging into [#3852013](https://glitchtip.devshift.net/ccx/issues/3852013) (highest event count)
@@ -78,9 +78,25 @@
 
 ## ccx-notification-service
 
-**Duplicate Groups:** 2
-**Issues in Groups:** 4
+**Duplicate Groups:** 3
+**Issues in Groups:** 9
 **Total Events:** 0
+
+### 🟢 LOW: Error: dial tcp ...: connect: connection refused
+
+**Issues:** 5 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4852264 | 151 | Error: read tcp 10.129.5.216:41030->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4852264) |
+| #4854273 | 149 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4854273) |
+| #4854274 | 148 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4854274) |
+| #4408130 | 1,231 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
+| #4852265 | 1 | Error: dial tcp 10.0.216.215:5432: connect: connection ti... | [View](https://glitchtip.devshift.net/ccx/issues/4852265) |
+
+**Recommendation:** Consider merging into [#4852264](https://glitchtip.devshift.net/ccx/issues/4852264) (highest event count)
+
+---
 
 ### 🟢 LOW: Error: Post \'...': readfrom tc…
 
@@ -110,9 +126,22 @@
 
 ## ccx-notification-writer
 
-**Duplicate Groups:** 1
-**Issues in Groups:** 2
+**Duplicate Groups:** 2
+**Issues in Groups:** 4
 **Total Events:** 0
+
+### 🟢 LOW: Error: dial tcp ...: connect: connection refused
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4852266 | 3 | Error: read tcp 10.129.1.192:42670->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4852266) |
+| #4017706 | 31 | Error: dial tcp 10.0.184.48:9096: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4017706) |
+
+**Recommendation:** Consider merging into [#4852266](https://glitchtip.devshift.net/ccx/issues/4852266) (highest event count)
+
+---
 
 ### 🟢 LOW: kafka: error while consuming ccx.ocp.results/0: dial tcp ...: connect: connection refu…
 
@@ -259,7 +288,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3781153 | 7,688 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
+| #3781153 | 7,714 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
 | #3791585 | 4,771 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
 
 **Recommendation:** Consider merging into [#3781153](https://glitchtip.devshift.net/ccx/issues/3781153) (highest event count)
@@ -272,7 +301,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4847319 | 1 | Rule response make_fail(OPERATOR_ISSUE) exceeds the size ... | [View](https://glitchtip.devshift.net/ccx/issues/4847319) |
+| #4847319 | 2 | Rule response make_fail(OPERATOR_ISSUE) exceeds the size ... | [View](https://glitchtip.devshift.net/ccx/issues/4847319) |
 | #4729746 | 36 | Rule response make_fail(NODES_CONTAINER_RUNTIME_VERSION) ... | [View](https://glitchtip.devshift.net/ccx/issues/4729746) |
 | #4615774 | 4 | Rule response make_fail(CERTIFICATES_EXPIRING_SOON) excee... | [View](https://glitchtip.devshift.net/ccx/issues/4615774) |
 | #4732746 | 1 | Rule response make_info(CLUSTER_STATUS_OVERVIEW_PODS) exc... | [View](https://glitchtip.devshift.net/ccx/issues/4732746) |
