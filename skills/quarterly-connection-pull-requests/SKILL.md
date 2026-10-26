@@ -33,10 +33,9 @@ during a given quarter across team repositories.
   The token needs `read_api` scope. If not authenticated, ask the user to run
   `glab auth login --hostname gitlab.cee.redhat.com`.
 
-Do not scrape tokens from `glab` config files. If a raw token is absolutely
-needed for a fallback `curl`, derive it with
-`glab config get token --host gitlab.cee.redhat.com` and never print it. This
-report is read-only; do not review, approve, comment on, or merge PRs/MRs.
+Use authenticated `glab api` commands for GitLab requests. Do not scrape tokens
+from `glab` config files. This report is read-only; do not review, approve,
+comment on, or merge PRs/MRs.
 
 ## Defaults
 
@@ -68,12 +67,17 @@ before it (to capture carry-over work). Use JSON output so the report can be
 built deterministically:
 
 ```bash
-GH_HOST=github.com gh search prs --author={username} --created="{YYYY-MM-DD}..{YYYY-MM-DD}" --limit 1000 \
+GH_HOST=github.com gh search prs --author={username} --owner RedHatInsights --created="{YYYY-MM-DD}..{YYYY-MM-DD}" --limit 1000 \
   --json number,title,url,state,createdAt,closedAt,repository
 
-GH_HOST=github.com gh search prs --author={username} --merged-at="{YYYY-MM-DD}..{YYYY-MM-DD}" --limit 1000 \
+GH_HOST=github.com gh search prs --author={username} --owner RedHatInsights --merged-at="{YYYY-MM-DD}..{YYYY-MM-DD}" --limit 1000 \
   --json number,title,url,state,createdAt,closedAt,repository
 ```
+
+Restrict GitHub results to team repositories. By default, search the
+`RedHatInsights` owner as shown above. If the user specifies additional GitHub
+owners or repos, add the matching `--owner` / `--repo` filters or filter results
+against an explicit team-repository allowlist before deduplication.
 
 Deduplicate across both result sets by PR URL (or `{owner}/{repo}#{number}`).
 
@@ -214,7 +218,10 @@ created in the quarter across global results, active `ccx/` projects, and
 configured outside team repositories.
 
 {total} PRs/MRs authored across {repo_count} repositories ({merged} merged,
-{open} open, {closed} closed/superseded).
+{open} open, {closed} closed/superseded, {locked} locked, {unknown} unknown).
+
+If `locked` or `unknown` is zero, it may be omitted from prose, but the displayed
+state counts must reconcile with `{total}`.
 
 ## {Theme 1}
 
@@ -266,8 +273,8 @@ Export the report as a markdown file named
 ```bash
 gh auth status -h github.com
 gh api --hostname github.com user --jq '.login'
-GH_HOST=github.com gh search prs --author={username} --created="{start}..{end}" --limit 1000 --json number,title,url,state,createdAt,closedAt,repository
-GH_HOST=github.com gh search prs --author={username} --merged-at="{start}..{end}" --limit 1000 --json number,title,url,state,createdAt,closedAt,repository
+GH_HOST=github.com gh search prs --author={username} --owner RedHatInsights --created="{start}..{end}" --limit 1000 --json number,title,url,state,createdAt,closedAt,repository
+GH_HOST=github.com gh search prs --author={username} --owner RedHatInsights --merged-at="{start}..{end}" --limit 1000 --json number,title,url,state,createdAt,closedAt,repository
 GH_HOST=github.com gh pr view {number} --repo {owner/repo} --json title,state,createdAt,mergedAt,closedAt,additions,deletions,changedFiles,url,body
 
 glab auth status --hostname gitlab.cee.redhat.com

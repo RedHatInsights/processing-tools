@@ -161,8 +161,14 @@ curl --netrc \
   'https://redhat.atlassian.net/rest/api/3/issue/{EPIC_KEY}?expand=changelog&fields=summary,status,assignee,reporter,description,comment,updated,labels,duedate,fixVersions'
 ```
 
-Also collect the number of child tasks assigned/reported/commented by the user
-versus the total number of child tasks in that epic. For child totals, query:
+Also collect direct child-task counts for the epic: direct children
+assigned/reported/commented by the user versus all direct children in that epic.
+These direct-child totals are useful for Jira-visible epic progress, but they do
+not automatically include subtasks grouped under the epic through an ancestor
+chain. If you include subtasks in user-involved counts, label that count
+separately or resolve ancestors for totals using the same method.
+
+For direct child totals, query:
 
 ```jql
 project = {PROJECT} AND parent = {EPIC_KEY}
@@ -193,6 +199,10 @@ AND labels in (CCX-PROCESSING, ccx-processing, obsint-processing)
 ORDER BY due ASC
 ```
 
+Deduplicate the directly assigned epics from Step 1 and the contributed epics
+from this query by issue key before grouping, counting, or writing the report.
+Do not list the same epic twice.
+
 Then gather non-Epic child work where the user is current assignee, historical
 assignee, or reporter.
 
@@ -212,7 +222,9 @@ When grouping non-Epic issues by epic, do not blindly treat `parent` as the epic
 subtasks usually have a Story/Task as their immediate parent. Use `parentEpic`
 where Jira returns it; otherwise resolve the parent chain with issue detail
 requests until an Epic is found. Keep the original issue filters unchanged while
-resolving the ancestor epic.
+resolving the ancestor epic. If this adds subtasks to the user's involved-work
+count, make the scope explicit: direct Epic child totals may differ from
+ancestor-grouped user-involved issues.
 
 For each parent/ancestor epic, query the epic details:
 
@@ -226,7 +238,9 @@ ORDER BY due ASC
 For each epic, collect the same information as in Step 1.1 plus:
 
 - what the user did specifically in that epic
-- the amount of work in the quarter (user-involved tasks vs all quarter tasks)
+- the amount of work in the quarter (direct user-involved child tasks vs all
+  direct quarter child tasks, plus separately labeled ancestor-grouped subtasks
+  when applicable)
 - overall epic child status counts when useful (closed / in progress / not
   started)
 - whether a task was included because of current assignment, assignment history,
