@@ -13,8 +13,10 @@ description: >-
 
 # quarterly-connection-jiras
 
-Produce a quarter status report for CCX Core - Processing epics owned by the
-given user and for a given quarter.
+Produce a quarter status report for CCX Core - Processing epics owned by or
+contributed to by the given user for a given quarter. Contributions include
+assigned work, historical assignee work, reported work, and Jira issues where
+the user added quarter-relevant comments.
 
 ## Access requirements
 
@@ -24,14 +26,15 @@ Default board: `1553` / **CCX Core - Processing**.
 
 Preferred Pi-compatible access path:
 
-- **`acli`** for Jira searches and issue reads. Verify with:
+- **`acli`** for auth checks and simple Jira searches/issue reads. Verify with:
   ```bash
   acli jira auth status
   acli jira project view --key CCXDEV --json
   acli jira board view --id 1553 --json
   ```
-- **`curl --netrc`** for read-only Jira REST fallback when `acli` cannot fetch
-  a needed field such as changelog/comments. Verify with:
+- **`curl --netrc`** for read-only Jira REST when `acli` cannot fetch a needed
+  field such as `parent`, `duedate`, `updated`, changelog, or comments. Verify
+  with:
   ```bash
   curl --netrc https://redhat.atlassian.net/rest/api/3/myself
   ```
@@ -45,18 +48,72 @@ unless the user explicitly asks. Never ask the user to paste Jira tokens.
 ## Defaults
 
 - **Project:** CCXDEV (override with `--project KEY`)
-- **Quarter filter:** Should contain the year and quarter number (e.g. 2026Q2 for April–June 2026)
-- **Assignee:** The user's name
+- **Quarter filter:** Should contain the year and quarter number (e.g. 2026Q2
+  for April–June 2026)
+- **Person:** The user's Jira display name. Treat it as assignee, historical
+  assignee, reporter, and commenter unless the user explicitly asks for a
+  narrower scope.
 
 ## I/O operations
 
-You can use intermediate files to store the information about the epics and
-tasks. These files will be deleted after the report is generated. They can be
-CSVs or markdown files. You can use Python or shell to work with them.
+You can use intermediate files to store the information about epics, tasks, and
+comments. These files should be deleted after the report is generated. They can
+be JSON, CSV, or markdown files. Use them as short-term memory so context is not
+oversized.
 
-Use it as a short-term memory so that the context is not oversized.
+## Jira REST notes
 
-## Step 1: Find assigned epics
+Atlassian removed the old `/rest/api/3/search` endpoint. For REST fallback, use
+`/rest/api/3/search/jql` and always paginate with `nextPageToken` until no token
+is returned. A small Python helper is the most reliable Pi-compatible approach:
+
+```python
+import requests
+
+session = requests.Session()
+session.headers.update({"Accept": "application/json"})
+
+
+def search_jql(jql, fields, max_results=100):
+    issues = []
+    next_page_token = None
+    while True:
+        params = {
+            "jql": jql,
+            "fields": ",".join(fields),
+            "maxResults": str(max_results),
+        }
+        if next_page_token:
+            params["nextPageToken"] = next_page_token
+        response = session.get(
+            "https://redhat.atlassian.net/rest/api/3/search/jql",
+            params=params,
+            timeout=60,
+        )
+        response.raise_for_status()
+        data = response.json()
+        issues.extend(data.get("issues", []))
+        next_page_token = data.get("nextPageToken")
+        if data.get("isLast", True) or not next_page_token:
+            return issues
+```
+
+For one-off checks, this is the first request only; keep following
+`nextPageToken` in later requests:
+
+```bash
+curl --netrc \
+  'https://redhat.atlassian.net/rest/api/3/search/jql?jql=<URL_ENCODED_JQL>&fields=key,summary,status,assignee,reporter,parent,priority,updated,issuetype,fixVersions,labels,duedate,description,comment&maxResults=100'
+```
+
+With `acli`, some fields such as `parent`, `duedate`, or `updated` may not be
+allowed in `--fields`. If that happens, switch to REST `/search/jql` instead of
+retrying the same `acli` command.
+
+Convert `{QUARTER}` to a date range when scanning comments or `updatedBy`, e.g.
+`2026Q3` → `2026-07-01` through `2026-09-30`.
+
+## Step 1: Find directly assigned epics
 
 Search with this JQL (adjust labels only if the user specifies otherwise):
 
@@ -64,30 +121,32 @@ Search with this JQL (adjust labels only if the user specifies otherwise):
 project = {PROJECT}
 AND issuetype = Epic
 AND fixVersion = "{QUARTER}"
-AND assignee = "{ASSIGNEE}"
+AND assignee = "{PERSON}"
 AND labels in (CCX-PROCESSING, ccx-processing, obsint-processing)
 ORDER BY due ASC
 ```
 
 Collect these fields: `key`, `summary`, `status`, `duedate`, `labels`,
-`assignee`, `priority`, `updated`.
+`assignee`, `reporter`, `priority`, `updated`, `description`, and `comment`.
 
 Use one of these access paths:
 
 - MCP, if available: call `searchJiraIssuesUsingJql` with the fields above.
-- Pi default: use `acli` and JSON output:
+- `acli` if the requested fields are supported:
   ```bash
   acli jira workitem search \
     --jql '<JQL from above>' \
-    --fields key,summary,status,duedate,labels,assignee,priority,updated \
+    --fields key,summary,status,assignee,priority \
     --paginate \
     --json
   ```
+- REST fallback, preferred when field coverage matters: use the `search_jql`
+  helper from **Jira REST notes** so results are paginated with `nextPageToken`.
 
 ### Step 1.1: Gather information about the epics
 
-Use the epic summary, description, comments and status updates to understand
-what the epic is about. With `acli`, fetch issue details like this:
+Use the epic summary, description, comments, and status updates to understand
+what the epic is about. With `acli`, fetch basic details like this:
 
 ```bash
 acli jira workitem view {EPIC_KEY} \
@@ -95,38 +154,67 @@ acli jira workitem view {EPIC_KEY} \
   --json
 ```
 
-If changelog/status-history detail is needed and not available through `acli`,
-use read-only Jira REST with `curl --netrc`:
+If changelog/status-history detail is needed, use read-only Jira REST:
 
 ```bash
 curl --netrc \
-  'https://redhat.atlassian.net/rest/api/3/issue/{EPIC_KEY}?expand=changelog&fields=summary,status,assignee,description,comment,updated'
+  'https://redhat.atlassian.net/rest/api/3/issue/{EPIC_KEY}?expand=changelog&fields=summary,status,assignee,reporter,description,comment,updated,labels,duedate,fixVersions'
 ```
 
-Also, collect the number of tasks assigned to the user in that epic vs the total
-number of tasks in that epic.
+Also collect the number of child tasks assigned/reported/commented by the user
+versus the total number of child tasks in that epic. For child totals, query:
+
+```jql
+project = {PROJECT} AND parent = {EPIC_KEY}
+```
+
+and also a quarter-limited version:
+
+```jql
+project = {PROJECT} AND parent = {EPIC_KEY} AND fixVersion = "{QUARTER}"
+```
 
 ### Step 1.2: If the information is missing or too vague
 
 Ask the user for more information about that specific epic.
 
-## Step 2: Gather other tasks
+## Step 2: Gather other epics and tasks in the quarter
 
-Sometimes users work on epics that are assigned to others. We need to gather
-these tasks as well.
+Sometimes users work on epics assigned to others, or they reported / previously
+owned an epic that has no matching child task. First gather contributed epics
+with a dedicated Epic query:
+
+```jql
+project = {PROJECT}
+AND issuetype = Epic
+AND fixVersion = "{QUARTER}"
+AND (assignee = "{PERSON}" OR assignee was "{PERSON}" OR reporter = "{PERSON}")
+AND labels in (CCX-PROCESSING, ccx-processing, obsint-processing)
+ORDER BY due ASC
+```
+
+Then gather non-Epic child work where the user is current assignee, historical
+assignee, or reporter.
 
 ```jql
 project = {PROJECT}
 AND issuetype != Epic
 AND fixVersion = "{QUARTER}"
-AND assignee = "{ASSIGNEE}"
 AND parent is not EMPTY
-AND assignee was "{ASSIGNEE}"
+AND (assignee = "{PERSON}" OR assignee was "{PERSON}" OR reporter = "{PERSON}")
 ORDER BY parent ASC, updated DESC
 ```
 
-Use the "Parent" column to group the tasks by epic. You can then use the
-Parent key to query the API and get more information about the epics:
+Prefer REST `/search/jql` for these queries because `acli` may not allow
+`parent`, `parentEpic`, or other needed fields in `--fields`.
+
+When grouping non-Epic issues by epic, do not blindly treat `parent` as the epic:
+subtasks usually have a Story/Task as their immediate parent. Use `parentEpic`
+where Jira returns it; otherwise resolve the parent chain with issue detail
+requests until an Epic is found. Keep the original issue filters unchanged while
+resolving the ancestor epic.
+
+For each parent/ancestor epic, query the epic details:
 
 ```jql
 project = {PROJECT}
@@ -135,25 +223,116 @@ AND key in (CCXDEV-123, CCXDEV-456, CCXDEV-789)
 ORDER BY due ASC
 ```
 
-For each epic, collect the same information as in Step 1.1 but also what the
-user did specifically in that epic and the amount of work (assigned tasks vs
-total number of tasks in that epic).
+For each epic, collect the same information as in Step 1.1 plus:
 
-## Step 3: Write the report
+- what the user did specifically in that epic
+- the amount of work in the quarter (user-involved tasks vs all quarter tasks)
+- overall epic child status counts when useful (closed / in progress / not
+  started)
+- whether a task was included because of current assignment, assignment history,
+  reporter, or comments
 
-Use this structure for **each epic**, then a summary table.
+## Step 3: Gather quarter comments by the user
+
+Also check Jira issues where the user commented during the quarter. This catches
+cross-quarter follow-ups, verification comments, CVE checks, and work that may
+not have the quarter fixVersion.
+
+Use a broad update search for issues touched by the user in the quarter:
+
+```jql
+project = {PROJECT}
+AND issue in updatedBy("{PERSON}", "{YYYY/MM/DD_START}", "{YYYY/MM/DD_END_PLUS_ONE}")
+ORDER BY updated DESC
+```
+
+Then fetch comments for each issue and keep only comments where:
+
+- comment author display name equals `{PERSON}`
+- comment `created` is within the quarter date range
+
+REST comment endpoint. Paginate with `startAt` and `maxResults` until all
+comments are fetched:
+
+```python
+def issue_comments(key, max_results=100):
+    comments = []
+    start_at = 0
+    while True:
+        response = session.get(
+            f"https://redhat.atlassian.net/rest/api/3/issue/{key}/comment",
+            params={
+                "startAt": str(start_at),
+                "maxResults": str(max_results),
+                "orderBy": "created",
+            },
+            timeout=60,
+        )
+        response.raise_for_status()
+        data = response.json()
+        page = data.get("comments", [])
+        comments.extend(page)
+        start_at += len(page)
+        if start_at >= data.get("total", 0) or not page:
+            return comments
+```
+
+For one-off checks, this is the first request only; keep incrementing `startAt`
+until all comments are returned:
+
+```bash
+curl --netrc \
+  'https://redhat.atlassian.net/rest/api/3/issue/{KEY}/comment?startAt=0&maxResults=100&orderBy=created'
+```
+
+For each comment-discovered issue, collect issue details and parent information.
+If the issue was already included from Step 1 or Step 2, use the comments as
+additional context. If it was not already included, add it to an **Additional
+{QUARTER} comment-discovered Jira work** section. Include cross-quarter items,
+e.g. previous-quarter watch duty tasks, CVE verification, production rollout
+validation, or next-quarter follow-up epics, but clearly label their fixVersion
+or no-fixVersion status.
+
+Do not use `comment ~ "{PERSON}"` as the primary source for authored comments;
+it searches comment text, not author identity. It can be useful only as a
+fallback or sanity check.
+
+## Step 4: Write the report
+
+Use this structure for each epic, then a summary table.
 
 ```markdown
-# Assignee Epics — Quarterly Connection ({QUARTER})
+# Assignee/Reporter/Commenter Epics — Quarterly Connection ({QUARTER})
+
+**Project:** {PROJECT}
+**Assignee/reporter/commenter:** {PERSON}
+**Base Jira scope:** `fixVersion = {QUARTER}` and {PERSON} as current assignee,
+historical assignee, or reporter; grouped by parent epic.
+**Additional comment scan:** {PROJECT} issues updated by {PERSON} during the
+quarter were fetched, then comments authored by {PERSON} in that date range were
+reviewed.
+
+> If no directly assigned epics are found, say so and explain that the report
+> focuses on child issues grouped by parent epic.
 
 ---
 
 - **N. [KEY](https://redhat.atlassian.net/browse/KEY)** Summary: X% (done/active) | **Assignee:** Name | **Due:** date or —
   - Description: {description from step 1.1}.
   - **Status update:** whether it was completed, is in progress, or is blocked.
-  - Items: completed vs in progress vs not started children tasks
+  - {PERSON}'s contribution: linked key tasks and factual one-line summaries.
+  - Items: completed vs in progress vs not started children tasks.
 
 ---
+```
+
+If Step 3 found extra issues, add:
+
+```markdown
+## Additional {QUARTER} comment-discovered Jira work
+
+| Issue | Parent | Status / fixVersion | What {PERSON}'s {QUARTER} comments show |
+|------|--------|---------------------|----------------------------------------|
 ```
 
 End with **Summary at a glance**:
@@ -161,15 +340,18 @@ End with **Summary at a glance**:
 | Epic | Completion | Summary |
 |------|------------|---------|
 
-Add a short **Highlights** paragraph (2–4 sentences): busiest epics,
-blockers, epics that slipped (yellow/red), tasks with no movement.
+Add a short **Highlights** paragraph (2–4 sentences): busiest epics, blockers,
+epics that slipped (yellow/red), tasks with no movement, and important
+comment-discovered cross-quarter/follow-up work.
 
 ## Output rules
 
 - Link every epic and key task to `https://redhat.atlassian.net/browse/{KEY}`.
 - Be factual; do not invent progress not visible in Jira.
-- If Status Summary text is truncated in the API (`...`), present
-  what is available and link to the epic for the full text.
+- If Status Summary text is truncated in the API (`...`), present what is
+  available and link to the epic for the full text.
+- Keep comment-discovered issues separate when they are outside the base quarter
+  fixVersion scope.
 - Do not create or edit Jira issues unless the user explicitly asks.
 
 Export the report as a markdown file named
@@ -178,6 +360,8 @@ Export the report as a markdown file named
 ## Example trigger phrases
 
 - "Generate the quarterly connection report for 2026Q1 and Juan Díaz Suárez"
+- "Generate for 2026Q3 and Martin Zibricky assignee/reporter name Martin Zibricky, project CCXDEV"
+- "Also check Jiras where Martin Zibricky commented"
 - "Help me write my quarterly connection?"
 
 ## Quick reference — Jira access
@@ -186,15 +370,19 @@ Preferred Pi CLI path:
 
 ```bash
 acli jira auth status
-acli jira workitem search --jql '<JQL>' --fields key,summary,status,duedate,labels,assignee,priority,updated --paginate --json
+acli jira workitem search --jql '<JQL>' --fields key,summary,status,assignee,priority --paginate --json
 acli jira workitem view CCXDEV-123 --fields key,summary,status,assignee,description,comment,updated --json
-curl --netrc 'https://redhat.atlassian.net/rest/api/3/issue/CCXDEV-123?expand=changelog&fields=summary,status,assignee,description,comment,updated'
+# For /search/jql, follow nextPageToken until no token remains.
+curl --netrc 'https://redhat.atlassian.net/rest/api/3/search/jql?jql=<URL_ENCODED_JQL>&fields=key,summary,status,assignee,reporter,parent,parentEpic,priority,updated,issuetype,fixVersions,labels,duedate,description,comment&maxResults=100'
+curl --netrc 'https://redhat.atlassian.net/rest/api/3/issue/CCXDEV-123?expand=changelog&fields=summary,status,assignee,reporter,parent,parentEpic,description,comment,updated,labels,duedate,fixVersions'
+# For comments, increment startAt until startAt >= total.
+curl --netrc 'https://redhat.atlassian.net/rest/api/3/issue/CCXDEV-123/comment?startAt=0&maxResults=100&orderBy=created'
 ```
 
 Optional MCP path, when available:
 
 ```text
 getAccessibleAtlassianResources → cloudId
-searchJiraIssuesUsingJql       → epic/task lists
-getJiraIssue(expand=changelog,comments) → status updates per epic
+searchJiraIssuesUsingJql       → epic/task/comment candidate lists
+getJiraIssue(expand=changelog,comments) → status updates per epic/issue
 ```
