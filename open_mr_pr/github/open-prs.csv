@@ -1,15 +1,12 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-insights-results-aggregator,2770,chore(deps): update go dependencies,2026-10-26T02:02:59Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2770,app/red-hat-konflux,failed,ready
-insights-operator-gathering-conditions-service,1059,chore(deps): update go dependencies,2026-10-26T01:21:16Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/1059,app/red-hat-konflux,ok,ready
-ccx-notification-writer,995,chore(deps): update pre-commit hook astral-sh/ruff-pre-commit to v0.17.2,2026-10-26T00:58:55Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/995,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1233,chore(deps): update dependency github.com/redhatinsights/konflux-pipelines to v1.79.0,2026-10-24T06:14:45Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1233,app/red-hat-konflux,ok,ready
-insights-results-aggregator,2768,chore(deps): update pre-commit hooks,2026-10-24T02:51:56Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2768,app/red-hat-konflux,failed,ready
-insights-results-aggregator-mock,915,Update dependency ring:ring-jetty-adapter to v1.15.6,2026-10-23T02:20:10Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/915,app/red-hat-konflux,ok,ready
-insights-results-aggregator-mock,914,Update dependency ring:ring-core to v1.15.6,2026-10-23T02:20:00Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/914,app/red-hat-konflux,ok,ready
-ocp-advisor-frontend,1232,chore(deps): lock file maintenance,2026-10-23T00:58:41Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1232,app/red-hat-konflux,ok,ready
-ocp-advisor-frontend,1231,fix(deps): update npm minor and patch dependencies,2026-10-23T00:56:47Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1231,app/red-hat-konflux,ok,ready
+insights-operator-gathering-conditions-service,1062,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.181.1,2026-10-27T03:56:28Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/1062,app/red-hat-konflux,ok,ready
+insights-operator-gathering-conditions-service,1061,chore(deps): update module github.com/prometheus/procfs to v0.23.0,2026-10-27T03:56:16Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/1061,app/red-hat-konflux,ok,ready
+insights-results-aggregator-cleaner,1115,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.181.1,2026-10-27T02:07:40Z,https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/1115,app/red-hat-konflux,ok,ready
+insights-results-smart-proxy,1855,Update Go dependencies,2026-10-27T02:03:53Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1855,app/red-hat-konflux,failed,ready
+insights-ccx-messaging,1025,chore(deps): update dependency aiobotocore to v3.10.0,2026-10-27T01:50:35Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/1025,app/red-hat-konflux,failed,ready
+ocp-advisor-frontend,1235,chore(deps): lock file maintenance,2026-10-27T01:41:01Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1235,app/red-hat-konflux,ok,ready
+ocp-advisor-frontend,1234,fix(deps): update npm minor and patch dependencies,2026-10-27T01:38:57Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1234,app/red-hat-konflux,ok,ready
 insights-results-smart-proxy,1854,Update Pre-commit hooks,2026-10-10T07:16:04Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1854,app/red-hat-konflux,failed,ready
-insights-results-smart-proxy,1853,Update Go dependencies,2026-10-10T07:14:11Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1853,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1852,Update Ruby dependencies,2026-10-10T02:20:23Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1852,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1225,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-10-08T15:24:35Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1225,app/obsint-processing-app,ok,ready
 ccx-upgrades-data-eng,325,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-10-08T15:21:51Z,https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/325,app/obsint-processing-app,failed,ready
