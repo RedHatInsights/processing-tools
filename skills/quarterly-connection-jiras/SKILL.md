@@ -24,7 +24,9 @@ Default Jira site: `https://redhat.atlassian.net`.
 Default project: `CCXDEV`.
 Default board: `1553` / **CCX Core - Processing**.
 
-Preferred Pi-compatible access path:
+Use any authenticated, read-only Jira access path available in Pi. Keep the skill
+tool-agnostic: prefer the most complete/reliable tool for each query, and fall
+back as needed. Common paths, in recommended order for RH Jira today:
 
 - **`acli`** for auth checks and simple Jira searches/issue reads. Verify with:
   ```bash
@@ -38,9 +40,10 @@ Preferred Pi-compatible access path:
   ```bash
   curl --netrc https://redhat.atlassian.net/rest/api/3/myself
   ```
-- **Atlassian MCP** (`plugin-atlassian-atlassian`) is optional. If MCP tools are
-  available, you may use `getAccessibleAtlassianResources`,
-  `searchJiraIssuesUsingJql`, and `getJiraIssue`; otherwise use `acli`/REST.
+- **Atlassian MCP** (`plugin-atlassian-atlassian`) is optional and should not be
+  required. If MCP tools are available, you may use
+  `getAccessibleAtlassianResources`, `searchJiraIssuesUsingJql`, and
+  `getJiraIssue`; otherwise use `acli`/REST.
 
 Do not create, edit, comment on, link, or transition Jira issues for this report
 unless the user explicitly asks. Never ask the user to paste Jira tokens.
@@ -50,9 +53,10 @@ unless the user explicitly asks. Never ask the user to paste Jira tokens.
 - **Project:** CCXDEV (override with `--project KEY`)
 - **Quarter filter:** Should contain the year and quarter number (e.g. 2026Q2
   for April–June 2026)
-- **Person:** The user's Jira display name. Treat it as assignee, historical
-  assignee, reporter, and commenter unless the user explicitly asks for a
-  narrower scope.
+- **Person:** The user's Jira identity. Resolve the requested person to an
+  Atlassian `accountId` when possible and use display name only for human-facing
+  report labels. Treat the user as assignee, historical assignee, reporter, and
+  commenter unless the user explicitly asks for a narrower scope.
 
 ## I/O operations
 
@@ -252,7 +256,13 @@ Also check Jira issues where the user commented during the quarter. This catches
 cross-quarter follow-ups, verification comments, CVE checks, and work that may
 not have the quarter fixVersion.
 
-Use a broad update search for issues touched by the user in the quarter:
+Use a broad update search for issues touched by the user in the quarter. When
+reporting on the authenticated Jira user, you may use `currentUser()` in JQL
+identity predicates (for example, `assignee = currentUser()` or
+`updatedBy(currentUser(), ...)`) and resolve the account ID from
+`/rest/api/3/myself`. When reporting on someone else, resolve `{PERSON}` to an
+Atlassian `accountId` before filtering comments; if a name search is ambiguous,
+ask the user to confirm the intended Jira user.
 
 ```jql
 project = {PROJECT}
@@ -262,7 +272,8 @@ ORDER BY updated DESC
 
 Then fetch comments for each issue and keep only comments where:
 
-- comment author display name equals `{PERSON}`
+- `comment.author.accountId` equals the resolved Atlassian account ID for
+  `{PERSON}`
 - comment `created` is within the quarter date range
 
 REST comment endpoint. Paginate with `startAt` and `maxResults` until all
