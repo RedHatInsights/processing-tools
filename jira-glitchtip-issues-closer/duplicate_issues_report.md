@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-10-27 04:20:18
+**Generated:** 2026-10-28 04:15:56
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -12,9 +12,9 @@
 
 | Metric | Value |
 |--------|-------|
-| Projects with duplicates | 10 |
-| Total duplicate groups | 18 |
-| Total issues in groups | 50 |
+| Projects with duplicates | 9 |
+| Total duplicate groups | 16 |
+| Total issues in groups | 46 |
 | Total events affected | 0 |
 
 ---
@@ -22,14 +22,13 @@
 ## Table of Contents
 
 - [archive-sync](#archive-sync) - 1 groups, 6 issues
-- [ccx-data-pipeline](#ccx-data-pipeline) - 1 groups, 2 issues
 - [ccx-notification-service](#ccx-notification-service) - 3 groups, 9 issues
 - [ccx-notification-writer](#ccx-notification-writer) - 2 groups, 4 issues
 - [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 1 groups, 2 issues
 - [dvo-writer](#dvo-writer) - 2 groups, 4 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 11 issues
 - [parquet-factory](#parquet-factory) - 1 groups, 2 issues
-- [rules-processing](#rules-processing) - 2 groups, 6 issues
+- [rules-processing](#rules-processing) - 1 groups, 4 issues
 - [valkey-writer](#valkey-writer) - 2 groups, 4 issues
 
 ---
@@ -57,25 +56,6 @@
 
 ---
 
-## ccx-data-pipeline
-
-**Duplicate Groups:** 1
-**Issues in Groups:** 2
-**Total Events:** 0
-
-### 🟢 LOW: AttributeError: 'str' object has no attribute 'parent'
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #3852013 | 7,337 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3852013) |
-| #3852210 | 4,542 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3852210) |
-
-**Recommendation:** Consider merging into [#3852013](https://glitchtip.devshift.net/ccx/issues/3852013) (highest event count)
-
----
-
 ## ccx-notification-service
 
 **Duplicate Groups:** 3
@@ -88,9 +68,9 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4852265 | 8 | Error: dial tcp 10.0.216.215:5432: connect: connection ti... | [View](https://glitchtip.devshift.net/ccx/issues/4852265) |
+| #4852265 | 11 | Error: dial tcp 10.0.216.215:5432: connect: connection ti... | [View](https://glitchtip.devshift.net/ccx/issues/4852265) |
+| #4852264 | 945 | Error: read tcp 10.129.5.216:41030->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4852264) |
 | #4854274 | 932 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4854274) |
-| #4852264 | 941 | Error: read tcp 10.129.5.216:41030->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4852264) |
 | #4854273 | 936 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4854273) |
 | #4408130 | 1,234 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
 
@@ -136,10 +116,10 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4852266 | 9 | Error: read tcp 10.129.1.192:42670->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4852266) |
-| #4017706 | 31 | Error: dial tcp 10.0.184.48:9096: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4017706) |
+| #4017706 | 32 | Error: dial tcp 10.0.184.48:9096: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4017706) |
+| #4852266 | 15 | Error: read tcp 10.129.1.192:42670->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4852266) |
 
-**Recommendation:** Consider merging into [#4852266](https://glitchtip.devshift.net/ccx/issues/4852266) (highest event count)
+**Recommendation:** Consider merging into [#4017706](https://glitchtip.devshift.net/ccx/issues/4017706) (highest event count)
 
 ---
 
@@ -181,16 +161,16 @@
 **Issues in Groups:** 4
 **Total Events:** 0
 
-### 🟢 LOW: kafka: error while consuming ccx.dvo.results/0: write tcp ...->...: w…
+### 🟢 LOW: kafka: error while consuming ccx.dvo.results/0: kafka: broker not connected
 
 **Issues:** 2 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4794206 | 1 | kafka: error while consuming ccx.dvo.results/0: write tcp... | [View](https://glitchtip.devshift.net/ccx/issues/4794206) |
+| #4793249 | 6 | kafka: error while consuming ccx.dvo.results/0: kafka ser... | [View](https://glitchtip.devshift.net/ccx/issues/4793249) |
 | #4794179 | 1 | kafka: error while consuming ccx.dvo.results/0: kafka: br... | [View](https://glitchtip.devshift.net/ccx/issues/4794179) |
 
-**Recommendation:** Consider merging into [#4794206](https://glitchtip.devshift.net/ccx/issues/4794206) (highest event count)
+**Recommendation:** Consider merging into [#4793249](https://glitchtip.devshift.net/ccx/issues/4793249) (highest event count)
 
 ---
 
@@ -278,22 +258,9 @@
 
 ## rules-processing
 
-**Duplicate Groups:** 2
-**Issues in Groups:** 6
+**Duplicate Groups:** 1
+**Issues in Groups:** 4
 **Total Events:** 0
-
-### 🟢 LOW: AttributeError: 'str' object has no attribute 'parent'
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #3781153 | 7,767 | AttributeError: 'NoneType' object has no attribute 'start... | [View](https://glitchtip.devshift.net/ccx/issues/3781153) |
-| #3791585 | 4,771 | AttributeError: 'str' object has no attribute 'parent' | [View](https://glitchtip.devshift.net/ccx/issues/3791585) |
-
-**Recommendation:** Consider merging into [#3781153](https://glitchtip.devshift.net/ccx/issues/3781153) (highest event count)
-
----
 
 ### 🟢 LOW: Rule response make_fail(OPERATOR_ISSUE) exceeds the size limit of ... characters.
 
@@ -316,19 +283,6 @@
 **Issues in Groups:** 4
 **Total Events:** 0
 
-### 🟢 LOW: kafka: error while consuming ccx.ocp.results/0: dial tcp ...: connect: connection ref…
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4793697 | 1 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4793697) |
-| #4730621 | 1 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4730621) |
-
-**Recommendation:** Consider merging into [#4793697](https://glitchtip.devshift.net/ccx/issues/4793697) (highest event count)
-
----
-
 ### 🟢 LOW: Error: kafka server: Tried to send a message to a replica that is not the leader for some partition…
 
 **Issues:** 2 | **Total Events:** 0
@@ -339,5 +293,18 @@
 | #4793834 | 10 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4793834) |
 
 **Recommendation:** Consider merging into [#4793832](https://glitchtip.devshift.net/ccx/issues/4793832) (highest event count)
+
+---
+
+### 🟢 LOW: kafka: error while consuming ccx.ocp.results/0: dial tcp ...: connect: connection ref…
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4793697 | 1 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4793697) |
+| #4730621 | 1 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4730621) |
+
+**Recommendation:** Consider merging into [#4793697](https://glitchtip.devshift.net/ccx/issues/4793697) (highest event count)
 
 ---
