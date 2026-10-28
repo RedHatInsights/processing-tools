@@ -1,13 +1,8 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-insights-operator-gathering-conditions-service,1062,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.181.1,2026-10-27T03:56:28Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/1062,app/red-hat-konflux,ok,ready
-insights-operator-gathering-conditions-service,1061,chore(deps): update module github.com/prometheus/procfs to v0.23.0,2026-10-27T03:56:16Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/1061,app/red-hat-konflux,ok,ready
-insights-results-aggregator-cleaner,1115,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.181.1,2026-10-27T02:07:40Z,https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/1115,app/red-hat-konflux,ok,ready
-insights-results-smart-proxy,1855,Update Go dependencies,2026-10-27T02:03:53Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1855,app/red-hat-konflux,failed,ready
-insights-ccx-messaging,1025,chore(deps): update dependency aiobotocore to v3.10.0,2026-10-27T01:50:35Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/1025,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1235,chore(deps): lock file maintenance,2026-10-27T01:41:01Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1235,app/red-hat-konflux,ok,ready
-ocp-advisor-frontend,1234,fix(deps): update npm minor and patch dependencies,2026-10-27T01:38:57Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1234,app/red-hat-konflux,ok,ready
-insights-results-smart-proxy,1854,Update Pre-commit hooks,2026-10-10T07:16:04Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1854,app/red-hat-konflux,failed,ready
-insights-results-smart-proxy,1852,Update Ruby dependencies,2026-10-10T02:20:23Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1852,app/red-hat-konflux,failed,ready
+insights-content-template-renderer,707,Update pre-commit hook renovatebot/pre-commit-hooks to v44.181.5,2026-10-28T01:32:33Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/707,app/red-hat-konflux,failed,ready
+ocp-advisor-frontend,1237,chore(deps): lock file maintenance,2026-10-28T01:24:21Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1237,app/red-hat-konflux,ok,ready
+ocp-advisor-frontend,1236,chore(deps): update build-tools digest to 687944f,2026-10-28T01:22:20Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1236,app/red-hat-konflux,ok,ready
+insights-results-smart-proxy,1858,Update Ruby dependencies,2026-10-28T01:21:33Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1858,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1225,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-10-08T15:24:35Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1225,app/obsint-processing-app,ok,ready
 ccx-upgrades-data-eng,325,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-10-08T15:21:51Z,https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/325,app/obsint-processing-app,failed,ready
 ccx-notification-service,1271,[CCXDEV-16563] add aggregator database configuration to Clowdapp,2026-08-07T13:37:22Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1271,Bee-lee,failed,draft
