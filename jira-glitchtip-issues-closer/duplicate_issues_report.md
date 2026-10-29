@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-10-28 04:15:56
+**Generated:** 2026-10-29 04:16:11
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -14,7 +14,7 @@
 |--------|-------|
 | Projects with duplicates | 9 |
 | Total duplicate groups | 16 |
-| Total issues in groups | 46 |
+| Total issues in groups | 47 |
 | Total events affected | 0 |
 
 ---
@@ -26,7 +26,7 @@
 - [ccx-notification-writer](#ccx-notification-writer) - 2 groups, 4 issues
 - [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 1 groups, 2 issues
 - [dvo-writer](#dvo-writer) - 2 groups, 4 issues
-- [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 11 issues
+- [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 12 issues
 - [parquet-factory](#parquet-factory) - 1 groups, 2 issues
 - [rules-processing](#rules-processing) - 1 groups, 4 issues
 - [valkey-writer](#valkey-writer) - 2 groups, 4 issues
@@ -45,8 +45,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4696802 | 7 | error: Error -3 while decompressing data: invalid code le... | [View](https://glitchtip.devshift.net/ccx/issues/4696802) |
-| #4582018 | 24 | error: Error -3 while decompressing data: invalid block type | [View](https://glitchtip.devshift.net/ccx/issues/4582018) |
+| #4696802 | 8 | error: Error -3 while decompressing data: invalid code le... | [View](https://glitchtip.devshift.net/ccx/issues/4696802) |
+| #4582018 | 25 | error: Error -3 while decompressing data: invalid block type | [View](https://glitchtip.devshift.net/ccx/issues/4582018) |
 | #4768590 | 7 | error: Error -3 while decompressing data: invalid distanc... | [View](https://glitchtip.devshift.net/ccx/issues/4768590) |
 | #4729727 | 11 | error: Error -3 while decompressing data: invalid stored ... | [View](https://glitchtip.devshift.net/ccx/issues/4729727) |
 | #4782079 | 2 | error: Error -3 while decompressing data: invalid literal... | [View](https://glitchtip.devshift.net/ccx/issues/4782079) |
@@ -68,13 +68,13 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
+| #4408130 | 1,246 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
 | #4852265 | 11 | Error: dial tcp 10.0.216.215:5432: connect: connection ti... | [View](https://glitchtip.devshift.net/ccx/issues/4852265) |
 | #4852264 | 945 | Error: read tcp 10.129.5.216:41030->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4852264) |
 | #4854274 | 932 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4854274) |
 | #4854273 | 936 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4854273) |
-| #4408130 | 1,234 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
 
-**Recommendation:** Consider merging into [#4852265](https://glitchtip.devshift.net/ccx/issues/4852265) (highest event count)
+**Recommendation:** Consider merging into [#4408130](https://glitchtip.devshift.net/ccx/issues/4408130) (highest event count)
 
 ---
 
@@ -148,10 +148,10 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
+| #4693160 | 14 | ConnectionError: HTTPConnectionPool(host='ccx-upgrades-in... | [View](https://glitchtip.devshift.net/ccx/issues/4693160) |
 | #4693164 | 15 | ConnectionError: HTTPConnectionPool(host='ccx-upgrades-in... | [View](https://glitchtip.devshift.net/ccx/issues/4693164) |
-| #4693160 | 10 | ConnectionError: HTTPConnectionPool(host='ccx-upgrades-in... | [View](https://glitchtip.devshift.net/ccx/issues/4693160) |
 
-**Recommendation:** Consider merging into [#4693164](https://glitchtip.devshift.net/ccx/issues/4693164) (highest event count)
+**Recommendation:** Consider merging into [#4693160](https://glitchtip.devshift.net/ccx/issues/4693160) (highest event count)
 
 ---
 
@@ -190,17 +190,18 @@
 ## insights-results-aggregator-db-writer
 
 **Duplicate Groups:** 3
-**Issues in Groups:** 11
+**Issues in Groups:** 12
 **Total Events:** 0
 
 ### 🟢 LOW: Error: sql: database is closed
 
-**Issues:** 7 | **Total Events:** 0
+**Issues:** 8 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4127668 | 1,597 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4127668) |
-| #4293672 | 1,476 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4293672) |
+| #4127668 | 1,598 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4127668) |
+| #4293672 | 1,477 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4293672) |
+| #4866428 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4866428) |
 | #4839684 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4839684) |
 | #4768423 | 2 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4768423) |
 | #4802967 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4802967) |
