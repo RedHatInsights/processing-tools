@@ -35,12 +35,15 @@ for RH Jira today:
   acli jira project view --key CCXDEV --json
   acli jira board view --id 1553 --json
   ```
-- **`curl --netrc`** for read-only Jira REST when `acli` cannot fetch a needed
+- **`curl --netrc`** for read-only Jira REST when a `.netrc` entry for
+  `redhat.atlassian.net` is already configured and `acli` cannot fetch a needed
   field such as `parent`, `duedate`, `updated`, changelog, or comments. Verify
   with:
   ```bash
   curl --netrc https://redhat.atlassian.net/rest/api/3/myself
   ```
+  If this fails because credentials are not configured, use `acli`, MCP, or
+  another authenticated read-only access path instead of asking for tokens.
 - **Atlassian MCP** (`plugin-atlassian-atlassian`) is optional and should not be
   required. If MCP tools are available, you may use
   `getAccessibleAtlassianResources`, `searchJiraIssuesUsingJql`, and
@@ -54,9 +57,10 @@ unless the user explicitly asks. Never ask the user to paste Jira tokens.
 - **Project:** CCXDEV (override with `--project KEY`)
 - **Quarter filter:** Should contain the year and quarter number (e.g. 2026Q2
   for April–June 2026)
-- **Person:** The user's Jira identity. Resolve the requested person to an
-  Atlassian `accountId` when possible and use display name only for human-facing
-  report labels. Treat the user as assignee, historical assignee, reporter, and
+- **Person:** The Quarterly Connection owner's Jira identity. By default this is
+  the authenticated Jira user. Resolve the user's Jira identity to an Atlassian
+  `accountId` when possible and use display name only for human-facing report
+  labels. Treat the user as assignee, historical assignee, reporter, and
   commenter unless the user explicitly asks for a narrower scope.
 
 ## I/O operations
@@ -70,38 +74,17 @@ oversized.
 
 Atlassian removed the old `/rest/api/3/search` endpoint. For REST fallback, use
 `/rest/api/3/search/jql` and always paginate with `nextPageToken` until no token
-is returned. A small Python helper is the most reliable portable approach:
+is returned. The helper script in this skill directory keeps pagination logic out
+of the skill text and can be used for repeatable REST queries:
 
-```python
-import requests
-
-session = requests.Session()
-session.headers.update({"Accept": "application/json"})
-
-
-def search_jql(jql, fields, max_results=100):
-    issues = []
-    next_page_token = None
-    while True:
-        params = {
-            "jql": jql,
-            "fields": ",".join(fields),
-            "maxResults": str(max_results),
-        }
-        if next_page_token:
-            params["nextPageToken"] = next_page_token
-        response = session.get(
-            "https://redhat.atlassian.net/rest/api/3/search/jql",
-            params=params,
-            timeout=60,
-        )
-        response.raise_for_status()
-        data = response.json()
-        issues.extend(data.get("issues", []))
-        next_page_token = data.get("nextPageToken")
-        if data.get("isLast", True) or not next_page_token:
-            return issues
+```bash
+python3 skills/quarterly-connection-jiras/jira_rest_helper.py search \
+  --jql '<JQL>' \
+  --fields key,summary,status,assignee,reporter,parent,priority,updated,issuetype,fixVersions,labels,duedate,description,comment
 ```
+
+The helper uses existing REST authentication, such as an already configured
+`.netrc` entry; it does not accept raw tokens on the command line.
 
 For one-off checks, this is the first request only; keep following
 `nextPageToken` in later requests:
@@ -261,13 +244,13 @@ not have the quarter fixVersion.
 
 Use a broad update search for issues touched by the user in the quarter. For the
 authenticated Jira user, you may use `currentUser()` in supported user-field
-predicates such as `assignee = currentUser()`, and resolve
-the account ID from `/rest/api/3/myself`. For `updatedBy()`, use an identifier
-accepted by the tenant for that function, such as the user's Atlassian
-`accountId` if supported; otherwise use a broader candidate scan and rely on the
-exact comment-author and date filters below. Resolve `{PERSON}` to an Atlassian
-`accountId` before filtering comments; if a name search is ambiguous, ask the
-user to confirm the intended Jira user.
+predicates such as `assignee = currentUser()`, and resolve the account ID from
+`/rest/api/3/myself`. For `updatedBy()`, use an identifier accepted by the tenant
+for that function, such as the user's Atlassian `accountId` if supported;
+otherwise use a broader candidate scan and rely on the exact comment-author and
+date filters below. Resolve the user's Jira identity to an Atlassian `accountId`
+before filtering comments; if a name search is ambiguous, ask the user to
+confirm the intended Jira user.
 
 ```jql
 project = {PROJECT}
@@ -282,29 +265,10 @@ Then fetch comments for each issue and keep only comments where:
 - comment `created` is within the quarter date range
 
 REST comment endpoint. Paginate with `startAt` and `maxResults` until all
-comments are fetched:
+comments are fetched. The helper script handles this pagination:
 
-```python
-def issue_comments(key, max_results=100):
-    comments = []
-    start_at = 0
-    while True:
-        response = session.get(
-            f"https://redhat.atlassian.net/rest/api/3/issue/{key}/comment",
-            params={
-                "startAt": str(start_at),
-                "maxResults": str(max_results),
-                "orderBy": "created",
-            },
-            timeout=60,
-        )
-        response.raise_for_status()
-        data = response.json()
-        page = data.get("comments", [])
-        comments.extend(page)
-        start_at += len(page)
-        if start_at >= data.get("total", 0) or not page:
-            return comments
+```bash
+python3 skills/quarterly-connection-jiras/jira_rest_helper.py comments {KEY}
 ```
 
 For one-off checks, this is the first request only; keep incrementing `startAt`
@@ -403,9 +367,11 @@ acli jira auth status
 acli jira workitem search --jql '<JQL>' --fields key,summary,status,assignee,priority --paginate --json
 acli jira workitem view CCXDEV-123 --fields key,summary,status,assignee,description,comment,updated --json
 # For /search/jql, follow nextPageToken until no token remains.
+python3 skills/quarterly-connection-jiras/jira_rest_helper.py search --jql '<JQL>' --fields key,summary,status,assignee,reporter,parent,parentEpic,priority,updated,issuetype,fixVersions,labels,duedate,description,comment
 curl --netrc 'https://redhat.atlassian.net/rest/api/3/search/jql?jql=<URL_ENCODED_JQL>&fields=key,summary,status,assignee,reporter,parent,parentEpic,priority,updated,issuetype,fixVersions,labels,duedate,description,comment&maxResults=100'
 curl --netrc 'https://redhat.atlassian.net/rest/api/3/issue/CCXDEV-123?expand=changelog&fields=summary,status,assignee,reporter,parent,parentEpic,description,comment,updated,labels,duedate,fixVersions'
 # For comments, increment startAt until startAt >= total.
+python3 skills/quarterly-connection-jiras/jira_rest_helper.py comments CCXDEV-123
 curl --netrc 'https://redhat.atlassian.net/rest/api/3/issue/CCXDEV-123/comment?startAt=0&maxResults=100&orderBy=created'
 ```
 

@@ -33,9 +33,13 @@ during a given quarter across team repositories.
   The token needs `read_api` scope. If not authenticated, ask the user to run
   `glab auth login --hostname gitlab.cee.redhat.com`.
 
-Use authenticated `glab api` commands for GitLab requests. Do not scrape tokens
-from `glab` config files. This report is read-only; do not review, approve,
-comment on, or merge PRs/MRs.
+Prefer authenticated `glab api` commands for GitLab requests because they reuse
+existing `glab` authentication and host configuration, support pagination with
+`--paginate`, and avoid handling raw token headers in commands or logs.
+Equivalent authenticated `curl` requests are acceptable only when they avoid
+printing tokens and paginate all pages. Do not scrape tokens from `glab` config
+files. This report is read-only; do not review, approve, comment on, or merge
+PRs/MRs.
 
 ## Defaults
 
