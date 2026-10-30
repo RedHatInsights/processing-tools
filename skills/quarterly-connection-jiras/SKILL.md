@@ -226,9 +226,11 @@ When grouping non-Epic issues by epic, do not blindly treat `parent` as the epic
 subtasks usually have a Story/Task as their immediate parent. Use `parentEpic`
 where Jira returns it; otherwise resolve the parent chain with issue detail
 requests until an Epic is found. Keep the original issue filters unchanged while
-resolving the ancestor epic. If this adds subtasks to the user's involved-work
-count, make the scope explicit: direct Epic child totals may differ from
-ancestor-grouped user-involved issues.
+resolving the ancestor epic. After resolving an ancestor, keep it only when its
+Epic key is in the deduplicated Step 1/Step 2 Epic set; discard out-of-scope
+ancestors before querying or reporting epic details. If this adds subtasks to the
+user's involved-work count, make the scope explicit: direct Epic child totals may
+differ from ancestor-grouped user-involved issues.
 
 For each parent/ancestor epic, query the epic details:
 
@@ -256,13 +258,15 @@ Also check Jira issues where the user commented during the quarter. This catches
 cross-quarter follow-ups, verification comments, CVE checks, and work that may
 not have the quarter fixVersion.
 
-Use a broad update search for issues touched by the user in the quarter. When
-reporting on the authenticated Jira user, you may use `currentUser()` in JQL
-identity predicates (for example, `assignee = currentUser()` or
-`updatedBy(currentUser(), ...)`) and resolve the account ID from
-`/rest/api/3/myself`. When reporting on someone else, resolve `{PERSON}` to an
-Atlassian `accountId` before filtering comments; if a name search is ambiguous,
-ask the user to confirm the intended Jira user.
+Use a broad update search for issues touched by the user in the quarter. For the
+authenticated Jira user, you may use `currentUser()` in supported user-field
+predicates such as `assignee = currentUser()`, and resolve
+the account ID from `/rest/api/3/myself`. For `updatedBy()`, use an identifier
+accepted by the tenant for that function, such as the user's Atlassian
+`accountId` if supported; otherwise use a broader candidate scan and rely on the
+exact comment-author and date filters below. Resolve `{PERSON}` to an Atlassian
+`accountId` before filtering comments; if a name search is ambiguous, ask the
+user to confirm the intended Jira user.
 
 ```jql
 project = {PROJECT}

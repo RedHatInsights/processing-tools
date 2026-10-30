@@ -163,11 +163,20 @@ Also search these team-relevant repos that live outside `ccx/`:
 - `service/app-interface`
 - `ccit/jenkins-csb-customers/ccx-dev-casc-main`
 
-Use URL-encoded project paths and paginate:
+Use URL-encoded project paths and paginate. Run the same MR query for every
+configured outside project:
 
 ```bash
-glab api --hostname gitlab.cee.redhat.com --paginate --output ndjson \
-  'projects/insights-qe%2Fiqe-ccx-plugin/merge_requests?author_id={user_id}&created_after={start}T00:00:00Z&created_before={end}T23:59:59Z&state=all&per_page=50'
+outside_projects=(
+  'insights-qe%2Fiqe-ccx-plugin'
+  'service%2Fapp-interface'
+  'ccit%2Fjenkins-csb-customers%2Fccx-dev-casc-main'
+)
+
+for project_path in "${outside_projects[@]}"; do
+  glab api --hostname gitlab.cee.redhat.com --paginate --output ndjson \
+    "projects/${project_path}/merge_requests?author_id={user_id}&created_after={start}T00:00:00Z&created_before={end}T23:59:59Z&state=all&per_page=50"
+done
 ```
 
 ### 2e. Deduplicate MRs
