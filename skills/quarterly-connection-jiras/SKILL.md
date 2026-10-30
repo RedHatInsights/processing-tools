@@ -57,11 +57,18 @@ unless the user explicitly asks. Never ask the user to paste Jira tokens.
 - **Project:** CCXDEV (override with `--project KEY`)
 - **Quarter filter:** Should contain the year and quarter number (e.g. 2026Q2
   for April–June 2026)
-- **Person:** The Quarterly Connection owner's Jira identity. By default this is
-  the authenticated Jira user. Resolve the user's Jira identity to an Atlassian
-  `accountId` when possible and use display name only for human-facing report
-  labels. Treat the user as assignee, historical assignee, reporter, and
-  commenter unless the user explicitly asks for a narrower scope.
+- **Jira user identity:** The Quarterly Connection owner's Jira identity. By
+  default this is the authenticated Jira user. Resolve it once and use separate
+  placeholders because Jira JQL user operands, `updatedBy()`, REST comment
+  authors, and human-facing report labels can require different values:
+  - `{JIRA_USER}`: complete JQL user operand for assignee/reporter predicates
+    (for example, a quoted account ID; `currentUser()` is OK only where Jira
+    supports it).
+  - `{JIRA_UPDATE_USER}`: identifier accepted by `updatedBy()` for this tenant;
+    do not use `currentUser()` there unless the tenant documents support.
+  - `{JIRA_ACCOUNT_ID}`: Atlassian account ID for exact REST comment-author
+    comparisons.
+  - `{USER_DISPLAY_NAME}`: readable name for report labels.
 
 ## I/O operations
 
@@ -109,7 +116,7 @@ Search with this JQL (adjust labels only if the user specifies otherwise):
 project = {PROJECT}
 AND issuetype = Epic
 AND fixVersion = "{QUARTER}"
-AND assignee = "{PERSON}"
+AND assignee = {JIRA_USER}
 AND labels in (CCX-PROCESSING, ccx-processing, obsint-processing)
 ORDER BY due ASC
 ```
@@ -182,7 +189,7 @@ with a dedicated Epic query:
 project = {PROJECT}
 AND issuetype = Epic
 AND fixVersion = "{QUARTER}"
-AND (assignee = "{PERSON}" OR assignee was "{PERSON}" OR reporter = "{PERSON}")
+AND (assignee = {JIRA_USER} OR assignee was {JIRA_USER} OR reporter = {JIRA_USER})
 AND labels in (CCX-PROCESSING, ccx-processing, obsint-processing)
 ORDER BY due ASC
 ```
@@ -199,7 +206,7 @@ project = {PROJECT}
 AND issuetype != Epic
 AND fixVersion = "{QUARTER}"
 AND parent is not EMPTY
-AND (assignee = "{PERSON}" OR assignee was "{PERSON}" OR reporter = "{PERSON}")
+AND (assignee = {JIRA_USER} OR assignee was {JIRA_USER} OR reporter = {JIRA_USER})
 ORDER BY parent ASC, updated DESC
 ```
 
@@ -248,20 +255,19 @@ predicates such as `assignee = currentUser()`, and resolve the account ID from
 `/rest/api/3/myself`. For `updatedBy()`, use an identifier accepted by the tenant
 for that function, such as the user's Atlassian `accountId` if supported;
 otherwise use a broader candidate scan and rely on the exact comment-author and
-date filters below. Resolve the user's Jira identity to an Atlassian `accountId`
+date filters below. Resolve the user's Jira identity to `{JIRA_ACCOUNT_ID}`
 before filtering comments; if a name search is ambiguous, ask the user to
 confirm the intended Jira user.
 
 ```jql
 project = {PROJECT}
-AND issue in updatedBy("{PERSON}", "{YYYY/MM/DD_START}", "{YYYY/MM/DD_END_PLUS_ONE}")
+AND issue in updatedBy({JIRA_UPDATE_USER}, "{YYYY/MM/DD_START}", "{YYYY/MM/DD_END_PLUS_ONE}")
 ORDER BY updated DESC
 ```
 
 Then fetch comments for each issue and keep only comments where:
 
-- `comment.author.accountId` equals the resolved Atlassian account ID for
-  `{PERSON}`
+- `comment.author.accountId` equals `{JIRA_ACCOUNT_ID}`
 - comment `created` is within the quarter date range
 
 REST comment endpoint. Paginate with `startAt` and `maxResults` until all
@@ -287,7 +293,7 @@ e.g. previous-quarter watch duty tasks, CVE verification, production rollout
 validation, or next-quarter follow-up epics, but clearly label their fixVersion
 or no-fixVersion status.
 
-Do not use `comment ~ "{PERSON}"` as the primary source for authored comments;
+Do not use `comment ~ "{USER_DISPLAY_NAME}"` as the primary source for authored comments;
 it searches comment text, not author identity. It can be useful only as a
 fallback or sanity check.
 
@@ -299,12 +305,12 @@ Use this structure for each epic, then a summary table.
 # Assignee/Reporter/Commenter Epics — Quarterly Connection ({QUARTER})
 
 **Project:** {PROJECT}
-**Assignee/reporter/commenter:** {PERSON}
-**Base Jira scope:** `fixVersion = {QUARTER}` and {PERSON} as current assignee,
-historical assignee, or reporter; grouped by parent epic.
-**Additional comment scan:** {PROJECT} issues updated by {PERSON} during the
-quarter were fetched, then comments authored by {PERSON} in that date range were
-reviewed.
+**Assignee/reporter/commenter:** {USER_DISPLAY_NAME}
+**Base Jira scope:** `fixVersion = {QUARTER}` and {USER_DISPLAY_NAME} as current
+assignee, historical assignee, or reporter; grouped by parent epic.
+**Additional comment scan:** {PROJECT} issues updated by {USER_DISPLAY_NAME}
+during the quarter were fetched, then comments authored by {USER_DISPLAY_NAME}
+in that date range were reviewed.
 
 > If no directly assigned epics are found, say so and explain that the report
 > focuses on child issues grouped by parent epic.
@@ -314,7 +320,7 @@ reviewed.
 - **N. [KEY](https://redhat.atlassian.net/browse/KEY)** Summary: X% (done/active) | **Assignee:** Name | **Due:** date or —
   - Description: {description from step 1.1}.
   - **Status update:** whether it was completed, is in progress, or is blocked.
-  - {PERSON}'s contribution: linked key tasks and factual one-line summaries.
+  - {USER_DISPLAY_NAME}'s contribution: linked key tasks and factual one-line summaries.
   - Items: completed vs in progress vs not started children tasks.
 
 ---
@@ -325,7 +331,7 @@ If Step 3 found extra issues, add:
 ```markdown
 ## Additional {QUARTER} comment-discovered Jira work
 
-| Issue | Parent | Status / fixVersion | What {PERSON}'s {QUARTER} comments show |
+| Issue | Parent | Status / fixVersion | What {USER_DISPLAY_NAME}'s {QUARTER} comments show |
 |------|--------|---------------------|----------------------------------------|
 ```
 
