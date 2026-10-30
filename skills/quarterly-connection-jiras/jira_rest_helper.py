@@ -98,11 +98,17 @@ def issue_comments(
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--site", default=DEFAULT_SITE, help=f"Jira site URL (default: {DEFAULT_SITE})")
-    parser.add_argument("--timeout", type=int, default=60, help="request timeout in seconds")
+    parser.add_argument(
+        "--site", default=DEFAULT_SITE, help=f"Jira site URL (default: {DEFAULT_SITE})"
+    )
+    parser.add_argument(
+        "--timeout", type=int, default=60, help="request timeout in seconds"
+    )
     subparsers = parser.add_subparsers(dest="command", required=True)
 
-    search_parser = subparsers.add_parser("search", help="run a paginated /search/jql query")
+    search_parser = subparsers.add_parser(
+        "search", help="run a paginated /search/jql query"
+    )
     search_parser.add_argument("--jql", required=True, help="JQL query")
     search_parser.add_argument(
         "--fields",
@@ -111,7 +117,9 @@ def main() -> int:
     )
     search_parser.add_argument("--max-results", type=int, default=100)
 
-    comments_parser = subparsers.add_parser("comments", help="fetch all comments for an issue")
+    comments_parser = subparsers.add_parser(
+        "comments", help="fetch all comments for an issue"
+    )
     comments_parser.add_argument("key", help="Jira issue key, e.g. CCXDEV-123")
     comments_parser.add_argument("--max-results", type=int, default=100)
 
@@ -120,7 +128,9 @@ def main() -> int:
 
     try:
         if args.command == "search":
-            fields = [field.strip() for field in args.fields.split(",") if field.strip()]
+            fields = [
+                field.strip() for field in args.fields.split(",") if field.strip()
+            ]
             output: dict[str, Any] = {
                 "issues": search_jql(
                     session,
