@@ -24,9 +24,10 @@ Default Jira site: `https://redhat.atlassian.net`.
 Default project: `CCXDEV`.
 Default board: `1553` / **CCX Core - Processing**.
 
-Use any authenticated, read-only Jira access path available in Pi. Keep the skill
-tool-agnostic: prefer the most complete/reliable tool for each query, and fall
-back as needed. Common paths, in recommended order for RH Jira today:
+Use any authenticated, read-only Jira access path available in the local
+environment. Keep the skill tool-agnostic: prefer the most complete/reliable
+tool for each query, and fall back as needed. Common paths, in recommended order
+for RH Jira today:
 
 - **`acli`** for auth checks and simple Jira searches/issue reads. Verify with:
   ```bash
@@ -69,7 +70,7 @@ oversized.
 
 Atlassian removed the old `/rest/api/3/search` endpoint. For REST fallback, use
 `/rest/api/3/search/jql` and always paginate with `nextPageToken` until no token
-is returned. A small Python helper is the most reliable Pi-compatible approach:
+is returned. A small Python helper is the most reliable portable approach:
 
 ```python
 import requests
@@ -395,7 +396,7 @@ Export the report as a markdown file named
 
 ## Quick reference — Jira access
 
-Preferred Pi CLI path:
+Preferred CLI path:
 
 ```bash
 acli jira auth status
