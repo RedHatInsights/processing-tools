@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-10-30 04:15:31
+**Generated:** 2026-10-31 04:12:34
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -13,8 +13,8 @@
 | Metric | Value |
 |--------|-------|
 | Projects with duplicates | 9 |
-| Total duplicate groups | 16 |
-| Total issues in groups | 47 |
+| Total duplicate groups | 15 |
+| Total issues in groups | 45 |
 | Total events affected | 0 |
 
 ---
@@ -23,7 +23,7 @@
 
 - [archive-sync](#archive-sync) - 1 groups, 6 issues
 - [ccx-notification-service](#ccx-notification-service) - 3 groups, 9 issues
-- [ccx-notification-writer](#ccx-notification-writer) - 2 groups, 4 issues
+- [ccx-notification-writer](#ccx-notification-writer) - 1 groups, 2 issues
 - [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 1 groups, 2 issues
 - [dvo-writer](#dvo-writer) - 2 groups, 4 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 12 issues
@@ -62,6 +62,19 @@
 **Issues in Groups:** 9
 **Total Events:** 0
 
+### 🟢 LOW: Error: Post \'...': readfrom tc…
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #3997223 | 420 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
+| #4649219 | 3 | Error: Get \"http://ccx-insights-content-service:10000/ap... | [View](https://glitchtip.devshift.net/ccx/issues/4649219) |
+
+**Recommendation:** Consider merging into [#3997223](https://glitchtip.devshift.net/ccx/issues/3997223) (highest event count)
+
+---
+
 ### 🟢 LOW: Error: dial tcp ...: connect: connection refused
 
 **Issues:** 5 | **Total Events:** 0
@@ -75,19 +88,6 @@
 | #4854274 | 1,125 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4854274) |
 
 **Recommendation:** Consider merging into [#4852265](https://glitchtip.devshift.net/ccx/issues/4852265) (highest event count)
-
----
-
-### 🟢 LOW: Error: Post \'...': readfrom tc…
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #3997223 | 419 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
-| #4649219 | 3 | Error: Get \"http://ccx-insights-content-service:10000/ap... | [View](https://glitchtip.devshift.net/ccx/issues/4649219) |
-
-**Recommendation:** Consider merging into [#3997223](https://glitchtip.devshift.net/ccx/issues/3997223) (highest event count)
 
 ---
 
@@ -106,8 +106,8 @@
 
 ## ccx-notification-writer
 
-**Duplicate Groups:** 2
-**Issues in Groups:** 4
+**Duplicate Groups:** 1
+**Issues in Groups:** 2
 **Total Events:** 0
 
 ### 🟢 LOW: Error: dial tcp ...: connect: connection refused
@@ -120,19 +120,6 @@
 | #4017706 | 32 | Error: dial tcp 10.0.184.48:9096: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4017706) |
 
 **Recommendation:** Consider merging into [#4852266](https://glitchtip.devshift.net/ccx/issues/4852266) (highest event count)
-
----
-
-### 🟢 LOW: kafka: error while consuming ccx.ocp.results/0: dial tcp ...: connect: connection refu…
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4794006 | 4 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4794006) |
-| #4730620 | 1 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4730620) |
-
-**Recommendation:** Consider merging into [#4794006](https://glitchtip.devshift.net/ccx/issues/4794006) (highest event count)
 
 ---
 
@@ -225,16 +212,16 @@
 
 ---
 
-### 🟢 LOW: kafka: error while consuming ccx.ocp.results/0: EOF
+### 🟢 LOW: Error: dial tcp ...: connect: connection refused
 
 **Issues:** 2 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
+| #4017705 | 83 | Error: dial tcp 10.0.184.48:9096: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4017705) |
 | #4794125 | 5 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4794125) |
-| #4730619 | 1 | kafka: error while consuming ccx.ocp.results/0: EOF | [View](https://glitchtip.devshift.net/ccx/issues/4730619) |
 
-**Recommendation:** Consider merging into [#4794125](https://glitchtip.devshift.net/ccx/issues/4794125) (highest event count)
+**Recommendation:** Consider merging into [#4017705](https://glitchtip.devshift.net/ccx/issues/4017705) (highest event count)
 
 ---
 
@@ -297,15 +284,15 @@
 
 ---
 
-### 🟢 LOW: kafka: error while consuming ccx.ocp.results/0: dial tcp ...: connect: connection ref…
+### 🟢 LOW: Error: dial tcp ...: connect: connection refused
 
 **Issues:** 2 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
+| #4017718 | 31 | Error: dial tcp 10.0.186.167:9096: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4017718) |
 | #4793697 | 1 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4793697) |
-| #4730621 | 1 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4730621) |
 
-**Recommendation:** Consider merging into [#4793697](https://glitchtip.devshift.net/ccx/issues/4793697) (highest event count)
+**Recommendation:** Consider merging into [#4017718](https://glitchtip.devshift.net/ccx/issues/4017718) (highest event count)
 
 ---
