@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-11-01 04:12:41
+**Generated:** 2026-11-02 04:14:15
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -14,7 +14,7 @@
 |--------|-------|
 | Projects with duplicates | 9 |
 | Total duplicate groups | 15 |
-| Total issues in groups | 45 |
+| Total issues in groups | 44 |
 | Total events affected | 0 |
 
 ---
@@ -28,7 +28,7 @@
 - [dvo-writer](#dvo-writer) - 2 groups, 4 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 12 issues
 - [parquet-factory](#parquet-factory) - 1 groups, 2 issues
-- [rules-processing](#rules-processing) - 1 groups, 4 issues
+- [rules-processing](#rules-processing) - 1 groups, 3 issues
 - [valkey-writer](#valkey-writer) - 2 groups, 4 issues
 
 ---
@@ -247,19 +247,18 @@
 ## rules-processing
 
 **Duplicate Groups:** 1
-**Issues in Groups:** 4
+**Issues in Groups:** 3
 **Total Events:** 0
 
 ### 🟢 LOW: Rule response make_fail(OPERATOR_ISSUE) exceeds the size limit of ... characters.
 
-**Issues:** 4 | **Total Events:** 0
+**Issues:** 3 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
 | #4615774 | 5 | Rule response make_fail(CERTIFICATES_EXPIRING_SOON) excee... | [View](https://glitchtip.devshift.net/ccx/issues/4615774) |
 | #4847319 | 3 | Rule response make_fail(OPERATOR_ISSUE) exceeds the size ... | [View](https://glitchtip.devshift.net/ccx/issues/4847319) |
 | #4729746 | 36 | Rule response make_fail(NODES_CONTAINER_RUNTIME_VERSION) ... | [View](https://glitchtip.devshift.net/ccx/issues/4729746) |
-| #4732746 | 1 | Rule response make_info(CLUSTER_STATUS_OVERVIEW_PODS) exc... | [View](https://glitchtip.devshift.net/ccx/issues/4732746) |
 
 **Recommendation:** Consider merging into [#4615774](https://glitchtip.devshift.net/ccx/issues/4615774) (highest event count)
 
