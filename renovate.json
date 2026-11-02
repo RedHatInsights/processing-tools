@@ -27,7 +27,8 @@
     {
       "matchManagers": ["gomod"],
       "matchDepTypes": ["indirect"],
-      "enabled": true
+      "enabled": true,
+      "automerge": true
     },
     {
       "matchManagers": ["github-actions"],
