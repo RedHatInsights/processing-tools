@@ -1,16 +1,12 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
+insights-behavioral-spec,849,Harden the notification service disabled rules BDD scenarios,2026-11-03T17:23:14Z,https://github.com/RedHatInsights/insights-behavioral-spec/pull/849,Bee-lee,ok,ready
 insights-content-template-renderer,710,[CCXDEV-16882] Add /v2/rendered_reports endpoint for item-based template rendering,2026-11-02T13:09:34Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/710,JiriPapousek,failed,draft
-parquet-factory,350,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-11-02T09:58:36Z,https://github.com/RedHatInsights/parquet-factory/pull/350,app/obsint-processing-app,failed,ready
-insights-results-smart-proxy,1864,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-11-02T09:58:18Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1864,app/obsint-processing-app,failed,ready
-insights-results-aggregator,2778,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-11-02T09:57:33Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2778,app/obsint-processing-app,failed,ready
 insights-content-template-renderer,709,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-11-02T09:56:41Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/709,app/obsint-processing-app,failed,ready
-content-service,1107,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-11-02T09:56:17Z,https://github.com/RedHatInsights/content-service/pull/1107,app/obsint-processing-app,failed,ready
 ccx-notification-writer,999,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-11-02T09:55:50Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/999,app/obsint-processing-app,failed,ready
 ccx-notification-service,1287,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-11-02T09:55:42Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1287,app/obsint-processing-app,failed,ready
-insights-results-aggregator,2777,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.198.3,2026-11-01T01:41:29Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2777,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1238,fix(deps): update npm minor and patch dependencies,2026-10-30T04:33:51Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1238,app/red-hat-konflux,ok,ready
 ccx-notification-writer,998,chore(deps): update pre-commit hook astral-sh/ruff-pre-commit to v0.17.3,2026-10-30T03:16:47Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/998,app/red-hat-konflux,failed,ready
-ccx-notification-writer,997,chore(deps): update go dependencies,2026-10-30T03:16:39Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/997,app/red-hat-konflux,ok,ready
+ccx-notification-writer,997,chore(deps): update go dependencies,2026-10-30T03:16:39Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/997,app/red-hat-konflux,failed,ready
 insights-content-template-renderer,708,Update Python dependencies,2026-10-30T03:02:26Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/708,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1863,Update Pre-commit hooks,2026-10-29T01:05:58Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1863,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1862,Update Go dependencies,2026-10-29T01:03:48Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1862,app/red-hat-konflux,failed,ready
@@ -18,7 +14,5 @@ insights-content-template-renderer,707,Update Pre-commit hooks,2026-10-28T01:32:
 ocp-advisor-frontend,1237,chore(deps): lock file maintenance,2026-10-28T01:24:21Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1237,app/red-hat-konflux,ok,ready
 ocp-advisor-frontend,1236,chore(deps): update build-tools digest to 687944f,2026-10-28T01:22:20Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1236,app/red-hat-konflux,ok,ready
 insights-results-smart-proxy,1858,Update Ruby dependencies,2026-10-28T01:21:33Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1858,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1225,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-10-08T15:24:35Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1225,app/obsint-processing-app,ok,ready
-ccx-upgrades-data-eng,325,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-10-08T15:21:51Z,https://github.com/RedHatInsights/ccx-upgrades-data-eng/pull/325,app/obsint-processing-app,failed,ready
 ccx-notification-service,1271,[CCXDEV-16563] add aggregator database configuration to Clowdapp,2026-08-07T13:37:22Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1271,Bee-lee,failed,draft
 insights-operator-gathering-conditions-service,371,Drop legacy building,2025-03-28T12:35:04Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/371,ikerreyes,failed,draft
