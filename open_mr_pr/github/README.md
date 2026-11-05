@@ -1,11 +1,12 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-11-04 04:08:16*
+*Last updated: 2026-11-05 04:08:47*
 
-**Total Konflux PRs: 10**
+**Total Konflux PRs: 11**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| insights-ccx-messaging | [1037](https://github.com/RedHatInsights/insights-ccx-messaging/pull/1037) | chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.199.2 | 2026-11-05 | app/red-hat-konflux | ❌ failed | ready |
 | ocp-advisor-frontend | [1238](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1238) | fix(deps): update npm minor and patch dependencies | 2026-10-30 | app/red-hat-konflux | ✅ ok | ready |
 | ccx-notification-writer | [998](https://github.com/RedHatInsights/ccx-notification-writer/pull/998) | chore(deps): update pre-commit hook astral-sh/ruff-pre-commit to v0.17.3 | 2026-10-30 | app/red-hat-konflux | ❌ failed | ready |
 | ccx-notification-writer | [997](https://github.com/RedHatInsights/ccx-notification-writer/pull/997) | chore(deps): update go dependencies | 2026-10-30 | app/red-hat-konflux | ❌ failed | ready |
