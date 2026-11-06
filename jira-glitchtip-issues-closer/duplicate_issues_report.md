@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-11-05 04:14:09
+**Generated:** 2026-11-06 04:14:22
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -12,9 +12,9 @@
 
 | Metric | Value |
 |--------|-------|
-| Projects with duplicates | 9 |
-| Total duplicate groups | 17 |
-| Total issues in groups | 49 |
+| Projects with duplicates | 11 |
+| Total duplicate groups | 20 |
+| Total issues in groups | 55 |
 | Total events affected | 0 |
 
 ---
@@ -22,13 +22,15 @@
 ## Table of Contents
 
 - [archive-sync](#archive-sync) - 1 groups, 6 issues
+- [ccx-data-pipeline](#ccx-data-pipeline) - 1 groups, 2 issues
 - [ccx-notification-service](#ccx-notification-service) - 3 groups, 9 issues
 - [ccx-notification-writer](#ccx-notification-writer) - 2 groups, 5 issues
 - [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 1 groups, 2 issues
+- [dvo-extractor](#dvo-extractor) - 1 groups, 2 issues
 - [dvo-writer](#dvo-writer) - 3 groups, 6 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 12 issues
 - [parquet-factory](#parquet-factory) - 1 groups, 2 issues
-- [rules-processing](#rules-processing) - 1 groups, 3 issues
+- [rules-processing](#rules-processing) - 2 groups, 5 issues
 - [valkey-writer](#valkey-writer) - 2 groups, 4 issues
 
 ---
@@ -56,6 +58,25 @@
 
 ---
 
+## ccx-data-pipeline
+
+**Duplicate Groups:** 1
+**Issues in Groups:** 2
+**Total Events:** 0
+
+### 🟢 LOW: ParseException: ccx_ocp_core.parsers.insights_operator.core.PodsIO couldn't parse json.
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4901599 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator.op... | [View](https://glitchtip.devshift.net/ccx/issues/4901599) |
+| #4319957 | 2,017 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319957) |
+
+**Recommendation:** Consider merging into [#4901599](https://glitchtip.devshift.net/ccx/issues/4901599) (highest event count)
+
+---
+
 ## ccx-notification-service
 
 **Duplicate Groups:** 3
@@ -68,7 +89,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4408130 | 1,265 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
+| #4408130 | 1,392 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
 | #4852265 | 15 | Error: dial tcp 10.0.216.215:5432: connect: connection ti... | [View](https://glitchtip.devshift.net/ccx/issues/4852265) |
 | #4852264 | 1,141 | Error: read tcp 10.129.5.216:41030->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4852264) |
 | #4854273 | 1,130 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4854273) |
@@ -84,7 +105,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3997223 | 482 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
+| #3997223 | 483 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
 | #4649219 | 3 | Error: Get \"http://ccx-insights-content-service:10000/ap... | [View](https://glitchtip.devshift.net/ccx/issues/4649219) |
 
 **Recommendation:** Consider merging into [#3997223](https://glitchtip.devshift.net/ccx/issues/3997223) (highest event count)
@@ -153,6 +174,25 @@
 | #4693164 | 16 | ConnectionError: HTTPConnectionPool(host='ccx-upgrades-in... | [View](https://glitchtip.devshift.net/ccx/issues/4693164) |
 
 **Recommendation:** Consider merging into [#4693160](https://glitchtip.devshift.net/ccx/issues/4693160) (highest event count)
+
+---
+
+## dvo-extractor
+
+**Duplicate Groups:** 1
+**Issues in Groups:** 2
+**Total Events:** 0
+
+### 🟢 LOW: ParseException: ccx_ocp_core.parsers.insights_operator.core.PodsIO couldn't parse json.
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4901601 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator.op... | [View](https://glitchtip.devshift.net/ccx/issues/4901601) |
+| #4319955 | 2,016 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319955) |
+
+**Recommendation:** Consider merging into [#4901601](https://glitchtip.devshift.net/ccx/issues/4901601) (highest event count)
 
 ---
 
@@ -264,18 +304,31 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4081087 | 189 | Error: unexpected status code 503 while pushing to https:... | [View](https://glitchtip.devshift.net/ccx/issues/4081087) |
-| #4781142 | 2 | Error: unexpected status code 503 while pushing to https:... | [View](https://glitchtip.devshift.net/ccx/issues/4781142) |
+| #4781142 | 3 | Error: unexpected status code 503 while pushing to https:... | [View](https://glitchtip.devshift.net/ccx/issues/4781142) |
+| #4081087 | 190 | Error: unexpected status code 503 while pushing to https:... | [View](https://glitchtip.devshift.net/ccx/issues/4081087) |
 
-**Recommendation:** Consider merging into [#4081087](https://glitchtip.devshift.net/ccx/issues/4081087) (highest event count)
+**Recommendation:** Consider merging into [#4781142](https://glitchtip.devshift.net/ccx/issues/4781142) (highest event count)
 
 ---
 
 ## rules-processing
 
-**Duplicate Groups:** 1
-**Issues in Groups:** 3
+**Duplicate Groups:** 2
+**Issues in Groups:** 5
 **Total Events:** 0
+
+### 🟢 LOW: ParseException: ccx_ocp_core.parsers.insights_operator.core.PodsIO couldn't parse json.
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4901600 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator.op... | [View](https://glitchtip.devshift.net/ccx/issues/4901600) |
+| #4319956 | 2,016 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319956) |
+
+**Recommendation:** Consider merging into [#4901600](https://glitchtip.devshift.net/ccx/issues/4901600) (highest event count)
+
+---
 
 ### 🟢 LOW: Rule response make_fail(OPERATOR_ISSUE) exceeds the size limit of ... characters.
 
