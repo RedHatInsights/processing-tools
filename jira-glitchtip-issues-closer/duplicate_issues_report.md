@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-11-06 04:14:22
+**Generated:** 2026-11-07 04:12:42
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -13,8 +13,8 @@
 | Metric | Value |
 |--------|-------|
 | Projects with duplicates | 11 |
-| Total duplicate groups | 20 |
-| Total issues in groups | 55 |
+| Total duplicate groups | 21 |
+| Total issues in groups | 57 |
 | Total events affected | 0 |
 
 ---
@@ -25,7 +25,7 @@
 - [ccx-data-pipeline](#ccx-data-pipeline) - 1 groups, 2 issues
 - [ccx-notification-service](#ccx-notification-service) - 3 groups, 9 issues
 - [ccx-notification-writer](#ccx-notification-writer) - 2 groups, 5 issues
-- [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 1 groups, 2 issues
+- [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 2 groups, 4 issues
 - [dvo-extractor](#dvo-extractor) - 1 groups, 2 issues
 - [dvo-writer](#dvo-writer) - 3 groups, 6 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 12 issues
@@ -89,7 +89,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4408130 | 1,392 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
+| #4408130 | 1,423 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
 | #4852265 | 15 | Error: dial tcp 10.0.216.215:5432: connect: connection ti... | [View](https://glitchtip.devshift.net/ccx/issues/4852265) |
 | #4852264 | 1,141 | Error: read tcp 10.129.5.216:41030->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4852264) |
 | #4854273 | 1,130 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4854273) |
@@ -105,7 +105,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3997223 | 483 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
+| #3997223 | 484 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
 | #4649219 | 3 | Error: Get \"http://ccx-insights-content-service:10000/ap... | [View](https://glitchtip.devshift.net/ccx/issues/4649219) |
 
 **Recommendation:** Consider merging into [#3997223](https://glitchtip.devshift.net/ccx/issues/3997223) (highest event count)
@@ -160,9 +160,22 @@
 
 ## ccx-upgrades-data-eng
 
-**Duplicate Groups:** 1
-**Issues in Groups:** 2
+**Duplicate Groups:** 2
+**Issues in Groups:** 4
 **Total Events:** 0
+
+### 🟢 LOW: TokenError: Error refreshing the token:
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4904816 | 1 | TokenError: Error refreshing the token: | [View](https://glitchtip.devshift.net/ccx/issues/4904816) |
+| #4462503 | 27 | TokenError: Error refreshing the token: | [View](https://glitchtip.devshift.net/ccx/issues/4462503) |
+
+**Recommendation:** Consider merging into [#4904816](https://glitchtip.devshift.net/ccx/issues/4904816) (highest event count)
+
+---
 
 ### 🟢 LOW: ConnectionError: HTTPConnectionPool(host='ccx-upgrades-inference-svc', port=8000): Max retries exce…
 
@@ -336,7 +349,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4615774 | 5 | Rule response make_fail(CERTIFICATES_EXPIRING_SOON) excee... | [View](https://glitchtip.devshift.net/ccx/issues/4615774) |
+| #4615774 | 6 | Rule response make_fail(CERTIFICATES_EXPIRING_SOON) excee... | [View](https://glitchtip.devshift.net/ccx/issues/4615774) |
 | #4847319 | 3 | Rule response make_fail(OPERATOR_ISSUE) exceeds the size ... | [View](https://glitchtip.devshift.net/ccx/issues/4847319) |
 | #4729746 | 36 | Rule response make_fail(NODES_CONTAINER_RUNTIME_VERSION) ... | [View](https://glitchtip.devshift.net/ccx/issues/4729746) |
 
