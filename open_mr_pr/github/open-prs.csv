@@ -1,7 +1,8 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-ocp-advisor-frontend,1240,fix(deps): update dependency semver to v7.8.6,2026-11-06T01:23:44Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1240,app/red-hat-konflux,ok,ready
+ocp-advisor-frontend,1241,chore(deps): update dependency github.com/redhatinsights/konflux-pipelines to v1.81.0,2026-11-07T02:15:55Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1241,app/red-hat-konflux,ok,ready
+ccx-notification-writer,1002,chore(deps): update dependency github-pages to v233,2026-11-07T02:09:50Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/1002,app/red-hat-konflux,failed,ready
+ocp-advisor-frontend,1240,fix(deps): update npm minor and patch dependencies,2026-11-06T01:23:44Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1240,app/red-hat-konflux,ok,ready
 ocp-advisor-frontend,1239,chore(deps): update build-tools digest to ef06e64,2026-11-06T01:23:26Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1239,app/red-hat-konflux,ok,ready
-insights-operator-gathering-conditions-service,1080,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.206.2,2026-11-06T01:17:35Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/1080,app/red-hat-konflux,failed,ready
 ccx-notification-service,1288,dummy PR to trigger CI in order to test new BDD tests,2026-11-04T15:01:59Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1288,Bee-lee,failed,ready
 insights-results-smart-proxy,1865,[CCXDEV-16882] Add render query parameter to recommendations endpoints,2026-11-04T08:29:55Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1865,JiriPapousek,ok,draft
 insights-content-template-renderer,710,[CCXDEV-16882] Add /v2/rendered_reports endpoint for item-based template rendering,2026-11-02T13:09:34Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/710,JiriPapousek,ok,ready
