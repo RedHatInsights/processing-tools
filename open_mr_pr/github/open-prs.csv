@@ -1,4 +1,9 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
+insights-results-aggregator,2789,chore(deps): update go dependencies,2026-11-09T00:53:06Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2789,app/red-hat-konflux,failed,ready
+insights-results-aggregator,2787,chore(deps): update pre-commit hooks,2026-11-08T04:47:08Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2787,app/red-hat-konflux,failed,ready
+ccx-notification-writer,1004,chore(deps): update go dependencies,2026-11-08T04:45:24Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/1004,app/red-hat-konflux,failed,ready
+insights-results-aggregator-mock,952,Update module go.yaml.in/yaml/v3 to v4,2026-11-08T04:44:17Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/952,app/red-hat-konflux,failed,ready
+insights-operator-gathering-conditions-service,1085,chore(deps): update go dependencies,2026-11-08T04:42:53Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/1085,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1241,chore(deps): update dependency github.com/redhatinsights/konflux-pipelines to v1.81.0,2026-11-07T02:15:55Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1241,app/red-hat-konflux,ok,ready
 ocp-advisor-frontend,1240,fix(deps): update npm minor and patch dependencies,2026-11-06T01:23:44Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1240,app/red-hat-konflux,ok,ready
 ocp-advisor-frontend,1239,chore(deps): update build-tools digest to ef06e64,2026-11-06T01:23:26Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1239,app/red-hat-konflux,ok,ready
