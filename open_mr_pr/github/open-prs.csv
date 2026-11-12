@@ -1,9 +1,21 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
+ccx-notification-service,1296,Update module golang.org/x/text to v0.41.0 [SECURITY],2026-11-12T02:51:51Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1296,app/red-hat-konflux,ok,ready
+ccx-notification-service,1294,Update module golang.org/x/net to v0.62.0 [SECURITY],2026-11-12T02:51:31Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1294,app/red-hat-konflux,ok,ready
+ccx-notification-service,1293,Update module golang.org/x/crypto to v0.59.0 [SECURITY],2026-11-12T02:51:19Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1293,app/red-hat-konflux,failed,ready
+insights-results-smart-proxy,1869,[CCXDEV-16882] Add render query parameter to DVO recommendations endpoint,2026-11-11T13:53:05Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1869,JiriPapousek,failed,ready
+insights-operator-utils,1322,chore(deps): update module go.yaml.in/yaml/v3 to v4,2026-11-11T05:20:22Z,https://github.com/RedHatInsights/insights-operator-utils/pull/1322,app/red-hat-konflux,failed,ready
+insights-results-aggregator-mock,961,Update module go.yaml.in/yaml/v3 to v4,2026-11-11T05:18:29Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/961,app/red-hat-konflux,failed,ready
+insights-operator-gathering-conditions-service,1091,chore(deps): update module go.yaml.in/yaml/v3 to v4,2026-11-11T05:16:49Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/1091,app/red-hat-konflux,failed,ready
+insights-results-aggregator,2792,chore(deps): update module go.yaml.in/yaml/v3 to v4,2026-11-11T05:14:06Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2792,app/red-hat-konflux,failed,ready
+ccx-notification-writer,1008,chore(deps): update module go.yaml.in/yaml/v3 to v4,2026-11-11T05:09:28Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/1008,app/red-hat-konflux,failed,ready
+insights-results-aggregator-cleaner,1149,chore(deps): update module go.yaml.in/yaml/v3 to v4,2026-11-11T05:08:33Z,https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/1149,app/red-hat-konflux,failed,ready
+insights-results-aggregator-exporter,1023,chore(deps): update module go.yaml.in/yaml/v3 to v4,2026-11-11T05:06:56Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/1023,app/red-hat-konflux,failed,ready
+insights-results-smart-proxy,1868,Update Ruby dependencies,2026-11-11T05:03:29Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1868,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1244,chore(deps): lock file maintenance,2026-11-11T02:29:08Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1244,app/red-hat-konflux,ok,ready
 ocp-advisor-frontend,1243,fix(deps): update npm minor and patch dependencies,2026-11-11T02:26:59Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1243,app/red-hat-konflux,ok,ready
 insights-results-aggregator-mock,955,Restore YAML v3 dependency for viper compatibility,2026-11-09T10:16:57Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/955,platex-rehor-bot,ok,draft
 ccx-notification-service,1288,dummy PR to trigger CI in order to test new BDD tests,2026-11-04T15:01:59Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1288,Bee-lee,failed,ready
-insights-results-smart-proxy,1865,[CCXDEV-16882] Add render query parameter to recommendations endpoints,2026-11-04T08:29:55Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1865,JiriPapousek,ok,draft
+insights-results-smart-proxy,1865,[CCXDEV-16882] Add render query parameter to cluster reports endpoint,2026-11-04T08:29:55Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1865,JiriPapousek,failed,ready
 insights-results-smart-proxy,1863,Update Pre-commit hooks,2026-10-29T01:05:58Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1863,app/red-hat-konflux,failed,ready
 insights-results-smart-proxy,1862,Update Go dependencies,2026-10-29T01:03:48Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1862,app/red-hat-konflux,failed,ready
 ccx-notification-service,1271,[CCXDEV-16563] add aggregator database configuration to Clowdapp,2026-08-07T13:37:22Z,https://github.com/RedHatInsights/ccx-notification-service/pull/1271,Bee-lee,failed,draft
