@@ -1,12 +1,11 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-insights-results-aggregator-exporter,1030,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.227.4,2026-11-14T03:30:21Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/1030,app/red-hat-konflux,ok,ready
-insights-results-aggregator-exporter,1029,chore(deps): update go dependencies,2026-11-14T03:30:13Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/1029,app/red-hat-konflux,ok,ready
-insights-ccx-messaging,1050,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.227.4,2026-11-14T03:08:57Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/1050,app/red-hat-konflux,ok,ready
-insights-content-template-renderer,727,Update Python dependencies,2026-11-14T02:25:44Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/727,app/red-hat-konflux,ok,ready
+insights-results-aggregator-exporter,1030,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.227.4,2026-11-14T03:30:21Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/1030,app/red-hat-konflux,failed,ready
+insights-results-aggregator-exporter,1029,chore(deps): update go dependencies,2026-11-14T03:30:13Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/1029,app/red-hat-konflux,failed,ready
+insights-content-template-renderer,727,Update Python dependencies,2026-11-14T02:25:44Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/727,app/red-hat-konflux,failed,ready
 insights-results-aggregator,2796,chore(deps): update go dependencies,2026-11-14T01:37:29Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2796,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1247,chore(deps): lock file maintenance,2026-11-14T01:16:46Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1247,app/red-hat-konflux,ok,ready
 obsint-mocks,652,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.227.4,2026-11-13T07:44:23Z,https://github.com/RedHatInsights/obsint-mocks/pull/652,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1245,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-11-13T01:58:36Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1245,app/obsint-processing-app,ok,ready
+ocp-advisor-frontend,1245,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-11-13T01:58:36Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1245,app/obsint-processing-app,failed,ready
 insights-results-aggregator,2795,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-11-13T01:57:24Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2795,app/obsint-processing-app,failed,ready
 insights-results-aggregator,2794,chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.227.4,2026-11-12T11:57:39Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2794,app/red-hat-konflux,failed,ready
 insights-results-aggregator,2793,chore(deps): update module golang.org/x/crypto to v0.59.0 [security],2026-11-12T11:57:29Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2793,app/red-hat-konflux,failed,ready
