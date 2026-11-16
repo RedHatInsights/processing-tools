@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-11-15 04:13:35
+**Generated:** 2026-11-16 04:14:30
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -14,7 +14,7 @@
 |--------|-------|
 | Projects with duplicates | 11 |
 | Total duplicate groups | 23 |
-| Total issues in groups | 62 |
+| Total issues in groups | 64 |
 | Total events affected | 0 |
 
 ---
@@ -27,7 +27,7 @@
 - [ccx-notification-writer](#ccx-notification-writer) - 2 groups, 4 issues
 - [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 2 groups, 4 issues
 - [dvo-extractor](#dvo-extractor) - 1 groups, 2 issues
-- [dvo-writer](#dvo-writer) - 3 groups, 7 issues
+- [dvo-writer](#dvo-writer) - 3 groups, 9 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 14 issues
 - [parquet-factory](#parquet-factory) - 2 groups, 4 issues
 - [rules-processing](#rules-processing) - 2 groups, 6 issues
@@ -81,13 +81,26 @@
 **Issues in Groups:** 11
 **Total Events:** 0
 
+### 🟢 LOW: Error: Post \'...': readfrom tc…
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #3997223 | 541 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
+| #4649219 | 3 | Error: Get \"http://ccx-insights-content-service:10000/ap... | [View](https://glitchtip.devshift.net/ccx/issues/4649219) |
+
+**Recommendation:** Consider merging into [#3997223](https://glitchtip.devshift.net/ccx/issues/3997223) (highest event count)
+
+---
+
 ### 🟢 LOW: Error: dial tcp ...: connect: connection refused
 
 **Issues:** 5 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4408130 | 1,936 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
+| #4408130 | 1,943 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
 | #4852265 | 15 | Error: dial tcp 10.0.216.215:5432: connect: connection ti... | [View](https://glitchtip.devshift.net/ccx/issues/4852265) |
 | #4852264 | 1,141 | Error: read tcp 10.129.5.216:41030->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4852264) |
 | #4854273 | 1,130 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4854273) |
@@ -107,19 +120,6 @@
 | #4793833 | 2 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4793833) |
 
 **Recommendation:** Consider merging into [#4793836](https://glitchtip.devshift.net/ccx/issues/4793836) (highest event count)
-
----
-
-### 🟢 LOW: Error: Post \'...': readfrom tc…
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #3997223 | 539 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
-| #4649219 | 3 | Error: Get \"http://ccx-insights-content-service:10000/ap... | [View](https://glitchtip.devshift.net/ccx/issues/4649219) |
-
-**Recommendation:** Consider merging into [#3997223](https://glitchtip.devshift.net/ccx/issues/3997223) (highest event count)
 
 ---
 
@@ -222,8 +222,23 @@
 ## dvo-writer
 
 **Duplicate Groups:** 3
-**Issues in Groups:** 7
+**Issues in Groups:** 9
 **Total Events:** 0
+
+### 🟢 LOW: Error: sql: database is closed
+
+**Issues:** 4 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4965656 | 4 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4965656) |
+| #4965657 | 3 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4965657) |
+| #4887263 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4887263) |
+| #4887264 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4887264) |
+
+**Recommendation:** Consider merging into [#4965656](https://glitchtip.devshift.net/ccx/issues/4965656) (highest event count)
+
+---
 
 ### 🟢 LOW: Error: kafka server: Tried to send a message to a replica that is not the leader for some partition…
 
@@ -235,19 +250,6 @@
 | #4793121 | 24 | Error: kafka server: Tried to send a message to a replica... | [View](https://glitchtip.devshift.net/ccx/issues/4793121) |
 
 **Recommendation:** Consider merging into [#4793109](https://glitchtip.devshift.net/ccx/issues/4793109) (highest event count)
-
----
-
-### 🟢 LOW: Error: sql: database is closed
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4887263 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4887263) |
-| #4887264 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4887264) |
-
-**Recommendation:** Consider merging into [#4887263](https://glitchtip.devshift.net/ccx/issues/4887263) (highest event count)
 
 ---
 
