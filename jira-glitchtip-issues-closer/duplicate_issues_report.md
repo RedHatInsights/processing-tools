@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-11-16 04:14:30
+**Generated:** 2026-11-17 04:13:31
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -12,9 +12,9 @@
 
 | Metric | Value |
 |--------|-------|
-| Projects with duplicates | 11 |
-| Total duplicate groups | 23 |
-| Total issues in groups | 64 |
+| Projects with duplicates | 9 |
+| Total duplicate groups | 20 |
+| Total issues in groups | 56 |
 | Total events affected | 0 |
 
 ---
@@ -22,15 +22,13 @@
 ## Table of Contents
 
 - [archive-sync](#archive-sync) - 1 groups, 4 issues
-- [ccx-data-pipeline](#ccx-data-pipeline) - 1 groups, 2 issues
 - [ccx-notification-service](#ccx-notification-service) - 4 groups, 11 issues
 - [ccx-notification-writer](#ccx-notification-writer) - 2 groups, 4 issues
 - [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 2 groups, 4 issues
-- [dvo-extractor](#dvo-extractor) - 1 groups, 2 issues
-- [dvo-writer](#dvo-writer) - 3 groups, 9 issues
-- [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 14 issues
+- [dvo-writer](#dvo-writer) - 3 groups, 8 issues
+- [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 13 issues
 - [parquet-factory](#parquet-factory) - 2 groups, 4 issues
-- [rules-processing](#rules-processing) - 2 groups, 6 issues
+- [rules-processing](#rules-processing) - 1 groups, 4 issues
 - [valkey-writer](#valkey-writer) - 2 groups, 4 issues
 
 ---
@@ -53,25 +51,6 @@
 | #4729727 | 11 | error: Error -3 while decompressing data: invalid stored ... | [View](https://glitchtip.devshift.net/ccx/issues/4729727) |
 
 **Recommendation:** Consider merging into [#4696802](https://glitchtip.devshift.net/ccx/issues/4696802) (highest event count)
-
----
-
-## ccx-data-pipeline
-
-**Duplicate Groups:** 1
-**Issues in Groups:** 2
-**Total Events:** 0
-
-### 🟢 LOW: ParseException: ccx_ocp_core.parsers.insights_operator.core.PodsIO couldn't parse json.
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4901599 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator.op... | [View](https://glitchtip.devshift.net/ccx/issues/4901599) |
-| #4319957 | 2,017 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319957) |
-
-**Recommendation:** Consider merging into [#4901599](https://glitchtip.devshift.net/ccx/issues/4901599) (highest event count)
 
 ---
 
@@ -200,29 +179,10 @@
 
 ---
 
-## dvo-extractor
-
-**Duplicate Groups:** 1
-**Issues in Groups:** 2
-**Total Events:** 0
-
-### 🟢 LOW: ParseException: ccx_ocp_core.parsers.insights_operator.core.PodsIO couldn't parse json.
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4901601 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator.op... | [View](https://glitchtip.devshift.net/ccx/issues/4901601) |
-| #4319955 | 2,016 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319955) |
-
-**Recommendation:** Consider merging into [#4901601](https://glitchtip.devshift.net/ccx/issues/4901601) (highest event count)
-
----
-
 ## dvo-writer
 
 **Duplicate Groups:** 3
-**Issues in Groups:** 9
+**Issues in Groups:** 8
 **Total Events:** 0
 
 ### 🟢 LOW: Error: sql: database is closed
@@ -253,24 +213,23 @@
 
 ---
 
-### 🟢 LOW: kafka: error while consuming ccx.dvo.results/0: write tcp ...->...: w…
+### 🟢 LOW: Error: dial tcp ...: connect: connection refused
 
-**Issues:** 3 | **Total Events:** 0
+**Issues:** 2 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
+| #4730833 | 6 | Error: dial tcp 10.0.184.48:9096: connect: connection ref... | [View](https://glitchtip.devshift.net/ccx/issues/4730833) |
 | #4937434 | 6 | kafka: error while consuming ccx.dvo.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4937434) |
-| #4794206 | 1 | kafka: error while consuming ccx.dvo.results/0: write tcp... | [View](https://glitchtip.devshift.net/ccx/issues/4794206) |
-| #4794179 | 1 | kafka: error while consuming ccx.dvo.results/0: kafka: br... | [View](https://glitchtip.devshift.net/ccx/issues/4794179) |
 
-**Recommendation:** Consider merging into [#4937434](https://glitchtip.devshift.net/ccx/issues/4937434) (highest event count)
+**Recommendation:** Consider merging into [#4730833](https://glitchtip.devshift.net/ccx/issues/4730833) (highest event count)
 
 ---
 
 ## insights-results-aggregator-db-writer
 
 **Duplicate Groups:** 3
-**Issues in Groups:** 14
+**Issues in Groups:** 13
 **Total Events:** 0
 
 ### 🟢 LOW: Error: sql: database is closed
@@ -279,17 +238,17 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
+| #4127668 | 1,659 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4127668) |
+| #4768423 | 7 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4768423) |
 | #4293672 | 1,537 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4293672) |
 | #4839684 | 59 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4839684) |
-| #4127668 | 1,657 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4127668) |
-| #4768423 | 5 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4768423) |
 | #4959747 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4959747) |
 | #4866428 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4866428) |
 | #4802967 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4802967) |
 | #4802965 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4802965) |
 | #4802966 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4802966) |
 
-**Recommendation:** Consider merging into [#4293672](https://glitchtip.devshift.net/ccx/issues/4293672) (highest event count)
+**Recommendation:** Consider merging into [#4127668](https://glitchtip.devshift.net/ccx/issues/4127668) (highest event count)
 
 ---
 
@@ -308,13 +267,12 @@
 
 ### 🟢 LOW: kafka: error while consuming ccx.ocp.results/0: EOF
 
-**Issues:** 3 | **Total Events:** 0
+**Issues:** 2 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
 | #4938005 | 1 | kafka: error while consuming ccx.ocp.results/0: EOF | [View](https://glitchtip.devshift.net/ccx/issues/4938005) |
 | #4794125 | 10 | kafka: error while consuming ccx.ocp.results/0: dial tcp ... | [View](https://glitchtip.devshift.net/ccx/issues/4794125) |
-| #4793238 | 1 | kafka: error while consuming ccx.ocp.results/0: kafka ser... | [View](https://glitchtip.devshift.net/ccx/issues/4793238) |
 
 **Recommendation:** Consider merging into [#4938005](https://glitchtip.devshift.net/ccx/issues/4938005) (highest event count)
 
@@ -354,22 +312,9 @@
 
 ## rules-processing
 
-**Duplicate Groups:** 2
-**Issues in Groups:** 6
+**Duplicate Groups:** 1
+**Issues in Groups:** 4
 **Total Events:** 0
-
-### 🟢 LOW: ParseException: ccx_ocp_core.parsers.insights_operator.core.PodsIO couldn't parse json.
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4901600 | 1 | ParseException: ccx_ocp_core.parsers.insights_operator.op... | [View](https://glitchtip.devshift.net/ccx/issues/4901600) |
-| #4319956 | 2,016 | ParseException: ccx_ocp_core.parsers.insights_operator.co... | [View](https://glitchtip.devshift.net/ccx/issues/4319956) |
-
-**Recommendation:** Consider merging into [#4901600](https://glitchtip.devshift.net/ccx/issues/4901600) (highest event count)
-
----
 
 ### 🟢 LOW: Rule response make_fail(OPERATOR_ISSUE) exceeds the size limit of ... characters.
 
