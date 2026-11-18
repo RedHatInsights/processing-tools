@@ -1,11 +1,14 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-11-17 04:08:29*
+*Last updated: 2026-11-18 04:08:32*
 
-**Total PRs: 6**
+**Total PRs: 9**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| insights-results-smart-proxy | [1881](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1881) | [CCXDEV-17083] Enable Redis TLS when AUTH password is set | 2026-11-17 | juandspy | ❌ failed | draft |
+| insights-results-aggregator | [2798](https://github.com/RedHatInsights/insights-results-aggregator/pull/2798) | [CCXDEV-17083] Enable Redis TLS when AUTH password is set | 2026-11-17 | juandspy | ❌ failed | draft |
+| insights-operator-utils | [1330](https://github.com/RedHatInsights/insights-operator-utils/pull/1330) | [CCXDEV-17083] Add useTLS to CreateRedisClient | 2026-11-17 | juandspy | ❌ failed | draft |
 | insights-results-aggregator | [2797](https://github.com/RedHatInsights/insights-results-aggregator/pull/2797) | Bump Go version in test workflow | 2026-11-16 | joselsegura | ❌ failed | ready |
 | ocp-advisor-frontend | [1245](https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1245) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-11-13 | app/obsint-processing-app | ❌ failed | ready |
 | insights-results-aggregator | [2795](https://github.com/RedHatInsights/insights-results-aggregator/pull/2795) | chore(sync): synced file(s) with RedHatInsights/processing-tools | 2026-11-13 | app/obsint-processing-app | ❌ failed | ready |
