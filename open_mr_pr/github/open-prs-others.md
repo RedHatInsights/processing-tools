@@ -1,11 +1,15 @@
 # Open Pull Requests (Others)
 
-*Last updated: 2026-11-18 04:08:32*
+*Last updated: 2026-11-19 04:08:31*
 
-**Total PRs: 9**
+**Total PRs: 13**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
+| data-pipeline | [159](https://github.com/RedHatInsights/data-pipeline/pull/159) | Bumped ccx-rules-ocp version to 2026.11.17 | 2026-11-18 | app/obsint-processing-app | ❌ failed | ready |
+| content-service | [1111](https://github.com/RedHatInsights/content-service/pull/1111) | Bumped ccx-rules-ocp version to 2026.11.17 | 2026-11-18 | app/obsint-processing-app | ❌ failed | ready |
+| data-pipeline | [158](https://github.com/RedHatInsights/data-pipeline/pull/158) | Bumped ccx-rules-ocp version to 2026.11.17 | 2026-11-18 | app/obsint-processing-app | ❌ failed | ready |
+| content-service | [1110](https://github.com/RedHatInsights/content-service/pull/1110) | Bumped ccx-rules-ocp version to 2026.11.17 | 2026-11-18 | app/obsint-processing-app | ❌ failed | ready |
 | insights-results-smart-proxy | [1881](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1881) | [CCXDEV-17083] Enable Redis TLS when AUTH password is set | 2026-11-17 | juandspy | ❌ failed | draft |
 | insights-results-aggregator | [2798](https://github.com/RedHatInsights/insights-results-aggregator/pull/2798) | [CCXDEV-17083] Enable Redis TLS when AUTH password is set | 2026-11-17 | juandspy | ❌ failed | draft |
 | insights-operator-utils | [1330](https://github.com/RedHatInsights/insights-operator-utils/pull/1330) | [CCXDEV-17083] Add useTLS to CreateRedisClient | 2026-11-17 | juandspy | ❌ failed | draft |
