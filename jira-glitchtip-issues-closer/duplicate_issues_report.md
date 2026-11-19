@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-11-18 04:13:32
+**Generated:** 2026-11-19 04:13:39
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -14,14 +14,14 @@
 |--------|-------|
 | Projects with duplicates | 10 |
 | Total duplicate groups | 21 |
-| Total issues in groups | 67 |
+| Total issues in groups | 66 |
 | Total events affected | 0 |
 
 ---
 
 ## Table of Contents
 
-- [archive-sync](#archive-sync) - 1 groups, 4 issues
+- [archive-sync](#archive-sync) - 1 groups, 3 issues
 - [ccx-notification-service](#ccx-notification-service) - 4 groups, 11 issues
 - [ccx-notification-writer](#ccx-notification-writer) - 2 groups, 4 issues
 - [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 2 groups, 4 issues
@@ -37,19 +37,18 @@
 ## archive-sync
 
 **Duplicate Groups:** 1
-**Issues in Groups:** 4
+**Issues in Groups:** 3
 **Total Events:** 0
 
 ### 🟢 LOW: error: Error -3 while decompressing data: invalid block type
 
-**Issues:** 4 | **Total Events:** 0
+**Issues:** 3 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
 | #4696802 | 10 | error: Error -3 while decompressing data: invalid code le... | [View](https://glitchtip.devshift.net/ccx/issues/4696802) |
 | #4582018 | 25 | error: Error -3 while decompressing data: invalid block type | [View](https://glitchtip.devshift.net/ccx/issues/4582018) |
 | #4768590 | 7 | error: Error -3 while decompressing data: invalid distanc... | [View](https://glitchtip.devshift.net/ccx/issues/4768590) |
-| #4729727 | 11 | error: Error -3 while decompressing data: invalid stored ... | [View](https://glitchtip.devshift.net/ccx/issues/4729727) |
 
 **Recommendation:** Consider merging into [#4696802](https://glitchtip.devshift.net/ccx/issues/4696802) (highest event count)
 
@@ -67,7 +66,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3997223 | 543 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
+| #3997223 | 549 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
 | #4649219 | 3 | Error: Get \"http://ccx-insights-content-service:10000/ap... | [View](https://glitchtip.devshift.net/ccx/issues/4649219) |
 
 **Recommendation:** Consider merging into [#3997223](https://glitchtip.devshift.net/ccx/issues/3997223) (highest event count)
@@ -80,7 +79,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4408130 | 2,008 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
+| #4408130 | 2,030 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
 | #4852265 | 132 | Error: dial tcp 10.0.216.215:5432: connect: connection ti... | [View](https://glitchtip.devshift.net/ccx/issues/4852265) |
 | #4852264 | 1,141 | Error: read tcp 10.129.5.216:41030->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4852264) |
 | #4854273 | 1,130 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4854273) |
@@ -192,8 +191,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4965657 | 8 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4965657) |
-| #4976627 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4976627) |
+| #4965657 | 9 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4965657) |
+| #4976627 | 2 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4976627) |
 | #4965656 | 8 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4965656) |
 | #4887263 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4887263) |
 | #4887264 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4887264) |
