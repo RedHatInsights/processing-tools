@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-11-19 04:13:39
+**Generated:** 2026-11-20 04:13:44
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -14,7 +14,7 @@
 |--------|-------|
 | Projects with duplicates | 10 |
 | Total duplicate groups | 21 |
-| Total issues in groups | 66 |
+| Total issues in groups | 63 |
 | Total events affected | 0 |
 
 ---
@@ -27,7 +27,7 @@
 - [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 2 groups, 4 issues
 - [dvo-writer](#dvo-writer) - 3 groups, 9 issues
 - [insights-results-aggregator](#insights-results-aggregator) - 1 groups, 10 issues
-- [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 13 issues
+- [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 10 issues
 - [parquet-factory](#parquet-factory) - 2 groups, 4 issues
 - [rules-processing](#rules-processing) - 1 groups, 4 issues
 - [valkey-writer](#valkey-writer) - 2 groups, 4 issues
@@ -66,7 +66,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #3997223 | 549 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
+| #3997223 | 552 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
 | #4649219 | 3 | Error: Get \"http://ccx-insights-content-service:10000/ap... | [View](https://glitchtip.devshift.net/ccx/issues/4649219) |
 
 **Recommendation:** Consider merging into [#3997223](https://glitchtip.devshift.net/ccx/issues/3997223) (highest event count)
@@ -153,6 +153,19 @@
 **Issues in Groups:** 4
 **Total Events:** 0
 
+### 🟢 LOW: TokenError: Error refreshing the token:
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4462503 | 30 | TokenError: Error refreshing the token: | [View](https://glitchtip.devshift.net/ccx/issues/4462503) |
+| #4904816 | 1 | TokenError: Error refreshing the token: | [View](https://glitchtip.devshift.net/ccx/issues/4904816) |
+
+**Recommendation:** Consider merging into [#4462503](https://glitchtip.devshift.net/ccx/issues/4462503) (highest event count)
+
+---
+
 ### 🟢 LOW: ConnectionError: HTTPConnectionPool(host='ccx-upgrades-inference-svc', port=8000): Max retries exce…
 
 **Issues:** 2 | **Total Events:** 0
@@ -163,19 +176,6 @@
 | #4693160 | 20 | ConnectionError: HTTPConnectionPool(host='ccx-upgrades-in... | [View](https://glitchtip.devshift.net/ccx/issues/4693160) |
 
 **Recommendation:** Consider merging into [#4693164](https://glitchtip.devshift.net/ccx/issues/4693164) (highest event count)
-
----
-
-### 🟢 LOW: TokenError: Error refreshing the token:
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #4462503 | 29 | TokenError: Error refreshing the token: | [View](https://glitchtip.devshift.net/ccx/issues/4462503) |
-| #4904816 | 1 | TokenError: Error refreshing the token: | [View](https://glitchtip.devshift.net/ccx/issues/4904816) |
-
-**Recommendation:** Consider merging into [#4462503](https://glitchtip.devshift.net/ccx/issues/4462503) (highest event count)
 
 ---
 
@@ -257,12 +257,12 @@
 ## insights-results-aggregator-db-writer
 
 **Duplicate Groups:** 3
-**Issues in Groups:** 13
+**Issues in Groups:** 10
 **Total Events:** 0
 
 ### 🟢 LOW: Error: sql: database is closed
 
-**Issues:** 9 | **Total Events:** 0
+**Issues:** 6 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
@@ -272,9 +272,6 @@
 | #4839684 | 60 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4839684) |
 | #4768423 | 7 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4768423) |
 | #4959747 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4959747) |
-| #4802967 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4802967) |
-| #4802965 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4802965) |
-| #4802966 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4802966) |
 
 **Recommendation:** Consider merging into [#4127668](https://glitchtip.devshift.net/ccx/issues/4127668) (highest event count)
 
