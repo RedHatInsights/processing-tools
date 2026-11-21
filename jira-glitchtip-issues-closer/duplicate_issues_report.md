@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-11-20 04:13:44
+**Generated:** 2026-11-21 04:13:15
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -13,8 +13,8 @@
 | Metric | Value |
 |--------|-------|
 | Projects with duplicates | 10 |
-| Total duplicate groups | 21 |
-| Total issues in groups | 63 |
+| Total duplicate groups | 22 |
+| Total issues in groups | 67 |
 | Total events affected | 0 |
 
 ---
@@ -24,7 +24,7 @@
 - [archive-sync](#archive-sync) - 1 groups, 3 issues
 - [ccx-notification-service](#ccx-notification-service) - 4 groups, 11 issues
 - [ccx-notification-writer](#ccx-notification-writer) - 2 groups, 4 issues
-- [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 2 groups, 4 issues
+- [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 3 groups, 8 issues
 - [dvo-writer](#dvo-writer) - 3 groups, 9 issues
 - [insights-results-aggregator](#insights-results-aggregator) - 1 groups, 10 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 10 issues
@@ -60,32 +60,32 @@
 **Issues in Groups:** 11
 **Total Events:** 0
 
-### 🟢 LOW: Error: Post \'...': readfrom tc…
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #3997223 | 552 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
-| #4649219 | 3 | Error: Get \"http://ccx-insights-content-service:10000/ap... | [View](https://glitchtip.devshift.net/ccx/issues/4649219) |
-
-**Recommendation:** Consider merging into [#3997223](https://glitchtip.devshift.net/ccx/issues/3997223) (highest event count)
-
----
-
 ### 🟢 LOW: Error: dial tcp ...: connect: connection refused
 
 **Issues:** 5 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4408130 | 2,030 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
+| #4408130 | 2,108 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
 | #4852265 | 132 | Error: dial tcp 10.0.216.215:5432: connect: connection ti... | [View](https://glitchtip.devshift.net/ccx/issues/4852265) |
 | #4852264 | 1,141 | Error: read tcp 10.129.5.216:41030->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4852264) |
 | #4854273 | 1,130 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4854273) |
 | #4854274 | 1,125 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4854274) |
 
 **Recommendation:** Consider merging into [#4408130](https://glitchtip.devshift.net/ccx/issues/4408130) (highest event count)
+
+---
+
+### 🟢 LOW: Error: Post \'...': readfrom tc…
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #3997223 | 553 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
+| #4649219 | 3 | Error: Get \"http://ccx-insights-content-service:10000/ap... | [View](https://glitchtip.devshift.net/ccx/issues/4649219) |
+
+**Recommendation:** Consider merging into [#3997223](https://glitchtip.devshift.net/ccx/issues/3997223) (highest event count)
 
 ---
 
@@ -108,10 +108,10 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
+| #4619510 | 151 | Couldn't initialize Service Log producer with the provide... | [View](https://glitchtip.devshift.net/ccx/issues/4619510) |
 | #4933130 | 20 | Couldn't initialize Kafka producer with the provided config. | [View](https://glitchtip.devshift.net/ccx/issues/4933130) |
-| #4619510 | 114 | Couldn't initialize Service Log producer with the provide... | [View](https://glitchtip.devshift.net/ccx/issues/4619510) |
 
-**Recommendation:** Consider merging into [#4933130](https://glitchtip.devshift.net/ccx/issues/4933130) (highest event count)
+**Recommendation:** Consider merging into [#4619510](https://glitchtip.devshift.net/ccx/issues/4619510) (highest event count)
 
 ---
 
@@ -149,9 +149,28 @@
 
 ## ccx-upgrades-data-eng
 
-**Duplicate Groups:** 2
-**Issues in Groups:** 4
+**Duplicate Groups:** 3
+**Issues in Groups:** 8
 **Total Events:** 0
+
+### 🟢 LOW: Unable to update SSO token: Error refreshing the token: (unauthorized_client) Invalid client or Inv…
+
+**Issues:** 4 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #4989244 | 169 | Unable to update SSO token: Error refreshing the token:
+(... | [View](https://glitchtip.devshift.net/ccx/issues/4989244) |
+| #4989245 | 83 | Unable to update SSO token: Error refreshing the token:
+(... | [View](https://glitchtip.devshift.net/ccx/issues/4989245) |
+| #4989223 | 261 | Unable to update SSO token: Error refreshing the token:
+(... | [View](https://glitchtip.devshift.net/ccx/issues/4989223) |
+| #4989224 | 168 | Unable to update SSO token: Error refreshing the token:
+(... | [View](https://glitchtip.devshift.net/ccx/issues/4989224) |
+
+**Recommendation:** Consider merging into [#4989244](https://glitchtip.devshift.net/ccx/issues/4989244) (highest event count)
+
+---
 
 ### 🟢 LOW: TokenError: Error refreshing the token:
 
