@@ -1,7 +1,10 @@
 repo,pr_id,title,date_created,url,author,ci_status,draft_status
-insights-behavioral-spec,857,Update pre-commit hook astral-sh/ruff-pre-commit to v0.17.5,2026-11-21T03:52:02Z,https://github.com/RedHatInsights/insights-behavioral-spec/pull/857,app/red-hat-konflux,ok,ready
+insights-results-smart-proxy,1884,Update Ruby dependencies,2026-11-22T00:49:50Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1884,app/red-hat-konflux,failed,ready
+insights-results-aggregator-mock,971,Update dependency org.clojure:clojure to v1.12.7,2026-11-22T00:46:03Z,https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/971,app/red-hat-konflux,ok,ready
+insights-operator-gathering-conditions-service,1099,chore(deps): update pre-commit hooks,2026-11-21T04:42:55Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/1099,app/red-hat-konflux,failed,ready
+insights-operator-gathering-conditions-service,1098,chore(deps): update go dependencies,2026-11-21T04:42:46Z,https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/1098,app/red-hat-konflux,failed,ready
 insights-content-template-renderer,728,Update Pre-commit hooks,2026-11-21T03:42:33Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/728,app/red-hat-konflux,failed,ready
-ocp-advisor-frontend,1249,fix(deps): update npm minor and patch dependencies,2026-11-21T03:40:30Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1249,app/red-hat-konflux,ok,ready
+ocp-advisor-frontend,1249,fix(deps): update npm minor and patch dependencies,2026-11-21T03:40:30Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1249,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1248,chore(deps): update build-tools digest to 31041f8,2026-11-21T03:40:01Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1248,app/red-hat-konflux,failed,ready
 insights-results-aggregator-cleaner,1158,chore(deps): update pre-commit hooks,2026-11-21T03:22:23Z,https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/1158,app/red-hat-konflux,failed,ready
 insights-results-aggregator-cleaner,1157,chore(deps): update go dependencies,2026-11-21T03:22:15Z,https://github.com/RedHatInsights/insights-results-aggregator-cleaner/pull/1157,app/red-hat-konflux,failed,ready
@@ -18,12 +21,10 @@ insights-results-smart-proxy,1881,[CCXDEV-17083] Enable Redis TLS when AUTH pass
 insights-results-aggregator,2798,[CCXDEV-17083] Enable Redis TLS when AUTH password is set,2026-11-17T09:25:15Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2798,juandspy,failed,draft
 insights-operator-utils,1330,[CCXDEV-17083] Add useTLS to CreateRedisClient,2026-11-17T09:22:53Z,https://github.com/RedHatInsights/insights-operator-utils/pull/1330,juandspy,failed,draft
 insights-results-aggregator,2797,Bump Go version in test workflow,2026-11-16T09:29:14Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2797,joselsegura,failed,ready
-insights-results-aggregator-exporter,1030,chore(deps): update pre-commit hooks,2026-11-14T03:30:21Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/1030,app/red-hat-konflux,ok,ready
-insights-results-aggregator-exporter,1029,chore(deps): update go dependencies,2026-11-14T03:30:13Z,https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/1029,app/red-hat-konflux,ok,ready
-insights-content-template-renderer,727,Update Python dependencies,2026-11-14T02:25:44Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/727,app/red-hat-konflux,ok,ready
+insights-content-template-renderer,727,Update Python dependencies,2026-11-14T02:25:44Z,https://github.com/RedHatInsights/insights-content-template-renderer/pull/727,app/red-hat-konflux,failed,ready
 insights-results-aggregator,2796,chore(deps): update go dependencies,2026-11-14T01:37:29Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2796,app/red-hat-konflux,failed,ready
 ocp-advisor-frontend,1247,chore(deps): lock file maintenance,2026-11-14T01:16:46Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1247,app/red-hat-konflux,ok,ready
-ocp-advisor-frontend,1245,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-11-13T01:58:36Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1245,app/obsint-processing-app,failed,ready
+ocp-advisor-frontend,1245,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-11-13T01:58:36Z,https://github.com/RedHatInsights/ocp-advisor-frontend/pull/1245,app/obsint-processing-app,ok,ready
 insights-results-aggregator,2795,chore(sync): synced file(s) with RedHatInsights/processing-tools,2026-11-13T01:57:24Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2795,app/obsint-processing-app,failed,ready
 insights-results-aggregator,2794,chore(deps): update pre-commit hooks,2026-11-12T11:57:39Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2794,app/red-hat-konflux,failed,ready
 insights-results-aggregator,2793,chore(deps): update module golang.org/x/crypto to v0.59.0 [security],2026-11-12T11:57:29Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2793,app/red-hat-konflux,failed,ready
