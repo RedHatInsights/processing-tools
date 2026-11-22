@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-11-21 04:13:15
+**Generated:** 2026-11-22 04:13:27
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -366,12 +366,12 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
+| #4847319 | 4 | Rule response make_fail(OPERATOR_ISSUE) exceeds the size ... | [View](https://glitchtip.devshift.net/ccx/issues/4847319) |
 | #4927785 | 1 | Rule response make_fail(MACHINE_POOL_NOT_OK) exceeds the ... | [View](https://glitchtip.devshift.net/ccx/issues/4927785) |
 | #4615774 | 6 | Rule response make_fail(CERTIFICATES_EXPIRING_SOON) excee... | [View](https://glitchtip.devshift.net/ccx/issues/4615774) |
-| #4847319 | 3 | Rule response make_fail(OPERATOR_ISSUE) exceeds the size ... | [View](https://glitchtip.devshift.net/ccx/issues/4847319) |
 | #4729746 | 36 | Rule response make_fail(NODES_CONTAINER_RUNTIME_VERSION) ... | [View](https://glitchtip.devshift.net/ccx/issues/4729746) |
 
-**Recommendation:** Consider merging into [#4927785](https://glitchtip.devshift.net/ccx/issues/4927785) (highest event count)
+**Recommendation:** Consider merging into [#4847319](https://glitchtip.devshift.net/ccx/issues/4847319) (highest event count)
 
 ---
 
