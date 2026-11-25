@@ -1,12 +1,11 @@
 # Open Pull Requests (Konflux)
 
-*Last updated: 2026-11-24 04:09:11*
+*Last updated: 2026-11-25 04:09:27*
 
-**Total Konflux PRs: 20**
+**Total Konflux PRs: 19**
 
 | Repo | PR | Title | Created | Author | CI Status | Draft |
 |------|-------|-------|---------|--------|-----------|-------|
-| insights-results-aggregator-exporter | [1035](https://github.com/RedHatInsights/insights-results-aggregator-exporter/pull/1035) | chore(deps): update pre-commit hook renovatebot/pre-commit-hooks to v44.256.0 | 2026-11-23 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-smart-proxy | [1884](https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1884) | Update Ruby dependencies | 2026-11-22 | app/red-hat-konflux | ❌ failed | ready |
 | insights-results-aggregator-mock | [971](https://github.com/RedHatInsights/insights-results-aggregator-mock/pull/971) | Update dependency org.clojure:clojure to v1.12.7 | 2026-11-22 | app/red-hat-konflux | ✅ ok | ready |
 | insights-operator-gathering-conditions-service | [1099](https://github.com/RedHatInsights/insights-operator-gathering-conditions-service/pull/1099) | chore(deps): update pre-commit hooks | 2026-11-21 | app/red-hat-konflux | ❌ failed | ready |
