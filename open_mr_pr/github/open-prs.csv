@@ -13,8 +13,6 @@ insights-results-smart-proxy,1882,Update Go dependencies,2026-11-21T03:02:34Z,ht
 ccx-notification-writer,1013,chore(deps): update pre-commit hook astral-sh/ruff-pre-commit to v0.17.6,2026-11-21T02:22:36Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/1013,app/red-hat-konflux,failed,ready
 ccx-notification-writer,1012,fix(deps): update go dependencies,2026-11-21T02:22:27Z,https://github.com/RedHatInsights/ccx-notification-writer/pull/1012,app/red-hat-konflux,failed,ready
 insights-ccx-messaging,1051,chore(deps): update pre-commit hooks,2026-11-21T02:04:22Z,https://github.com/RedHatInsights/insights-ccx-messaging/pull/1051,app/red-hat-konflux,failed,ready
-content-service,1111,Bumped ccx-rules-ocp version to 2026.11.17,2026-11-18T16:51:35Z,https://github.com/RedHatInsights/content-service/pull/1111,app/obsint-processing-app,failed,ready
-data-pipeline,158,Bumped ccx-rules-ocp version to 2026.11.17,2026-11-18T15:51:34Z,https://github.com/RedHatInsights/data-pipeline/pull/158,app/obsint-processing-app,failed,ready
 insights-results-smart-proxy,1881,[CCXDEV-17083] Enable Redis TLS when AUTH password is set,2026-11-17T09:28:10Z,https://github.com/RedHatInsights/insights-results-smart-proxy/pull/1881,juandspy,failed,draft
 insights-results-aggregator,2798,[CCXDEV-17083] Enable Redis TLS when AUTH password is set,2026-11-17T09:25:15Z,https://github.com/RedHatInsights/insights-results-aggregator/pull/2798,juandspy,failed,draft
 insights-operator-utils,1330,[CCXDEV-17083] Add useTLS to CreateRedisClient,2026-11-17T09:22:53Z,https://github.com/RedHatInsights/insights-operator-utils/pull/1330,juandspy,failed,draft
