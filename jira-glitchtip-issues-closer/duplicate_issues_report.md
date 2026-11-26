@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-11-25 10:54:36
+**Generated:** 2026-11-26 04:13:54
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -13,8 +13,8 @@
 | Metric | Value |
 |--------|-------|
 | Projects with duplicates | 10 |
-| Total duplicate groups | 22 |
-| Total issues in groups | 68 |
+| Total duplicate groups | 23 |
+| Total issues in groups | 70 |
 | Total events affected | 0 |
 
 ---
@@ -26,7 +26,7 @@
 - [ccx-notification-writer](#ccx-notification-writer) - 2 groups, 5 issues
 - [ccx-upgrades-data-eng](#ccx-upgrades-data-eng) - 3 groups, 8 issues
 - [dvo-writer](#dvo-writer) - 3 groups, 9 issues
-- [insights-results-aggregator](#insights-results-aggregator) - 1 groups, 10 issues
+- [insights-results-aggregator](#insights-results-aggregator) - 2 groups, 12 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 11 issues
 - [parquet-factory](#parquet-factory) - 2 groups, 4 issues
 - [rules-processing](#rules-processing) - 1 groups, 4 issues
@@ -59,32 +59,32 @@
 **Issues in Groups:** 11
 **Total Events:** 0
 
-### 🟢 LOW: Error: Post \'...': readfrom tc…
-
-**Issues:** 2 | **Total Events:** 0
-
-| Issue ID | Events | Title | Link |
-|----------|--------|-------|------|
-| #3997223 | 556 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
-| #4649219 | 3 | Error: Get \"http://ccx-insights-content-service:10000/ap... | [View](https://glitchtip.devshift.net/ccx/issues/4649219) |
-
-**Recommendation:** Consider merging into [#3997223](https://glitchtip.devshift.net/ccx/issues/3997223) (highest event count)
-
----
-
 ### 🟢 LOW: Error: dial tcp ...: connect: connection refused
 
 **Issues:** 5 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4408130 | 2,108 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
+| #4408130 | 2,116 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
 | #4852265 | 132 | Error: dial tcp 10.0.216.215:5432: connect: connection ti... | [View](https://glitchtip.devshift.net/ccx/issues/4852265) |
 | #4852264 | 1,141 | Error: read tcp 10.129.5.216:41030->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4852264) |
 | #4854273 | 1,130 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4854273) |
 | #4854274 | 1,125 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4854274) |
 
 **Recommendation:** Consider merging into [#4408130](https://glitchtip.devshift.net/ccx/issues/4408130) (highest event count)
+
+---
+
+### 🟢 LOW: Error: Post \'...': readfrom tc…
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #3997223 | 557 | Error: Post \"http://insights-content-template-renderer-s... | [View](https://glitchtip.devshift.net/ccx/issues/3997223) |
+| #4649219 | 3 | Error: Get \"http://ccx-insights-content-service:10000/ap... | [View](https://glitchtip.devshift.net/ccx/issues/4649219) |
+
+**Recommendation:** Consider merging into [#3997223](https://glitchtip.devshift.net/ccx/issues/3997223) (highest event count)
 
 ---
 
@@ -248,8 +248,8 @@
 
 ## insights-results-aggregator
 
-**Duplicate Groups:** 1
-**Issues in Groups:** 10
+**Duplicate Groups:** 2
+**Issues in Groups:** 12
 **Total Events:** 0
 
 ### 🟢 LOW: Error: pq: password authentication failed for user "postgres" (28P01)
@@ -258,7 +258,8 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4974959 | 511 | Error: pq: password authentication failed for user "postg... | [View](https://glitchtip.devshift.net/ccx/issues/4974959) |
+| #4974959 | 512 | Error: pq: password authentication failed for user "postg... | [View](https://glitchtip.devshift.net/ccx/issues/4974959) |
+| #4975050 | 2 | Error: pq: password authentication failed for user "postg... | [View](https://glitchtip.devshift.net/ccx/issues/4975050) |
 | #4974960 | 192 | Error: pq: password authentication failed for user "postg... | [View](https://glitchtip.devshift.net/ccx/issues/4974960) |
 | #4974997 | 13 | Error: pq: password authentication failed for user "postg... | [View](https://glitchtip.devshift.net/ccx/issues/4974997) |
 | #4974998 | 13 | Error: pq: password authentication failed for user "postg... | [View](https://glitchtip.devshift.net/ccx/issues/4974998) |
@@ -266,10 +267,22 @@
 | #4974999 | 2 | Error: pq: password authentication failed for user "postg... | [View](https://glitchtip.devshift.net/ccx/issues/4974999) |
 | #4975051 | 4 | Error: pq: password authentication failed for user "postg... | [View](https://glitchtip.devshift.net/ccx/issues/4975051) |
 | #4974985 | 4 | Error: pq: password authentication failed for user "postg... | [View](https://glitchtip.devshift.net/ccx/issues/4974985) |
-| #4975050 | 1 | Error: pq: password authentication failed for user "postg... | [View](https://glitchtip.devshift.net/ccx/issues/4975050) |
 | #4975049 | 1 | Error: pq: password authentication failed for user "postg... | [View](https://glitchtip.devshift.net/ccx/issues/4975049) |
 
 **Recommendation:** Consider merging into [#4974959](https://glitchtip.devshift.net/ccx/issues/4974959) (highest event count)
+
+---
+
+### 🟢 LOW: Error: sql: database is closed
+
+**Issues:** 2 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #5009306 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/5009306) |
+| #4975762 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4975762) |
+
+**Recommendation:** Consider merging into [#5009306](https://glitchtip.devshift.net/ccx/issues/5009306) (highest event count)
 
 ---
 
@@ -285,10 +298,10 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4127668 | 1,661 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4127668) |
-| #4293672 | 1,539 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4293672) |
+| #4127668 | 1,662 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4127668) |
+| #4293672 | 1,540 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4293672) |
+| #4839684 | 61 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4839684) |
 | #4866428 | 2 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4866428) |
-| #4839684 | 60 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4839684) |
 | #4768423 | 7 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4768423) |
 | #4959747 | 1 | Error: sql: database is closed | [View](https://glitchtip.devshift.net/ccx/issues/4959747) |
 
