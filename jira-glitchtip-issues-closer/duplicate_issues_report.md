@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-11-26 04:13:54
+**Generated:** 2026-11-27 04:13:32
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -14,7 +14,7 @@
 |--------|-------|
 | Projects with duplicates | 10 |
 | Total duplicate groups | 23 |
-| Total issues in groups | 70 |
+| Total issues in groups | 69 |
 | Total events affected | 0 |
 
 ---
@@ -29,7 +29,7 @@
 - [insights-results-aggregator](#insights-results-aggregator) - 2 groups, 12 issues
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 11 issues
 - [parquet-factory](#parquet-factory) - 2 groups, 4 issues
-- [rules-processing](#rules-processing) - 1 groups, 4 issues
+- [rules-processing](#rules-processing) - 1 groups, 3 issues
 - [valkey-writer](#valkey-writer) - 2 groups, 4 issues
 
 ---
@@ -65,7 +65,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4408130 | 2,116 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
+| #4408130 | 2,126 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
 | #4852265 | 132 | Error: dial tcp 10.0.216.215:5432: connect: connection ti... | [View](https://glitchtip.devshift.net/ccx/issues/4852265) |
 | #4852264 | 1,141 | Error: read tcp 10.129.5.216:41030->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4852264) |
 | #4854273 | 1,130 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4854273) |
@@ -371,19 +371,18 @@
 ## rules-processing
 
 **Duplicate Groups:** 1
-**Issues in Groups:** 4
+**Issues in Groups:** 3
 **Total Events:** 0
 
 ### 🟢 LOW: Rule response make_fail(OPERATOR_ISSUE) exceeds the size limit of ... characters.
 
-**Issues:** 4 | **Total Events:** 0
+**Issues:** 3 | **Total Events:** 0
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
 | #4847319 | 8 | Rule response make_fail(OPERATOR_ISSUE) exceeds the size ... | [View](https://glitchtip.devshift.net/ccx/issues/4847319) |
 | #4927785 | 1 | Rule response make_fail(MACHINE_POOL_NOT_OK) exceeds the ... | [View](https://glitchtip.devshift.net/ccx/issues/4927785) |
 | #4615774 | 6 | Rule response make_fail(CERTIFICATES_EXPIRING_SOON) excee... | [View](https://glitchtip.devshift.net/ccx/issues/4615774) |
-| #4729746 | 36 | Rule response make_fail(NODES_CONTAINER_RUNTIME_VERSION) ... | [View](https://glitchtip.devshift.net/ccx/issues/4729746) |
 
 **Recommendation:** Consider merging into [#4847319](https://glitchtip.devshift.net/ccx/issues/4847319) (highest event count)
 
