@@ -1,6 +1,6 @@
 # Potential Duplicate Issues Report
 
-**Generated:** 2026-11-27 04:13:32
+**Generated:** 2026-11-28 04:13:03
 **Glitchtip Instance:** glitchtip.devshift.net
 **Organization:** ccx
 **Similarity Threshold:** 65%
@@ -13,8 +13,8 @@
 | Metric | Value |
 |--------|-------|
 | Projects with duplicates | 10 |
-| Total duplicate groups | 23 |
-| Total issues in groups | 69 |
+| Total duplicate groups | 24 |
+| Total issues in groups | 72 |
 | Total events affected | 0 |
 
 ---
@@ -30,7 +30,7 @@
 - [insights-results-aggregator-db-writer](#insights-results-aggregator-db-writer) - 3 groups, 11 issues
 - [parquet-factory](#parquet-factory) - 2 groups, 4 issues
 - [rules-processing](#rules-processing) - 1 groups, 3 issues
-- [valkey-writer](#valkey-writer) - 2 groups, 4 issues
+- [valkey-writer](#valkey-writer) - 3 groups, 7 issues
 
 ---
 
@@ -65,7 +65,7 @@
 
 | Issue ID | Events | Title | Link |
 |----------|--------|-------|------|
-| #4408130 | 2,126 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
+| #4408130 | 2,129 | Error: read tcp 10.131.1.230:47006->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4408130) |
 | #4852265 | 132 | Error: dial tcp 10.0.216.215:5432: connect: connection ti... | [View](https://glitchtip.devshift.net/ccx/issues/4852265) |
 | #4852264 | 1,141 | Error: read tcp 10.129.5.216:41030->10.0.216.215:5432: re... | [View](https://glitchtip.devshift.net/ccx/issues/4852264) |
 | #4854273 | 1,130 | Error: dial tcp 10.0.216.215:5432: connect: connection re... | [View](https://glitchtip.devshift.net/ccx/issues/4854273) |
@@ -390,9 +390,23 @@
 
 ## valkey-writer
 
-**Duplicate Groups:** 2
-**Issues in Groups:** 4
+**Duplicate Groups:** 3
+**Issues in Groups:** 7
 **Total Events:** 0
+
+### 🟢 LOW: Error: i/o timeout
+
+**Issues:** 3 | **Total Events:** 0
+
+| Issue ID | Events | Title | Link |
+|----------|--------|-------|------|
+| #5016466 | 15 | Error: i/o timeout | [View](https://glitchtip.devshift.net/ccx/issues/5016466) |
+| #5016464 | 15 | Error: i/o timeout | [View](https://glitchtip.devshift.net/ccx/issues/5016464) |
+| #5016465 | 15 | Error: i/o timeout | [View](https://glitchtip.devshift.net/ccx/issues/5016465) |
+
+**Recommendation:** Consider merging into [#5016466](https://glitchtip.devshift.net/ccx/issues/5016466) (highest event count)
+
+---
 
 ### 🟢 LOW: Error: kafka server: Tried to send a message to a replica that is not the leader for some partition…
 
